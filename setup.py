@@ -10,6 +10,8 @@ requires = [
     'pyramid',
     'pyramid_debugtoolbar',
     'waitress',
+    'docutils',
+    'jinja2',
     ]
 
 setup(name='MyProject',
