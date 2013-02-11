@@ -36,20 +36,25 @@
 					<a class="brand" href="/">&lt;insert name here&gt; Restaurant Management</a>
 					<div class="nav-collapse collapse">
 						<ul class="nav">
-							<li class="active"><a href="menu">Menu</a></li>
-							<li class="active"><a href="orders">Orders</a></li>
-							<li class="active"><a href="admin">Admin</a></li>
-							<li class="active"><a href="about">About</a></li>
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+								<ul class="dropdown-menu">
+									<li><a href="menu">View the Menu</a></li>
+								</ul>
+							</li>
+							<li><a href="orders">Orders</a></li>
+							<li><a href="admin">Admin</a></li>
+							<li><a href="about">About</a></li>
 						</ul><!-- nav -->
 					</div><!-- nav collapse -->
 				</div><!-- container -->
 			</div><!-- navbar-inner -->
 		</div><!-- navbar navbar-fixed-top -->
-               {% endblock navbar %}
+               	{% endblock navbar %}
 		{% block body %}
 		<div class="container">
-			<h1>4350Proj</h1>
-			<p>test test</p>
+			<h1>&lt;insert name here&gt; Restaurant Management System</h1>
+			<p>We might not have a name, but we definitely have the solution for your restaurant!</p>
 		</div><!-- container -->
 		{% endblock body %}
 	</body>
