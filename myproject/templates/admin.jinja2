@@ -2,8 +2,48 @@
 <html lang="en">
 {% extends "index.jinja2" %}
 {% block body %}
-	<div class="container">
-			<h1>ADMIN</h1>
-			<p>LOGIN FORM</p>
-		</div><!-- container -->
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <div class="tabbable tabs-left">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="active"><a href="#stats" data-toggle="tab">Statistics</a></li>
+          <li class="dropdown">
+	    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Change Menu<b class="caret"></b></a>
+	    <ul class="dropdown-menu">
+	      <li><a href="#addItem" data-toggle="tab">Add Menu Item</a></li>
+	      <li><a href="#editItem" data-toggle="tab">Edit Menu Item</a></li>
+	    </ul>
+	  </li>
+        </ul>
+      </div>
+    </div>
+    <div class="span10">
+      <div class="tab-content">
+        <div class="tab-pane active" id="stats">
+	  <p>Statistics go here.</p>
+	</div>
+        <div class="tab-pane" id="addItem">
+          <form>
+            <fieldset>
+              <legend>Add Menu Item</legend>
+              <label>Item Name</label>
+              <input name="itemName" type="text" placeholder="...">
+              <label>Description</label>
+              <input name="desc" type="text" placeholder="...">
+              <label>Price</label>
+              <input name="price" type="text" placeholder="xx.xx">
+              <p>
+                <button type="submit" class="btn">Submit</button>
+              </p>
+            </fieldset>
+          </form>
+        </div>
+	<div class="tab-pane" id="editItem">
+	  <p>Edit item here</p>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock body %}
