@@ -1,5 +1,11 @@
 from pyramid.config import Configurator
+from pyramid.events import subscriber
+from pyramid.events import NewRequest
 
+from urlparse import urlparse
+import pymongo
+
+from pymongo import MongoClient
 
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
