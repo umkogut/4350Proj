@@ -12,6 +12,8 @@ requires = [
     'waitress',
     'docutils',
     'jinja2',
+    'SQLAlchemy',
+    'zope.sqlalchemy',
     ]
 
 setup(name='MyProject',
@@ -37,5 +39,7 @@ setup(name='MyProject',
       entry_points="""\
       [paste.app_factory]
       main = myproject:main
+      [console_scripts]
+      initialize_menu_db = myproject.scripts.initializedb:main
       """,
       )
