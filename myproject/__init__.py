@@ -4,8 +4,6 @@ from pyramid.events import NewRequest
 
 from urlparse import urlparse
 
-from pymongo import MongoClient
-
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
