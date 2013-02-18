@@ -16,6 +16,5 @@ def main(global_config, **settings):
     config.add_route('orders', '/orders')
     config.add_route('admin', '/admin')
     config.add_route('about', '/about')
-    config.add_route('test', '/test')
     config.scan()
     return config.make_wsgi_app()
