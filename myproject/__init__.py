@@ -3,7 +3,6 @@ from pyramid.events import subscriber
 from pyramid.events import NewRequest
 
 from urlparse import urlparse
-import pymongo
 
 from pymongo import MongoClient
 
