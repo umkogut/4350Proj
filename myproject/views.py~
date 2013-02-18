@@ -25,8 +25,3 @@ def admin_view(request):
 def about_view(request):
     print request
     return {'project': 'MyProject'}
-
-@view_config(route_name='test', renderer='templates/test.jinja2')
-def test_view(request):
-    print request
-    return {'project': 'MyProject'}
