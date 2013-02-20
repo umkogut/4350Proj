@@ -2,8 +2,37 @@
 <html lang="en">
 {% extends "index.jinja2" %}
 {% block body %}
-	<div class="container">
-			<h1>ORDERS</h1>
-			<p>Manage orders from here</p>
-		</div><!-- container -->
+<div class="container-fluid">
+  <div class="row-fluid">
+    <p align="right">
+      <button class="btn btn-primary btn-large" type="button" id="addTable">+</button>
+    </p>
+  </div>
+  <div class="row-fluid">
+    <div class="span2">
+      <div class="tabbable tabs-left">
+        <ul class="nav nav-pills nav-stacked" id="tableTabs">
+        </ul>
+      </div>
+    </div>
+    <div class="span10">
+      <div class="tab-content" id="tableOrders">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(function() {
+  $('.tabs a:last').tab('show');
+
+  $('#addTable').click(function() {
+    $('#tableTabs').append($('<li><a href="#newTable" data-toggle="tab">New Table</a></li>'));
+    $('#tableOrders').append($('<div class="tab-pane" id="newTable"><p>Place Orders for this table here</p></div>'));
+
+    $('#newTable').tab('show');
+
+  });
+});
+</script>
 {% endblock body %}
