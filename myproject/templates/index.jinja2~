@@ -13,6 +13,12 @@
 			padding-top: 60px;
 		}
 
+		.subhead {
+			padding-top: 20px;
+			background-color: rgba(0, 80, 0, 0.9);
+			color: white;
+		}
+
 		.masthead {
 			background-color: rgba(0, 80, 0, 0.9);
 		}
@@ -82,9 +88,4 @@
 	</div><!-- container -->
         {% endblock body %}
     </body>
-    <footer>
-	{% block footer %}
-        <p>&copy Group 6 Corp.</p>
-	{% endblock footer %}
-    </footer>
 </html>
