@@ -20,8 +20,6 @@ def cook_view(request):
     if item is None:
 	print "There is nothing in the menu"
 
-    print item.name
-
     return {'item': item, 'project': 'MyProject'}
 
 @view_config(route_name='orders', renderer='templates/orders.jinja2')

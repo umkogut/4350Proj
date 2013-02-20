@@ -1,9 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
 {% extends "index.jinja2" %}
+
 {% block body %}
-	<div class="container">
-		<h1>MENU</h1>
-		<p>&copy This is different!</p>
-	</div><!-- container -->
+<header class="subhead">
+  <div class="container">
+    <h1>Menu</h1>
+    <p class="lead">This is where you create and manipulate items in your menu.</p>
+  </div>
+</header>
+
+<div class="container">
+    <dl>
+        <dt><h1>{{menuItems.category}}</h1></dt>
+
+        <dd>
+		<ul>
+			<h3>{{menuItems.name}}</h3>
+			<h3 class="text-right">{{menuItems.price}}</h3>	
+		</ul>
+
+		<hr>
+		
+        </dd>
+    </dl>   
+</div>
 {% endblock body %}
+
+
