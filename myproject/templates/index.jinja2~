@@ -82,4 +82,9 @@
 	</div><!-- container -->
         {% endblock body %}
     </body>
+    <footer>
+	{% block footer %}
+        <p>&copy Group 6 Corp.</p>
+	{% endblock footer %}
+    </footer>
 </html>
