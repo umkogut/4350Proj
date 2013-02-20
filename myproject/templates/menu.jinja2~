@@ -4,6 +4,6 @@
 {% block body %}
 	<div class="container">
 		<h1>MENU</h1>
-		<p>This is different!</p>
+		<p>&copy This is different!</p>
 	</div><!-- container -->
 {% endblock body %}

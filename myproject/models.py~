@@ -27,10 +27,8 @@ class MenuItem(Base):
     isVegetarian = Column(BOOLEAN, nullable=False)
     isActive = Column(BOOLEAN, nullable=False)
 
-    def __init__(self, name, category, price, isVegetarian, isActive):
+    def __init__(self, name, category, price):
         self.name = name
 	self.category = category
 	self.price = price
-	self.isVegetarian = isVegetarian
-	self.isActive = isActive
 	
