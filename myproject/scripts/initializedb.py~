@@ -33,5 +33,5 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
     with transaction.manager:
-        item = MenuItem(name='cheeseburger', category='Entree', price=5.00, isVegetarian=False, isActive=True)
+        item = MenuItem(name='cheeseburger', category='Entree', price='5.00')
         DBSession.add(item)
