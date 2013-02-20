@@ -16,6 +16,7 @@ myproject/__init__.py
 myproject/models.py
 myproject/tests.py
 myproject/views.py
+myproject/myimages/test.jpg
 myproject/scripts/__init__.py
 myproject/scripts/initializedb.py
 myproject/static/favicon.ico
@@ -186,3 +187,7 @@ myproject/static/bootstrap/less/tests/forms.html
 myproject/static/bootstrap/less/tests/navbar-fixed-top.html
 myproject/static/bootstrap/less/tests/navbar-static-top.html
 myproject/static/bootstrap/less/tests/navbar.html
+myproject/static/qunit/qunit.css
+myproject/static/qunit/qunit.js
+myproject/static/qunit/tests.js
+myproject/templates/test.jpg
