@@ -16,11 +16,11 @@ def cook_view(request):
     print request
 
     print "Loading the menu"
-    item = DBSession.query(MenuItem).first()
-    if item is None:
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).first()
+    if menuItems is None:
 	print "There is nothing in the menu"
 
-    return {'item': item, 'project': 'MyProject'}
+    return {'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
 def orders_view(request):

@@ -12,17 +12,21 @@
 
 <div class="container">
     <dl>
-        <dt><h1>{{menuItems.category}}</h1></dt>
+	<ul>
+		{% for item in menuItems %}
+        		<dt><h1>{{item.category}}</h1></dt>
 
-        <dd>
-		<ul>
-			<h3>{{menuItems.name}}</h3>
-			<h3 class="text-right">{{menuItems.price}}</h3>	
-		</ul>
+        		<dd>		
+				<ul>
+					<h3>{{item.name}}</h3>
+					<h3 class="text-right">$ {{item.price}}</h3>	
+				</ul>
 
-		<hr>
-		
-        </dd>
+				<hr>
+        		</dd>
+		{% else %}
+		{% endfor %}
+	</ul>
     </dl>   
 </div>
 {% endblock body %}
