@@ -24,7 +24,7 @@
 	  <p>Statistics go here.</p>
 	</div>
         <div class="tab-pane" id="addItem">
-          <form>
+          <form method="POST" action="add_menu_item">
             <fieldset>
               <legend>Add Menu Item</legend>
               <label>Item Name</label>
@@ -33,10 +33,10 @@
               <input name="desc" type="text" placeholder="...">
               <label>Price</label>
               <input name="price" type="text" placeholder="xx.xx">
-              <p>
-                <button type="submit" class="btn">Submit</button>
-              </p>
-            </fieldset>
+              <p>    
+		<button type="submit" class="btn">Submit</button>
+              </p>  
+	    </fieldset>
           </form>
         </div>
 	<div class="tab-pane" id="editItem">

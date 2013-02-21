@@ -1,3 +1,4 @@
+from pyramid.response import Response
 from pyramid.view import view_config
 from jinja2 import Environment, FileSystemLoader
 
@@ -5,6 +6,19 @@ from .models import (
     DBSession,
     MenuItem,
     )
+
+@view_config(route_name='add_menu_item', renderer='templates/admin.jinja2')
+def add_menu_item(request):
+    print request
+
+    itemName = request.params['itemName']
+    desc = request.params['desc']
+    price = request.params['price']
+
+    newItem = MenuItem(name=itemName, category='Entrees', price=price, isVegetarian=False, isActive=True) 
+    DBSession.add(newItem)
+
+    return {'project': 'MyProject'}
 
 @view_config(route_name='home', renderer='templates/index.jinja2')
 def my_view(request):
@@ -17,6 +31,9 @@ def cook_view(request):
 
     print "Loading the menu"
     menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+    
+    print menuItems
+
     if menuItems is None:
 	print "There is nothing in the menu"
 
