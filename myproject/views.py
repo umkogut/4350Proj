@@ -16,7 +16,7 @@ def cook_view(request):
     print request
 
     print "Loading the menu"
-    menuItems = DBSession.query(MenuItem).first()
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
     if menuItems is None:
 	print "There is nothing in the menu"
 
