@@ -24,7 +24,6 @@
 
 				<hr>
         		</dd>
-		{% else %}
 		{% endfor %}
 	</ul>
     </dl>   
