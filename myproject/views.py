@@ -44,6 +44,11 @@ def orders_view(request):
     print request
     return {'project': 'MyProject'}
 
+@view_config(route_name='pos', renderer='templates/pos.jinja2')
+def pos_view(request):
+    print request
+    return {'project': 'MyProject'}
+
 @view_config(route_name='admin', renderer='templates/admin.jinja2')
 def admin_view(request):
     print request
