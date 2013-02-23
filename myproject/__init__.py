@@ -26,6 +26,7 @@ def main(global_config, **settings):
     config.add_route('home', '/')
     config.add_route('menu', '/menu')
     config.add_route('orders', '/orders')
+    config.add_route('pos','/pos')
     config.add_route('admin', '/admin')
     config.add_route('about', '/about')
     config.add_route('test', '/test')
