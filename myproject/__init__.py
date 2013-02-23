@@ -2,7 +2,9 @@ from pyramid.config import Configurator
 from pyramid.events import subscriber
 from pyramid.events import NewRequest
 
+from sqlalchemy.engine import Engine
 from sqlalchemy import engine_from_config
+from sqlalchemy import event
 
 from .models import (
     DBSession,
@@ -34,3 +36,9 @@ def main(global_config, **settings):
     config.add_route('add_menu_item', '/add_menu_item')
     config.scan()
     return config.make_wsgi_app()
+
+@event.listens_for(Engine, "connect")
+def set_sqlite_pragma(dbapi_connection, connection_record):
+    cursor = dbapi_connection.cursor()
+    cursor.execute('pragma foreign_keys=ON')
+    cursor.close()
