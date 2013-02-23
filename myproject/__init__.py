@@ -25,6 +25,7 @@ def main(global_config, **settings):
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('home', '/')
     config.add_route('menu', '/menu')
+    config.add_route('placeOrder', '/placeOrder')
     config.add_route('orders', '/orders')
     config.add_route('pos','/pos')
     config.add_route('admin', '/admin')
