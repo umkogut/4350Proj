@@ -4,6 +4,7 @@ from sqlalchemy import (
     Numeric,
     String,
     BOOLEAN,
+    ForeignKey
     )
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -27,8 +28,9 @@ class MenuItem(Base):
     isVegetarian = Column(BOOLEAN, nullable=False)
     isActive = Column(BOOLEAN, nullable=False)
 
-    def __init__(self, name, category, price):
+    def __init__(self, name, category, price, isVegetarian, isActive):
         self.name = name
 	self.category = category
 	self.price = price
-	
+	self.isVegetarian = isVegetarian
+	self.isActive = isActive
