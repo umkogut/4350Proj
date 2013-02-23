@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html land="en">
+{%extends "index.jinja2" %}
+{% block body %}
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="tabbable tabs-left">
+      <ul class="nav nav-pills" id="my-tabs">
+        <li class="active"><a href="#tab1"> Tab1</a></li>
+        <!--Load up all orders here, tab1 as a placeholder-->
+      </ul>
+      <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+          <div class="row-fluid">
+            <div class="span3" id="bill">
+              <label class="checkbox">
+                <input type="checkbox" value="" id="item1" checked="checked">
+                Item1 - Price
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" value="" id="item2" checked="checked">
+                Item2 - Price
+              </label>
+            </div>
+            <div class="span3" id="currBill">
+              <label id="item1_lb">
+                Item1 - Price
+              </label>
+              <label id="item2_lb">
+                Item2 - Price
+              </label>
+            </div>
+          </div>
+          <div class="row-fluid">
+            <button class="btn" id="pay">Pay</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+$(function() {
+  $('input:checkbox').bind('change',function() {
+    $('#'+this.id+'_lb').toggle($(this).is(':checked'));
+  });
+ 
+  $("#pay").click(function() {
+    $("#bill input[type=checkbox]").each(function() {
+      if($(this).is(":checked"))
+      {
+       $(this).parent().hide();
+       $(this).prop('checked', false);
+       $('#'+ this.id +'_lb').hide();
+      }
+    });
+  });
+});
+</script>
+{% endblock body %}
+
