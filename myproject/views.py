@@ -64,10 +64,7 @@ def placeOrder_view(request):
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
 def orders_view(request):
     print request
-
-    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category,MenuItem.name).all()
-
-    return {'menuItems': menuItems, 'project': 'MyProject'}
+    return {'project': 'MyProject'}
 
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
 def pos_view(request):
