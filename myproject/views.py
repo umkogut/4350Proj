@@ -14,12 +14,26 @@ from .models import (
 def add_menu_item(request):
     print request
 
+    params = request.POST
+    print params
+
     itemName = request.params['itemName']
     desc = request.params['desc']
     price = request.params['price']
+    vegetarian = "off"
+    if 'vegetarian' in params:
+       vegetarian = request.params['vegetarian']
+    category = request.params['category']
 
-    newItem = MenuItem(name=itemName, category='Entrees', price=price, isVegetarian=False, isActive=True) 
+    isVeggie = False
+
+    if vegetarian in ['on']:
+       isVeggie = True
+
+    newItem = MenuItem(name=itemName, category=category, price=price, isVegetarian=isVeggie, isActive=True) 
     DBSession.add(newItem)
+
+    transaction.commit()
 
     return {'project': 'MyProject'}
 
