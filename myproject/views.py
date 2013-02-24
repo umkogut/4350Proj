@@ -1,6 +1,3 @@
-import pdb
-import transaction;
-
 from pyramid.response import Response
 from pyramid.view import view_config
 from jinja2 import Environment, FileSystemLoader
@@ -50,10 +47,7 @@ def placeOrder_view(request):
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
 def orders_view(request):
     print request
-
-    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category,MenuItem.name).all()
-
-    return {'menuItems': menuItems, 'project': 'MyProject'}
+    return {'project': 'MyProject'}
 
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
 def pos_view(request):
@@ -74,23 +68,3 @@ def about_view(request):
 def test_view(request):
     print request
     return {'project': 'MyProject'}
-
-"""
-Keeping this code around temporarily. Will need to look at it later.
-Just keep pushing it to the bottom when adding new views
-- Marko
-
-@view_config(route_name='fktest', renderer='templates/fktest.jinja2')
-def fktest_view(request):
-    newTestFK = testFK(fkID=1, testID=1)
-    DBSession.add(newTestFK)
-
-    transaction.commit()
-
-    newTestFK2 = testFK(fkID=2, testID=2)
-    DBSession.add(newTestFK2)
-
-    transaction.commit()
-
-    return {'project': 'MyProject'}
-"""
