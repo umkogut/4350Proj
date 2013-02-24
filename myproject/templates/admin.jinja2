@@ -2,6 +2,7 @@
 <html lang="en">
 {% extends "index.jinja2" %}
 {% block body %}
+
 <div class="tabbable tabs-left">
 	<ul class="nav nav-tabs">
 		<li class="active"><a href="#stats" data-toggle="tab">Statistics</a></li>
@@ -22,11 +23,11 @@
 				<fieldset>
 					<legend>Add Menu Item</legend>
 						<label>Item Name</label>
-						<input name="itemName" type="text" placeholder="...">
+						<input id="itemName"  name="itemName" type="text" placeholder="...">
 						<div class="control-group">
 							<label class="control-label">Category</label>
 							<div class="controls">
-								<select>
+								<select name="category">
 									<option value="Appetizers">Appetizers</option>
 									<option value="Entrees">Entrees</option>
 									<option value="Dessert">Dessert</option>
@@ -34,13 +35,13 @@
 							</div> <!-- controls -->
 						</div> <!-- control-group -->
 						<label>Description</label>
-						<input name="desc" type="text" placeholder="...">
+						<input id="desc" name="desc" type="text" placeholder="...">
 						<label>Price</label>
-						<input name="price" type="text" placeholder="xx.xx">
+						<input id="price" name="price" type="text" placeholder="xx.xx">
 						<label class="checkbox">
-							<input type="checkbox" class="vegetarian" id="vegetarian">Vegetarian
+							<input type="checkbox" name="vegetarian" class="vegetarian" id="vegetarian">Vegetarian
 						</label>
-						<button type="submit" class="btn">Submit</button>  
+						<button type="submit" id="submitBtn" class="btn" disabled="true">Submit</button>  
 				</fieldset>
 			</form>
 		</div> <!-- tab-pane addItem -->
@@ -48,4 +49,35 @@
 	  <p>Edit item here</p>
 	</div> <!-- tab-pane editItem -->
 </div> <!-- tabbable tabs-left -->
+
+<script type="text/javascript">
+$('#itemName').keyup(function() {
+	testIfCanSubmit();
+});
+</script>
+
+<script type="text/javascript">
+$('#price').keyup(function() {
+    var intRegex = /^\d+\.\d{2}$/;
+    if(intRegex.test($('#price').val()))
+	testIfCanSubmit();
+});
+</script>
+
+<script type="text/javascript">
+$('#desc').keyup(function() {
+        testIfCanSubmit();
+});
+</script>
+
+
+<script type="text/javascript">
+function testIfCanSubmit() {
+	if($('#itemName').val() == "" || $('#price').val() == "" || $('#desc').val() == "")
+		$('#submitBtn').attr('disabled', true);
+	else
+		$('#submitBtn').attr('disabled', false); 
+
+}
+</script>
 {% endblock body %}
