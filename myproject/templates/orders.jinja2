@@ -16,20 +16,41 @@
 						<legend>Order 1</legend>
 						<div class="container-fluid">
 							<div class="row-fluid">
-								{% for category in ('Appetizers', 'Entrees', 'Dessert') %}
 								<div class="span4">
 									<dl>
-										<dt>{{category}}</dt>
-											{% for item in menuItems if item.category == category %}
+										<dt>Appetizers</dt>
 											<dd>
 												<label class="checkbox">
-													<input type="checkbox" class="appetizer" id="app1">{{item.name}}
+													<input type="checkbox" class="appetizer" id="app1">Appetizer 1
 												</label>
 											</dd>
-											{% endfor %}
 									</dl>
 								</div> <!-- span4 -->
-								{% endfor %}
+								<div class="span4">
+									<dl>
+										<dt>Entrees</dt>
+											<dd>
+												<label class="checkbox">
+													<input type="checkbox" class="entree" id="entree1" disabled="false">Entree 1
+												</label>
+											</dd>
+											<dd>
+												<label class="checkbox">
+													<input type="checkbox" class="entree" id="entree2" disabled="false">Entree 2
+												</label>
+											</dd>
+									</dl>
+								</div> <!-- span4 -->
+								<div class="span4">
+									<dl>
+										<dt>Dessert</dt>
+											<dd>
+												<label class="checkbox">
+													<input type="checkbox" class="dessert" id="dessert1" disabled="false">Dessert 1
+												</label>
+											</dd>
+									</dl>
+								</div> <!-- span4 -->
 							</div> <!-- row-fluid -->
 							<button type="submit" class="btn">Submit</button>
 						</div> <!-- container-fluid -->
