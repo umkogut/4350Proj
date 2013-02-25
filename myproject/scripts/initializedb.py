@@ -11,7 +11,11 @@ from pyramid.paster import (
 
 from ..models import (
     DBSession,
+    MenuCategory,
     MenuItem,
+    PayMethod,
+    UserType,
+    User,
     Base,
     )
 
@@ -33,8 +37,23 @@ def main(argv=sys.argv):
     DBSession.configure(bind=engine)
     Base.metadata.create_all(engine)
     with transaction.manager:
-        cheeseburger = MenuItem(name='Cheese Burger', category='Entrees', price=5.00, isVegetarian=False, isActive=True)
+	appetizers = MenuCategory(name='Appetizers')
+	DBSession.add(appetizers)
+
+	entrees = MenuCategory(name='Entrees')
+	DBSession.add(entrees)
+
+	dessert = MenuCategory(name='Dessert')
+	DBSession.add(dessert)
+
+	ceasarSalad = MenuItem(name='Ceasar Salad', category=1, price=1.95, isVeg=False, isActive=True, description='Salad', image="")
+	DBSession.add(ceasarSalad)
+
+        cheeseburger = MenuItem(name='Cheese Burger', category=2, price=5.00, isVeg=False, isActive=True, description='Burger', image="")
         DBSession.add(cheeseburger)
 
-	veggieburger = MenuItem(name='Veggie Burger', category='Entrees', price=3.00, isVegetarian=True, isActive=True)
+	veggieburger = MenuItem(name='Veggie Burger', category=2, price=3.00, isVeg=True, isActive=True, description='Burger', image="")
 	DBSession.add(veggieburger)
+
+	chocolateCake = MenuItem(name='ChocolateCake', category=3, price=1.45, isVeg=False, isActive=True, description='Cake', image="")
+	DBSession.add(chocolateCake)
