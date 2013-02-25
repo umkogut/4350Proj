@@ -32,9 +32,9 @@
 							<label class="control-label" for="category">Category</label>
 							<div class="controls">
 								<select name="category">
-									<option value="Appetizers">Appetizers</option>
-									<option value="Entrees">Entrees</option>
-									<option value="Dessert">Dessert</option>
+									{% for category in menuCategories %}
+									<option value={{category.catID}}>{{category.name}}</option>
+									{% endfor %}
 								</select>
 							</div> <!-- controls category -->
 						</div> <!-- control-group -->
