@@ -69,10 +69,9 @@ def test_view(request):
 def getMenuItem_view(request):
 	print request
 	itemName = request.json_body['name']
-	items = DBSession.query(MenuItem).filter_by(name=itemName).all()
+	item = DBSession.query(MenuItem).filter_by(name=itemName).first()
 
-	if items:
-		item = items[0]
+	if item:
 		return {'menuID': item.menuID, 'name': item.name, 'category': item.category, 'price': item.price, 'isVeg': item.isVeg, 'isActive': item.isActive, 'description': item.description, 'image': item.image}
 	else:
 		return {'isSuccess': 0}
