@@ -1,0 +1,6 @@
+*.log
+*~
+*.pyc
+
+#What the hell was this doing there?
+menuDB.sqlite
