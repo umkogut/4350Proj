@@ -88,6 +88,14 @@ def test_view(request):
     print request
     return {'project': 'MyProject'}
 
+@view_config(renderer='json', name='getMenuItem.json')
+def updates_view(request):
+	print request
+	menuItem = DBSession.query(MenuItem).filter(request.name).all()
+
+	print menuItem
+	return menuItem
+
 """
 Keeping this code around temporarily. Will need to look at it later.
 Just keep pushing it to the bottom when adding new views
