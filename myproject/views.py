@@ -11,33 +11,6 @@ from .models import (
     MenuCategory,
     )
 
-@view_config(route_name='add_menu_item', renderer='templates/admin.jinja2')
-def add_menu_item(request):
-    print request
-
-    params = request.POST
-    print params
-
-    itemName = request.params['itemName']
-    desc = request.params['desc']
-    price = request.params['price']
-    vegetarian = "off"
-    if 'vegetarian' in params:
-       vegetarian = request.params['vegetarian']
-    category = request.params['category']
-
-    isVeggie = False
-
-    if vegetarian in ['on']:
-       isVeggie = True
-
-    newItem = MenuItem(name=itemName, category=category, price=price, isVeg=isVeggie, isActive=True, description=desc, image="") 
-    DBSession.add(newItem)
-
-    transaction.commit()
-
-    return {'project': 'MyProject'}
-
 @view_config(route_name='home', renderer='templates/index.jinja2')
 def my_view(request):
     print request
@@ -93,13 +66,44 @@ def test_view(request):
     return {'project': 'MyProject'}
 
 @view_config(renderer='json', name='getMenuItem.json')
-def updates_view(request):
+def getMenuItem_view(request):
 	print request
-	menuItem = DBSession.query(MenuItem).filter(request.name).all()
+	itemName = request.json_body['name']
+	items = DBSession.query(MenuItem).filter_by(name=itemName).all()
 
-	print menuItem
-	return menuItem
+	if items:
+		item = items[0]
+		return {'menuID': item.menuID, 'name': item.name, 'category': item.category, 'price': item.price, 'isVeg': item.isVeg, 'isActive': item.isActive, 'description': item.description, 'image': item.image}
+	else:
+		return {'isSuccess': 0}
 
+@view_config(renderer='json', name='addMenuItem.json')
+def addMenuItem_view(request):
+	print request
+	item = request.json_body
+	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
+	DBSession.add(newItem)
+	transaction.commit()
+	return {'isSuccess': 1}
+
+@view_config(renderer='json', name='editMenuItem.json')
+def editMenuItem_view(request):
+	print request
+	newItem = request.json_body
+	prevItemName = request.json_body['prevItemName']
+	item = DBSession.query(MenuItem).filter_by(name=newItem['prevItemName']).first()
+	if item:
+		item.name = newItem['name']
+		item.category = newItem['category']
+		item.price = newItem['price']
+		item.isVeg = newItem['isVeg']
+		item.description = newItem['description']
+		item.image = newItem['image']
+		transaction.commit()
+		return {'isSuccess': 1}
+	else:
+		return {'isSuccess': 0}
+		
 """
 Keeping this code around temporarily. Will need to look at it later.
 Just keep pushing it to the bottom when adding new views
