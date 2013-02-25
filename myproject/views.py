@@ -59,7 +59,9 @@ def cook_view(request):
 @view_config(route_name='placeOrder', renderer='templates/placeOrder.jinja2')
 def placeOrder_view(request):
 	print request
-	return {'project': 'MyProject'}
+	menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+
+	return {'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
 def orders_view(request):
