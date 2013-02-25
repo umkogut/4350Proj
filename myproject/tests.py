@@ -1,11 +1,6 @@
 import unittest
 
 from pyramid import testing
-from .models import (
-    DBSession,
-    MenuItem,
-    MenuCategory,
-    )
 
 # Model tests
 class MenuCategoryModelTests(unittest.TestCase):
