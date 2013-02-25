@@ -142,6 +142,20 @@ $('#addForm input[name="desc"], #editForm input[name="desc"]').keyup(function() 
 	testIfCanSubmit();
 });
 
+$('#prevName').keyup(function(e) {
+	if(e.keyCode == 13)
+		$(this).trigger("fillData");
+});
+
+$('#prevName').bind("fillData", function() {
+	alert($('#prevName').val());
+	$.getJSON('/getMenuItem.json', {name: $('#prevName').val()}, function(data) {
+		$.each(data, function (key, val) {
+			alert(value);
+		});
+	});
+});
+
 function testIfCanSubmit() {
 	if($('#addForm input[name="itemName"]').val() == "" || $('#addForm input[name="price"]').val() == "" || $('#addForm input[name="desc"]').val() == "")
 		$('#addForm :submit').attr("disabled", true);
