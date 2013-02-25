@@ -19,65 +19,139 @@
 			<p>Statistics go here.</p>
 		</div> <!-- tab-pane stats -->
 		<div class="tab-pane" id="addItem">
-			<form method="POST" action="add_menu_item">
+			<form method="POST" action="add_menu_item" id="addForm" class="form-horizontal">
 				<fieldset>
 					<legend>Add Menu Item</legend>
-						<label>Item Name</label>
-						<input id="itemName"  name="itemName" type="text" placeholder="...">
 						<div class="control-group">
-							<label class="control-label">Category</label>
+							<label class="control-label" for="itemName">Item Name</label>
+							<div class="controls">
+								<input id="itemName"  name="itemName" type="text" placeholder="Item Name">
+							</div> <!-- controls itemName -->
+						</div> <!-- control-group -->
+						<div class="control-group">
+							<label class="control-label" for="category">Category</label>
 							<div class="controls">
 								<select name="category">
 									<option value="Appetizers">Appetizers</option>
 									<option value="Entrees">Entrees</option>
 									<option value="Dessert">Dessert</option>
 								</select>
-							</div> <!-- controls -->
+							</div> <!-- controls category -->
 						</div> <!-- control-group -->
-						<label>Description</label>
-						<input id="desc" name="desc" type="text" placeholder="...">
-						<label>Price</label>
-						<input id="price" name="price" type="text" placeholder="xx.xx">
-						<label class="checkbox">
-							<input type="checkbox" name="vegetarian" class="vegetarian" id="vegetarian">Vegetarian
-						</label>
-						<button type="submit" id="submitBtn" class="btn" disabled="true">Submit</button>  
+						<div class="control-group">
+							<label class="control-label" for="desc">Description</label>
+							<div class="controls">
+								<input id="desc" name="desc" type="text" placeholder="Description">
+							</div> <!-- controls desc -->
+						</div> <!-- control-group -->
+						<div class="control-group">
+							<label class="control-label" for="price">Price</label>
+							<div class="controls">
+								<input id="price" name="price" type="text" placeholder="00.00">
+							</div> <!-- controls price -->
+						</div> <!-- control-group -->
+						<div class="control-group">
+							<div class="controls">
+								<label class="checkbox">
+									<input type="checkbox" name="vegetarian" class="vegetarian" id="vegetarian">Vegetarian
+								</label>
+								<button type="submit" id="submitBtn" name="submitBtn" class="btn" disabled="true">Submit</button>
+							</div> <!-- controls vegetarian -->
+						</div> <!-- control-group -->
 				</fieldset>
 			</form>
 		</div> <!-- tab-pane addItem -->
 	<div class="tab-pane" id="editItem">
-	  <p>Edit item here</p>
+		<form method="POST" action="edit_menu_item" id="editForm" class="form-horizontal">
+			<fieldset>
+				<legend>Edit Menu Item</legend>
+					<div class="control-group">
+						<label class="control-label" for="menuItems">Menu Item</label>
+						<div class="controls">
+							<input id="prevName" type="text" list="menuItems">
+								<datalist id="menuItems">
+									{% for item in menuItems %}
+									<option>{{item.name}}</option>
+									{% endfor %}
+								</datalist>
+						</div> <!-- controls menuItems -->
+					</div> <!-- control-group -->
+					<div class="control-group">
+						<label class="control-label" for="itemName">Item Name</label>
+						<div class="controls">
+							<input id="itemName"  name="itemName" type="text" placeholder="Item Name">
+						</div> <!-- controls itemName -->
+					</div> <!-- control-group -->
+					<div class="control-group">
+						<label class="control-label" for="category">Category</label>
+						<div class="controls">
+							<select id="category">
+								<option value="Appetizers">Appetizers</option>
+								<option value="Entrees">Entrees</option>
+								<option value="Dessert">Dessert</option>
+							</select>
+						</div> <!-- controls category -->
+					</div> <!-- control-group -->
+					<div class="control-group">
+						<label class="control-label" for="desc">Description</label>
+						<div class="controls">
+							<input id="desc" name="desc" type="text" placeholder="Description">
+						</div> <!-- controls desc -->
+					</div> <!-- control-group -->
+					<div class="control-group">
+						<label class="control-label" for="price">Price</label>
+						<div class="controls">
+							<input id="price" name="price" type="text" placeholder="00.00">
+						</div> <!-- controls price -->
+					</div> <!-- control-group -->
+					<div class="control-group">
+						<div class="controls">
+							<label class="checkbox">
+								<input type="checkbox" name="vegetarian" class="vegetarian" id="vegetarian">Vegetarian
+							</label>
+							<button type="submit" id="submitBtn" class="btn" disabled="true" name="submitBtn">Submit</button>
+						</div> <!-- control vegetarian -->
+					</div> <!-- control-group -->
+			</fieldset>
+		</form>
 	</div> <!-- tab-pane editItem -->
 </div> <!-- tabbable tabs-left -->
 
 <script type="text/javascript">
-$('#itemName').keyup(function() {
+var intRegex = /^\d+\.\d{2}$/;
+
+$('#addForm input[name="itemName"], #editForm input[name="itemName"]').keyup(function() {
 	testIfCanSubmit();
 });
-</script>
 
-<script type="text/javascript">
-$('#price').keyup(function() {
-    var intRegex = /^\d+\.\d{2}$/;
-    if(intRegex.test($('#price').val()))
-	testIfCanSubmit();
-});
-</script>
-
-<script type="text/javascript">
-$('#desc').keyup(function() {
-        testIfCanSubmit();
-});
-</script>
-
-
-<script type="text/javascript">
-function testIfCanSubmit() {
-	if($('#itemName').val() == "" || $('#price').val() == "" || $('#desc').val() == "")
-		$('#submitBtn').attr('disabled', true);
+$('#addForm input[name="price"]').keyup(function() {
+	if(intRegex.test($('#addForm input[name="price"]').val()))
+		testIfCanSubmit();
 	else
-		$('#submitBtn').attr('disabled', false); 
+		$('#addForm :submit').attr("disabled", true);
+});
 
+$('#editForm input[name="price"]').keyup(function() {
+	if(intRegex.test($('#editForm input[name="price"]').val()))
+		testIfCanSubmit();
+	else
+		$('#editForm :submit').attr("disabled", true);
+});
+
+$('#addForm input[name="desc"], #editForm input[name="desc"]').keyup(function() {
+	testIfCanSubmit();
+});
+
+function testIfCanSubmit() {
+	if($('#addForm input[name="itemName"]').val() == "" || $('#addForm input[name="price"]').val() == "" || $('#addForm input[name="desc"]').val() == "")
+		$('#addForm :submit').attr("disabled", true);
+	else
+		$('#addForm :submit').attr("disabled", false);
+
+	if($('#editForm input[name="itemName"]').val() == "" || $('#editForm input[name="price"]').val() == "" || $('#editForm input[name="desc"]').val() == "")
+		$('#editForm :submit').attr("disabled", true);
+	else
+		$('#editForm :submit').attr("disabled", false);
 }
 </script>
 {% endblock body %}
