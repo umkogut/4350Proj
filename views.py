@@ -8,7 +8,6 @@ from jinja2 import Environment, FileSystemLoader
 from .models import (
     DBSession,
     MenuItem,
-    testFK,
     )
 
 @view_config(route_name='add_menu_item', renderer='templates/admin.jinja2')
