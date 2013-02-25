@@ -74,7 +74,9 @@ def pos_view(request):
 @view_config(route_name='admin', renderer='templates/admin.jinja2')
 def admin_view(request):
     print request
-    return {'project': 'MyProject'}
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+
+    return {'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='about', renderer='templates/about.jinja2')
 def about_view(request):
