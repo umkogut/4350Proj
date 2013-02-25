@@ -8,6 +8,7 @@ from jinja2 import Environment, FileSystemLoader
 from .models import (
     DBSession,
     MenuItem,
+    MenuCategory,
     )
 
 @view_config(route_name='add_menu_item', renderer='templates/admin.jinja2')
@@ -30,7 +31,7 @@ def add_menu_item(request):
     if vegetarian in ['on']:
        isVeggie = True
 
-    newItem = MenuItem(name=itemName, category=category, price=price, isVegetarian=isVeggie, isActive=True) 
+    newItem = MenuItem(name=itemName, category=category, price=price, isVeg=isVeggie, isActive=True, description=desc, image="") 
     DBSession.add(newItem)
 
     transaction.commit()
@@ -48,13 +49,13 @@ def cook_view(request):
 
     print "Loading the menu"
     menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
-    
+    menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
     print menuItems
 
     if menuItems is None:
 	print "There is nothing in the menu"
 
-    return {'menuItems': menuItems, 'project': 'MyProject'}
+    return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='placeOrder', renderer='templates/placeOrder.jinja2')
 def placeOrder_view(request):
@@ -75,8 +76,9 @@ def pos_view(request):
 def admin_view(request):
     print request
     menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+    menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
 
-    return {'menuItems': menuItems, 'project': 'MyProject'}
+    return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='about', renderer='templates/about.jinja2')
 def about_view(request):

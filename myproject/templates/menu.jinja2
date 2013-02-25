@@ -13,12 +13,12 @@
 <div class="container">
 	<dl>
 		<table class="table">
-			{% for category in ('Appetizers', 'Entrees', 'Dessert') %}
+			{% for category in menuCategories %}
 			<tbody>
 				<tr>
-					<td colspan="2"><h4><dt>{{category}}</dt></h4></td>
+					<td colspan="2"><h4><dt>{{category.name}}</dt></h4></td>
 				</tr>
-				{% for item in menuItems if item.category == category %}
+				{% for item in menuItems if item.category == category.catID %}
 				<tr>
 					<td><dd>{{item.name}}</dd></td>
 					<td>{{"$%.2f"|format(item.price)}}</td>
@@ -30,5 +30,3 @@
 	</dl>
 </div> <!-- container -->
 {% endblock body %}
-
-
