@@ -126,25 +126,25 @@
 <script type="text/javascript">
 var intRegex = /^\d+\.\d{2}$/;
 
-$('#addForm input[name="itemName"], #editForm input[name="itemName"]').change(function() {
+$('#addForm input[name="itemName"], #editForm input[name="itemName"]').bind('change keyup', function() {
 	testIfCanSubmit();
 });
 
-$('#addForm input[name="price"]').change(function() {
+$('#addForm input[name="price"]').bind('change keyup', function() {
 	if(intRegex.test($('#addForm input[name="price"]').val()))
 		testIfCanSubmit();
 	else
 		$('#addForm :button').attr("disabled", true);
 });
 
-$('#editForm input[name="price"]').change(function() {
+$('#editForm input[name="price"]').bind('change keyup', function() {
 	if(intRegex.test($('#editForm input[name="price"]').val()))
 		testIfCanSubmit();
 	else
 		$('#editForm :button').attr("disabled", true);
 });
 
-$('#addForm input[name="desc"], #editForm input[name="desc"]').keyup(function() {
+$('#addForm input[name="desc"], #editForm input[name="desc"]').bind('change keyup', function() {
 	testIfCanSubmit();
 });
 
@@ -153,7 +153,7 @@ $('#prevName').keyup(function(e) {
 		$(this).trigger("fillData");
 });
 
-$('#prevName').bind("fillData", function() {
+$('#prevName').bind("change fillData", function() {
 	var itemName = JSON.stringify({'name':$('#prevName').val()});
 	$.post('/getMenuItem.json', itemName, function(data) {
 		$.each(data, function (key, value) {
@@ -169,6 +169,7 @@ $('#prevName').bind("fillData", function() {
 				$('#editForm input[name="vegetarian"]').prop('checked', value);
 			else if(key == 'isSuccess' && !value)
 				$('#editForm label[name="result"]').text("Error: \"" + $('#prevName').val() + "\" does not exist");
+			testIfCanSubmit();
 		});
 	}, "json");
 });
