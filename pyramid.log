@@ -3680,3 +3680,765 @@ Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/orders
 User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
 Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
 X-Forwarded-For: 130.179.29.167
+Starting server in PID 18323.
+serving on http://0.0.0.0:6543
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /orders HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/admin
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /orders HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/orders
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/orders
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/orders
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/admin
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /menu HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+Loading the menu
+/home/ec2-user/python/pyramid/install/env/lib/python2.7/site-packages/SQLAlchemy-0.8.0b2-py2.7-linux-i686.egg/sqlalchemy/types.py:293: SAWarning: Dialect sqlite+pysqlite does *not* support Decimal objects natively, and SQLAlchemy must convert from floating point - rounding errors and other issues may occur. Please consider storing Decimal numbers as strings or integers on this platform for lossless storage.
+[<myproject.models.MenuItem object at 0xa6cd52c>, <myproject.models.MenuItem object at 0xa6d4f6c>, <myproject.models.MenuItem object at 0xa6cd0ac>, <myproject.models.MenuItem object at 0xa6d4e6c>, <myproject.models.MenuItem object at 0xa6cbc4c>, <myproject.models.MenuItem object at 0xa6cbe4c>, <myproject.models.MenuItem object at 0xa6cb96c>, <myproject.models.MenuItem object at 0xa6cb14c>, <myproject.models.MenuItem object at 0xa6cb98c>, <myproject.models.MenuItem object at 0xa6cbb2c>, <myproject.models.MenuItem object at 0xa6cbb6c>]
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/admin
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /orders HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/admin
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11
+GET / HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /menu HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+Loading the menu
+[<myproject.models.MenuItem object at 0xa6dd04c>, <myproject.models.MenuItem object at 0xa6dd0ac>, <myproject.models.MenuItem object at 0xa6dd08c>, <myproject.models.MenuItem object at 0xa6dd10c>, <myproject.models.MenuItem object at 0xa6dd16c>, <myproject.models.MenuItem object at 0xa6dd1cc>, <myproject.models.MenuItem object at 0xa6dd22c>, <myproject.models.MenuItem object at 0xa6dd28c>, <myproject.models.MenuItem object at 0xa6dd2ec>, <myproject.models.MenuItem object at 0xa6dd34c>, <myproject.models.MenuItem object at 0xa6dd38c>]
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET / HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/admin
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /menu HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+Loading the menu
+[<myproject.models.MenuItem object at 0xa6e8b0c>, <myproject.models.MenuItem object at 0xa6e8e6c>, <myproject.models.MenuItem object at 0xa6e8dec>, <myproject.models.MenuItem object at 0xa6e8c6c>, <myproject.models.MenuItem object at 0xa6e8d8c>, <myproject.models.MenuItem object at 0xa6e8aec>, <myproject.models.MenuItem object at 0xa6e8d4c>, <myproject.models.MenuItem object at 0xa6e8dac>, <myproject.models.MenuItem object at 0xa6e8bcc>, <myproject.models.MenuItem object at 0xa6e8a2c>, <myproject.models.MenuItem object at 0xa6a0bcc>]
+GET / HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /menu HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+Loading the menu
+[<myproject.models.MenuItem object at 0xa6e80ac>, <myproject.models.MenuItem object at 0xa6e816c>, <myproject.models.MenuItem object at 0xa6e82ac>, <myproject.models.MenuItem object at 0xa6e806c>, <myproject.models.MenuItem object at 0xa6e812c>, <myproject.models.MenuItem object at 0xa6dd08c>, <myproject.models.MenuItem object at 0xa6ddc8c>, <myproject.models.MenuItem object at 0xa6dd2cc>, <myproject.models.MenuItem object at 0xa6dd9ac>, <myproject.models.MenuItem object at 0xa6ddd2c>, <myproject.models.MenuItem object at 0xa6ddb2c>]
+GET / HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /placeOrder HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET / HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/placeOrder
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+Starting server in PID 18791.
+serving on http://0.0.0.0:6543
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+Starting server in PID 18843.
+serving on http://0.0.0.0:6543
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+/home/ec2-user/python/pyramid/install/env/lib/python2.7/site-packages/SQLAlchemy-0.8.0b2-py2.7-linux-i686.egg/sqlalchemy/types.py:293: SAWarning: Dialect sqlite+pysqlite does *not* support Decimal objects natively, and SQLAlchemy must convert from floating point - rounding errors and other issues may occur. Please consider storing Decimal numbers as strings or integers on this platform for lossless storage.
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET / HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; SGH-I317M Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19
+GET /admin HTTP/1.1
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-GB,en-US;q=0.8,en;q=0.6
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Linux; Android 4.1.2; SGH-I317M Build/JZO54K) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /admin HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=0
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/menu
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET / HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/admin
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+GET /menu HTTP/1.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Charset: ISO-8859-1,utf-8;q=0.7,*;q=0.3
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: en-US,en;q=0.8
+Cache-Control: max-age=259200
+Host: ec2-23-23-59-159.compute-1.amazonaws.com:6543
+Referer: http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17
+Via: 1.1 zubra.cc.umanitoba.ca (squid/3.0.STABLE13-20090409)
+X-Forwarded-For: 130.179.29.156
+Loading the menu
+[<myproject.models.MenuItem object at 0x9c9e06c>, <myproject.models.MenuItem object at 0x9c8fe8c>, <myproject.models.MenuItem object at 0x9c8f98c>, <myproject.models.MenuItem object at 0x9c8ff6c>, <myproject.models.MenuItem object at 0x9c8fb4c>, <myproject.models.MenuItem object at 0x9c8f0ec>, <myproject.models.MenuItem object at 0x9c8f90c>, <myproject.models.MenuItem object at 0x9c867cc>, <myproject.models.MenuItem object at 0x9c8678c>, <myproject.models.MenuItem object at 0x9c980cc>, <myproject.models.MenuItem object at 0x9c98c0c>]
