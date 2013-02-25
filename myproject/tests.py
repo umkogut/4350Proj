@@ -1,6 +1,11 @@
 import unittest
 
 from pyramid import testing
+from .models import (
+    DBSession,
+    MenuItem,
+    MenuCategory,
+    )
 
 # Model tests
 class MenuCategoryModelTests(unittest.TestCase):
@@ -75,7 +80,94 @@ class UserModelTests(unittest.TestCase):
 
 # View Tests
 
-class ViewTests(unittest.TestCase):
+class ViewMenuTests(unittest.TestCase):
+    def _callFUT(self, request):
+	from .views import cook_view
+	return cook_view(request)
+
+    #def test_view(self):
+	menuItems = testing.DummyResource()
+	menuCategories = testing.DummyResource()
+	request = testing.DummyRequest()
+	#view_info = self._callFUT(request)
+
+	#self.assertEqual(view_info['project'], 'MyProject')
+	#self.assertEqual(view_info['menuCategories'], menuCategories)
+	#self.assertEqual(view_info['menuItems'], menuItems)	
+
+class ViewPlaceOrderTests(unittest.TestCase):
+    def _callFUT(self, request):
+	from .views import placeOrder_view
+	return placeOrder_view(request)
+
+    def test_view(self):
+	request = testing.DummyRequest()
+	menuItems = testing.DummyResource()
+	#view_info = self._callFUT(request)
+	#self.assertEqual(view_info['project'], 'MyProject')
+
+class ViewOrdersTest:
+    def _callFUT(self, request):
+	from .views import orders_view
+	return orders_view(request)
+
+    def test_view(self):
+	request = testing.DummyRequest()
+	view_info = self._callFUT(request)
+	self.assertEqual(view_info['project'], 'MyProject')
+
+class ViewPOSTest:
+    def _callFUT(self, request):
+        from .views import pos_view
+        return pos_view(request)
+
+    def test_view(self):
+        request = testing.DummyRequest()
+        view_info = self._callFUT(request)
+        self.assertEqual(view_info['project'], 'MyProject')
+
+class ViewAdminTest:
+    def _callFUT(self, request):
+        from .views import admin_view
+        return admin_view(request)
+
+    def test_view(self):
+        request = testing.DummyRequest()
+        view_info = self._callFUT(request)
+        self.assertEqual(view_info['project'], 'MyProject')
+
+class ViewAboutTest:
+    def _callFUT(self, request):
+        from .views import about_view
+        return about_view(request)
+
+    def test_view(self):
+        request = testing.DummyRequest()
+        view_info = self._callFUT(request)
+        self.assertEqual(view_info['project'], 'MyProject')
+
+class ViewTest:
+    def _callFUT(self, request):
+        from .views import test_view
+        return test_view(request)
+
+    def test_view(self):
+        request = testing.DummyRequest()
+        view_info = self._callFUT(request)
+        self.assertEqual(view_info['project'], 'MyProject')
+
+class ViewUpdatesTest:
+    def _callFUT(self, request):
+        from .views import updates_view
+        return updates_view(request)
+
+    def test_view(self):
+        request = testing.DummyRequest()
+        view_info = self._callFUT(request)
+        self.assertEqual(view_info['project'], 'MyProject')
+
+
+class ViewIndexTests(unittest.TestCase):
     def setUp(self):
         self.config = testing.setUp()
 
