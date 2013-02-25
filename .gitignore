@@ -1,0 +1,8 @@
+*.log
+*~
+*.pyc
+pyramid.pid
+
+#These files should never have been here in the first place. Just ensuring they don't make a comeback later
+view.py
+menuDB.sqlite
