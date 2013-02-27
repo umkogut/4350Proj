@@ -74,74 +74,78 @@ class UserModelTests(unittest.TestCase):
 	self.assertEqual(instance.password, 'testpw')
 
 # View Tests
-
+'''
 class ViewMenuTests(unittest.TestCase):
     def _callFUT(self, request):
 	from .views import cook_view
 	return cook_view(request)
 
-    #def test_view(self):
+    def test_menu_view(self):
 	menuItems = testing.DummyResource()
 	menuCategories = testing.DummyResource()
 	request = testing.DummyRequest()
-	#view_info = self._callFUT(request)
-
-	#self.assertEqual(view_info['project'], 'MyProject')
-	#self.assertEqual(view_info['menuCategories'], menuCategories)
-	#self.assertEqual(view_info['menuItems'], menuItems)	
+	view_info = self._callFUT(request)
+	self.assertEqual(view_info['project'], 'MyProject')
+	self.assertEqual(view_info['menuCategories'], menuCategories)
+	self.assertEqual(view_info['menuItems'], menuItems)	
 
 class ViewPlaceOrderTests(unittest.TestCase):
     def _callFUT(self, request):
 	from .views import placeOrder_view
 	return placeOrder_view(request)
 
-    def test_view(self):
+    def test_place_orders_view(self):
 	request = testing.DummyRequest()
 	menuItems = testing.DummyResource()
-	#view_info = self._callFUT(request)
-	#self.assertEqual(view_info['project'], 'MyProject')
-
-class ViewOrdersTest:
+	view_info = self._callFUT(request)
+	self.assertEqual(view_info['project'], 'MyProject')
+	self.assertEqual(view_info['menuItems'], menuItems)
+'''
+class ViewOrdersTest(unittest.TestCase):
     def _callFUT(self, request):
 	from .views import orders_view
 	return orders_view(request)
 
-    def test_view(self):
+    def test_orders_view(self):
 	request = testing.DummyRequest()
 	view_info = self._callFUT(request)
 	self.assertEqual(view_info['project'], 'MyProject')
 
-class ViewPOSTest:
+class ViewPOSTest(unittest.TestCase):
     def _callFUT(self, request):
         from .views import pos_view
         return pos_view(request)
 
-    def test_view(self):
+    def test_pos_view(self):
         request = testing.DummyRequest()
         view_info = self._callFUT(request)
         self.assertEqual(view_info['project'], 'MyProject')
-
-class ViewAdminTest:
+'''
+class ViewAdminTest(unittest.TestCase):
     def _callFUT(self, request):
         from .views import admin_view
         return admin_view(request)
 
-    def test_view(self):
+    def test_admin_view(self):
         request = testing.DummyRequest()
+	menuItems = testing.DummyResource()
+	menuCategories = testing.DummyResource()
         view_info = self._callFUT(request)
         self.assertEqual(view_info['project'], 'MyProject')
-
-class ViewAboutTest:
+	self.assertEqual(view_info['menuItems'], menuItems)
+	self.assertEqual(view_info['menuCategories'], menuCategories)
+'''
+class ViewAboutTest(unittest.TestCase):
     def _callFUT(self, request):
         from .views import about_view
         return about_view(request)
 
-    def test_view(self):
+    def test_about_view(self):
         request = testing.DummyRequest()
         view_info = self._callFUT(request)
         self.assertEqual(view_info['project'], 'MyProject')
 
-class ViewTest:
+class ViewTest(unittest.TestCase):
     def _callFUT(self, request):
         from .views import test_view
         return test_view(request)
@@ -150,17 +154,6 @@ class ViewTest:
         request = testing.DummyRequest()
         view_info = self._callFUT(request)
         self.assertEqual(view_info['project'], 'MyProject')
-
-class ViewUpdatesTest:
-    def _callFUT(self, request):
-        from .views import updates_view
-        return updates_view(request)
-
-    def test_view(self):
-        request = testing.DummyRequest()
-        view_info = self._callFUT(request)
-        self.assertEqual(view_info['project'], 'MyProject')
-
 
 class ViewIndexTests(unittest.TestCase):
     def setUp(self):
