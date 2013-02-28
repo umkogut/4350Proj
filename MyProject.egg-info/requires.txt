@@ -1,7 +1,0 @@
-pyramid
-pyramid_debugtoolbar
-waitress
-docutils
-jinja2
-SQLAlchemy
-zope.sqlalchemy
