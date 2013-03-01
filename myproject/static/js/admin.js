@@ -28,7 +28,7 @@ $('#prevName').keyup(function(e) {
 });
 
 $('#prevName').bind("change fillData", function() {
-        var itemName = {'name':$('#prevName').val()};
+        var itemName = JSON.stringify({'name':$('#prevName').val()});
         $.post('/getMenuItem.json', itemName, function(data) {
                 $.each(data, function (key, value) {
                         if(key == 'name')
