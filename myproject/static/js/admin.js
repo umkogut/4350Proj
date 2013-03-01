@@ -50,7 +50,13 @@ $('#prevName').bind("change fillData", function() {
 
 
 $('#addForm button[name="submitBtn"]').click(function() {
-        var itemName = {'name': $('#addForm input[name="itemName"]').val(), 'category': $('#addForm select[name="category"]').val(), 'description': $('#addForm input[name="desc"]').val(), 'price': $('#addForm input[name="price"]').val(), 'isVeg': $('#addForm input[name="vegetarian"]').prop('checked'), 'image': ''};
+        var itemName = JSON.stringify({
+                'name': $('#addForm input[name="itemName"]').val(), 
+                'category': $('#addForm select[name="category"]').val(), 
+                'description': $('#addForm input[name="desc"]').val(), 
+                'price': $('#addForm input[name="price"]').val(), 
+                'isVeg': $('#addForm input[name="vegetarian"]').prop('checked'), 
+                'image': ''});
         $.post('/addMenuItem.json', itemName, function(data) {
                 $.each(data, function (key, value) {
                         if (key == 'isSuccess' && value) {
@@ -62,7 +68,14 @@ $('#addForm button[name="submitBtn"]').click(function() {
 });
 
 $('#editForm button[name="submitBtn"]').click(function() {
-        var itemName = {'prevItemName': $('#prevName').val(), 'name': $('#editForm input[name="itemName"]').val(), 'category': $('#editForm select[name="category"]').val(), 'description': $('#editForm input[name="desc"]').val(), 'price': $('#editForm input[name="price"]').val(), 'isVeg': $('#editForm input[name="vegetarian"]').prop('checked'), 'image': ''};
+        var itemName = JSON.stringify({
+                'prevItemName': $('#prevName').val(), 
+                'name': $('#editForm input[name="itemName"]').val(), 
+                'category': $('#editForm select[name="category"]').val(), 
+                'description': $('#editForm input[name="desc"]').val(), 
+                'price': $('#editForm input[name="price"]').val(), 
+                'isVeg': $('#editForm input[name="vegetarian"]').prop('checked'), 
+                'image': ''});
         $.post('/editMenuItem.json', itemName, function(data) {
                 $.each(data, function (key, value) {
                         if (key == 'isSuccess') {
