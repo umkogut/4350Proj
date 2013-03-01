@@ -62,7 +62,9 @@ $('#addForm button[name="submitBtn"]').click(function() {
                         if (key == 'isSuccess' && value) {
                                 $('#addForm label[name="result"]').text("Successfully added item \"" + $('#addForm input[name="itemName"]').val() + "\"");
                                 clearAddForm();
-                        }
+                        } else if (key == 'isSuccess' && !value) {
+				$('#addForm label[name="result"]').text("Error: Menu Item \"" + $('#addForm input[name="itemName"]').val() + "\" already exist");
+			}
                 });
         }, "json");
 });
