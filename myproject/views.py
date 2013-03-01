@@ -85,9 +85,13 @@ def addMenuItem_view(request):
 
 	item = request.json_body
 	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
-	DBSession.add(newItem)
-	transaction.commit()
-	return {'isSuccess': 1}
+	existingItem = DBSession.query(MenuItem).filter_by(name=item['name']).first()
+	if item:
+		return {'isSuccess': 0}
+	else:
+		DBSession.add(newItem)
+		transaction.commit()
+		return {'isSuccess': 1}
 
 @view_config(renderer='json', name='editMenuItem.json')
 def editMenuItem_view(request):
