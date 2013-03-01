@@ -79,6 +79,10 @@ def getMenuItem_view(request):
 @view_config(renderer='json', name='addMenuItem.json')
 def addMenuItem_view(request):
 	print request
+	print "***************************************************************************"
+	print request.json_body['name']
+	print "***************************************************************************"
+
 	item = request.json_body
 	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
 	DBSession.add(newItem)
