@@ -86,7 +86,7 @@ def addMenuItem_view(request):
 	item = request.json_body
 	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
 	existingItem = DBSession.query(MenuItem).filter_by(name=item['name']).first()
-	if item:
+	if existingItem:
 		return {'isSuccess': 0}
 	else:
 		DBSession.add(newItem)
@@ -110,7 +110,20 @@ def editMenuItem_view(request):
 		return {'isSuccess': 1}
 	else:
 		return {'isSuccess': 0}
-		
+
+@view_config(renderer='json', name='getMenuName.json')
+def getMenuName_view(request):
+	print request
+	menuItem = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+	jsonString = "{"
+	for i in range(len(menuItem)):
+		if i < (len(menuItem)-1):
+			jsonString = jsonString + "\"" + str(menuItem[i].menuID) + "\": \"" + menuItem[i].name + "\","
+		else:
+			jsonString = jsonString + "\"" + str(menuItem[i].menuID) + "\": \"" + menuItem[i].name + "\""
+	jsonString = jsonString + "}"
+	print jsonString
+	return jsonString
 """
 Keeping this code around temporarily. Will need to look at it later.
 Just keep pushing it to the bottom when adding new views
