@@ -21,7 +21,7 @@ $(function() {
 });
 
 
-$(document).ready (function() {
+$(document).bind('focus scroll', function() {
 	$.post('getOrders.json', function(data) {
 		$('#tableNums').empty();
 		$('#tableContent').empty();
