@@ -40,7 +40,9 @@ def placeOrder_view(request):
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
 def orders_view(request):
     print request
-    return {'project': 'MyProject'}
+    orderItems = DBSession.query(OrderItem).group_by(OrderItem.orderID).all()
+
+    return {'orderItems': orderItems, 'project': 'MyProject'}
 
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
 def pos_view(request):
