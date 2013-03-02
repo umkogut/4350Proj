@@ -48,7 +48,6 @@ class MenuItem(Base):
 		self.description = description
 		self.image = image
 
-'''
 class Order(Base):
 	__tablename__ = 'ORDERS'
 	orderID = Column(Integer, primary_key=True)
@@ -64,7 +63,6 @@ class Order(Base):
 		self.groupNum = groupNum
 		self.isComplete = False
 		self.comments = comments
-'''
 
 class PayMethod(Base):
 	__tablename__ = 'PAY_METHODS'
@@ -94,7 +92,6 @@ class User(Base):
 		self.userType = userType
 		self.password = password
 
-'''
 class Transaction(Base):
 	__tablename__ = 'TRANSACTIONS'
 	transactionID = Column(Integer, primary_key=True)
@@ -108,4 +105,4 @@ class Transaction(Base):
 		self.paymentMethod = paymentMethod
 		self.whenProcessed = whenProcessed
 		self.userID = userID
-'''
+
