@@ -9,6 +9,7 @@ from .models import (
     DBSession,
     MenuItem,
     MenuCategory,
+    Order,
     )
 
 @view_config(route_name='home', renderer='templates/index.jinja2')
@@ -45,7 +46,17 @@ def orders_view(request):
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
 def pos_view(request):
     print request
-    return {'project': 'MyProject'}
+    orders = DBSession.query(Order).group_by(Order.orderID).all()
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+
+
+    tableNums = list()
+    if orders != None:
+	for order in orders:
+	    if order.tableNum not in tableNums:
+		tableNums.append(order.tableNum)
+
+    return {'menuItems': menuItems, 'tableNums': tableNums, 'orders': orders, 'project': 'MyProject'}
 
 @view_config(route_name='admin', renderer='templates/admin.jinja2')
 def admin_view(request):
