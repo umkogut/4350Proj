@@ -48,7 +48,6 @@ class MenuItem(Base):
 		self.description = description
 		self.image = image
 
-'''
 class Order(Base):
 	__tablename__ = 'ORDERS'
 	orderID = Column(Integer, primary_key=True)
@@ -64,7 +63,6 @@ class Order(Base):
 		self.groupNum = groupNum
 		self.isComplete = False
 		self.comments = comments
-'''
 
 class PayMethod(Base):
 	__tablename__ = 'PAY_METHODS'

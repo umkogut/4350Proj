@@ -16,7 +16,6 @@ myproject/__init__.py
 myproject/models.py
 myproject/tests.py
 myproject/views.py
-myproject/js/admin.js
 myproject/scripts/__init__.py
 myproject/scripts/initializedb.py
 myproject/static/bootstrap/docs/base-css.html

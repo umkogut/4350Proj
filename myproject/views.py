@@ -40,9 +40,7 @@ def placeOrder_view(request):
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
 def orders_view(request):
     print request
-    orderItems = DBSession.query(OrderItem).group_by(OrderItem.orderID).all()
-
-    return {'orderItems': orderItems, 'project': 'MyProject'}
+    return {'project': 'MyProject'}
 
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
 def pos_view(request):
@@ -126,6 +124,35 @@ def getMenuName_view(request):
 	jsonString = jsonString + "}"
 	print jsonString
 	return jsonString
+
+@view_config(renderer='json', name='getOrders.json')
+def getOrders_view(request):
+	print request
+	tableNums = []
+	orders = DBSession.query(Order).group_by(Order.orderID).all()
+	for i in range(len(orders)):
+		if (orders[i].tableNum not in tableNums):
+			tableNums.append(orders[i].tableNum)
+	
+	jsonOrder = '{'
+	for i in range(len(tableNums)):
+		order = DBSession.query(Order).filter_by(tableNum=tablesNums[i]).group_by(Order.orderID).all()
+		jsonOrder = '"table' + str(order[0].tableNum) + '": ['
+		for n in range(len(order)):
+			menuItem = DBSession.query(MenuItem).filter_by(menuID=order[n].menuID).first()
+			category = DBSession.query(MenuCategory).filter_by(catID=menuItem.category).first()
+			if n < (len(order)-1):
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name +'", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + order[n].isComplete + '", "comments": "' + order[n].comments + '"},'
+			else:
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name + '", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + order[n].isComplete + '", "comments": "' + order[n].comments + '"}'
+		if i < (len(tableNums)):
+			jsonOrder = jsonOrder + '],'
+		else:
+			jsonOrder = jsonOrder + ']'
+	jsonOrder = jsonOrder + '}'
+	print jsonOrder
+	return jsonOrder
+			
 """
 Keeping this code around temporarily. Will need to look at it later.
 Just keep pushing it to the bottom when adding new views
