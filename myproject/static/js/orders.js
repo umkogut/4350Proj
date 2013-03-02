@@ -21,7 +21,8 @@ $(function() {
 });
 
 
-$(document).bind('focus scroll', function() {
+$('#test').click(function() {
+	alert("test");
 	$.post('getOrders.json', function(data) {
 		$('#tableNums').empty();
 		$('#tableContent').empty();
@@ -46,8 +47,6 @@ $(document).bind('focus scroll', function() {
 				}
 			});
 			$('#tableContent').append('</dl></div> <!-- span4 --></div> <!-- row-fluid --><button type="submit" class="btn">Submit</button></div> <!-- container-fluid --></fieldset></form></div>');
-			});
 		});
 	}, "json");
 });
-

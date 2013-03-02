@@ -9,6 +9,7 @@ from .models import (
     DBSession,
     MenuItem,
     MenuCategory,
+    Order,
     )
 
 @view_config(route_name='home', renderer='templates/index.jinja2')
@@ -136,19 +137,17 @@ def getOrders_view(request):
 	
 	jsonOrder = '{'
 	for i in range(len(tableNums)):
-		order = DBSession.query(Order).filter_by(tableNum=tablesNums[i]).group_by(Order.orderID).all()
-		jsonOrder = '"table' + str(order[0].tableNum) + '": ['
+		order = DBSession.query(Order).filter_by(tableNum=tableNums[i]).group_by(Order.orderID).all()
+		jsonOrder = jsonOrder + '{"table' + str(order[0].tableNum) + '": ['
 		for n in range(len(order)):
-			menuItem = DBSession.query(MenuItem).filter_by(menuID=order[n].menuID).first()
+			menuItem = DBSession.query(MenuItem).filter_by(menuID=order[n].menuItem).first()
 			category = DBSession.query(MenuCategory).filter_by(catID=menuItem.category).first()
 			if n < (len(order)-1):
-				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name +'", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + order[n].isComplete + '", "comments": "' + order[n].comments + '"},'
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name +'", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"},'
 			else:
-				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name + '", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + order[n].isComplete + '", "comments": "' + order[n].comments + '"}'
-		if i < (len(tableNums)):
-			jsonOrder = jsonOrder + '],'
-		else:
-			jsonOrder = jsonOrder + ']'
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name + '", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"}'
+		jsonOrder = jsonOrder + ']'
+		jsonOrder = jsonOrder + '}'
 	jsonOrder = jsonOrder + '}'
 	print jsonOrder
 	return jsonOrder
