@@ -83,7 +83,14 @@ $('#editForm button[name="submitBtn"]').click(function() {
                         if (key == 'isSuccess') {
                                 if (value) {
                                         $('#editForm label[name="result"]').text("Successfully modified item \"" + $('#prevName').val() + "\"");
-                                        clearEditForm();                                                                                                                           
+                                        clearEditForm();
+					$('#menuItems').empty();
+					$.post('/getMenuName.json', function(data) {
+						var items = $.parseJSON(data);
+                                        	$.each(items, function (id, name) {
+							$('#menuItems').append('<option>' + name + '</option>');
+						});
+					}, "json");                                                                                   
                                 } else                                                                                                                                             
                                         $('#editForm label[name="result"]').text("Error: \"" + $('#prevName').val() + "\" does not exist");                                        
                         }                                                                                                                                                          
