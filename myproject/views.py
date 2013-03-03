@@ -74,7 +74,11 @@ def about_view(request):
 @view_config(route_name='test', renderer='templates/test.jinja2')
 def test_view(request):
     print request
-    return {'project': 'MyProject'}
+
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+    menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
+
+    return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(renderer='json', name='getMenuItem.json')
 def getMenuItem_view(request):
@@ -90,9 +94,6 @@ def getMenuItem_view(request):
 @view_config(renderer='json', name='addMenuItem.json')
 def addMenuItem_view(request):
 	print request
-	print "***************************************************************************"
-	print request.json_body['name']
-	print "***************************************************************************"
 
 	item = request.json_body
 	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
