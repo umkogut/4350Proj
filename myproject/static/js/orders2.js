@@ -28,7 +28,7 @@ $('#test').click(function() {
 		$('#tableContent').empty();
 		$.each(orderList, function(tableNum, orders){
 			$('#tableNums').append('<li><a href="#' + tableNum + '" data-toggle="tab">' + tableNum + '</a></li>');
-			$('#tableContent').append('<div class="tab-pane" id="' + tableNum + '"><form><fieldset><legend>' + tableNum + '</legend><div class="container-fluid"><div class="row-fluid"><div class="span4"><dl><dt>Appetizers</dt>');
+			$('#tableContent').append('<div class="tab-pane active" id="' + tableNum + '"><form><fieldset><legend>' + tableNum + '</legend><div class="container-fluid"><div class="row-fluid"><div class="span4"><dl><dt>Appetizers</dt>');
 			if (orders.constructor == Array)
 				$.each(orders, function(table, order) {
 					if (order.category == 'Appetizers') {
