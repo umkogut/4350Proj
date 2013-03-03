@@ -138,16 +138,20 @@ def getOrders_view(request):
 	jsonOrder = '{'
 	for i in range(len(tableNums)):
 		order = DBSession.query(Order).filter_by(tableNum=tableNums[i]).group_by(Order.orderID).all()
-		jsonOrder = jsonOrder + '{"table' + str(order[0].tableNum) + '": ['
+		jsonOrder = jsonOrder + '"table' + str(order[0].tableNum) + '": '
+		if len(order) > 1:
+			jsonOrder = jsonOrder + '['
 		for n in range(len(order)):
 			menuItem = DBSession.query(MenuItem).filter_by(menuID=order[n].menuItem).first()
 			category = DBSession.query(MenuCategory).filter_by(catID=menuItem.category).first()
-			if n < (len(order)-1):
+			if (n < (len(order)-1) or (len(order) == 1 and i < (len(tableNums)-1))):
 				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name +'", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"},'
 			else:
 				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name + '", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"}'
-		jsonOrder = jsonOrder + ']'
-		jsonOrder = jsonOrder + '}'
+		if (i < (len(tableNums)-1) and len(order) > 1):
+			jsonOrder = jsonOrder + '],'
+		elif len(order) > 1:
+			jsonOrder = jsonOrder + ']'
 	jsonOrder = jsonOrder + '}'
 	print jsonOrder
 	return jsonOrder
