@@ -12,8 +12,9 @@
         {% endfor %}
       </ul>
       <div class="tab-content">
+	{% if tableNums is none %}
 	{% for tableNum in tableNums %}
-	  <div class="tab-pane active" id="tableNum{{tableNum}}" style="display:none">
+	   <div class="tab-pane active" id="tableNum{{tableNum}}" style="display:none">
            {% for order in orders %}
              {% if order.tableNum is sameas tableNum %}
 		<div class="row-fluid">
@@ -43,7 +44,10 @@
             <button class="btn" id="pay">Pay</button>
           </div>
         </div>
-     {% endfor %} 
+     {% endfor %}
+     {% else %}
+	There are currently no outstanding orders.
+     {% endif %} 
      </div>
     </div>
   </div>
