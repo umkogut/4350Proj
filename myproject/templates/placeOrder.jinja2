@@ -1,3 +1,24 @@
+{% macro tableTab(table) -%}
+  <li><a href="#table{{table}}" data-toggle="tab">Table {{table}}</a></li>
+{%- endmacro %}
+
+{% macro tableOrder(table) -%}
+  <div class="tab-pane" id="table{{table}}">
+    <div class="row-fluid">
+      <div class="span4">
+        <div class="well" id="group">
+          <select id="orderlist{{table}}" multiple>
+            {% for item in menuItems %}
+            <option>{{item.name}}</option>
+            {% endfor %}
+          </select>
+        </div>
+        <button class="btn" id="submit">Submit</button>
+      </div>
+    </div>
+  </div>
+{%- endmacro %}
+
 <!DOCTYPE html>
 <html lang="en">
 {% extends "index.jinja2" %}
@@ -12,11 +33,19 @@
     <div class="span2">
       <div class="tabbable tabs-left">
         <ul class="nav nav-pills nav-stacked" id="tableTabs">
+        {{ tableTab("1") }}
+        {{ tableTab("2") }}
+        {{ tableTab("3") }}
+        {{ tableTab("4") }}
         </ul>
       </div>
     </div>
     <div class="span10">
       <div class="tab-content" id="tableOrders">
+      {{ tableOrder("1") }}
+      {{ tableOrder("2") }}
+      {{ tableOrder("3") }}
+      {{ tableOrder("4") }}
       </div>
     </div>
   </div>
