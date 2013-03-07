@@ -15,7 +15,6 @@ class MenuCategoryModelTests(unittest.TestCase):
 	instance = self._makeOne()
 	self.assertEqual(instance.name, u'testname')
 
-
 class MenuItemModelTests(unittest.TestCase):
     def _getTargetClass(self):
 	from .models import MenuItem
@@ -73,6 +72,33 @@ class UserModelTests(unittest.TestCase):
 	self.assertEqual(instance.userType, 'testtype')
 	self.assertEqual(instance.password, 'testpw')
 
+class OrderModelTests(unittest.TestCase):
+    def _getTargetClass(self):
+	from .models import Order
+	return Order
+
+    def _makeOne(self):
+	return self._getTargetClass()(1, 1, 1, 'testcomments')
+
+    def test_constructor(self):
+	instance = self._makeOne()
+	self.assertEqual(instance.menuItem, 1)
+	self.assertEqual(instance.tableNum, 1)
+	self.assertEqual(instance.groupNum, 1)
+	self.assertEqual(instance.isComplete, False)
+	self.assertEqual(instance.comments, 'testcomments')
+
+class TransactionModelTests(unittest.TestCase):
+    def _getTargetClass(self):
+	from .models import Transaction
+	return Transaction
+
+    def _makeOne(self):
+	return self._getTargetClass()
+
+    def test_constructor(self):
+	instance = self._makeOne()
+
 # View Tests
 '''
 class ViewMenuTests(unittest.TestCase):
@@ -110,7 +136,7 @@ class ViewOrdersTest(unittest.TestCase):
 	request = testing.DummyRequest()
 	view_info = self._callFUT(request)
 	self.assertEqual(view_info['project'], 'MyProject')
-
+'''
 class ViewPOSTest(unittest.TestCase):
     def _callFUT(self, request):
         from .views import pos_view
@@ -120,7 +146,7 @@ class ViewPOSTest(unittest.TestCase):
         request = testing.DummyRequest()
         view_info = self._callFUT(request)
         self.assertEqual(view_info['project'], 'MyProject')
-'''
+
 class ViewAdminTest(unittest.TestCase):
     def _callFUT(self, request):
         from .views import admin_view
