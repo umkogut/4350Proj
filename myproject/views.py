@@ -136,6 +136,16 @@ def getMenuName_view(request):
 	jsonString = jsonString + "}"
 	print jsonString
 	return jsonString
+	
+@view_config(renderer='json', name='placedOrder.json')
+def placedOrder_view(request):
+        print request
+        orders = request.json_body['Orders']
+        for order in orders :
+                newOrder = Order(menuItem=order['menuItem'], tableNum=order['tableNum'], groupNum = order['groupNum'], comments=order['comments'])
+                DBSession.add(newOrder)
+        transaction.commit()
+        return {'isSuccess': 1}
 """
 Keeping this code around temporarily. Will need to look at it later.
 Just keep pushing it to the bottom when adding new views
