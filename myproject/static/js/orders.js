@@ -10,17 +10,17 @@ $(document).ready(function() {
 				$.each(orders, function(table, order) {
 					if (order.category == 'Appetizers'){
 						if (order.isComplete == "False")
-							$('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + order.menuName + '">' + order.menuName + '</label></dd>');
+							$('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + order.groupNum + '">' + order.menuName + '</label></dd>');
 						else
-							 $('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + order.menuName + '" checked>' + order.menuName + '</label></dd>');
+							 $('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + order.groupNum + '" checked>' + order.menuName + '</label></dd>');
 					}
 				});
 			else {
 				if (orders.category == 'Appetizers'){
 					if (order.isComplete == "False")
-						$('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + orders.menuName + '">' + orders.menuName + '</label></dd>');
+						$('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + orders.groupNum + '">' + orders.menuName + '</label></dd>');
 					else
-						 $('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + orders.menuName + '" checked>' + orders.menuName + '</label></dd>');
+						 $('#'+tableNum).children().children().children().children().children().children().eq(0).append('<dd><label class="checkbox"><input type="checkbox" class="appetizer" id="' + orders.groupNum + '" checked>' + orders.menuName + '</label></dd>');
 				}
 			}
 			$('#'+tableNum).children().children().children().children().append('</dl></div> <!-- span4 --><div class="span4"><dl><dt>Entrees</dt>');
@@ -28,17 +28,17 @@ $(document).ready(function() {
 				$.each(orders, function(table, order) {
 					if (order.category == 'Entrees'){
 						if (order.isComplete == "False")
-							$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + order.menuName + '">' + order.menuName + '</label></dd>');
+							$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + order.groupNum + '">' + order.menuName + '</label></dd>');
 						else
-							$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + order.menuName + '" checked>' + order.menuName + '</label></dd>');
+							$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + order.groupNum + '" checked>' + order.menuName + '</label></dd>');
 					}
 				});
 			else {
 				if (orders.category == 'Entrees'){
 					if (order.isComplete == "False")
-						$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + orders.menuName + '">' + orders.menuName + '</label></dd>');
+						$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + orders.groupNum + '">' + orders.menuName + '</label></dd>');
 					else
-						$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + orders.menuName + '" checked>' + orders.menuName + '</label></dd>');
+						$('#'+tableNum).children().children().children().children().children().children().eq(1).append('<dd><label class="checkbox"><input type="checkbox" class="entree" id="' + orders.groupNum + '" checked>' + orders.menuName + '</label></dd>');
 				}
 			}
 			$('#'+tableNum).children().children().children().children().append('</dl></div> <!-- span4 --><div class="span4"><dl><dt>Dessert</dt>');
@@ -46,17 +46,17 @@ $(document).ready(function() {
 				$.each(orders, function(table, order) {
 					if (order.category == 'Dessert'){
 						if (order.isComplete == "False")
-							$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + order.menuName + '">' + order.menuName + '</label></dd>');
+							$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + order.groupNum + '">' + order.menuName + '</label></dd>');
 						else
-							$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + order.menuName + '" checked>' + order.menuName + '</label></dd>');
+							$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + order.groupNum + '" checked>' + order.menuName + '</label></dd>');
 					}
 				});
 			else{
 				if (orders.category == 'Dessert'){
 					if (order.isComplete == "False")
-						$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + orders.menuName + '">' + orders.menuName + '</label></dd>');
+						$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + orders.groupNum + '">' + orders.menuName + '</label></dd>');
 					else
-						$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + orders.menuName + '" checked>' + orders.menuName + '</label></dd>');
+						$('#'+tableNum).children().children().children().children().children().children().eq(2).append('<dd><label class="checkbox"><input type="checkbox" class="dessert" id="' + orders.groupNum + '" checked>' + orders.menuName + '</label></dd>');
 				}
 			}
 			$('#'+tableNum).children().children().children().eq(1).append('</dl></div> <!-- span4 --></div> <!-- row-fluid --><button type="submit" class="btn" id="button">Submit</button></div> <!-- container-fluid --></fieldset></form></div>');
