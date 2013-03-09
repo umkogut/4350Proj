@@ -2,6 +2,8 @@
 *~
 *.pyc
 pyramid.pid
+Pygments-1.6-py2.7.egg/*
+MyProject.egg-info/*
 
 #These files should never have been here in the first place. Just ensuring they don't make a comeback later
 view.py

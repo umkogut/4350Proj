@@ -1,13 +1,20 @@
+<include package="pyramid_jinja2"/>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>QUnit Example</title>
-  <link rel="stylesheet" href="/static/qunit/qunit.css">
-</head>
-<body>
-  <div id="qunit"></div>
-  <div id="qunit-fixture"></div>
-  <script src="/static/qunit/qunit.js"></script>
-  <script src="/static/qunit/tests.js"></script>
-</body>
+	<head>
+		<meta charset="utf-8">
+		<title>Test Admin Page</title>
+		<link rel="stylesheet" href="/static/qunit/qunit.css">
+
+		<script src="http://code.jquery.com/jquery.js"></script>
+		<script src="/static/js/admin.js"></script>
+		<script src="/static/qunit/qunit.js"></script>
+		<script src="/static/qunit/tests.js"></script>
+	</head>
+	<body>
+		<div id="qunit"></div>
+		<div id="qunit-fixture">
+			<!-- NOTE:  The following includes are in comments so that jinja will still include the page, but the html in that file will not appear on this page -->
+			<!-- {% include "admin.jinja2" %} -->
+		</div>
+	</body>
 </html>

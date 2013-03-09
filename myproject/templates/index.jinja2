@@ -2,7 +2,7 @@
 <include package="pyramid_jinja2"/>
 <html lang="en">
 	<head>
-        {% block head %}
+    {% block head %}
 	<meta charset="utf-8">
 	<title>ManageMyRestaurant</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,21 +13,25 @@
 	<link href="/static/bootstrap/docs/assets/css/bootstrap-responsive.css" rel="stylesheet">
 	<link href="/static/bootstrap/docs/assets/css/docs.css" rel="stylesheet">
 
-        {% endblock head %}
+	<link href="http://ivaynberg.github.com/select2/select2-master/select2.css" rel="stylesheet">
 
-        {% block script %}
-        <script src="http://code.jquery.com/jquery.js"></script>
+    {% endblock head %}
+
+    {% block script %}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script src="/static/bootstrap/docs/assets/js/bootstrap.min.js"></script>
 	<script src="/static/bootstrap/docs/assets/js/bootstrap-collapse.js"></script>
+	<script src="http://ivaynberg.github.com/select2/select2-master/select2.js"></script>
+	
 	<!--
 	<script src="/static/bootstrap/docs/assets/js/bootstrap-transition.js"></script>
 	<script src="/static/bootstrap/docs/assets/js/bootstrap-dropdown.js"></script>
 	-->
-       {% endblock script %}
-   </head>
+    {% endblock script %}
+    </head>
 
     <body>
-        {% block navbar %}
+    {% block navbar %}
 	<div class="navbar navbar-inverse navbar-fixed-top">
 	    <div class="navbar-inner">
 	        <div class="container">
@@ -38,42 +42,43 @@
 		        <span class="icon-bar"></span>
 	            </a>
 		
-                    <a class="brand" href="/">ManageMyRestaurant</a>
-		    <div class="nav-collapse collapse">
-		        <ul class="nav">
-		            <li class="dropdown">
-			        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
-			        <ul class="dropdown-menu">
-			            <li><a href="menu">View the Menu</a></li>
-				    <li><a href="placeOrder">Place Order</a></li>
-			        </ul>
-			    </li>
-			    <li><a href="orders">Orders</a></li>
-			    <li><a href="pos">POS</a></li>
-			    <li><a href="admin">Admin</a></li>
-			    <li><a href="about">About</a></li>
-		        </ul><!-- nav -->
-		    </div><!-- nav collapse -->
+                <a class="brand" href="/">ManageMyRestaurant</a>
+			    <div class="nav-collapse collapse">
+			        <ul class="nav">
+		    	        <li class="dropdown">
+			    		    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <b class="caret"></b></a>
+			        		<ul class="dropdown-menu">
+			            		<li><a href="menu">View the Menu</a></li>
+				    			<li><a href="placeOrder">Place Order</a></li>
+			        		</ul>
+			    		</li>
+			    		<li><a href="orders">Orders</a></li>
+			    		<li><a href="pos">POS</a></li>
+			    		<li><a href="admin">Admin</a></li>
+			    		<li><a href="about">About</a></li>
+		        	</ul><!-- nav -->
+		    	</div><!-- nav collapse -->
 	        </div><!-- container -->
 	    </div><!-- navbar-inner -->
 	</div><!-- navbar navbar-fixed-top -->
-        {% endblock navbar %}
+    {% endblock navbar %}
+	
 	{% block body %}
 	<div class="masthead">
 	    <div class="container">
 	        <h1>ManageMyRestaurant</h1>
-		<p>Restaurant management made easy.  And best of all...it's free!!</p>
+			<p>Restaurant management made easy.  And best of all...it's free!!</p>
 				
-		<!--Buttons-->
-		<table align="center" width="500">
-		    <tr>
-		        <td align="left"><a href="menu" class="btn btn-primary">Look at the Menu</a></td>
-			<td align="right"><a href="placeOrder" class="btn btn-primary">Place an Order</a></td>
-		    </tr>
+			<!--Buttons-->
+			<table align="center" width="500">
+		    	<tr>
+		        	<td align="left"><a href="menu" class="btn btn-primary">Look at the Menu</a></td>
+					<td align="right"><a href="placeOrder" class="btn btn-primary">Place an Order</a></td>
+		    	</tr>
 
-		</table>
-	    </div>	
-	</div><!-- container -->
-        {% endblock body %}
+			</table>
+	    </div><!-- container -->
+	</div><!-- masthead -->
+    {% endblock body %}
     </body>
 </html>

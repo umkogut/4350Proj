@@ -49,37 +49,59 @@ $('#prevName').bind("change fillData", function() {
 });
 
 
-$('#addForm button[name="submitBtn"]').click(function() {
-        var itemName = {'name': $('#addForm input[name="itemName"]').val(), 'category': $('#addForm select[name="category"]').val(), 'description': $('#addForm input[name="desc"]').val(), 'price': $('#addForm input[name="price"]').val(), 'isVeg': $('#addForm input[name="vegetarian"]').prop('checked'), 'image': ''};
+function addMenuItem() {
+        var itemName = JSON.stringify({
+                'name': $('#addForm input[name="itemName"]').val(), 
+                'category': $('#addForm select[name="category"]').val(), 
+                'description': $('#addForm input[name="desc"]').val(), 
+                'price': $('#addForm input[name="price"]').val(), 
+                'isVeg': $('#addForm input[name="vegetarian"]').prop('checked'), 
+                'image': ''});
         $.post('/addMenuItem.json', itemName, function(data) {
                 $.each(data, function (key, value) {
                         if (key == 'isSuccess' && value) {
                                 $('#addForm label[name="result"]').text("Successfully added item \"" + $('#addForm input[name="itemName"]').val() + "\"");
                                 clearAddForm();
-                        }
+                        } else if (key == 'isSuccess' && !value) {
+				$('#addForm label[name="result"]').text("Error: Menu Item \"" + $('#addForm input[name="itemName"]').val() + "\" already exist");
+			}
                 });
         }, "json");
-});
+}
 
-$('#editForm button[name="submitBtn"]').click(function() {
-        var itemName = {'prevItemName': $('#prevName').val(), 'name': $('#editForm input[name="itemName"]').val(), 'category': $('#editForm select[name="category"]').val(), 'description': $('#editForm input[name="desc"]').val(), 'price': $('#editForm input[name="price"]').val(), 'isVeg': $('#editForm input[name="vegetarian"]').prop('checked'), 'image': ''};
+function editMenuItem() {
+        var itemName = JSON.stringify({
+                'prevItemName': $('#prevName').val(), 
+                'name': $('#editForm input[name="itemName"]').val(), 
+                'category': $('#editForm select[name="category"]').val(), 
+                'description': $('#editForm input[name="desc"]').val(), 
+                'price': $('#editForm input[name="price"]').val(), 
+                'isVeg': $('#editForm input[name="vegetarian"]').prop('checked'), 
+                'image': ''});
         $.post('/editMenuItem.json', itemName, function(data) {
                 $.each(data, function (key, value) {
                         if (key == 'isSuccess') {
                                 if (value) {
                                         $('#editForm label[name="result"]').text("Successfully modified item \"" + $('#prevName').val() + "\"");
-                                        clearEditForm();                                                                                                                           
+                                        clearEditForm();
+					$('#menuItems').empty();
+					$.post('/getMenuName.json', function(data) {
+						var items = $.parseJSON(data);
+                                        	$.each(items, function (id, name) {
+							$('#menuItems').append('<option>' + name + '</option>');
+						});
+					}, "json");                                                                                   
                                 } else                                                                                                                                             
                                         $('#editForm label[name="result"]').text("Error: \"" + $('#prevName').val() + "\" does not exist");                                        
                         }                                                                                                                                                          
                 });                                                                                                                                                                
         }, "json");                                                                                                                                                                
-}); 
+}
 
 function clearEditForm() {                                                                                                                                                         
         $('#prevName').val("");                                                                                                                                                    
         $('#editForm input[name="itemName"]').val("");                                                                                                                             
-        $('#editForm select[name="itemName"]').val(1);                                                                                                                             
+        $('#editForm select[name="category"]').val(1);                                                                                                                             
         $('#editForm input[name="desc"]').val("");                                                                                                                                 
         $('#editForm input[name="price"]').val("");                                                                                                                                
         $('#editForm input[name="vegetarian"]').prop('checked', 0);                                                                                                                
@@ -88,7 +110,7 @@ function clearEditForm() {
                                                                                                                                                                                    
 function clearAddForm() {                                                                                                                                                          
         $('#addForm input[name="itemName"]').val("");                                                                                                                              
-        $('#addForm select[name="itemName"]').val(1);                                                                                                                              
+        $('#addForm select[name="category"]').val(1);                                                                                                                              
         $('#addForm input[name="desc"]').val("");                                                                                                                                  
         $('#addForm input[name="price"]').val("");                                                                                                                                 
         $('#addForm input[name="vegetarian"]').prop('checked', 0);                                                                                                                 
@@ -105,4 +127,4 @@ function testIfCanSubmit() {
                 $('#editForm :button').attr("disabled", true);                                                                                                                     
         else                                                                                                                                                                       
                 $('#editForm :button').attr("disabled", false);                                                                                                                    
-}                                                                                                                                                                                  
+}                                                                                                                                                                           

@@ -74,7 +74,11 @@ def about_view(request):
 @view_config(route_name='test', renderer='templates/test.jinja2')
 def test_view(request):
     print request
-    return {'project': 'MyProject'}
+
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+    menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
+
+    return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(renderer='json', name='getMenuItem.json')
 def getMenuItem_view(request):
@@ -90,11 +94,16 @@ def getMenuItem_view(request):
 @view_config(renderer='json', name='addMenuItem.json')
 def addMenuItem_view(request):
 	print request
+
 	item = request.json_body
 	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
-	DBSession.add(newItem)
-	transaction.commit()
-	return {'isSuccess': 1}
+	existingItem = DBSession.query(MenuItem).filter_by(name=item['name']).first()
+	if existingItem:
+		return {'isSuccess': 0}
+	else:
+		DBSession.add(newItem)
+		transaction.commit()
+		return {'isSuccess': 1}
 
 @view_config(renderer='json', name='editMenuItem.json')
 def editMenuItem_view(request):
@@ -113,7 +122,20 @@ def editMenuItem_view(request):
 		return {'isSuccess': 1}
 	else:
 		return {'isSuccess': 0}
-		
+
+@view_config(renderer='json', name='getMenuName.json')
+def getMenuName_view(request):
+	print request
+	menuItem = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+	jsonString = "{"
+	for i in range(len(menuItem)):
+		if i < (len(menuItem)-1):
+			jsonString = jsonString + "\"" + str(menuItem[i].menuID) + "\": \"" + menuItem[i].name + "\","
+		else:
+			jsonString = jsonString + "\"" + str(menuItem[i].menuID) + "\": \"" + menuItem[i].name + "\""
+	jsonString = jsonString + "}"
+	print jsonString
+	return jsonString
 """
 Keeping this code around temporarily. Will need to look at it later.
 Just keep pushing it to the bottom when adding new views

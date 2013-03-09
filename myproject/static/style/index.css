@@ -5,10 +5,10 @@ body{
 .subhead {
 	padding-top: 15px;
 	padding-bottom: 10px;
-	background-color: rgba(0,80,0,0.9);
+	background-color: rgba(0,70,0,0.9);
 	color:white;
 }
 
 .masthead {
-	background-color: rgba(0,80,0,0.9);
+	background-color: rgba(0,70,0,0.9);
 }
