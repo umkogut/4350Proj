@@ -94,6 +94,16 @@ def addMenuItem_view(request):
 		transaction.commit()
 		return {'isSuccess': 1}
 
+@view_config(renderer='json', name='orderStatus.json')
+def orderStatus_view(request):
+	print request
+	orderStatus = request.json_body['orderStatus']
+	for status in orderStatus:
+		order = DBSession.query(Order).filter_by(orderID=status['orderID']).first()
+		order.isComplete = status['isComplete']
+		transaction.commit()
+	return {'isSuccess' : 1}
+
 @view_config(renderer='json', name='editMenuItem.json')
 def editMenuItem_view(request):
 	print request
