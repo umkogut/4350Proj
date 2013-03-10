@@ -1,6 +1,7 @@
 import pdb
 import transaction;
 
+from pyramid.renderers import render
 from pyramid.response import Response
 from pyramid.view import view_config
 from jinja2 import Environment, FileSystemLoader
@@ -18,18 +19,19 @@ def my_view(request):
     return {'project': 'MyProject'}
 
 @view_config(route_name='menu', renderer='templates/menu.jinja2')
+@view_config(route_name='menu', xhr=True, renderer='json')
 def cook_view(request):
-    print request
+	print request
 
-    print "Loading the menu"
-    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
-    menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
-    print menuItems
+	print "Loading the menu"
+	menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+	menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
+	print menuItems
 
-    if menuItems is None:
-	print "There is nothing in the menu"
+	if menuItems is None:
+		print "There is nothing in the menu"
 
-    return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
+	return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='placeOrder', renderer='templates/placeOrder.jinja2')
 def placeOrder_view(request):
