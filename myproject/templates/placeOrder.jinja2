@@ -9,11 +9,11 @@
         <div class="well" id="group">
           <select id="orderlist{{table}}" multiple>
             {% for item in menuItems %}
-            <option>{{item.name}}</option>
+            <option value="{{item.menuID}}">{{item.name}}</option>
             {% endfor %}
           </select>
         </div>
-        <button class="btn" id="submit{{table}}">Submit</button>
+        <button class="btn" id="submit{{table}}" onclick="submitOrder({{table}})"=>Submit</button>
       </div>
     </div>
   </div>
