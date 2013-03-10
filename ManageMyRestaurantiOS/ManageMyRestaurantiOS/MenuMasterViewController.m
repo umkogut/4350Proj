@@ -74,6 +74,7 @@
     return [self.dataController countOfList];
 }
 
+// populates each cell with data for the Menu
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     static NSString *CellIdentifier = @"MenuItemCell";
@@ -81,6 +82,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     MenuItem *itemAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
+    
 
     [[cell textLabel] setText:itemAtIndex.name];
     return cell;
@@ -130,9 +132,10 @@
  */
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([[segue identifier] isEqualToString:@"ShowMenuItemDetails"]) {
-        MenuDetailViewController *detailViewController = [segue destinationViewController];
         
+        MenuDetailViewController *detailViewController = [segue destinationViewController];
         detailViewController.menuItem = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
     }
 }
