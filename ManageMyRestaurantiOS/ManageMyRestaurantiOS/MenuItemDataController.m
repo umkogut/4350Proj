@@ -32,7 +32,10 @@
     NSMutableArray *defaultList = [[NSMutableArray alloc] init];
     self.masterMenuItemList = defaultList;
     
-    MenuItem *item = [[MenuItem alloc] initWithName:@"Test"];
+    MenuItem *item = [[MenuItem alloc] initWithName:@"Food 1" category:@"Category 1" description:@"This is description #1" price:1.00 isVegetarian:YES];
+    [self addMenuItem:item];
+    
+    item = [[MenuItem alloc] initWithName:@"Food 2" category:@"Category2" description:@"This is description #2" price:2.00 isVegetarian:NO];
     [self addMenuItem:item];
 }
 
