@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>FoundWorkingCopyPaths</key>
-	<array/>
+	<array>
+		<string>/home/student/umchmie2/4350Proj</string>
+	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2013-03-10T00:02:52Z</date>
+	<date>2013-03-10T16:13:15Z</date>
 	<key>MissingFilePaths</key>
 	<array/>
 	<key>Version</key>

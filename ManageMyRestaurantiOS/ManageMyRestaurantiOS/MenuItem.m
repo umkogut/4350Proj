@@ -15,6 +15,7 @@
     
     if (self) {
         _name = name;
+        return self;
     }
     return nil;
 }

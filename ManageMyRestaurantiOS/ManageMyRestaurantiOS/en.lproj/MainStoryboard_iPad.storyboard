@@ -44,10 +44,10 @@
             </objects>
             <point key="canvasLocation" x="4224" y="-2137"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Menu Detail View Controller-->
         <scene sceneID="7yC-73-h7j">
             <objects>
-                <tableViewController id="QZF-8m-JEB" sceneMemberID="viewController">
+                <tableViewController id="QZF-8m-JEB" customClass="MenuDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="oSG-1d-xyQ">
                         <rect key="frame" x="0.0" y="64" width="320" height="739"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -85,6 +85,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="fhE-as-9SB"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="1F8-8k-utr" id="pCP-o7-5Dq"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gWz-dy-1xT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -139,6 +142,12 @@
         </scene>
     </scenes>
     <classes>
+        <class className="MenuDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="MenuMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuMasterViewController.h"/>
         </class>
