@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F4FFBAD16EE6325005805DB /* EditMenuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F4FFBAC16EE6325005805DB /* EditMenuDetailViewController.m */; };
 		2F89588A16EB8608004A7B0E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588916EB8608004A7B0E /* UIKit.framework */; };
 		2F89588C16EB8608004A7B0E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588B16EB8608004A7B0E /* Foundation.framework */; };
 		2F89588E16EB8608004A7B0E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588D16EB8608004A7B0E /* CoreGraphics.framework */; };
@@ -29,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F4FFBAB16EE6325005805DB /* EditMenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMenuDetailViewController.h; sourceTree = "<group>"; };
+		2F4FFBAC16EE6325005805DB /* EditMenuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditMenuDetailViewController.m; sourceTree = "<group>"; };
 		2F89588616EB8608004A7B0E /* ManageMyRestaurantiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ManageMyRestaurantiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F89588916EB8608004A7B0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2F89588B16EB8608004A7B0E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -114,6 +117,8 @@
 				2F89593A16EC0478004A7B0E /* MenuMasterViewController.m */,
 				2F89593C16EC052A004A7B0E /* MenuDetailViewController.h */,
 				2F89593D16EC052A004A7B0E /* MenuDetailViewController.m */,
+				2F4FFBAB16EE6325005805DB /* EditMenuDetailViewController.h */,
+				2F4FFBAC16EE6325005805DB /* EditMenuDetailViewController.m */,
 				2F8958AA16EB8609004A7B0E /* first.png */,
 				2F8958AC16EB8609004A7B0E /* first@2x.png */,
 				2F8958B116EB8609004A7B0E /* second.png */,
@@ -215,6 +220,7 @@
 				2F89593816EBF82A004A7B0E /* MenuItemDataController.m in Sources */,
 				2F89593B16EC0478004A7B0E /* MenuMasterViewController.m in Sources */,
 				2F89593E16EC052A004A7B0E /* MenuDetailViewController.m in Sources */,
+				2F4FFBAD16EE6325005805DB /* EditMenuDetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
