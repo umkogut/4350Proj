@@ -13,7 +13,7 @@
 -(id)initWithName:(NSString *)name
          category:(NSString *)category
       description:(NSString *)description
-            price:(double)price
+            price:(NSDecimalNumber *)price
      isVegetarian:(BOOL)isVegetarian {
     
     self = [super init];
