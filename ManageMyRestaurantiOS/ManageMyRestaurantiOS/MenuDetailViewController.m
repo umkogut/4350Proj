@@ -8,6 +8,7 @@
 
 #import "MenuDetailViewController.h"
 #import "MenuItem.h"
+#import "EditMenuDetailViewController.h"
 
 @interface MenuDetailViewController ()
 
@@ -28,6 +29,26 @@
         
         // update the view
         [self configureView];
+    }
+}
+
+- (IBAction)done:(UIStoryboardSegue *)segue
+{
+//    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+//        
+//        EditMenuDetailViewController *controller = [segue sourceViewController];
+//        if (controller.birdSighting) {
+//            [self.dataController addBirdSightingWithSighting:addController.birdSighting];
+//            [[self tableView] reloadData];
+//        }
+//        [self dismissViewControllerAnimated:YES completion:NULL];
+//    }
+}
+
+- (IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
 
@@ -67,4 +88,11 @@
 
 
 
+- (IBAction)EditMenuItemDetails:(id)sender {
+    // hide the labels
+    [self.nameLabel setHidden:YES];
+    [self.categoryLabel setHidden:YES];
+    [self.descriptionLabel setHidden:YES];
+    [self.priceLabel setHidden:YES];
+}
 @end

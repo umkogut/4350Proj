@@ -11,6 +11,7 @@
 @class MenuItem;
 
 @interface MenuDetailViewController : UITableViewController
+- (IBAction)EditMenuItemDetails:(id)sender;
 
 @property (strong, nonatomic) MenuItem *menuItem;
 
@@ -19,5 +20,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UITableViewCell *isVegCell;
+
+- (IBAction)done:(UIStoryboardSegue *)segue;
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
 
 @end
