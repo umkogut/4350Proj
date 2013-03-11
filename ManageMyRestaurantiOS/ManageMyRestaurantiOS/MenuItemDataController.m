@@ -39,8 +39,8 @@
     item = [[MenuItem alloc] initWithName:@"Food 2" category:@"Category 2" description:@"This is description #2" price:[NSDecimalNumber decimalNumberWithString:@"2.02"] isVegetarian:NO];
     [self addMenuItem:item];
     
-    item = [[MenuItem alloc] initWithName:@"Food 3" category:@"Category 2" description:@"This is description #3" price:[NSDecimalNumber decimalNumberWithString:@"3.00000005"] isVegetarian:NO];
-    [self addMenuItem:item];git 
+    item = [[MenuItem alloc] initWithName:@"Food 3" category:@"Category 2" description:@"This is description #3" price:[NSDecimalNumber decimalNumberWithString:@"3.00"] isVegetarian:NO];
+    [self addMenuItem:item];
 }
 
 // initialize the default categories list
