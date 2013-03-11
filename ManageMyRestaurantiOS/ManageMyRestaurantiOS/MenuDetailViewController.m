@@ -41,7 +41,10 @@
         self.nameLabel.text = item.name;
         self.categoryLabel.text = item.category;
         self.descriptionLabel.text = item.description;
-        self.priceLabel.text = [NSString stringWithFormat:@"%g", item.price];
+        
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+        self.priceLabel.text = [formatter stringFromNumber:item.price];
         
         if (item.isVegetarian) {
             self.isVegCell.accessoryType = UITableViewCellAccessoryCheckmark;
