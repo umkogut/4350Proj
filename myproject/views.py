@@ -34,6 +34,7 @@ def cook_view(request):
 	return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='placeOrder', renderer='templates/placeOrder.jinja2')
+@view_config(route_name='placeOrder', xhr=True, renderer='json')
 def placeOrder_view(request):
 	print request
 	menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
@@ -41,11 +42,13 @@ def placeOrder_view(request):
 	return {'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
+@view_config(route_name='orders', xhr=True, renderer='json')
 def orders_view(request):
     print request
     return {'project': 'MyProject'}
 
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
+@view_config(route_name='pos', xhr=True, renderer='json')
 def pos_view(request):
     print request
     orders = DBSession.query(Order).group_by(Order.orderID).all()
@@ -61,6 +64,7 @@ def pos_view(request):
     return {'menuItems': menuItems, 'tableNums': tableNums, 'orders': orders, 'project': 'MyProject'}
 
 @view_config(route_name='admin', renderer='templates/admin.jinja2')
+@view_config(route_name='admin', xhr=True, renderer='json')
 def admin_view(request):
     print request
     menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
@@ -69,6 +73,7 @@ def admin_view(request):
     return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='about', renderer='templates/about.jinja2')
+@view_config(route_name='about', xhr=True, renderer='json')
 def about_view(request):
     print request
     return {'project': 'MyProject'}
