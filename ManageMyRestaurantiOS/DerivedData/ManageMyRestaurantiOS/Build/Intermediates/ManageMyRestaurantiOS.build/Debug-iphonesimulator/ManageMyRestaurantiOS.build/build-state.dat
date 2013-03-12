@@ -2,28 +2,29 @@ TManageMyRestaurantiOS
 v5
 r1
 cCheck dependencies
-cProcessInfoPlistFile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist
-cProcessPCH /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch.pth ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS normal i386
-cGenerateDSYMFile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
-cCopyStringsFile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings ManageMyRestaurantiOS/en.lproj/InfoPlist.strings
+cProcessInfoPlistFile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist
+cProcessPCH /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.pth ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS normal i386
+cGenerateDSYMFile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
+cCopyStringsFile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings ManageMyRestaurantiOS/en.lproj/InfoPlist.strings
 cCpResource ManageMyRestaurantiOS/Default.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png
-cCpResource ManageMyRestaurantiOS/Default@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png
 cCpResource ManageMyRestaurantiOS/Default-568h@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png
-cCompileStoryboard /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard
-cCompileStoryboard /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboard
-cCpResource ManageMyRestaurantiOS/first.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png
-cCpResource ManageMyRestaurantiOS/first@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png
-cCpResource ManageMyRestaurantiOS/second@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png
-cCpResource ManageMyRestaurantiOS/second.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png
-cTouch /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app
+cCpResource ManageMyRestaurantiOS/Default@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png
+cCompileStoryboard /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboard
+cCompileStoryboard /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard
+cCpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchOffPlain.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchOffPlain.png
+cCpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchThumb.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchThumb.png
+cCpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchBlueBg.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchBlueBg.png
+cTouch /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk
 c0000000050EDEAFB0000000000000110
@@ -31,33 +32,33 @@ t1357769467
 s272
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000513404A40000000000228FE0
-t1362363556
+c00000000513400B30000000000228FE0
+t1362362547
 s2265056
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000513404A500000000003DDFA0
-t1362363557
+c00000000513400B400000000003DDFA0
+t1362362548
 s4054944
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c00000000513404A500000000000015F7
-t1362363557
+c00000000513400B400000000000015F7
+t1362362548
 s5623
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c00000000513404A80000000000000E8D
-t1362363560
+c00000000513400B60000000000000E8D
+t1362362550
 s3725
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000513404AA0000000000AB6230
-t1362363562
+c00000000513400B70000000000AB6230
+t1362362551
 s11231792
 
 N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk/usr/include/Availability.h
-c00000000513404B30000000000001B73
-t1362363571
+c00000000513400BF0000000000001B73
+t1362362559
 s7027
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o
@@ -173,14 +174,14 @@ t1351926776
 s16107
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.h
-c00000000513E2BA50000000000000113
-t1363028901
-s275
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m
-c00000000513E3F590000000000000E1A
-t1363033945
-s3610
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch
 c00000000513B4E880000000000000159
@@ -191,54 +192,54 @@ i<UIKit/UIKit.h>
 i<Foundation/Foundation.h>
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.h
-c00000000513B4E88000000000000015A
-t1362841224
-s346
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m
-c00000000513B4E880000000000000831
-t1362841224
-s2097
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.h
-c00000000513E4752000000000000030B
-t1363035986
-s779
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m
-c00000000513E4BC80000000000000A02
-t1363037128
-s2562
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.h
-c00000000513CF11D0000000000000270
-t1362948381
-s624
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m
-c00000000513CF14D0000000000000292
-t1362948429
-s658
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.h
-c00000000513D1872000000000000025C
-t1362958450
-s604
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m
-c00000000513E0F040000000000000B04
-t1363021572
-s2820
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.h
-c00000000513BD50B00000000000001EE
-t1362875659
-s494
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m
-c00000000513D221300000000000012E1
-t1362960915
-s4833
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/InfoPlist.strings
 c00000000513B4E88000000000000002D
@@ -266,9 +267,9 @@ t1351926776
 s402
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m
-c00000000513B4E880000000000000195
-t1362841224
-s405
+c00000000000000000000000000000000
+t2
+s0
 
 N/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/second.png
 c000000005094C3F80000000000000080
@@ -280,9 +281,284 @@ c000000005094C3F80000000000000082
 t1351926776
 s130
 
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.o
+t1363117573
+s79240
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o
+t1363116697
+s69136
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOS.LinkFileList
+c00000000513F8605000000000000080E
+t1363117573
+s2062
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o
+t1363116697
+s87416
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o
+t1363116697
+s86412
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o
+t1363116697
+s13648
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o
+t1363116697
+s20408
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o
+t1363116697
+s83828
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.o
+t1363117573
+s100020
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o
+t1363116697
+s3372
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.pth
+t1363116697
+s4678868
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app
+t1363117575
+s4096
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM
+t1363117574
+s4096
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png
+t1363116698
+s18594
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png
+t1363116698
+s6540
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png
+t1363116698
+s16107
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist
+t1363116696
+s1178
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
+t1363117573
+s79492
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/PkgInfo
+t1363116696
+s8
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings
+t1363116698
+s42
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/MainStoryboard_iPad.storyboardc
+t1363117575
+s4096
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/MainStoryboard_iPhone.storyboardc
+t1363116666
+s4096
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png
+t1363116698
+s253
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png
+t1363116698
+s402
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png
+t1363116698
+s128
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png
+t1363116698
+s130
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchBlueBg.png
+t1363117574
+s805
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchOffPlain.png
+t1363117574
+s684
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchThumb.png
+t1363117574
+s575
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.h
+c000000004B61877D000000000000035D
+t1264682877
+s861
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m
+c00000000513E3F9600000000000019A7
+t1363034006
+s6567
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchBlueBg.png
+c000000004AE9B3E20000000000000325
+t1256829922
+s805
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchOffPlain.png
+c000000004AE9B51000000000000002AC
+t1256830224
+s684
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchThumb.png
+c000000004B6187FD000000000000023F
+t1264683005
+s575
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.h
+c00000000513F8605000000000000024E
+t1363117573
+s590
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m
+c00000000513F84A000000000000002FE
+t1363117216
+s766
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default-568h@2x.png
+c00000000513E4AA600000000000048A2
+t1363036838
+s18594
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default.png
+c00000000513E4AA6000000000000198C
+t1363036838
+s6540
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default@2x.png
+c00000000513E4AA60000000000003EEB
+t1363036838
+s16107
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.h
+c00000000513F827B0000000000000113
+t1363116667
+s275
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m
+c00000000513F827B0000000000000E1A
+t1363116667
+s3610
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch
+c00000000513E4AA60000000000000159
+t1363036838
+s345
+i<Availability.h>
+i<UIKit/UIKit.h>
+i<Foundation/Foundation.h>
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.h
+c00000000513E4AA6000000000000015A
+t1363036838
+s346
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m
+c00000000513E4AA60000000000000831
+t1363036838
+s2097
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.h
+c00000000513F827B000000000000030B
+t1363116667
+s779
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m
+c00000000513F827B0000000000000A02
+t1363116667
+s2562
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.h
+c00000000513E4AA60000000000000270
+t1363036838
+s624
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m
+c00000000513E4AA60000000000000292
+t1363036838
+s658
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.h
+c00000000513E4AA6000000000000025C
+t1363036838
+s604
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m
+c00000000513E4AA60000000000000B04
+t1363036838
+s2820
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.h
+c00000000513E4AA600000000000001EE
+t1363036838
+s494
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m
+c00000000513E4AA600000000000012E1
+t1363036838
+s4833
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/InfoPlist.strings
+c00000000513E4AA6000000000000002D
+t1363036838
+s45
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard
+c00000000513F8620000000000000B707
+t1363117600
+s46855
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboard
+c00000000513E4AA60000000000002654
+t1363036838
+s9812
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/first.png
+c00000000513F827200000000000000FD
+t1363116658
+s253
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/first@2x.png
+c00000000513F82720000000000000192
+t1363116658
+s402
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m
+c00000000513E4AA60000000000000195
+t1363036838
+s405
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/second.png
+c00000000513F82720000000000000080
+t1363116658
+s128
+
+N/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/second@2x.png
+c00000000513F82720000000000000082
+t1363116658
+s130
+
 NManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist
-c00000000513B4E880000000000000711
-t1362841224
+c00000000513E4AA60000000000000711
+t1363036838
 s1809
 
 CBuild AST from /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m
@@ -306,9 +582,49 @@ r0
 CBuild AST from /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m
 r0
 
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m
+r0
+
+CBuild AST from /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m
+r0
+
 CCheck dependencies
 r0
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependenciesf46d89fe85eeb641^1cd199fe85eeb641^---0#1#0#--18"Check dependencies36"36733DE9-E37E-4FC3-B793-398678414BB3-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies107a5aa0bdefb641^dcf368a0bdefb641^---0#1#0#--18"Check dependencies36"E1842AD1-3567-4F7E-AA50-643B3783AB39-
+
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384810373.531617
+e384810373.691206
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m863a8885bdefb641^732ab185bdefb641^---0#0#0#-19%DVTDocumentLocation2@119"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m0000000000000000^4703"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.o ManageMyRestaurantiOS/AddMenuItemViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/AddMenuItemViewController.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/AddMenuItemViewController.o36"4DD3DE81-0535-4197-A332-995DB41D1E83-
 
 CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384726765.442292
@@ -323,6 +639,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m365771ed76eeb641^27fa88ed76eeb641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m0000000000000000^4721"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o ManageMyRestaurantiOS/EditMenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.d --serialize-diagnostics /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.dia -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o36"6C62FEF4-F02D-435C-AAAD-E013A686DE2A-
 
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809497.390581
+e384809497.742357
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m481a6419baefb641^4a27be19baefb641^---0#0#0#-19%DVTDocumentLocation2@122"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m0000000000000000^4721"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o ManageMyRestaurantiOS/EditMenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/EditMenuDetailViewController.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/EditMenuDetailViewController.o36"07F9A462-1E5D-403E-9C9E-22DAD8D80A28-
+
 CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384713372.069479
 e384713372.379334
@@ -335,6 +664,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.mebe3119c42eeb641^871a619c42eeb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m0000000000000000^4745"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.d --serialize-diagnostics /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.dia -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o36"14A14EEE-5772-4B26-A537-64021B1F2529-
+
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809497.729630
+e384809497.845007
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m96eaba19baefb641^ec51d819baefb641^---0#0#0#-19%DVTDocumentLocation2@126"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m0000000000000000^4745"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOSAppDelegate.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOSAppDelegate.o36"F2E4B6AD-DE31-4B8B-914B-0EB6E45A9203-
 
 CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384730622.629899
@@ -349,6 +691,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m4a5ea1fe85eeb641^4297ccfe85eeb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m0000000000000000^4697"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o ManageMyRestaurantiOS/MenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.d --serialize-diagnostics /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.dia -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o36"D94616E1-F58B-431E-B94B-98D2EC18F818-
 
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809497.746886
+e384809497.868858
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m93acbf19baefb641^486dde19baefb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m0000000000000000^4697"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o ManageMyRestaurantiOS/MenuDetailViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuDetailViewController.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuDetailViewController.o36"E5268905-D385-4365-BE66-7127CB2E8C9E-
+
 CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384713372.069653
 e384713372.362489
@@ -361,6 +716,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.mad88129c42eeb641^4bcb5c9c42eeb641^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m0000000000000000^4601"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o ManageMyRestaurantiOS/MenuItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.d --serialize-diagnostics /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.dia -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o36"4AA7E404-F73C-4CD7-A06E-7A37EE9F78B1-
+
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809497.390574
+e384809497.759673
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.mf4196419baefb641^deabc219baefb641^---0#0#0#-19%DVTDocumentLocation2@102"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m0000000000000000^4601"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o ManageMyRestaurantiOS/MenuItem.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItem.o36"2BE837E8-3E33-433F-8E82-83515A6249D7-
 
 CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384714411.220067
@@ -375,6 +743,19 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m8fc338ab46eeb641^acc84cab46eeb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m0000000000000000^4685"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o ManageMyRestaurantiOS/MenuItemDataController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.d --serialize-diagnostics /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.dia -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o36"F6CB9560-3D59-4D32-BF9D-1EFD9EDAD595-
 
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809497.390584
+e384809497.738071
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection108"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.mac1e6419baefb641^e5f1bc19baefb641^---0#0#0#-19%DVTDocumentLocation2@116"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m0000000000000000^4685"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o ManageMyRestaurantiOS/MenuItemDataController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItemDataController.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuItemDataController.o36"A860E2A5-7CFF-4F20-A5E5-C534CE71E5AE-
+
 CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384729105.456926
 e384729105.644283
@@ -388,6 +769,32 @@ xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.mdb16751180eeb641^89efa41180eeb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m0000000000000000^4697"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o ManageMyRestaurantiOS/MenuMasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.d --serialize-diagnostics /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.dia -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o36"44B78E82-5D92-4C54-B4F5-A1C6D87662F0-
 
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809497.744119
+e384809497.896945
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection110"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m86c6bf19baefb641^fe9de519baefb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m0000000000000000^4697"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o ManageMyRestaurantiOS/MenuMasterViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuMasterViewController.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/MenuMasterViewController.o36"5C87F1A8-720F-4940-8C36-24DDC28DA0F8-
+
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384810373.534092
+e384810373.753597
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection149"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m98e08885bdefb641^46ebc085bdefb641^---0#0#0#-19%DVTDocumentLocation2@157"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m0000000000000000^4735"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.o ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/UICustomSwitch.o36"30F10789-5F86-4CB6-8160-86BC0D64A8BA-
+
 CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384713372.069410
 e384713372.361252
@@ -400,6 +807,19 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.mfcdf119c42eeb641^45835c9c42eeb641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m0000000000000000^4577"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o ManageMyRestaurantiOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.d --serialize-diagnostics /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.dia -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o36"FA5B52ED-6963-4FDD-8BB7-EA9150AFF4D6-
+
+CCompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809497.390667
+e384809497.727328
+r1
+xCompileC
+xDerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.mb4206419baefb641^2234ba19baefb641^---0#0#0#-19%DVTDocumentLocation2@98"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m0000000000000000^4577"CompileC DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o ManageMyRestaurantiOS/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -include /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.d --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/main.m -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/main.o36"9CEB4A86-FE18-4684-AA77-D68CD85C12DD-
 
 CCompileStoryboard /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard
 s384730623.019852
@@ -419,6 +839,18 @@ x/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.
 o2013-03-11 11:49:33.494 Interface Builder Cocoa Touch Tool[90213:f07] CFPreferences: user home directory at file://localhost/home/student/umchmie2/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection81"CompileStoryboard ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboardf206e09c42eeb641^6c5c1f9e42eeb641^-248"2013-03-11 11:49:33.494 Interface Builder Cocoa Touch Tool[90213:f07] CFPreferences: user home directory at file://localhost/home/student/umchmie2/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#0#-19%DVTDocumentLocation2@133"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboard0000000000000000^1095"CompileStoryboard ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboard    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/MainStoryboard_iPhone.storyboardc /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"ABBE3832-5285-4FA0-8718-F1F76CBAA3A8-
 
+CCompileStoryboard /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard
+s384810400.449695
+e384810401.016831
+r1
+xCompileStoryboard
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard
+o2013-03-12 14:46:40.829 Interface Builder Cocoa Touch Tool[49369:f07] -[UIPickerView setFrame:]: invalid height value 0.0 pinned to 216.0 
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection79"CompileStoryboard ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard1f3073a0bdefb641^3c4f04a1bdefb641^-137"2013-03-12 14:46:40.829 Interface Builder Cocoa Touch Tool[49369:f07] -[UIPickerView setFrame:]: invalid height value 0.0 pinned to 216.0-0#0#0#-19%DVTDocumentLocation2@131"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard0000000000000000^1089"CompileStoryboard ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv IBSC_MINIMUM_COMPATIBILITY_VERSION 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv XCODE_DEVELOPER_USR_PATH /Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/MainStoryboard_iPad.storyboardc /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPad.storyboard --sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk36"6371CFD6-15B6-43C6-B062-58118BD3E312-
+
+CCompileStoryboard /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/MainStoryboard_iPhone.storyboard
+r0
+
 CCopyStringsFile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings ManageMyRestaurantiOS/en.lproj/InfoPlist.strings
 s384713372.856329
 e384713372.934601
@@ -428,68 +860,104 @@ x/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyResta
 xManageMyRestaurantiOS/en.lproj/InfoPlist.strings
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy ManageMyRestaurantiOS/en.lproj/InfoPlist.stringsdac6db9c42eeb641^2442ef9c42eeb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/InfoPlist.strings0000000000000000^747"CopyStringsFile DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings ManageMyRestaurantiOS/en.lproj/InfoPlist.strings    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj -- ManageMyRestaurantiOS/en.lproj/InfoPlist.strings36"ACDF92F5-8DCC-431C-8850-45522262DC6D-
 
+CCopyStringsFile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings ManageMyRestaurantiOS/en.lproj/InfoPlist.strings
+s384809498.280139
+e384809498.304189
+r1
+xCopyStringsFile
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings
+xManageMyRestaurantiOS/en.lproj/InfoPlist.strings
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Copy ManageMyRestaurantiOS/en.lproj/InfoPlist.stringsa7ce471abaefb641^76df4d1abaefb641^---0#0#0#-19%DVTDocumentLocation2@118"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/en.lproj/InfoPlist.strings0000000000000000^747"CopyStringsFile DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj/InfoPlist.strings ManageMyRestaurantiOS/en.lproj/InfoPlist.strings    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/en.lproj -- ManageMyRestaurantiOS/en.lproj/InfoPlist.strings36"AC51D304-E2D1-450E-9E0D-15B0D6194FC5-
+
+CCpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchBlueBg.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchBlueBg.png
+s384810374.053289
+e384810374.071518
+r1
+xCpResource
+xManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchBlueBg.png
+xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchBlueBg.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection118"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchBlueBg.png29b30d86bdefb641^535b1286bdefb641^---0#0#0#-19%DVTDocumentLocation2@183"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchBlueBg.png000000000080d041^874"CpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchBlueBg.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchBlueBg.png    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchBlueBg.png /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"82380C0F-63A4-4E41-AF78-B8A4C0B1D362-
+
+CCpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchOffPlain.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchOffPlain.png
+s384810374.052170
+e384810374.065549
+r1
+xCpResource
+xManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchOffPlain.png
+xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchOffPlain.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchOffPlain.png616c0d86bdefb641^f3c71086bdefb641^---0#0#0#-19%DVTDocumentLocation2@185"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchOffPlain.png000000000080d041^880"CpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchOffPlain.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchOffPlain.png    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchOffPlain.png /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"4093129A-39BC-4CBA-9D37-211BD95F2CE2-
+
+CCpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchThumb.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchThumb.png
+s384810374.052611
+e384810374.069306
+r1
+xCpResource
+xManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchThumb.png
+xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchThumb.png
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchThumb.png66860d86bdefb641^6ebe1186bdefb641^---0#0#0#-19%DVTDocumentLocation2@182"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchThumb.png000000000080d041^871"CpResource ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchThumb.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/switchThumb.png    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/../../../Downloads/UICustomSwitch/UICustomSwitch/switchThumb.png /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"28186706-A742-4479-9FB0-FDA6B2D1B632-
+
 CCpResource ManageMyRestaurantiOS/Default-568h@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png
-s384713372.857952
-e384713372.880418
+s384809498.280305
+e384809498.326218
 r1
 xCpResource
 xManageMyRestaurantiOS/Default-568h@2x.png
 xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png81b4db9c42eeb641^d062e19c42eeb641^---0#0#0#-19%DVTDocumentLocation2@186"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png000000000080d041^791"CpResource "ManageMyRestaurantiOS/Default-568h@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png"    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default-568h@2x.png" /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"269CD0B0-0EA1-4D57-937F-0D925A076A41-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection121"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.pngc3d3471abaefb641^cf83531abaefb641^---0#0#0#-19%DVTDocumentLocation2@186"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png0000000000000000^791"CpResource "ManageMyRestaurantiOS/Default-568h@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default-568h@2x.png"    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default-568h@2x.png" /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"731F0AAF-7DE1-47E9-9D99-A6CAA9B48B42-
 
 CCpResource ManageMyRestaurantiOS/Default.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png
-s384713372.856335
-e384713372.871789
+s384809498.280168
+e384809498.326137
 r1
 xCpResource
 xManageMyRestaurantiOS/Default.png
 xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.pngb150db9c42eeb641^f435df9c42eeb641^---0#0#0#-19%DVTDocumentLocation2@178"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png000000000080d041^761"CpResource ManageMyRestaurantiOS/Default.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default.png /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"F96E18D8-FCD2-4379-B44A-2B2BC99F6E00-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection113"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png8dd0471abaefb641^e57e531abaefb641^---0#0#0#-19%DVTDocumentLocation2@178"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png0000000000000000^761"CpResource ManageMyRestaurantiOS/Default.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default.png    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default.png /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"70B631D3-D0DC-4096-ADE5-2E8675A93F7C-
 
 CCpResource ManageMyRestaurantiOS/Default@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png
-s384713372.856874
-e384713372.881716
+s384809498.280182
+e384809498.331668
 r1
 xCpResource
 xManageMyRestaurantiOS/Default@2x.png
 xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png4c6bdb9c42eeb641^35b8e19c42eeb641^---0#0#0#-19%DVTDocumentLocation2@181"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png000000000080d041^776"CpResource "ManageMyRestaurantiOS/Default@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png"    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default@2x.png" /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"3FFBA076-4235-45B4-80B9-542E56C0D1D2-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection116"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png18d0471abaefb641^96e8541abaefb641^---0#0#0#-19%DVTDocumentLocation2@181"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png0000000000000000^776"CpResource "ManageMyRestaurantiOS/Default@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Default@2x.png"    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/Default@2x.png" /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"03F8CFD1-844C-4A16-A399-44FF38DC1B15-
 
 CCpResource ManageMyRestaurantiOS/first.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png
-s384713372.883013
-e384713372.898450
+s384809498.327392
+e384809498.367350
 r1
 xCpResource
 xManageMyRestaurantiOS/first.png
 xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png3b1be29c42eeb641^f703e69c42eeb641^---0#0#0#-19%DVTDocumentLocation2@176"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png000000000080d041^755"CpResource ManageMyRestaurantiOS/first.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/first.png /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"03657ACF-901B-40A2-8A50-84810384E895-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png8be0531abaefb641^c80a5e1abaefb641^---0#0#0#-19%DVTDocumentLocation2@176"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png0000000000000000^755"CpResource ManageMyRestaurantiOS/first.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first.png    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/first.png /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"C479EFED-DCA8-4387-88C4-E7AA4DC00712-
 
 CCpResource ManageMyRestaurantiOS/first@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png
-s384713372.899753
-e384713372.940591
+s384809498.327425
+e384809498.393190
 r1
 xCpResource
 xManageMyRestaurantiOS/first@2x.png
 xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png6e68e69c42eeb641^eb39f19c42eeb641^---0#0#0#-19%DVTDocumentLocation2@179"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png000000000080d041^770"CpResource "ManageMyRestaurantiOS/first@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png"    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/first@2x.png" /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"21581FC0-3777-47FD-AB4F-29070FE139EF-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection114"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png0de2531abaefb641^09a8641abaefb641^---0#0#0#-19%DVTDocumentLocation2@179"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png0000000000000000^770"CpResource "ManageMyRestaurantiOS/first@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/first@2x.png"    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/first@2x.png" /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"E78EB394-52D1-4765-8832-A10109DF582C-
 
 CCpResource ManageMyRestaurantiOS/second.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png
-s384713372.940063
-e384713372.958549
+s384809498.332899
+e384809498.400081
 r1
 xCpResource
 xManageMyRestaurantiOS/second.png
 xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png8bc0f09c42eeb641^aa63f59c42eeb641^---0#0#0#-19%DVTDocumentLocation2@177"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png000000000080d041^758"CpResource ManageMyRestaurantiOS/second.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/second.png /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"421C8942-B643-47B8-81FB-A875F2134792-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png9d47551abaefb641^2f6f661abaefb641^---0#0#0#-19%DVTDocumentLocation2@177"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png0000000000000000^758"CpResource ManageMyRestaurantiOS/second.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second.png    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/second.png /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"30A7449F-1ECB-4A56-A900-68EF76413B66-
 
 CCpResource ManageMyRestaurantiOS/second@2x.png DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png
-s384713372.946593
-e384713372.962403
+s384809498.368621
+e384809498.423858
 r1
 xCpResource
 xManageMyRestaurantiOS/second@2x.png
 xDerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png
-lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png1765f29c42eeb641^3d60f69c42eeb641^---0#0#0#-19%DVTDocumentLocation2@180"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png000000000080d041^773"CpResource "ManageMyRestaurantiOS/second@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png"    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/second@2x.png" /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"E9A2E9CD-C6F0-45CF-B9E5-AD7CA7AC0DB0-
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection115"Copy DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png0d6f5e1abaefb641^7b826c1abaefb641^---0#0#0#-19%DVTDocumentLocation2@180"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png0000000000000000^773"CpResource "ManageMyRestaurantiOS/second@2x.png" "DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/second@2x.png"    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks "/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/second@2x.png" /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"B0F6A8C9-6936-4B3E-B57F-93B1D0C42F49-
 
 CGenerateDSYMFile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
 s384730622.857040
@@ -499,6 +967,15 @@ xGenerateDSYMFile
 x/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM
 x/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Generate /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM1d76dbfe85eeb641^9cdd02ff85eeb641^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM/0000000000000000^926"GenerateDSYMFile DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM36"8EE99590-91F5-4783-9B89-2BA434944976-
+
+CGenerateDSYMFile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
+s384810373.810046
+e384810374.042773
+r1
+xGenerateDSYMFile
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection164"Generate /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYMb971cf85bdefb641^e9f20a86bdefb641^---0#0#0#-19%DVTDocumentLocation2@172"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM/0000000000000000^926"GenerateDSYMFile DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app.dSYM36"DC505A06-F6F5-4E70-8D90-5613197C99EA-
 
 CLd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS normal i386
 s384730622.805931
@@ -510,6 +987,16 @@ xnormal
 xi386
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection177"Link /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS8064cefe85eeb641^54add9fe85eeb641^---0#0#0#--1540"Ld DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS normal i386    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -F/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -filelist /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOS.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS36"F874A395-86EE-47F6-AC66-4457E0D306DE-
 
+CLd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS normal i386
+s384810373.759919
+e384810373.803051
+r1
+xLd
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS
+xnormal
+xi386
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection177"Link /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS069fc285bdefb641^7995cd85bdefb641^---0#0#0#--1540"Ld DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS normal i386    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv IPHONEOS_DEPLOYMENT_TARGET 6.1    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -L/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator -filelist /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/Objects-normal/i386/ManageMyRestaurantiOS.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.1 -framework UIKit -framework Foundation -framework CoreGraphics -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS36"2A739490-728C-4B99-AB38-6239B4D6E465-
+
 CProcessInfoPlistFile /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist
 s384713371.528947
 e384713371.546392
@@ -518,6 +1005,15 @@ xProcessInfoPlistFile
 x/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist
 xManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Process ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plistee7c879b42eeb641^26e08b9b42eeb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist0000000000000000^922"ProcessInfoPlistFile DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist -genpkginfo /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist36"116001A8-6B2F-40BA-A412-772F8FCC97E2-
+
+CProcessInfoPlistFile /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist
+s384809496.681818
+e384809496.696000
+r1
+xProcessInfoPlistFile
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist
+xManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Process ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist261baf18baefb641^ba2cb218baefb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist0000000000000000^922"ProcessInfoPlistFile DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist -genpkginfo /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app/Info.plist36"C47257C2-A4D7-422D-AC4D-BF5627DDFA2F-
 
 CProcessPCH /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-gwbufepplrrutsfzjqnjssdahveq/ManageMyRestaurantiOS-Prefix.pch.pth ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s384713371.557964
@@ -535,6 +1031,22 @@ lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Precomp
 CProcessPCH /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Index/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-bxecirjdrwjxlgdsncqnykqivecd_ast/ManageMyRestaurantiOS-Prefix.pch.pth ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
 r0
 
+CProcessPCH /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.pth ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s384809496.704172
+e384809497.383741
+r1
+xProcessPCH
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.pth
+xManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Precompile ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch2ba4b418baefb641^433c6219baefb641^---0#0#0#-19%DVTDocumentLocation2@124"file://localhost/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch0000000000000000^4443"ProcessPCH DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.pth ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -std=gnu99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wreturn-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wduplicate-method-match -Wformat -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.1 -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-generated-files.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-own-target-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-all-target-headers.hmap -iquote /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/ManageMyRestaurantiOS-project-headers.hmap -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources/i386 -I/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/ManageMyRestaurantiOS.build/Debug-iphonesimulator/ManageMyRestaurantiOS.build/DerivedSources -F/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator --serialize-diagnostics /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.dia -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch -o /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.pth -MMD -MT dependencies -MF /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Intermediates/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-hflbseoualbjseacvqekfkttvlxf/ManageMyRestaurantiOS-Prefix.pch.d36"7BDD5B32-37CD-471C-88E7-DBA6048C9D44-
+
+CProcessPCH /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Index/PrecompiledHeaders/ManageMyRestaurantiOS-Prefix-cqvhmvherteadkanbotsljfqawsw_ast/ManageMyRestaurantiOS-Prefix.pch.pth ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
 CTouch /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app
 s384730624.078780
 e384730624.087236
@@ -542,4 +1054,12 @@ r1
 xTouch
 x/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app
 lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection156"Touch /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app113a140086eeb641^6d55160086eeb641^---0#0#0#--532"Touch DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app    cd /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"BC505665-6231-4BD7-A90B-2397FAEB52A3-
+
+CTouch /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app
+s384810401.024508
+e384810401.032074
+r1
+xTouch
+x/home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app
+lSLF05#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection156"Touch /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.appa45406a1bdefb641^2a3808a1bdefb641^---0#0#0#--532"Touch DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app    cd /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /home/student/umdrawa2/4350Proj/ManageMyRestaurantiOS/DerivedData/ManageMyRestaurantiOS/Build/Products/Debug-iphonesimulator/ManageMyRestaurantiOS.app36"1956F3A9-2631-49C9-BF8C-A0AF133815EE-
 
