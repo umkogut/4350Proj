@@ -196,7 +196,12 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JP5-v7-dIa"/>
+                            <pickerView tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JP5-v7-dIa">
+                                <connections>
+                                    <outlet property="dataSource" destination="2xm-5h-ADu" id="q1q-tU-8Mq"/>
+                                    <outlet property="delegate" destination="2xm-5h-ADu" id="NbI-BZ-DC7"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" red="0.86051577446910266" green="0.86633842446091469" blue="0.88797129755434778" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -232,7 +237,7 @@
                     <connections>
                         <outlet property="category" destination="JP5-v7-dIa" id="Fze-td-l9Z"/>
                         <outlet property="description" destination="te5-sQ-2Iq" id="tVG-x9-ibl"/>
-                        <outlet property="itemName" destination="JCH-SU-0wr" id="fio-DY-OMH"/>
+                        <outlet property="itemName" destination="3z9-yJ-Bor" id="ywX-CF-yE5"/>
                         <outlet property="price" destination="QEh-NW-gYh" id="I9p-tz-GXL"/>
                         <outlet property="vegetarian" destination="bNG-Sv-Q5L" id="gMf-GH-Sb2"/>
                     </connections>
