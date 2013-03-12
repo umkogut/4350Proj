@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UICustomSwitch.h"
 
 @interface AddMenuItemViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *itemName;
+@property (strong, nonatomic) IBOutlet UIPickerView *category;
+@property (weak, nonatomic) IBOutlet UITextField *description;
+@property (weak, nonatomic) IBOutlet UITextField *price;
+@property (weak, nonatomic) IBOutlet UICustomSwitch *vegetarian;
 
 @end

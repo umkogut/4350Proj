@@ -19,14 +19,15 @@
 		2F8958A016EB8609004A7B0E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F89589F16EB8609004A7B0E /* Default-568h@2x.png */; };
 		2F8958A316EB8609004A7B0E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8958A116EB8609004A7B0E /* MainStoryboard_iPhone.storyboard */; };
 		2F8958A616EB8609004A7B0E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8958A416EB8609004A7B0E /* MainStoryboard_iPad.storyboard */; };
-		2F8958AB16EB8609004A7B0E /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8958AA16EB8609004A7B0E /* first.png */; };
-		2F8958AD16EB8609004A7B0E /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8958AC16EB8609004A7B0E /* first@2x.png */; };
-		2F8958B216EB8609004A7B0E /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8958B116EB8609004A7B0E /* second.png */; };
-		2F8958B416EB8609004A7B0E /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2F8958B316EB8609004A7B0E /* second@2x.png */; };
 		2F89593516EBF5D3004A7B0E /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89593416EBF5D3004A7B0E /* MenuItem.m */; };
 		2F89593816EBF82A004A7B0E /* MenuItemDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89593716EBF82A004A7B0E /* MenuItemDataController.m */; };
 		2F89593B16EC0478004A7B0E /* MenuMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89593A16EC0478004A7B0E /* MenuMasterViewController.m */; };
 		2F89593E16EC052A004A7B0E /* MenuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89593D16EC052A004A7B0E /* MenuDetailViewController.m */; };
+		DD113AC416EFBBF700703CFA /* UICustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113ABD16EFBBF700703CFA /* UICustomSwitch.m */; };
+		DD113AC516EFBBF700703CFA /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = DD113ABE16EFBBF700703CFA /* switchOffPlain.png */; };
+		DD113AC616EFBBF700703CFA /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = DD113AC016EFBBF700703CFA /* switchThumb.png */; };
+		DD113AC716EFBBF700703CFA /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DD113AC116EFBBF700703CFA /* switchBlueBg.png */; };
+		DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,10 +48,6 @@
 		2F89589F16EB8609004A7B0E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		2F8958A216EB8609004A7B0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		2F8958A516EB8609004A7B0E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		2F8958AA16EB8609004A7B0E /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
-		2F8958AC16EB8609004A7B0E /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		2F8958B116EB8609004A7B0E /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
-		2F8958B316EB8609004A7B0E /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		2F89593316EBF5D3004A7B0E /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
 		2F89593416EBF5D3004A7B0E /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
 		2F89593616EBF82A004A7B0E /* MenuItemDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemDataController.h; sourceTree = "<group>"; };
@@ -59,6 +56,13 @@
 		2F89593A16EC0478004A7B0E /* MenuMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuMasterViewController.m; sourceTree = "<group>"; };
 		2F89593C16EC052A004A7B0E /* MenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDetailViewController.h; sourceTree = "<group>"; };
 		2F89593D16EC052A004A7B0E /* MenuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDetailViewController.m; sourceTree = "<group>"; };
+		DD113ABD16EFBBF700703CFA /* UICustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSwitch.m; sourceTree = "<group>"; };
+		DD113ABE16EFBBF700703CFA /* switchOffPlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOffPlain.png; sourceTree = "<group>"; };
+		DD113ABF16EFBBF700703CFA /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSwitch.h; sourceTree = "<group>"; };
+		DD113AC016EFBBF700703CFA /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchThumb.png; sourceTree = "<group>"; };
+		DD113AC116EFBBF700703CFA /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBlueBg.png; sourceTree = "<group>"; };
+		DD113AC816EFBC2000703CFA /* AddMenuItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMenuItemViewController.h; sourceTree = "<group>"; };
+		DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMenuItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,12 +121,11 @@
 				2F89593A16EC0478004A7B0E /* MenuMasterViewController.m */,
 				2F89593C16EC052A004A7B0E /* MenuDetailViewController.h */,
 				2F89593D16EC052A004A7B0E /* MenuDetailViewController.m */,
+				DD113AC816EFBC2000703CFA /* AddMenuItemViewController.h */,
+				DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */,
 				2F4FFBAB16EE6325005805DB /* EditMenuDetailViewController.h */,
 				2F4FFBAC16EE6325005805DB /* EditMenuDetailViewController.m */,
-				2F8958AA16EB8609004A7B0E /* first.png */,
-				2F8958AC16EB8609004A7B0E /* first@2x.png */,
-				2F8958B116EB8609004A7B0E /* second.png */,
-				2F8958B316EB8609004A7B0E /* second@2x.png */,
+				DD113ABC16EFBBF700703CFA /* UICustomSwitch */,
 				2F89589016EB8608004A7B0E /* Supporting Files */,
 			);
 			path = ManageMyRestaurantiOS;
@@ -140,6 +143,19 @@
 				2F89589F16EB8609004A7B0E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD113ABC16EFBBF700703CFA /* UICustomSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				DD113ABD16EFBBF700703CFA /* UICustomSwitch.m */,
+				DD113ABE16EFBBF700703CFA /* switchOffPlain.png */,
+				DD113ABF16EFBBF700703CFA /* UICustomSwitch.h */,
+				DD113AC016EFBBF700703CFA /* switchThumb.png */,
+				DD113AC116EFBBF700703CFA /* switchBlueBg.png */,
+			);
+			name = UICustomSwitch;
+			path = ../../../Downloads/UICustomSwitch/UICustomSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,10 +216,9 @@
 				2F8958A016EB8609004A7B0E /* Default-568h@2x.png in Resources */,
 				2F8958A316EB8609004A7B0E /* MainStoryboard_iPhone.storyboard in Resources */,
 				2F8958A616EB8609004A7B0E /* MainStoryboard_iPad.storyboard in Resources */,
-				2F8958AB16EB8609004A7B0E /* first.png in Resources */,
-				2F8958AD16EB8609004A7B0E /* first@2x.png in Resources */,
-				2F8958B216EB8609004A7B0E /* second.png in Resources */,
-				2F8958B416EB8609004A7B0E /* second@2x.png in Resources */,
+				DD113AC516EFBBF700703CFA /* switchOffPlain.png in Resources */,
+				DD113AC616EFBBF700703CFA /* switchThumb.png in Resources */,
+				DD113AC716EFBBF700703CFA /* switchBlueBg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,6 +236,8 @@
 				2F89593B16EC0478004A7B0E /* MenuMasterViewController.m in Sources */,
 				2F89593E16EC052A004A7B0E /* MenuDetailViewController.m in Sources */,
 				2F4FFBAD16EE6325005805DB /* EditMenuDetailViewController.m in Sources */,
+				DD113AC416EFBBF700703CFA /* UICustomSwitch.m in Sources */,
+				DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
