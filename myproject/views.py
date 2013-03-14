@@ -46,7 +46,17 @@ def orders_view(request):
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
 def pos_view(request):
     print request
-    return {'project': 'MyProject'}
+    orders = DBSession.query(Order).group_by(Order.orderID).all()
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+
+
+    tableNums = list()
+    if orders != None:
+	for order in orders:
+	    if order.tableNum not in tableNums:
+		tableNums.append(order.tableNum)
+
+    return {'menuItems': menuItems, 'tableNums': tableNums, 'orders': orders, 'project': 'MyProject'}
 
 @view_config(route_name='admin', renderer='templates/admin.jinja2')
 def admin_view(request):
@@ -64,7 +74,11 @@ def about_view(request):
 @view_config(route_name='test', renderer='templates/test.jinja2')
 def test_view(request):
     print request
-    return {'project': 'MyProject'}
+
+    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+    menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
+
+    return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(renderer='json', name='getMenuItem.json')
 def getMenuItem_view(request):
@@ -80,9 +94,6 @@ def getMenuItem_view(request):
 @view_config(renderer='json', name='addMenuItem.json')
 def addMenuItem_view(request):
 	print request
-	print "***************************************************************************"
-	print request.json_body['name']
-	print "***************************************************************************"
 
 	item = request.json_body
 	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
@@ -135,6 +146,7 @@ def getMenuName_view(request):
 	jsonString = jsonString + "}"
 	print jsonString
 	return jsonString
+<<<<<<< HEAD
 
 @view_config(renderer='json', name='getOrders.json')
 def getOrders_view(request):
@@ -185,3 +197,15 @@ def fktest_view(request):
 
     return {'project': 'MyProject'}
 """
+=======
+	
+@view_config(renderer='json', name='placedOrder.json')
+def placedOrder_view(request):
+        print request
+        orders = request.json_body['Orders']
+        for order in orders :
+                newOrder = Order(menuItem=order['menuItem'], tableNum=order['tableNum'], groupNum = order['groupNum'], comments=order['comments'])
+                DBSession.add(newOrder)
+        transaction.commit()
+        return {'isSuccess': 1}
+>>>>>>> da2ebcf935ae6f5d821f04b1c7e00e756642cf79

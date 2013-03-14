@@ -1,36 +1,35 @@
 $(function() {
+  $('.tabs a:last').tab('show');
   var numTables = 4;
   var currTable = 0;
-  
-  $('.tabs a:last').tab('show');
 
   while (currTable <= numTables)
   {
     currTable++;
-    $('#tableTabs').append($('<li><a href="#table' + currTable + '" data-toggle="tab">Table ' + currTable + '</a></li>'));
-    $('#tableOrders').append($('<div class="tab-pane" id="table' + currTable +'"><div class="row-fluid"><div class="span4"><div class="well" id="group1"><input type="text" value="" list="menuItems" id="item1"><datalist id="menuItems>{% for item in menuItems %}<option>{{item.name}}</option>{% endfor %}</datalist></input></div><button class="btn" id="submit">Submit</button></div></div></div>'));
-    
+
     $('#table' + currTable).tab('show');
+    $('#orderlist' + currTable).select2({ width: 'resolve' });
   }
-
-  var numItems = 1;
-
-  $(document)
-    .on('focus', 'input:text', function()
-    {
-      var $this = $(this);
-      if ($this.val() == "")
-      {
-        numItems++;
-        $($this.parent().append($('<input type="text" value ="" list="menuItems" id="item' + numItems + '"><datalist id="menuItems">{% for item in menuItems %}<option>{{item.name}}</option>{% endfor %}</datalist></input>')));
-      }
-    })
-    .on('blur', 'input:text', function()
-    {
-      var $this = $(this);
-      if ($this.val() == "")
-      {
-        $this.hide();
-      }
-    });
 });
+
+function submitOrder(table) {
+  var selectMenu = $('#orderlist' + table).val();
+  var result = '{ "Orders": [';
+  for( var i = 0; i < selectMenu.length; i++)
+  {
+    if (i != 0)
+    {
+      result = result + ',';
+    }
+    result= result + '{ "menuItem":' + selectMenu[i] + ', "tableNum":' + table;
+    result= result + ', "groupNum":0, "comments":""}';
+  }
+  result= result + ']}';
+
+  var jsonResult = $.parseJSON(result);
+  jsonResult = JSON.stringify(jsonResult);
+  $.post('/placedOrder.json', jsonResult, function(data) {
+  }, "json");
+  alert("Order placed");
+}
+
