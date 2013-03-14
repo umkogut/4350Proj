@@ -14,3 +14,8 @@ $(function() {
     });
   });
 });
+
+function displayTableBill(tableNum) {
+    $(".tab-pane").hide();
+    $("#tableNum" + tableNum).show();
+}

@@ -92,7 +92,6 @@ class User(Base):
 		self.userType = userType
 		self.password = password
 
-'''
 class Transaction(Base):
 	__tablename__ = 'TRANSACTIONS'
 	transactionID = Column(Integer, primary_key=True)
@@ -106,4 +105,4 @@ class Transaction(Base):
 		self.paymentMethod = paymentMethod
 		self.whenProcessed = whenProcessed
 		self.userID = userID
-'''
+

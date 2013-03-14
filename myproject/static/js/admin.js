@@ -49,7 +49,7 @@ $('#prevName').bind("change fillData", function() {
 });
 
 
-$('#addForm button[name="submitBtn"]').click(function() {
+function addMenuItem() {
         var itemName = JSON.stringify({
                 'name': $('#addForm input[name="itemName"]').val(), 
                 'category': $('#addForm select[name="category"]').val(), 
@@ -67,9 +67,9 @@ $('#addForm button[name="submitBtn"]').click(function() {
 			}
                 });
         }, "json");
-});
+}
 
-$('#editForm button[name="submitBtn"]').click(function() {
+function editMenuItem() {
         var itemName = JSON.stringify({
                 'prevItemName': $('#prevName').val(), 
                 'name': $('#editForm input[name="itemName"]').val(), 
@@ -96,12 +96,12 @@ $('#editForm button[name="submitBtn"]').click(function() {
                         }                                                                                                                                                          
                 });                                                                                                                                                                
         }, "json");                                                                                                                                                                
-}); 
+}
 
 function clearEditForm() {                                                                                                                                                         
         $('#prevName').val("");                                                                                                                                                    
         $('#editForm input[name="itemName"]').val("");                                                                                                                             
-        $('#editForm select[name="itemName"]').val(1);                                                                                                                             
+        $('#editForm select[name="category"]').val(1);                                                                                                                             
         $('#editForm input[name="desc"]').val("");                                                                                                                                 
         $('#editForm input[name="price"]').val("");                                                                                                                                
         $('#editForm input[name="vegetarian"]').prop('checked', 0);                                                                                                                
@@ -110,7 +110,7 @@ function clearEditForm() {
                                                                                                                                                                                    
 function clearAddForm() {                                                                                                                                                          
         $('#addForm input[name="itemName"]').val("");                                                                                                                              
-        $('#addForm select[name="itemName"]').val(1);                                                                                                                              
+        $('#addForm select[name="category"]').val(1);                                                                                                                              
         $('#addForm input[name="desc"]').val("");                                                                                                                                  
         $('#addForm input[name="price"]').val("");                                                                                                                                 
         $('#addForm input[name="vegetarian"]').prop('checked', 0);                                                                                                                 
@@ -127,4 +127,4 @@ function testIfCanSubmit() {
                 $('#editForm :button').attr("disabled", true);                                                                                                                     
         else                                                                                                                                                                       
                 $('#editForm :button').attr("disabled", false);                                                                                                                    
-}                                                                                                                                                                                  
+}                                                                                                                                                                           
