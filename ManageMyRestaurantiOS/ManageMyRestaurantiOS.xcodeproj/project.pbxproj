@@ -23,10 +23,10 @@
 		2F89593816EBF82A004A7B0E /* MenuItemDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89593716EBF82A004A7B0E /* MenuItemDataController.m */; };
 		2F89593B16EC0478004A7B0E /* MenuMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89593A16EC0478004A7B0E /* MenuMasterViewController.m */; };
 		2F89593E16EC052A004A7B0E /* MenuDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F89593D16EC052A004A7B0E /* MenuDetailViewController.m */; };
-		DD113AC416EFBBF700703CFA /* UICustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113ABD16EFBBF700703CFA /* UICustomSwitch.m */; };
-		DD113AC516EFBBF700703CFA /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = DD113ABE16EFBBF700703CFA /* switchOffPlain.png */; };
-		DD113AC616EFBBF700703CFA /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = DD113AC016EFBBF700703CFA /* switchThumb.png */; };
-		DD113AC716EFBBF700703CFA /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = DD113AC116EFBBF700703CFA /* switchBlueBg.png */; };
+		2FC85AD916F0E42800C3216E /* UICustomSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FC85AD216F0E42800C3216E /* UICustomSwitch.m */; };
+		2FC85ADA16F0E42800C3216E /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC85AD316F0E42800C3216E /* switchOffPlain.png */; };
+		2FC85ADB16F0E42800C3216E /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC85AD516F0E42800C3216E /* switchThumb.png */; };
+		2FC85ADC16F0E42800C3216E /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC85AD616F0E42800C3216E /* switchBlueBg.png */; };
 		DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -56,11 +56,11 @@
 		2F89593A16EC0478004A7B0E /* MenuMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuMasterViewController.m; sourceTree = "<group>"; };
 		2F89593C16EC052A004A7B0E /* MenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuDetailViewController.h; sourceTree = "<group>"; };
 		2F89593D16EC052A004A7B0E /* MenuDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuDetailViewController.m; sourceTree = "<group>"; };
-		DD113ABD16EFBBF700703CFA /* UICustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSwitch.m; sourceTree = "<group>"; };
-		DD113ABE16EFBBF700703CFA /* switchOffPlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOffPlain.png; sourceTree = "<group>"; };
-		DD113ABF16EFBBF700703CFA /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSwitch.h; sourceTree = "<group>"; };
-		DD113AC016EFBBF700703CFA /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchThumb.png; sourceTree = "<group>"; };
-		DD113AC116EFBBF700703CFA /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBlueBg.png; sourceTree = "<group>"; };
+		2FC85AD216F0E42800C3216E /* UICustomSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICustomSwitch.m; sourceTree = "<group>"; };
+		2FC85AD316F0E42800C3216E /* switchOffPlain.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchOffPlain.png; sourceTree = "<group>"; };
+		2FC85AD416F0E42800C3216E /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSwitch.h; sourceTree = "<group>"; };
+		2FC85AD516F0E42800C3216E /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchThumb.png; sourceTree = "<group>"; };
+		2FC85AD616F0E42800C3216E /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBlueBg.png; sourceTree = "<group>"; };
 		DD113AC816EFBC2000703CFA /* AddMenuItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMenuItemViewController.h; sourceTree = "<group>"; };
 		DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMenuItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -125,7 +125,7 @@
 				DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */,
 				2F4FFBAB16EE6325005805DB /* EditMenuDetailViewController.h */,
 				2F4FFBAC16EE6325005805DB /* EditMenuDetailViewController.m */,
-				DD113ABC16EFBBF700703CFA /* UICustomSwitch */,
+				2FC85AD016F0E42800C3216E /* UICustomSwitch */,
 				2F89589016EB8608004A7B0E /* Supporting Files */,
 			);
 			path = ManageMyRestaurantiOS;
@@ -145,17 +145,40 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DD113ABC16EFBBF700703CFA /* UICustomSwitch */ = {
+		2FC85AD016F0E42800C3216E /* UICustomSwitch */ = {
 			isa = PBXGroup;
 			children = (
-				DD113ABD16EFBBF700703CFA /* UICustomSwitch.m */,
-				DD113ABE16EFBBF700703CFA /* switchOffPlain.png */,
-				DD113ABF16EFBBF700703CFA /* UICustomSwitch.h */,
-				DD113AC016EFBBF700703CFA /* switchThumb.png */,
-				DD113AC116EFBBF700703CFA /* switchBlueBg.png */,
+				2FC85AD116F0E42800C3216E /* UICustomSwitch */,
+				2FC85AD716F0E42800C3216E /* __MACOSX */,
 			);
-			name = UICustomSwitch;
-			path = ../../../Downloads/UICustomSwitch/UICustomSwitch;
+			path = UICustomSwitch;
+			sourceTree = "<group>";
+		};
+		2FC85AD116F0E42800C3216E /* UICustomSwitch */ = {
+			isa = PBXGroup;
+			children = (
+				2FC85AD216F0E42800C3216E /* UICustomSwitch.m */,
+				2FC85AD316F0E42800C3216E /* switchOffPlain.png */,
+				2FC85AD416F0E42800C3216E /* UICustomSwitch.h */,
+				2FC85AD516F0E42800C3216E /* switchThumb.png */,
+				2FC85AD616F0E42800C3216E /* switchBlueBg.png */,
+			);
+			path = UICustomSwitch;
+			sourceTree = "<group>";
+		};
+		2FC85AD716F0E42800C3216E /* __MACOSX */ = {
+			isa = PBXGroup;
+			children = (
+				2FC85AD816F0E42800C3216E /* UICustomSwitch */,
+			);
+			path = __MACOSX;
+			sourceTree = "<group>";
+		};
+		2FC85AD816F0E42800C3216E /* UICustomSwitch */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UICustomSwitch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,9 +239,9 @@
 				2F8958A016EB8609004A7B0E /* Default-568h@2x.png in Resources */,
 				2F8958A316EB8609004A7B0E /* MainStoryboard_iPhone.storyboard in Resources */,
 				2F8958A616EB8609004A7B0E /* MainStoryboard_iPad.storyboard in Resources */,
-				DD113AC516EFBBF700703CFA /* switchOffPlain.png in Resources */,
-				DD113AC616EFBBF700703CFA /* switchThumb.png in Resources */,
-				DD113AC716EFBBF700703CFA /* switchBlueBg.png in Resources */,
+				2FC85ADA16F0E42800C3216E /* switchOffPlain.png in Resources */,
+				2FC85ADB16F0E42800C3216E /* switchThumb.png in Resources */,
+				2FC85ADC16F0E42800C3216E /* switchBlueBg.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,8 +259,8 @@
 				2F89593B16EC0478004A7B0E /* MenuMasterViewController.m in Sources */,
 				2F89593E16EC052A004A7B0E /* MenuDetailViewController.m in Sources */,
 				2F4FFBAD16EE6325005805DB /* EditMenuDetailViewController.m in Sources */,
-				DD113AC416EFBBF700703CFA /* UICustomSwitch.m in Sources */,
 				DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */,
+				2FC85AD916F0E42800C3216E /* UICustomSwitch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +306,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -298,6 +322,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -315,6 +340,7 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -323,6 +349,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -332,10 +360,12 @@
 		2F8958B816EB8609004A7B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
 				INFOPLIST_FILE = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E48E4454-2D8B-4E9E-9EFB-466DB4CFBEC1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -343,10 +373,12 @@
 		2F8958B916EB8609004A7B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
 				INFOPLIST_FILE = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "E48E4454-2D8B-4E9E-9EFB-466DB4CFBEC1";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
