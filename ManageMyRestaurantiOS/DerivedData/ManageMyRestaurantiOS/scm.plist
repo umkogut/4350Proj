@@ -4,13 +4,19 @@
 <dict>
 	<key>FoundWorkingCopyPaths</key>
 	<array>
-		<string>/home/student/umdrawa2/4350Proj</string>
-		<string>/home/student/umdrawa2/Downloads/UICustomSwitch/UICustomSwitch</string>
+		<string>/home/student/umchmie2/4350Proj</string>
 	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2013-03-12T19:45:49Z</date>
+	<date>2013-03-13T16:43:39Z</date>
 	<key>MissingFilePaths</key>
-	<array/>
+	<array>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchThumb.png</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.h</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchOffPlain.png</string>
+		<string>/home/student/umchmie2/Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.h</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.m</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchBlueBg.png</string>
+	</array>
 	<key>Version</key>
 	<integer>4</integer>
 </dict>
