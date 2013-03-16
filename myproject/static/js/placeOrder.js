@@ -1,14 +1,12 @@
 $(function() {
   $('.tabs a:last').tab('show');
+
   var numTables = 4;
-  var currTable = 0;
-
-  while (currTable <= numTables)
+  for (var currTable = 0; currTable <= numTables; currTable++)
   {
-    currTable++;
-
     $('#table' + currTable).tab('show');
     $('#orderlist' + currTable).select2({ width: 'resolve' });
+    $('#orderlist' + currTable + ':text').show();
   }
 });
 
@@ -22,7 +20,7 @@ function submitOrder(table) {
       result = result + ',';
     }
     result= result + '{ "menuItem":' + selectMenu[i] + ', "tableNum":' + table;
-    result= result + ', "groupNum":0, "comments":""}';
+    result= result + ', "groupNum":0, "comments":"' + $('#' + table + '_item'+ selectMenu[i]).val() + '"}';
   }
   result= result + ']}';
 
