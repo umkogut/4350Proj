@@ -51,21 +51,33 @@
 }
 
 - (IBAction)addMenuItem:(id)sender {
-    NSInteger row = [self.category selectedRowInComponent:0];
-    NSString *strPrintRepeat = [categories objectAtIndex:row];
+    SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
+    NSString *row = [NSString stringWithFormat:@"%d", [self.category selectedRowInComponent:0]];
     
-    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543"];
+    NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
+                             self.itemName.text, @"name",
+                             row, @"category",
+                             self.description.text, @"description",
+                             self.price.text, @"price",
+                             @"True", @"isVeg",
+                             nil];
+    NSString *jsonCommand = [jsonWriter stringWithObject:json];
+    
+    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem.json"];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     
-    [request setRequestMethod:@"POST"];
+    //[request addRequestHeader:@"User-Agent" value:@"ASIHTTPRequest"];
+    [request addRequestHeader:@"Content-Type" value:@"application/json"];
     
-    [request setPostValue:self.itemName.text forKey:@"menuItem[name]"];
-    [request setPostValue:self.price.text forKey:@"menuItem[price"];
-    [request setPostValue:self.description.text forKey:@"menuItem[description]"];
-    [request setPostValue:strPrintRepeat forKey:@"menuItem[category]"];
-    [request setPostValue:FALSE forKey:@"menuItem[isVeg]"];
+    [request setRequestMethod:@"POST"];
+    [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
     
     [request setDelegate:self];
-    [request startAsynchronous];
+    [request startSynchronous];
+    
+    NSLog([request responseString]);
+}
+
+- (IBAction)add:(id)sender {
 }
 @end
