@@ -20,6 +20,6 @@
 @property (weak, nonatomic) IBOutlet UITextField *price;
 @property (weak, nonatomic) IBOutlet UICustomSwitch *vegetarian;
 
--(id)addMenuItem;
+- (IBAction)addMenuItem:(id)sender;
 
 @end
