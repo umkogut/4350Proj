@@ -9,6 +9,9 @@ MyProject.egg-info/*
 view.py
 menuDB.sqlite
 
+#Ignore the database
+mydatabase.sqlite
+
 #Xcode files to ignore
 .DS_Store
 ._.DS_Store
