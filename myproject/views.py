@@ -153,7 +153,6 @@ def getMenuName_view(request):
 	jsonString = jsonString + "}"
 	print jsonString
 	return jsonString
-<<<<<<< HEAD
 
 @view_config(renderer='json', name='getOrders.json')
 def getOrders_view(request):
@@ -185,26 +184,6 @@ def getOrders_view(request):
 	print jsonOrder
 	return jsonOrder
 			
-"""
-Keeping this code around temporarily. Will need to look at it later.
-Just keep pushing it to the bottom when adding new views
-- Marko
-
-@view_config(route_name='fktest', renderer='templates/fktest.jinja2')
-def fktest_view(request):
-    newTestFK = testFK(fkID=1, testID=1)
-    DBSession.add(newTestFK)
-
-    transaction.commit()
-
-    newTestFK2 = testFK(fkID=2, testID=2)
-    DBSession.add(newTestFK2)
-
-    transaction.commit()
-
-    return {'project': 'MyProject'}
-"""
-=======
 	
 @view_config(renderer='json', name='placedOrder.json')
 def placedOrder_view(request):
@@ -215,4 +194,3 @@ def placedOrder_view(request):
                 DBSession.add(newOrder)
         transaction.commit()
         return {'isSuccess': 1}
->>>>>>> da2ebcf935ae6f5d821f04b1c7e00e756642cf79
