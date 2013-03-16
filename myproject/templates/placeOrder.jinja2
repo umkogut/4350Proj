@@ -7,7 +7,7 @@
     <div class="row-fluid">
       <div class="span4">
         <div class="well" id="group">
-          <select id="orderlist{{table}}" multiple>
+          <select id="orderlist{{table}}" style="width:250px" multiple>
             {% for item in menuItems %}
             <option value="{{item.menuID}}">{{item.name}}</option>
             {% endfor %}
