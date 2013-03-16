@@ -1,3 +1,3 @@
 dependencies: \
-  /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m \
-  /home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.h
+  /home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.m \
+  /home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/MenuItem.h
