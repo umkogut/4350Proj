@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UICustomSwitch.h"
+#import "ASIHttpRequest/ASIFormDataRequest.h"
 
 @interface AddMenuItemViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     NSArray *categories;

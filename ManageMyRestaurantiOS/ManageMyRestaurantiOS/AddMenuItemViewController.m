@@ -52,6 +52,22 @@
 
 -(id)addMenuItem {
     //send request to server
+    NSInteger row = [self.category selectedRowInComponent:0];
+    NSString *strPrintRepeat = [categories objectAtIndex:row];
+    
+    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+ 
+    [request setRequestMethod:@"POST"];
+    
+    [request setPostValue:self.itemName.text forKey:@"menuItem[name]"];
+    [request setPostValue:self.price.text forKey:@"menuItem[price"];
+    [request setPostValue:self.description.text forKey:@"menuItem[description]"];
+    [request setPostValue:strPrintRepeat forKey:@"menuItem[category]"];
+    [request setPostValue:FALSE forKey:@"menuItem[isVeg]"];
+    
+    [request setDelegate:self];
+    [request startAsynchronous];
     
     //success message?
     //reset interface?
