@@ -202,3 +202,24 @@ def placedOrder_view(request):
                 DBSession.add(newOrder)
         transaction.commit()
         return {'isSuccess': 1}
+
+@view_config(renderer='json', name='getMenu.json')
+def getMenu_view(request):
+	print request
+	menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+	categories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
+	jsonMenu = '{"menu": ['
+	for i in range(len(menuItems)):
+		if i < (len(menuItems)-1):
+			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": ' + str(menuItems[i].category) + ', "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"},'
+		else:
+			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": ' + str(menuItems[i].category) + ', "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"}'
+	jsonMenu = jsonMenu + '], "categories": ['
+	for i in range(len(categories)):
+		if i < (len(categories)-1):
+			jsonMenu = jsonMenu + '{"catID": ' + str(categories[i].catID) + ', "name": "' + categories[i].name + '"},'
+		else:
+			jsonMenu = jsonMenu + '{"catID": ' + str(categories[i].catID) + ', "name": "' + categories[i].name + '"}'
+	jsonMenu = jsonMenu + ']}'
+	return jsonMenu
+
