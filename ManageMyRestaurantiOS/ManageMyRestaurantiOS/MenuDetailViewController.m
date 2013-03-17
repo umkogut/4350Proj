@@ -45,13 +45,6 @@
 //    }
 }
 
-- (IBAction)cancel:(UIStoryboardSegue *)segue
-{
-    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
-        [self dismissViewControllerAnimated:YES completion:NULL];
-    }
-}
-
 // configure the view
 - (void)configureView
 {

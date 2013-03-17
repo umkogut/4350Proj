@@ -349,6 +349,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Menu Item" id="hr6-P3-IFd">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="i3Q-Oi-Bx6">
+                            <connections>
+                                <segue destination="GSW-mm-DYD" kind="unwind" unwindAction="cancel:" id="RPh-D0-tx6"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Item" style="done" id="2ar-52-Fd0">
                             <color key="tintColor" red="0.15021037585662966" green="0.50852997448979598" blue="0.13630492007774928" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
@@ -362,6 +367,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YV-Nm-GgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="GSW-mm-DYD" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="6311" y="-3390"/>
         </scene>
