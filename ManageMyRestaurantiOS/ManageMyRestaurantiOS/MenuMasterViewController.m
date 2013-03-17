@@ -58,17 +58,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-	// Do any additional setup after loading the view, typically from a nib.
-    
-    /*
-     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-     
-     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-     self.navigationItem.rightBarButtonItem = addButton;
-     self.detailViewController = (testDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
-     */
 }
+
+// called when the ASIHTTPRequest is finished
 - (void)requestFinished:(ASIHTTPRequest *)request {
     NSString *responseString =[request responseString];
     responseString = [responseString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
@@ -196,6 +188,7 @@
         
         NSMutableArray *listInCategory = [self.dataController getListInCategory:[self.tableView indexPathForSelectedRow].section];
         detailViewController.menuItem = [listInCategory objectAtIndex:[self.tableView indexPathForSelectedRow].row];
+        detailViewController.categoriesList = self.dataController.categoryList;
     }
 }
 

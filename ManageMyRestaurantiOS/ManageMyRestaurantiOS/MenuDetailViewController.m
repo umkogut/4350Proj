@@ -12,7 +12,6 @@
 
 @interface MenuDetailViewController ()
 
-@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 
 @end
@@ -29,29 +28,6 @@
         
         // update the view
         [self configureView];
-    }
-}
-
-- (IBAction)done:(UIStoryboardSegue *)segue
-{
-    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
-        [self dismissViewControllerAnimated:YES completion:NULL];
-    }
-//    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
-//        
-//        EditMenuDetailViewController *controller = [segue sourceViewController];
-//        if (controller.birdSighting) {
-//            [self.dataController addBirdSightingWithSighting:addController.birdSighting];
-//            [[self tableView] reloadData];
-//        }
-//        [self dismissViewControllerAnimated:YES completion:NULL];
-//    }
-}
-
-- (IBAction)cancel:(UIStoryboardSegue *)segue
-{
-    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
-        [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
 
@@ -98,6 +74,7 @@
         EditMenuDetailViewController *editMenuDetailViewController = [navigationController.childViewControllers objectAtIndex:0];
         
         editMenuDetailViewController.menuItem = self.menuItem;
+        editMenuDetailViewController.categoryList = self.categoriesList;
         
     }
 }

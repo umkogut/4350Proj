@@ -21,90 +21,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385235644.645541"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "120"
-         endingLineNumber = "120"
-         landmarkName = "-tableView:cellForRowAtIndexPath:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385234161.487134"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "91"
-         endingLineNumber = "91"
-         landmarkName = "-requestFinished:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385234161.487134"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "94"
-         endingLineNumber = "94"
-         landmarkName = "-requestFinished:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385235644.645541"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "108"
-         endingLineNumber = "108"
-         landmarkName = "-numberOfSectionsInTableView:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385235644.645541"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "114"
-         endingLineNumber = "114"
-         landmarkName = "-tableView:numberOfRowsInSection:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385235644.645541"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "115"
-         endingLineNumber = "115"
-         landmarkName = "-tableView:numberOfRowsInSection:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385235644.645541"
+         timestampString = "385240740.681243"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "112"
          endingLineNumber = "112"
-         landmarkName = "-tableView:numberOfRowsInSection:"
+         landmarkName = "-numberOfSectionsInTableView:"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -112,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385234161.487134"
+         timestampString = "385240740.681243"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "82"
-         endingLineNumber = "82"
+         startingLineNumber = "83"
+         endingLineNumber = "83"
          landmarkName = "-requestFinished:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -125,12 +47,194 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
-         timestampString = "385235644.645541"
+         timestampString = "385240740.681243"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "109"
-         endingLineNumber = "109"
-         landmarkName = "-numberOfSectionsInTableView:"
+         startingLineNumber = "86"
+         endingLineNumber = "86"
+         landmarkName = "-requestFinished:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240740.681243"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "100"
+         endingLineNumber = "100"
+         landmarkName = "-requestFinished:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240740.681243"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "106"
+         endingLineNumber = "106"
+         landmarkName = "-didReceiveMemoryWarning"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240740.681243"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "107"
+         endingLineNumber = "107"
+         landmarkName = "-didReceiveMemoryWarning"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240740.681243"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "104"
+         endingLineNumber = "104"
+         landmarkName = "-didReceiveMemoryWarning"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240740.681243"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "74"
+         endingLineNumber = "74"
+         landmarkName = "-requestFinished:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240740.681243"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "101"
+         endingLineNumber = "101"
+         landmarkName = "-requestFinished:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240735.738854"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "47"
+         endingLineNumber = "47"
+         landmarkName = "-awakeFromNib"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240761.158157"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "60"
+         endingLineNumber = "60"
+         landmarkName = "-viewDidLoad"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/MenuMasterViewController.m"
+         timestampString = "385240834.756329"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "65"
+         endingLineNumber = "65"
+         landmarkName = "-requestFinished:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
+         timestampString = "385244434.693867"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "24"
+         endingLineNumber = "24"
+         landmarkName = "-configureView"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
+         timestampString = "385249288.979318"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "72"
+         endingLineNumber = "72"
+         landmarkName = "-numberOfComponentsInPickerView:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
+         timestampString = "385249288.979318"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "77"
+         endingLineNumber = "77"
+         landmarkName = "-pickerView:numberOfRowsInComponent:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.h"
+         timestampString = "385243957.653527"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "14"
+         endingLineNumber = "14"
+         landmarkName = "menuItem"
+         landmarkType = "19">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
+         timestampString = "385247772.154465"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "21"
+         endingLineNumber = "21"
+         landmarkName = "-configureView"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

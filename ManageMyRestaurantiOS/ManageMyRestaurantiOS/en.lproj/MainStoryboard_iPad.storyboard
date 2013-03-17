@@ -241,12 +241,12 @@
                     <navigationItem key="navigationItem" title="Edit Details" id="xzq-j4-5xm">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iB0-9b-ARm">
                             <connections>
-                                <segue destination="DmR-GI-MCh" kind="unwind" unwindAction="cancel:" id="fDV-vX-CXw"/>
+                                <action selector="cancel:" destination="3f9-DU-DN0" id="YYh-RK-TYy"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="caW-FD-2Ki">
                             <connections>
-                                <segue destination="DmR-GI-MCh" kind="unwind" unwindAction="done:" id="s7J-fH-NPJ"/>
+                                <action selector="done:" destination="3f9-DU-DN0" id="5Mw-q1-aoa"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -259,7 +259,6 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0f-Uk-OE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="DmR-GI-MCh" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="7312" y="-2137"/>
         </scene>
@@ -630,6 +629,58 @@
     <resources>
         <image name="first.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="AddMenuItemViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMenuItemViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="add:"/>
+                <relationship kind="action" name="addMenuItem:"/>
+                <relationship kind="outlet" name="category" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="description" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="price" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="vegetarian" candidateClass="UICustomSwitch"/>
+            </relationships>
+        </class>
+        <class className="EditMenuDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditMenuDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="categoryPickerView" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="isVegetarianSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="priceTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MenuDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="categoryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="isVegCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MenuMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="refresh"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="UICustomSwitch" superclassName="UISlider">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICustomSwitch.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

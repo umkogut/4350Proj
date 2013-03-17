@@ -12,14 +12,12 @@
 
 @interface MenuDetailViewController : UITableViewController
 @property (strong, nonatomic) MenuItem *menuItem;
+@property (strong, nonatomic) NSMutableArray *categoriesList;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priceLabel;
 @property (weak, nonatomic) IBOutlet UITableViewCell *isVegCell;
-
-- (IBAction)done:(UIStoryboardSegue *)segue;
-- (IBAction)cancel:(UIStoryboardSegue *)segue;
 
 @end

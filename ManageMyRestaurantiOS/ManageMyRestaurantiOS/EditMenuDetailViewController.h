@@ -12,6 +12,7 @@
 @interface EditMenuDetailViewController : UITableViewController
 
 @property (strong, nonatomic) MenuItem *menuItem;
+@property (strong, nonatomic) NSMutableArray *categoryList;
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextField;
 @property (weak, nonatomic) IBOutlet UIPickerView *categoryPickerView;
@@ -20,5 +21,9 @@
 @property (weak, nonatomic) IBOutlet UISwitch *isVegetarianSwitch;
 
 -(void)configureView;
+
+
+- (IBAction)cancel:(id)sender;
+- (IBAction)done:(id)sender;
 
 @end
