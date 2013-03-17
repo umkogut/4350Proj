@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ASIHTTPRequest.h"
+#import "SBJson.h"
 
 @class MenuItem;
 
@@ -22,6 +24,7 @@
 
 -(NSInteger)numCategories;
 -(NSMutableArray *)getListInCategory:(NSInteger)index;
+-(NSString *)categoryAtIndex:(NSInteger)index;
 
 -(void)clearMenu;
 
