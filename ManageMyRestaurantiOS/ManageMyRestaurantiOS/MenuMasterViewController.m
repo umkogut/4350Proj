@@ -34,7 +34,7 @@
     }
     [super awakeFromNib];
     
-    NSURL *url = [NSURL URLWithString:@"http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/getMenu.json"];
+    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/getMenu.json"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setDelegate:self];
     [request startAsynchronous];
@@ -76,7 +76,9 @@
     NSArray *menu = [menuList objectForKey:@"menu"];
     for (NSDictionary *item in menu) {
         NSString *name = [item objectForKey:@"name"];
-        NSString *category = [item objectForKey:@"category"];
+        
+        NSInteger index = [[item objectForKey:@"category"] integerValue]-1;
+        NSString *category = [self.dataController categoryAtIndex:index];
         NSString *description = [item objectForKey:@"description"];
         NSDecimalNumber *price = [item objectForKey:@"price"];
         BOOL isVeg = [[item objectForKey:@"isVeg"] boolValue];
@@ -125,7 +127,7 @@
 }
 
 // populates each cell with data for the Menu
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {    
     
     static NSString *CellIdentifier = @"MenuItemCell";    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
