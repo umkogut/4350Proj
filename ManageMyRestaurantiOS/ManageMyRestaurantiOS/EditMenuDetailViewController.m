@@ -26,10 +26,10 @@
 -(void)configureView {
     MenuItem *item = self.menuItem;
     
-    self.nameTextField.text = item.name;
-    
-    self.descriptionTextField.text = item.description;
-    self.priceTextField.text = [NSString stringWithFormat:@"%0.2f", item.price];
+    [self.nameTextField setText:item.name];    
+    [self.descriptionTextField setText:item.description];    
+    [self.priceTextField setText:[NSString stringWithFormat:@"%0.2f", [item.price floatValue]]];    
+    [self.isVegetarianSwitch setOn:item.isVegetarian];
 }
 
 - (void)viewDidLoad
