@@ -7,6 +7,7 @@
 //
 
 #import "AddMenuItemViewController.h"
+#import "defines.h"
 
 @interface AddMenuItemViewController ()
 
@@ -66,8 +67,7 @@
     
     //NSLog(jsonCommand);
     
-    //Development
-    NSURL *url = [NSURL URLWithString:@"http://ec2-23-22-29-187.compute-1.amazonaws.com:6543/addMenuItem"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/addMenuItem", serverURL]];
     
     //Production
     //NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
