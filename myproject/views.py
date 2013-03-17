@@ -152,13 +152,13 @@ def editMenuItem_view(request):
 def getMenuName_view(request):
 	print request
 	menuItem = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
-	jsonString = "{"
+	jsonString = "["
 	for i in range(len(menuItem)):
 		if i < (len(menuItem)-1):
-			jsonString = jsonString + "\"" + str(menuItem[i].menuID) + "\": \"" + menuItem[i].name + "\","
+			jsonString = jsonString + '{"menuName": "' + menuItem[i].name + '"},'
 		else:
-			jsonString = jsonString + "\"" + str(menuItem[i].menuID) + "\": \"" + menuItem[i].name + "\""
-	jsonString = jsonString + "}"
+			jsonString = jsonString + '{"menuName": "' + menuItem[i].name + '"}'
+	jsonString = jsonString + "]"
 	print jsonString
 	return jsonString
 
