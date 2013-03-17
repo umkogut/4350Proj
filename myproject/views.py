@@ -171,24 +171,28 @@ def getOrders_view(request):
 		if (orders[i].tableNum not in tableNums):
 			tableNums.append(orders[i].tableNum)
 	
-	jsonOrder = '{'
+	jsonOrder = '['
 	for i in range(len(tableNums)):
 		order = DBSession.query(Order).filter_by(tableNum=tableNums[i]).group_by(Order.orderID).all()
-		jsonOrder = jsonOrder + '"table' + str(order[0].tableNum) + '": '
+		jsonOrder = jsonOrder + '{"tableNum": ' + str(order[0].tableNum) + ', "orders": '
 		if len(order) > 1:
 			jsonOrder = jsonOrder + '['
 		for n in range(len(order)):
 			menuItem = DBSession.query(MenuItem).filter_by(menuID=order[n].menuItem).first()
 			category = DBSession.query(MenuCategory).filter_by(catID=menuItem.category).first()
-			if (n < (len(order)-1) or (len(order) == 1 and i < (len(tableNums)-1))):
-				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name +'", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"},'
+			if (len(order) == 0 or n >= (len(order)-1)):
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name +'", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"}'
 			else:
-				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name + '", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"}'
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name + '", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"},'
 		if (i < (len(tableNums)-1) and len(order) > 1):
-			jsonOrder = jsonOrder + '],'
+			jsonOrder = jsonOrder + ']},'
+		elif (i < (len(tableNums)-1) and len(order) == 1):
+			jsonOrder = jsonOrder + '},'
 		elif len(order) > 1:
-			jsonOrder = jsonOrder + ']'
-	jsonOrder = jsonOrder + '}'
+			jsonOrder = jsonOrder + ']}'
+		elif len(order) == 1:
+			jsonOrder = jsonOrder + '}'
+	jsonOrder = jsonOrder + ']'
 	print jsonOrder
 	return jsonOrder
 			
@@ -222,5 +226,6 @@ def getMenu_view(request):
 		else:
 			jsonMenu = jsonMenu + '{"catID": ' + str(categories[i].catID) + ', "name": "' + categories[i].name + '"}'
 	jsonMenu = jsonMenu + ']}'
+	print jsonMenu
 	return jsonMenu
 
