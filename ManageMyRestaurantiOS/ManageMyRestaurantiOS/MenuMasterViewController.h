@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
+#import "SBJson.h"
 
 @class MenuItemDataController;
 @class MenuDetailViewController;

@@ -12,14 +12,17 @@
 
 @interface MenuItemDataController : NSObject
 
-@property (nonatomic, copy) NSMutableArray *masterMenuItemList;
-@property (nonatomic, copy) NSMutableArray *categoryList;
+@property (nonatomic) NSMutableArray *masterMenuItemList;
+@property (nonatomic) NSMutableArray *categoryList;
 
 -(NSUInteger)countOfList;
 -(MenuItem *)objectInListAtIndex:(NSUInteger)index;
 -(void)addMenuItem:(MenuItem *)menuItem;
+-(void)addCategory:(NSString *)category;
 
 -(NSInteger)numCategories;
 -(NSMutableArray *)getListInCategory:(NSInteger)index;
+
+-(void)clearMenu;
 
 @end
