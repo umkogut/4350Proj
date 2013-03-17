@@ -52,18 +52,21 @@
 
 - (IBAction)addMenuItem:(id)sender {
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
-    NSString *row = [NSString stringWithFormat:@"%d", [self.category selectedRowInComponent:0]];
+    NSString *row = [NSString stringWithFormat:@"%d", [self.category selectedRowInComponent:0] + 1];
     
     NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                              self.itemName.text, @"name",
                              row, @"category",
                              self.description.text, @"description",
                              self.price.text, @"price",
-                             @"True", @"isVeg",
+                             @"TRUE", @"isVeg",
+                             @"", @"image",
                              nil];
     NSString *jsonCommand = [jsonWriter stringWithObject:json];
     
-    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem.json"];
+    NSLog(jsonCommand);
+    
+    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     
     //[request addRequestHeader:@"User-Agent" value:@"ASIHTTPRequest"];
