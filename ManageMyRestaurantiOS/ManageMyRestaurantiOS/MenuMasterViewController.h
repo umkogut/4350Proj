@@ -17,5 +17,7 @@
 @property (strong, nonatomic) MenuItemDataController *dataController;
 @property (strong, nonatomic) MenuDetailViewController *detailViewController;
 
+- (IBAction)cancel:(UIStoryboardSegue *)segue;
+
 
 @end
