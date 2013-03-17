@@ -70,8 +70,8 @@
                                             <subviews>
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="999" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaQ-R6-haZ">
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="90" id="5wJ-f7-Huo"/>
                                                         <constraint firstAttribute="height" constant="21" id="ofl-bH-tet"/>
+                                                        <constraint firstAttribute="width" constant="120" id="ypG-X4-S8U"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -92,8 +92,8 @@
                                         </view>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="R9S-YB-jA1" secondAttribute="trailing" constant="20" type="default" id="012-XF-DPR"/>
+                                            <constraint firstItem="R9S-YB-jA1" firstAttribute="leading" secondItem="vaQ-R6-haZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="C3N-x4-xrn"/>
                                             <constraint firstItem="vaQ-R6-haZ" firstAttribute="leading" secondItem="GVf-DH-JHu" secondAttribute="leading" constant="20" type="default" id="GJd-jm-iW3"/>
-                                            <constraint firstItem="R9S-YB-jA1" firstAttribute="leading" secondItem="vaQ-R6-haZ" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="O1J-Fh-168"/>
                                             <constraint firstItem="R9S-YB-jA1" firstAttribute="baseline" secondItem="vaQ-R6-haZ" secondAttribute="baseline" type="default" id="TVD-5S-R3b"/>
                                             <constraint firstItem="R9S-YB-jA1" firstAttribute="centerY" secondItem="GVf-DH-JHu" secondAttribute="centerY" type="default" id="dWR-I6-Kri"/>
                                         </constraints>
@@ -108,18 +108,22 @@
                                                 <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWP-NE-vKz">
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="3Y1-AU-CPT"/>
-                                                        <constraint firstAttribute="width" constant="90" id="udW-Gm-TXC"/>
+                                                        <constraint firstAttribute="width" constant="120" id="82H-4l-z9p"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
-                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ik-A6-0bF"/>
+                                                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ik-A6-0bF">
+                                                    <connections>
+                                                        <outlet property="delegate" destination="3f9-DU-DN0" id="RPn-lR-BSI"/>
+                                                    </connections>
+                                                </pickerView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="1ik-A6-0bF" firstAttribute="leading" secondItem="HWP-NE-vKz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="5Pw-Ow-8Zm"/>
+                                            <constraint firstItem="1ik-A6-0bF" firstAttribute="leading" secondItem="HWP-NE-vKz" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="ANV-zG-fMF"/>
                                             <constraint firstItem="HWP-NE-vKz" firstAttribute="leading" secondItem="51c-Fn-MGy" secondAttribute="leading" constant="20" type="default" id="QER-cg-SuA"/>
                                             <constraint firstItem="1ik-A6-0bF" firstAttribute="centerY" secondItem="51c-Fn-MGy" secondAttribute="centerY" type="default" id="Wed-hq-8Gj"/>
                                             <constraint firstItem="1ik-A6-0bF" firstAttribute="top" secondItem="HWP-NE-vKz" secondAttribute="top" type="default" id="eB2-Wc-Jpa"/>
@@ -145,6 +149,9 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jor-DJ-Fpa">
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="3f9-DU-DN0" id="oKY-Na-jc4"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -173,11 +180,14 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 </label>
+                                                <switch opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XLB-hU-DLk"/>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <constraints>
-                                            <constraint firstItem="n8W-FZ-MLU" firstAttribute="top" secondItem="ykn-0P-M5j" secondAttribute="top" constant="11" id="8bv-Ec-7sw"/>
+                                            <constraint firstItem="XLB-hU-DLk" firstAttribute="top" secondItem="ykn-0P-M5j" secondAttribute="top" constant="8" id="6eq-Px-uoS"/>
+                                            <constraint firstItem="XLB-hU-DLk" firstAttribute="leading" secondItem="n8W-FZ-MLU" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="O7L-Tt-3Xq"/>
+                                            <constraint firstItem="XLB-hU-DLk" firstAttribute="centerY" secondItem="n8W-FZ-MLU" secondAttribute="centerY" type="default" id="REe-hP-xjt"/>
                                             <constraint firstItem="n8W-FZ-MLU" firstAttribute="leading" secondItem="ykn-0P-M5j" secondAttribute="leading" constant="20" type="default" id="ekg-eb-MJn"/>
                                         </constraints>
                                     </tableViewCell>
@@ -203,6 +213,9 @@
                                                     </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
+                                                    <connections>
+                                                        <outlet property="delegate" destination="3f9-DU-DN0" id="kI6-Rg-1ck"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -224,8 +237,19 @@
                                 <segue destination="DmR-GI-MCh" kind="unwind" unwindAction="cancel:" id="fDV-vX-CXw"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="caW-FD-2Ki"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="caW-FD-2Ki">
+                            <connections>
+                                <segue destination="DmR-GI-MCh" kind="unwind" unwindAction="done:" id="s7J-fH-NPJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="categoryPickerView" destination="1ik-A6-0bF" id="ibO-4o-E90"/>
+                        <outlet property="descriptionTextField" destination="Jor-DJ-Fpa" id="jrR-KV-C4M"/>
+                        <outlet property="isVegetarianSwitch" destination="XLB-hU-DLk" id="vFg-2C-Yk8"/>
+                        <outlet property="nameTextField" destination="R9S-YB-jA1" id="44T-ej-g2e"/>
+                        <outlet property="priceTextField" destination="Zit-Av-yP9" id="Lai-UL-VSP"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0f-Uk-OE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="DmR-GI-MCh" userLabel="Exit" sceneMemberID="exit"/>
@@ -524,7 +548,7 @@
                     <navigationItem key="navigationItem" title="Details" id="fhE-as-9SB">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="saA-Il-SWr">
                             <connections>
-                                <segue destination="Uvo-d3-TpW" kind="modal" id="Snw-pL-o30"/>
+                                <segue destination="Uvo-d3-TpW" kind="modal" identifier="EditMenuItemDetails" id="Snw-pL-o30"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -603,6 +627,7 @@
         <class className="AddMenuItemViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMenuItemViewController.h"/>
             <relationships>
+                <relationship kind="action" name="add:"/>
                 <relationship kind="action" name="addMenuItem:"/>
                 <relationship kind="outlet" name="category" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="description" candidateClass="UITextField"/>
@@ -613,12 +638,18 @@
         </class>
         <class className="EditMenuDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/EditMenuDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="categoryPickerView" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="isVegetarianSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="priceTextField" candidateClass="UITextField"/>
+            </relationships>
         </class>
         <class className="MenuDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuDetailViewController.h"/>
             <relationships>
                 <relationship kind="action" name="EditMenuItemDetails:"/>
-                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="categoryLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
@@ -629,6 +660,9 @@
         </class>
         <class className="MenuMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>

@@ -23,9 +23,17 @@
 //    return self;
 //}
 
+-(void)configureView {
+    MenuItem *item = self.menuItem;
+    
+    self.nameTextField.text = item.name;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self configureView];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
