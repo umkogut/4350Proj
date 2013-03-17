@@ -372,6 +372,7 @@
                     <navigationItem key="navigationItem" id="SXx-0t-aDB"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vnu-pY-wXA">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.09803922474" green="0.3803921938" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="3f9-DU-DN0" kind="relationship" relationship="rootViewController" id="0ol-zE-Q3Y"/>
@@ -537,9 +538,10 @@
         <scene sceneID="pLt-An-zgf">
             <objects>
                 <navigationController id="RpJ-bx-hNg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Menu" id="5q1-Q8-0Oq"/>
+                    <tabBarItem key="tabBarItem" title="Menu" image="first.png" id="5q1-Q8-0Oq"/>
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="rX2-FR-Sq4">
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.09803922474" green="0.3803921938" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="vHS-Pt-B9c" kind="relationship" relationship="rootViewController" id="T57-PL-X97"/>
@@ -588,10 +590,14 @@
             <point key="canvasLocation" x="5337" y="-3390"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="first.png" width="30" height="30"/>
+    </resources>
     <classes>
         <class className="AddMenuItemViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMenuItemViewController.h"/>
             <relationships>
+                <relationship kind="action" name="addMenuItem:"/>
                 <relationship kind="outlet" name="category" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="description" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
