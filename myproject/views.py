@@ -98,12 +98,19 @@ def getMenuItem_view(request):
 	else:
 		return {'isSuccess': 0}
 
-@view_config(route_name='addMenuItem')
+@view_config(renderer='json', route_name='addMenuItem')
 @view_config(renderer='json', name='addMenuItem.json')
 def addMenuItem_view(request):
 	print request
 
 	item = request.json_body
+
+	isVegetarian = item['isVeg']
+        if isVegetarian == 'TRUE':
+                item['isVeg'] = True
+        elif isVegetarian == 'FALSE':
+                item['isVeg'] = False;
+
 	newItem = MenuItem(name=item['name'], category=item['category'], price=item['price'], isVeg=item['isVeg'], isActive=True, description=item['description'], image=item['image'])
 	existingItem = DBSession.query(MenuItem).filter_by(name=item['name']).first()
 	if existingItem:
