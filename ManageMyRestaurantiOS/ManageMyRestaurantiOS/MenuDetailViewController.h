@@ -22,6 +22,5 @@
 @property (weak, nonatomic) IBOutlet UITableViewCell *isVegCell;
 
 - (IBAction)done:(UIStoryboardSegue *)segue;
-- (IBAction)cancel:(UIStoryboardSegue *)segue;
 
 @end
