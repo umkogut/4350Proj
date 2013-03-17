@@ -67,22 +67,26 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+    return [self.dataController numCategories];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.dataController countOfList];
+    NSMutableArray *list = [self.dataController getListInCategory:section];
+    
+    return [list count];
 }
 
+// populates each cell with data for the Menu
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"MenuItemCell";
-    
+    static NSString *CellIdentifier = @"MenuItemCell";    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    MenuItem *itemAtIndex = [self.dataController objectInListAtIndex:indexPath.row];
-
+    NSMutableArray *sectionList = [self.dataController getListInCategory:indexPath.section];    
+    MenuItem *itemAtIndex = [sectionList objectAtIndex:indexPath.row];    
+    
     [[cell textLabel] setText:itemAtIndex.name];
+    
     return cell;
 }
 
@@ -90,6 +94,10 @@
 {
     // Return NO if you do not want the specified item to be editable.
     return NO;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [self.dataController.categoryList objectAtIndex:section];
 }
 
 /*
@@ -130,10 +138,13 @@
  */
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([[segue identifier] isEqualToString:@"ShowMenuItemDetails"]) {
+        
         MenuDetailViewController *detailViewController = [segue destinationViewController];
         
-        detailViewController.menuItem = [self.dataController objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        NSMutableArray *listInCategory = [self.dataController getListInCategory:[self.tableView indexPathForSelectedRow].section];
+        detailViewController.menuItem = [listInCategory objectAtIndex:[self.tableView indexPathForSelectedRow].row];
     }
 }
 

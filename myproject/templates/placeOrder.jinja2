@@ -7,11 +7,16 @@
     <div class="row-fluid">
       <div class="span4">
         <div class="well" id="group">
-          <select id="orderlist{{table}}" multiple>
+          <select id="orderlist{{table}}" style="width:100%" multiple>
             {% for item in menuItems %}
             <option value="{{item.menuID}}">{{item.name}}</option>
             {% endfor %}
           </select>
+        </div>
+        <div class="well" id="comments">
+          {% for item in menuItems %}
+          <input id="{{table}}_item{{item.menuID}}" type="text" placeholder="{{item.name}} comments..."></input>
+          {% endfor %}
         </div>
         <button class="btn" id="submit{{table}}" onclick="submitOrder({{table}})"=>Submit</button>
       </div>

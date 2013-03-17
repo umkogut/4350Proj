@@ -3,11 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>FoundWorkingCopyPaths</key>
-	<array/>
+	<array>
+		<string>/home/student/umwur/comp4350/4350Proj</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/json-framework</string>
+	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2013-03-10T00:02:52Z</date>
+	<date>2013-03-16T21:36:24Z</date>
 	<key>MissingFilePaths</key>
-	<array/>
+	<array>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchBlueBg.png</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.h</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchOffPlain.png</string>
+		<string>/home/student/umchmie2/Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.h</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchThumb.png</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.m</string>
+	</array>
 	<key>Version</key>
 	<integer>4</integer>
 </dict>
