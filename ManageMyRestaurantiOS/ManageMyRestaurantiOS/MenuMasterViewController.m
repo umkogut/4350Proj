@@ -27,12 +27,18 @@
     }
     [super awakeFromNib];
     
+    NSURL *url = [NSURL URLWithString:@"http://ec2-23-23-59-159.compute-1.amazonaws.com:6543/getMenu.json"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    
     self.dataController = [[MenuItemDataController alloc] init];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     
     /*
@@ -43,7 +49,42 @@
      self.detailViewController = (testDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
      */
 }
-
+- (void)requestFinished:(ASIHTTPRequest *)request {
+    NSString *responseString =[request responseString];
+    responseString = [responseString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
+    responseString = [responseString stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:@""];
+    NSLog(@"Response: %@", responseString);
+    
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSDictionary *menuList = [jsonParser objectWithString:responseString];
+    NSLog(@"%@", menuList);
+    
+    [self.dataController clearMenu];
+    
+    NSArray *categories = [menuList objectForKey:@"categories"];
+    for (NSDictionary *category in categories) {
+        [self.dataController addCategory:[category objectForKey:@"name"]];
+    }
+    
+    NSArray *menu = [menuList objectForKey:@"menu"];
+    for (NSDictionary *item in menu) {
+        NSString *name = [item objectForKey:@"name"];
+        NSString *category = [item objectForKey:@"category"];
+        NSString *description = [item objectForKey:@"description"];
+        NSDecimalNumber *price = [item objectForKey:@"price"];
+        BOOL isVeg = [[item objectForKey:@"isVeg"] boolValue];
+        
+        MenuItem *item = [[MenuItem alloc] initWithName:name
+                                               category:category
+                                            description:description
+                                                  price:price
+                                           isVegetarian:isVeg];
+        [self.dataController addMenuItem:item];
+    }
+    
+    [self.tableView reloadData];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -63,7 +104,7 @@
  }
  */
 
-#pragma mark - Table View
+#pragma mark - Table View   
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {

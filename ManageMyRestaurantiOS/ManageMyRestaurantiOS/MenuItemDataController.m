@@ -46,10 +46,12 @@
 // initialize the default categories list
 -(void)initializeDefaultCategoriesList {
     NSMutableArray *defaultList = [[NSMutableArray alloc] init];
-    [defaultList addObject:@"Category 1"];
-    [defaultList addObject:@"Category 2"];
-    
     self.categoryList = defaultList;
+    [self.categoryList addObject:@"Category 1"];
+    [self.categoryList addObject:@"Category 2"];
+    
+    
+    //self.categoryList = defaultList;
 }
 
 // get number of categories
@@ -57,6 +59,10 @@
     return [self.categoryList count];
 }
 
+// adds a new category to the list
+-(void)addCategory:(NSString *)newCategory {
+    [self.categoryList addObject:newCategory];
+}
 
 // get the list of menu items in a given category
 -(NSMutableArray *)getListInCategory:(NSInteger)index {
@@ -94,6 +100,11 @@
 // adds a new item to the list (does not manipulate the database)
 -(void)addMenuItem:(MenuItem *)menuItem {
     [self.masterMenuItemList addObject:menuItem];
+}
+
+-(void)clearMenu {
+    [self.categoryList removeAllObjects];
+    [self.masterMenuItemList removeAllObjects];
 }
 
 @end
