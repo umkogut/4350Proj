@@ -23,9 +23,20 @@
 //    return self;
 //}
 
+-(void)configureView {
+    MenuItem *item = self.menuItem;
+    
+    self.nameTextField.text = item.name;
+    
+    self.descriptionTextField.text = item.description;
+    self.priceTextField.text = [NSString stringWithFormat:@"%0.2f", item.price];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self configureView];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
