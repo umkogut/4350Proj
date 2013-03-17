@@ -7,6 +7,7 @@
 //
 
 #import "AddMenuItemViewController.h"
+#import "defines.h"
 
 @interface AddMenuItemViewController ()
 
@@ -50,12 +51,59 @@
     return [categories objectAtIndex:row];
 }
 
--(id)addMenuItem {
-    //send request to server
+- (IBAction)addMenuItem:(id)sender {
+    SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
+    NSString *row = [NSString stringWithFormat:@"%d", [self.category selectedRowInComponent:0] + 1];
     
-    //success message?
-    //reset interface?
-    return nil;
+    NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
+                             self.itemName.text, @"name",
+                             row, @"category",
+                             self.description.text, @"description",
+                             self.price.text, @"price",
+                             @"TRUE", @"isVeg",
+                             @"", @"image",
+                             nil];
+    NSString *jsonCommand = [jsonWriter stringWithObject:json];
+    
+    //NSLog(jsonCommand);
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/addMenuItem", serverURL]];
+    
+    //Production
+    //NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    
+    //[request addRequestHeader:@"User-Agent" value:@"ASIHTTPRequest"];
+    [request addRequestHeader:@"Content-Type" value:@"application/json"];
+    
+    [request setRequestMethod:@"POST"];
+    [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [request setDelegate:self];
+    [request startSynchronous];
+    
+    NSString *JsonData = [request responseString];
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSDictionary *jsonObject = [jsonParser objectWithString:JsonData];
+    NSInteger retVal = [[jsonObject objectForKey:@"isSuccess"] integerValue];
+    
+    if (retVal == 1)
+    {
+        //success
+        
+    }
+    else
+    {
+        //failed - can't know why yet. Will work that out later
+        UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Adding new menu item failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [failedMsg show];
+    }
+    
+    NSLog([request responseString]);
 }
+
+- (IBAction)add:(id)sender {
+}
+
 
 @end

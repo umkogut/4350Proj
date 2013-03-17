@@ -5,63 +5,12 @@
 {% block body %}
 <div class="container">
 	<div class="tabbable tabs-left">
-		<ul class="nav nav-tabs">
-			<li class="active"><a href="#order1" data-toggle="tab">Order 1</a></li>
-			<li><a href="#order2" data-toggle="tab">Order 2</a></li>
+		<ul class="nav nav-tabs" id="tableNums">
 		</ul>
-		<div class="tab-content">
-			<div class="tab-pane active" id="order1">
-				<form>
-					<fieldset>
-						<legend>Order 1</legend>
-						<div class="container-fluid">
-							<div class="row-fluid">
-								<div class="span4">
-									<dl>
-										<dt>Appetizers</dt>
-											<dd>
-												<label class="checkbox">
-													<input type="checkbox" class="appetizer" id="app1">Appetizer 1
-												</label>
-											</dd>
-									</dl>
-								</div> <!-- span4 -->
-								<div class="span4">
-									<dl>
-										<dt>Entrees</dt>
-											<dd>
-												<label class="checkbox">
-													<input type="checkbox" class="entree" id="entree1" disabled="false">Entree 1
-												</label>
-											</dd>
-											<dd>
-												<label class="checkbox">
-													<input type="checkbox" class="entree" id="entree2" disabled="false">Entree 2
-												</label>
-											</dd>
-									</dl>
-								</div> <!-- span4 -->
-								<div class="span4">
-									<dl>
-										<dt>Dessert</dt>
-											<dd>
-												<label class="checkbox">
-													<input type="checkbox" class="dessert" id="dessert1" disabled="false">Dessert 1
-												</label>
-											</dd>
-									</dl>
-								</div> <!-- span4 -->
-							</div> <!-- row-fluid -->
-							<button type="submit" class="btn">Submit</button>
-						</div> <!-- container-fluid -->
-					</fieldset>
-				</form>
-			</div> <!-- order 1 -->
-			<div class="tab-pane" id="order2">
-				<p>test2</p>
-			</div> <!-- order 2 -->
+		<div class="tab-content" id="tableContent">
 		</div> <!-- tab-content" -->
 	</div> <!-- tabbable tabs-left -->
+	<label id="result" name="result"></label>
 </div> <!-- container -->
 
 <script src="/static/js/orders.js" type="text/javascript"></script>

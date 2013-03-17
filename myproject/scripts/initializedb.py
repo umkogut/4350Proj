@@ -16,6 +16,7 @@ from ..models import (
     PayMethod,
     UserType,
     User,
+    Order,
     Base,
     )
 

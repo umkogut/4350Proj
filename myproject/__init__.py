@@ -33,7 +33,7 @@ def main(global_config, **settings):
     config.add_route('admin', '/admin')
     config.add_route('about', '/about')
     config.add_route('test', '/test')
-    config.add_route('add_menu_item', '/add_menu_item')
+    config.add_route('addMenuItem', '/addMenuItem')
     config.scan()
     return config.make_wsgi_app()
 

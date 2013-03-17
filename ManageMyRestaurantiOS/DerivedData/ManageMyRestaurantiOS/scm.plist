@@ -4,18 +4,39 @@
 <dict>
 	<key>FoundWorkingCopyPaths</key>
 	<array>
-		<string>/home/student/umchmie2/4350Proj</string>
+		<string>/home/student/umwur/comp4350/4350Proj</string>
 	</array>
 	<key>LastWorkingCopyScanDate</key>
-	<date>2013-03-13T16:43:39Z</date>
+	<date>2013-03-17T18:42:11Z</date>
 	<key>MissingFilePaths</key>
 	<array>
 		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchThumb.png</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParser.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamWriterAccumulator.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamWriterState.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParserAccumulator.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParserState.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamWriter.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonParser.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonParser.m</string>
+		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParser.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParserAdapter.m</string>
 		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamWriterAccumulator.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamTokeniser.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParserAdapter.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamWriterState.m</string>
 		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchOffPlain.png</string>
 		<string>/home/student/umchmie2/Downloads/UICustomSwitch/UICustomSwitch/UICustomSwitch.h</string>
-		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.m</string>
 		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchBlueBg.png</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamTokeniser.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamWriter.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParserState.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJson.h</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonStreamParserAccumulator.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonWriter.m</string>
+		<string>/home/student/umwur/comp4350/4350Proj/ManageMyRestaurantiOS/SBJsonWriter.h</string>
 	</array>
 	<key>Version</key>
 	<integer>4</integer>
