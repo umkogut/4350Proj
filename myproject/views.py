@@ -211,9 +211,10 @@ def getMenu_view(request):
 	jsonMenu = '{"menu": ['
 	for i in range(len(menuItems)):
 		if i < (len(menuItems)-1):
-			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": ' + str(menuItems[i].category) + ', "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"},'
+			category = DBSession.query(MenuCategory).filter_by(catID=menuItems[i].category).first().name
+			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": "' + category + '", "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"},'
 		else:
-			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": ' + str(menuItems[i].category) + ', "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"}'
+			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": "' + category + '", "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"}'
 	jsonMenu = jsonMenu + '], "categories": ['
 	for i in range(len(categories)):
 		if i < (len(categories)-1):
