@@ -8,3 +8,26 @@ MyProject.egg-info/*
 #These files should never have been here in the first place. Just ensuring they don't make a comeback later
 view.py
 menuDB.sqlite
+
+#Ignore the database
+mydatabase.sqlite
+
+#Xcode files to ignore
+.DS_Store
+._.DS_Store
+*/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xactivitylog

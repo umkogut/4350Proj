@@ -8,6 +8,7 @@
 
 #import "MenuDetailViewController.h"
 #import "MenuItem.h"
+#import "EditMenuDetailViewController.h"
 
 @interface MenuDetailViewController ()
 
@@ -31,6 +32,26 @@
     }
 }
 
+- (IBAction)done:(UIStoryboardSegue *)segue
+{
+//    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+//        
+//        EditMenuDetailViewController *controller = [segue sourceViewController];
+//        if (controller.birdSighting) {
+//            [self.dataController addBirdSightingWithSighting:addController.birdSighting];
+//            [[self tableView] reloadData];
+//        }
+//        [self dismissViewControllerAnimated:YES completion:NULL];
+//    }
+}
+
+- (IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+}
+
 // configure the view
 - (void)configureView
 {
@@ -39,6 +60,16 @@
     
     if (item) {
         self.nameLabel.text = item.name;
+        self.categoryLabel.text = item.category;
+        self.descriptionLabel.text = item.description;
+        
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        [formatter setNumberStyle:NSNumberFormatterCurrencyStyle];
+        self.priceLabel.text = [formatter stringFromNumber:item.price];
+        
+        if (item.isVegetarian) {
+            self.isVegCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        }        
     }
 }
 
@@ -55,20 +86,13 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Split view
 
-- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
-{
-    barButtonItem.title = NSLocalizedString(@"Master", @"Master");
-    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
-    self.masterPopoverController = popoverController;
+
+- (IBAction)EditMenuItemDetails:(id)sender {
+    // hide the labels
+    [self.nameLabel setHidden:YES];
+    [self.categoryLabel setHidden:YES];
+    [self.descriptionLabel setHidden:YES];
+    [self.priceLabel setHidden:YES];
 }
-
-- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
-{
-    // Called when the view is shown again in the split view, invalidating the button and popover controller.
-    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
-    self.masterPopoverController = nil;
-}
-
 @end

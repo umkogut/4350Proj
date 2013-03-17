@@ -1,6 +1,7 @@
 import pdb
 import transaction;
 
+from pyramid.renderers import render
 from pyramid.response import Response
 from pyramid.view import view_config
 from jinja2 import Environment, FileSystemLoader
@@ -18,20 +19,22 @@ def my_view(request):
     return {'project': 'MyProject'}
 
 @view_config(route_name='menu', renderer='templates/menu.jinja2')
+@view_config(route_name='menu', xhr=True, renderer='json')
 def cook_view(request):
-    print request
+	print request
 
-    print "Loading the menu"
-    menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
-    menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
-    print menuItems
+	print "Loading the menu"
+	menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
+	menuCategories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
+	print menuItems
 
-    if menuItems is None:
-	print "There is nothing in the menu"
+	if menuItems is None:
+		print "There is nothing in the menu"
 
-    return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
+	return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='placeOrder', renderer='templates/placeOrder.jinja2')
+@view_config(route_name='placeOrder', xhr=True, renderer='json')
 def placeOrder_view(request):
 	print request
 	menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
@@ -39,11 +42,13 @@ def placeOrder_view(request):
 	return {'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
+@view_config(route_name='orders', xhr=True, renderer='json')
 def orders_view(request):
     print request
     return {'project': 'MyProject'}
 
 @view_config(route_name='pos', renderer='templates/pos.jinja2')
+@view_config(route_name='pos', xhr=True, renderer='json')
 def pos_view(request):
     print request
     orders = DBSession.query(Order).group_by(Order.orderID).all()
@@ -59,6 +64,7 @@ def pos_view(request):
     return {'menuItems': menuItems, 'tableNums': tableNums, 'orders': orders, 'project': 'MyProject'}
 
 @view_config(route_name='admin', renderer='templates/admin.jinja2')
+@view_config(route_name='admin', xhr=True, renderer='json')
 def admin_view(request):
     print request
     menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
@@ -67,6 +73,7 @@ def admin_view(request):
     return {'menuCategories': menuCategories, 'menuItems': menuItems, 'project': 'MyProject'}
 
 @view_config(route_name='about', renderer='templates/about.jinja2')
+@view_config(route_name='about', xhr=True, renderer='json')
 def about_view(request):
     print request
     return {'project': 'MyProject'}
@@ -106,6 +113,16 @@ def addMenuItem_view(request):
 		transaction.commit()
 		return {'isSuccess': 1}
 
+@view_config(renderer='json', name='orderStatus.json')
+def orderStatus_view(request):
+	print request
+	orderStatus = request.json_body['orderStatus']
+	for status in orderStatus:
+		order = DBSession.query(Order).filter_by(orderID=status['orderID']).first()
+		order.isComplete = status['isComplete']
+		transaction.commit()
+	return {'isSuccess' : 1}
+
 @view_config(renderer='json', name='editMenuItem.json')
 def editMenuItem_view(request):
 	print request
@@ -137,6 +154,37 @@ def getMenuName_view(request):
 	jsonString = jsonString + "}"
 	print jsonString
 	return jsonString
+
+@view_config(renderer='json', name='getOrders.json')
+def getOrders_view(request):
+	print request
+	tableNums = []
+	orders = DBSession.query(Order).group_by(Order.orderID).all()
+	for i in range(len(orders)):
+		if (orders[i].tableNum not in tableNums):
+			tableNums.append(orders[i].tableNum)
+	
+	jsonOrder = '{'
+	for i in range(len(tableNums)):
+		order = DBSession.query(Order).filter_by(tableNum=tableNums[i]).group_by(Order.orderID).all()
+		jsonOrder = jsonOrder + '"table' + str(order[0].tableNum) + '": '
+		if len(order) > 1:
+			jsonOrder = jsonOrder + '['
+		for n in range(len(order)):
+			menuItem = DBSession.query(MenuItem).filter_by(menuID=order[n].menuItem).first()
+			category = DBSession.query(MenuCategory).filter_by(catID=menuItem.category).first()
+			if (n < (len(order)-1) or (len(order) == 1 and i < (len(tableNums)-1))):
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name +'", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"},'
+			else:
+				jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "category": "' + category.name + '", "menuName": "' + menuItem.name + '", "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"}'
+		if (i < (len(tableNums)-1) and len(order) > 1):
+			jsonOrder = jsonOrder + '],'
+		elif len(order) > 1:
+			jsonOrder = jsonOrder + ']'
+	jsonOrder = jsonOrder + '}'
+	print jsonOrder
+	return jsonOrder
+			
 	
 @view_config(renderer='json', name='placedOrder.json')
 def placedOrder_view(request):
@@ -147,22 +195,3 @@ def placedOrder_view(request):
                 DBSession.add(newOrder)
         transaction.commit()
         return {'isSuccess': 1}
-"""
-Keeping this code around temporarily. Will need to look at it later.
-Just keep pushing it to the bottom when adding new views
-- Marko
-
-@view_config(route_name='fktest', renderer='templates/fktest.jinja2')
-def fktest_view(request):
-    newTestFK = testFK(fkID=1, testID=1)
-    DBSession.add(newTestFK)
-
-    transaction.commit()
-
-    newTestFK2 = testFK(fkID=2, testID=2)
-    DBSession.add(newTestFK2)
-
-    transaction.commit()
-
-    return {'project': 'MyProject'}
-"""
