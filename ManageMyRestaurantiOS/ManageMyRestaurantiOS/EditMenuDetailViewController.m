@@ -23,9 +23,20 @@
 //    return self;
 //}
 
+-(void)configureView {
+    MenuItem *item = self.menuItem;
+    
+    [self.nameTextField setText:item.name];    
+    [self.descriptionTextField setText:item.description];    
+    [self.priceTextField setText:[NSString stringWithFormat:@"%0.2f", [item.price floatValue]]];    
+    [self.isVegetarianSwitch setOn:item.isVegetarian];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self configureView];
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

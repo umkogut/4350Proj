@@ -10,6 +10,7 @@
 #import "MenuDetailViewController.h"
 #import "MenuItemDataController.h"
 #import "MenuItem.h"
+#import "defines.h"
 
 /*
 @interface MenuMasterViewControlViewController ()
@@ -19,6 +20,23 @@
 
 @implementation MenuMasterViewController
 
+- (IBAction)cancel:(UIStoryboardSegue *)segue
+{
+    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
+}
+
+- (IBAction)refresh {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setRequestMethod:@"POST"];
+    [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
+	[request addRequestHeader:@"Accept" value:@"application/json"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
 -(void)awakeFromNib
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -27,12 +45,21 @@
     }
     [super awakeFromNib];
     
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setRequestMethod:@"POST"];
+    [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
+	[request addRequestHeader:@"Accept" value:@"application/json"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+    
     self.dataController = [[MenuItemDataController alloc] init];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
 	// Do any additional setup after loading the view, typically from a nib.
     
     /*
@@ -43,7 +70,44 @@
      self.detailViewController = (testDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
      */
 }
-
+- (void)requestFinished:(ASIHTTPRequest *)request {
+    NSString *responseString =[request responseString];
+    responseString = [responseString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
+    responseString = [responseString stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:@""];
+    NSLog(@"Response: %@", responseString);
+    
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSDictionary *menuList = [jsonParser objectWithString:responseString];
+    NSLog(@"%@", menuList);
+    
+    [self.dataController clearMenu];
+    
+    NSArray *categories = [menuList objectForKey:@"categories"];
+    for (NSDictionary *category in categories) {
+        [self.dataController addCategory:[category objectForKey:@"name"]];
+    }
+    
+    NSArray *menu = [menuList objectForKey:@"menu"];
+    for (NSDictionary *item in menu) {
+        NSString *name = [item objectForKey:@"name"];
+        
+        NSInteger index = [[item objectForKey:@"category"] integerValue]-1;
+        NSString *category = [self.dataController categoryAtIndex:index];
+        NSString *description = [item objectForKey:@"description"];
+        NSDecimalNumber *price = [item objectForKey:@"price"];
+        BOOL isVeg = [[item objectForKey:@"isVeg"] boolValue];
+        
+        MenuItem *item = [[MenuItem alloc] initWithName:name
+                                               category:category
+                                            description:description
+                                                  price:price
+                                           isVegetarian:isVeg];
+        [self.dataController addMenuItem:item];
+    }
+    
+    [self.tableView reloadData];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -51,19 +115,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
- - (void)insertNewObject:(id)sender
- {
- if (!_objects) {
- _objects = [[NSMutableArray alloc] init];
- }
- [_objects insertObject:[NSDate date] atIndex:0];
- NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
- [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
- }
- */
-
-#pragma mark - Table View
+#pragma mark - Table View   
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -77,7 +129,7 @@
 }
 
 // populates each cell with data for the Menu
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {    
     
     static NSString *CellIdentifier = @"MenuItemCell";    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];

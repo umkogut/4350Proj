@@ -34,6 +34,9 @@
 
 - (IBAction)done:(UIStoryboardSegue *)segue
 {
+    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
+        [self dismissViewControllerAnimated:YES completion:NULL];
+    }
 //    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
 //        
 //        EditMenuDetailViewController *controller = [segue sourceViewController];
@@ -86,13 +89,16 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-- (IBAction)EditMenuItemDetails:(id)sender {
-    // hide the labels
-    [self.nameLabel setHidden:YES];
-    [self.categoryLabel setHidden:YES];
-    [self.descriptionLabel setHidden:YES];
-    [self.priceLabel setHidden:YES];
+// does initial stuff before the segue is called
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"EditMenuItemDetails"]) {
+        
+        UINavigationController *navigationController = [segue destinationViewController];
+        EditMenuDetailViewController *editMenuDetailViewController = [navigationController.childViewControllers objectAtIndex:0];
+        
+        editMenuDetailViewController.menuItem = self.menuItem;
+        
+    }
 }
 @end
