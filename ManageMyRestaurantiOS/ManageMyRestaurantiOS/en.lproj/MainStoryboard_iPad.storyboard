@@ -39,6 +39,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Menu" id="klX-h1-WmO">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="DCS-wU-6gh">
+                            <connections>
+                                <action selector="refresh" destination="vHS-Pt-B9c" id="Tb6-ba-T5f"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KIs-dk-xV3">
                             <connections>
                                 <segue destination="xUS-bu-LvF" kind="modal" id="sr3-FX-RVl"/>

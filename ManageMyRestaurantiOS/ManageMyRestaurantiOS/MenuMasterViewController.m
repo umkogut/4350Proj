@@ -26,6 +26,16 @@
     }
 }
 
+- (IBAction)refresh {
+    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/getMenu.json"];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setRequestMethod:@"POST"];
+    [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
+	[request addRequestHeader:@"Accept" value:@"application/json"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
 -(void)awakeFromNib
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -36,6 +46,9 @@
     
     NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/getMenu.json"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setRequestMethod:@"POST"];
+    [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
+	[request addRequestHeader:@"Accept" value:@"application/json"];
     [request setDelegate:self];
     [request startAsynchronous];
     
