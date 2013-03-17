@@ -64,9 +64,13 @@
                              nil];
     NSString *jsonCommand = [jsonWriter stringWithObject:json];
     
-    NSLog(jsonCommand);
+    //NSLog(jsonCommand);
     
-    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
+    //Development
+    NSURL *url = [NSURL URLWithString:@"http://ec2-23-22-29-187.compute-1.amazonaws.com:6543/addMenuItem"];
+    
+    //Production
+    //NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     
     //[request addRequestHeader:@"User-Agent" value:@"ASIHTTPRequest"];
@@ -78,9 +82,28 @@
     [request setDelegate:self];
     [request startSynchronous];
     
+    NSString *JsonData = [request responseString];
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSDictionary *jsonObject = [jsonParser objectWithString:JsonData];
+    NSInteger retVal = [[jsonObject objectForKey:@"isSuccess"] integerValue];
+    
+    if (retVal == 1)
+    {
+        //success
+        
+    }
+    else
+    {
+        //failed - can't know why yet. Will work that out later
+        UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Adding new menu item failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [failedMsg show];
+    }
+    
     NSLog([request responseString]);
 }
 
 - (IBAction)add:(id)sender {
 }
+
+
 @end
