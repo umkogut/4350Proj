@@ -91,6 +91,7 @@ def getMenuItem_view(request):
 	else:
 		return {'isSuccess': 0}
 
+@view_config(route_name='addMenuItem')
 @view_config(renderer='json', name='addMenuItem.json')
 def addMenuItem_view(request):
 	print request
