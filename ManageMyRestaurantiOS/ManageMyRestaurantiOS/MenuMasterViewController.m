@@ -10,6 +10,7 @@
 #import "MenuDetailViewController.h"
 #import "MenuItemDataController.h"
 #import "MenuItem.h"
+#import "defines.h"
 
 /*
 @interface MenuMasterViewControlViewController ()
@@ -27,7 +28,7 @@
 }
 
 - (IBAction)refresh {
-    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/getMenu.json"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setRequestMethod:@"POST"];
     [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
@@ -44,7 +45,7 @@
     }
     [super awakeFromNib];
     
-    NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/getMenu.json"];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setRequestMethod:@"POST"];
     [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];

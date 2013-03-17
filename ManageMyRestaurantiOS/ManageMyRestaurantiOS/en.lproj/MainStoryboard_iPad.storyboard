@@ -386,6 +386,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Item" style="done" id="2ar-52-Fd0">
                             <color key="tintColor" red="0.15021037585662966" green="0.50852997448979598" blue="0.13630492007774928" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addMenuItem:" destination="2xm-5h-ADu" id="TcB-gU-wSM"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
