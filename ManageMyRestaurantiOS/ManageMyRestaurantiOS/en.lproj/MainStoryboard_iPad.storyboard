@@ -41,7 +41,7 @@
                     <navigationItem key="navigationItem" title="Menu" id="klX-h1-WmO">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KIs-dk-xV3">
                             <connections>
-                                <segue destination="2xm-5h-ADu" kind="push" id="sr3-FX-RVl"/>
+                                <segue destination="xUS-bu-LvF" kind="modal" id="sr3-FX-RVl"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -237,13 +237,14 @@
             <objects>
                 <viewController id="2xm-5h-ADu" customClass="AddMenuItemViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yju-cV-wGe">
-                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="bNG-Sv-Q5L" customClass="UICustomSwitch">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="114" id="8Bz-WE-WiU"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" red="0.094117656350135803" green="0.34509804844856262" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
                             </slider>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="te5-sQ-2Iq">
                                 <constraints>
@@ -348,7 +349,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Add Menu Item" id="hr6-P3-IFd">
-                        <barButtonItem key="rightBarButtonItem" title="Add Item" style="done" id="2ar-52-Fd0"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add Item" style="done" id="2ar-52-Fd0">
+                            <color key="tintColor" red="0.15021037585662966" green="0.50852997448979598" blue="0.13630492007774928" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="category" destination="JP5-v7-dIa" id="Fze-td-l9Z"/>
@@ -360,7 +363,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8YV-Nm-GgD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5337" y="-3390"/>
+            <point key="canvasLocation" x="6311" y="-3390"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="WAz-gL-WDb">
@@ -563,6 +566,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4RC-nU-h1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1317" y="-1255"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="OVF-jo-Gh8">
+            <objects>
+                <navigationController id="xUS-bu-LvF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="wdx-Gq-tRK"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="v4F-JZ-BSw">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.094117656349999995" green="0.34509804840000002" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2xm-5h-ADu" kind="relationship" relationship="rootViewController" id="xrN-jv-N7N"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0p-dK-hWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5337" y="-3390"/>
         </scene>
     </scenes>
     <classes>
