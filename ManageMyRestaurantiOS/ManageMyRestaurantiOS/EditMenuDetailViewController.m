@@ -27,6 +27,9 @@
     MenuItem *item = self.menuItem;
     
     self.nameTextField.text = item.name;
+    
+    self.descriptionTextField.text = item.description;
+    self.priceTextField.text = [NSString stringWithFormat:@"%0.2f", item.price];
 }
 
 - (void)viewDidLoad
