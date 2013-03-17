@@ -20,6 +20,6 @@
 @property (strong, nonatomic) MenuDetailViewController *detailViewController;
 
 - (IBAction)cancel:(UIStoryboardSegue *)segue;
-
+- (IBAction)refresh;
 
 @end
