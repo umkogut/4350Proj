@@ -356,6 +356,9 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Add Item" style="done" id="2ar-52-Fd0">
                             <color key="tintColor" red="0.15021037585662966" green="0.50852997448979598" blue="0.13630492007774928" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="addMenuItem:" destination="2xm-5h-ADu" id="TcB-gU-wSM"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -603,6 +606,7 @@
         <class className="AddMenuItemViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMenuItemViewController.h"/>
             <relationships>
+                <relationship kind="action" name="add:"/>
                 <relationship kind="action" name="addMenuItem:"/>
                 <relationship kind="outlet" name="category" candidateClass="UIPickerView"/>
                 <relationship kind="outlet" name="description" candidateClass="UITextField"/>
@@ -618,7 +622,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuDetailViewController.h"/>
             <relationships>
                 <relationship kind="action" name="EditMenuItemDetails:"/>
-                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="action" name="done:" candidateClass="UIStoryboardSegue"/>
                 <relationship kind="outlet" name="categoryLabel" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
@@ -629,6 +632,9 @@
         </class>
         <class className="MenuMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
