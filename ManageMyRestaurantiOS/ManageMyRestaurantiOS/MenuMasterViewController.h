@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ASIHTTPRequest.h"
+#import "SBJson.h"
 
 @class MenuItemDataController;
 @class MenuDetailViewController;
@@ -18,6 +20,6 @@
 @property (strong, nonatomic) MenuDetailViewController *detailViewController;
 
 - (IBAction)cancel:(UIStoryboardSegue *)segue;
-
+- (IBAction)refresh;
 
 @end
