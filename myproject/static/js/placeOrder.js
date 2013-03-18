@@ -1,5 +1,6 @@
 $(function() {
   $('.tabs a:last').tab('show');
+  $('input:text').hide();
 
   var numTables = 4;
   for (var currTable = 0; currTable <= numTables; currTable++)
@@ -8,6 +9,17 @@ $(function() {
     $('#orderlist' + currTable).select2({ width: 'resolve' });
     $('#orderlist' + currTable + ':text').show();
   }
+
+  $('select').bind('change', function() {
+    var table = $(this).attr('name');
+    
+    $(this).find("option").each(function() {
+      $('#' + table + '_item' + this.value).hide();
+    });
+    $(this).find("option:selected").each(function() {
+      $('#' + table + '_item' + this.value).show();
+    });
+  });
 });
 
 function submitOrder(table) {
