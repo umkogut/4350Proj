@@ -12,7 +12,6 @@
 
 @interface MenuDetailViewController ()
 
-@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 - (void)configureView;
 
 @end
@@ -29,26 +28,6 @@
         
         // update the view
         [self configureView];
-    }
-}
-
-- (IBAction)done:(UIStoryboardSegue *)segue
-{
-//    if ([[segue identifier] isEqualToString:@"ReturnInput"]) {
-//        
-//        EditMenuDetailViewController *controller = [segue sourceViewController];
-//        if (controller.birdSighting) {
-//            [self.dataController addBirdSightingWithSighting:addController.birdSighting];
-//            [[self tableView] reloadData];
-//        }
-//        [self dismissViewControllerAnimated:YES completion:NULL];
-//    }
-}
-
-- (IBAction)cancel:(UIStoryboardSegue *)segue
-{
-    if ([[segue identifier] isEqualToString:@"CancelInput"]) {
-        [self dismissViewControllerAnimated:YES completion:NULL];
     }
 }
 
@@ -86,13 +65,17 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-- (IBAction)EditMenuItemDetails:(id)sender {
-    // hide the labels
-    [self.nameLabel setHidden:YES];
-    [self.categoryLabel setHidden:YES];
-    [self.descriptionLabel setHidden:YES];
-    [self.priceLabel setHidden:YES];
+// does initial stuff before the segue is called
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    if ([[segue identifier] isEqualToString:@"EditMenuItemDetails"]) {
+        
+        UINavigationController *navigationController = [segue destinationViewController];
+        EditMenuDetailViewController *editMenuDetailViewController = [navigationController.childViewControllers objectAtIndex:0];
+        
+        editMenuDetailViewController.menuItem = self.menuItem;
+        editMenuDetailViewController.categoryList = self.categoriesList;
+        
+    }
 }
 @end

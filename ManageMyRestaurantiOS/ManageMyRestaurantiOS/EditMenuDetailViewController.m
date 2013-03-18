@@ -7,6 +7,7 @@
 //
 
 #import "EditMenuDetailViewController.h"
+#import "defines.h"
 
 @interface EditMenuDetailViewController ()
 
@@ -14,24 +15,98 @@
 
 @implementation EditMenuDetailViewController
 
-//- (id)initWithStyle:(UITableViewStyle)style
-//{
-//    self = [super initWithStyle:style];
-//    if (self) {
-//        // Custom initialization
-//    }
-//    return self;
-//}
+// displays the menu item's current details
+-(void)configureView {
+    MenuItem *item = self.menuItem;
+    
+    [self.nameTextField setText:item.name];    
+    [self.descriptionTextField setText:item.description];    
+    [self.priceTextField setText:[NSString stringWithFormat:@"%0.2f", [item.price floatValue]]];    
+    [self.isVegetarianSwitch setOn:item.isVegetarian];
+    
+    NSInteger index = [self.categoryList indexOfObject:self.menuItem.category];
+    [self.categoryPickerView selectRow:index inComponent:0 animated:NO];
+}
+
+
+- (IBAction)cancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+- (IBAction)done:(id)sender {
+    NSLog(@"done called");
+    
+    NSString *name = [self.nameTextField text];
+//    NSInteger categoryIndex = [self.categoryPickerView selectedRowInComponent:0];
+    NSString *categoryID = [NSString stringWithFormat:@"%d", [self.categoryPickerView selectedRowInComponent:0] + 1];
+//    NSString *category = [self.categoryList objectAtIndex:categoryIndex];
+    NSString *description = [self.descriptionTextField text];
+    NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:[self.priceTextField text]];
+    BOOL isVegetarian = [self.isVegetarianSwitch isOn];
+    
+    MenuItem *updatedItem = [[MenuItem alloc] initWithName:name category:categoryID description:description price:price  isVegetarian:isVegetarian];
+    [self editMenuItemDetails:updatedItem];
+    
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+-(void)editMenuItemDetails:(MenuItem *)updatedItem {
+    NSLog(@"done called");
+    SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
+    
+    NSString *isVeg = self.menuItem.isVegetarian ? @"TRUE" : @"FALSE";
+    NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
+                          updatedItem.name, @"name",
+                          updatedItem.category, @"category",
+                          updatedItem.description, @"description",
+                          updatedItem.price, @"price",
+                          isVeg, @"isVeg",
+                          @"", @"image",
+                          nil];
+    NSString *jsonCommand = [jsonWriter stringWithObject:json];
+    
+    NSLog(jsonCommand);
+    
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/editMenuItem", serverURL]];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    
+    [request addRequestHeader:@"Content-Type" value:@"application/json"];
+    
+    [request setRequestMethod:@"POST"];
+    [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [request setDelegate:self];
+    [request startSynchronous];
+    
+    NSString *JsonData = [request responseString];
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSDictionary *jsonObject = [jsonParser objectWithString:JsonData];
+    NSInteger retVal = [[jsonObject objectForKey:@"isSuccess"] integerValue];
+    
+    if (retVal == 1)
+    {
+        //success
+        UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"Success" message:@"You have successfully edited the menu item" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [success show];
+        
+    }
+    else
+    {
+        //failed - can't know why yet. Will work that out later
+        UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Editing failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [failedMsg show];
+    }
+
+}
+
+
+
+#pragma mark - Table view data source
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self configureView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,70 +115,6 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//#warning Potentially incomplete method implementation.
-//    // Return the number of sections.
-//    return 1;
-//}
-//
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//#warning Incomplete method implementation.
-//    // Return the number of rows in the section.
-//    return 1;
-//}
-
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    static NSString *CellIdentifier = @"NameCell";
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
-//    
-//    // Configure the cell...
-//    
-//    return cell;
-//}
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
-{
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
 #pragma mark - Table view delegate
 
@@ -118,4 +129,28 @@
      */
 }
 
+
+#pragma mark - UIPickerView data source
+
+-(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+{
+    return 1;
+}
+
+-(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+{
+    return self.categoryList.count;
+}
+
+-(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    NSString *title = [self.categoryList objectAtIndex:row];
+//    NSString *category = self.menuItem.category;
+//    if ([title isEqual:category]) {
+//        [self.categoryPickerView selectRow:row inComponent:component animated:NO];
+//    }
+    
+    
+    return title;
+}
 @end
