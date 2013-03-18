@@ -54,13 +54,17 @@
 - (IBAction)addMenuItem:(id)sender {
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
     NSString *row = [NSString stringWithFormat:@"%d", [self.category selectedRowInComponent:0] + 1];
+    NSString *vegValue = @"FALSE";
+    if(self.vegetarian.value == 1.0) {
+        vegValue = @"TRUE";
+    }
     
     NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                              self.itemName.text, @"name",
                              row, @"category",
                              self.description.text, @"description",
                              self.price.text, @"price",
-                             @"TRUE", @"isVeg",
+                             vegValue, @"isVeg",
                              @"", @"image",
                              nil];
     NSString *jsonCommand = [jsonWriter stringWithObject:json];
