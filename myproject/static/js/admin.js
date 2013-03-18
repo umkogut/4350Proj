@@ -86,9 +86,9 @@ function editMenuItem() {
                                         clearEditForm();
 					$('#menuItems').empty();
 					$.post('/getMenuName.json', function(data) {
-						var items = $.parseJSON(data);
-                                        	$.each(items, function (id, name) {
-							$('#menuItems').append('<option>' + name + '</option>');
+						var menuItems = $.parseJSON(data);
+                                        	$.each(menuItems, function (key, value) {
+							$('#menuItems').append('<option>' + value['menuName'] + '</option>');
 						});
 					}, "json");                                                                                   
                                 } else                                                                                                                                             

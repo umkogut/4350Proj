@@ -7,7 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MenuItem.h"
+#import "ASIHttpRequest/ASIFormDataRequest.h"
+#import "SBJson.h"
 
-@interface EditMenuDetailViewController : UITableViewController
+@interface EditMenuDetailViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
+@property (strong, nonatomic) MenuItem *menuItem;
+@property (strong, nonatomic) NSMutableArray *categoryList;
+
+@property (weak, nonatomic) IBOutlet UITextField *nameTextField;
+@property (weak, nonatomic) IBOutlet UIPickerView *categoryPickerView;
+@property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
+@property (weak, nonatomic) IBOutlet UITextField *priceTextField;
+@property (weak, nonatomic) IBOutlet UISwitch *isVegetarianSwitch;
+
+-(void)configureView;
+-(void)editMenuItemDetails:(MenuItem *)updatedItem;
+
+
+- (IBAction)cancel:(id)sender;
+- (IBAction)done:(id)sender;
 
 @end
