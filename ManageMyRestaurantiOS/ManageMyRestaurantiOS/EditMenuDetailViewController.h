@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UISwitch *isVegetarianSwitch;
 
 -(void)configureView;
+-(void)editMenuItemDetails:(MenuItem *)updatedItem;
 
 
 - (IBAction)cancel:(id)sender;
