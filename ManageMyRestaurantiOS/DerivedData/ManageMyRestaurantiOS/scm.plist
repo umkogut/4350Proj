@@ -4,6 +4,7 @@
 <dict>
 	<key>FoundWorkingCopyPaths</key>
 	<array>
+<<<<<<< HEAD
 		<string>/home/student/umchmie2/4350Proj</string>
 		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/ManageMyRestaurantiOS/json-framework</string>
 	</array>
@@ -18,6 +19,14 @@
 		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/UICustomSwitch.m</string>
 		<string>/home/student/umchmie2/4350Proj/ManageMyRestaurantiOS/switchThumb.png</string>
 	</array>
+=======
+		<string>/home/student/umkalicm/Desktop/4350Proj</string>
+	</array>
+	<key>LastWorkingCopyScanDate</key>
+	<date>2013-03-18T02:38:06Z</date>
+	<key>MissingFilePaths</key>
+	<array/>
+>>>>>>> iOSTesting
 	<key>Version</key>
 	<integer>4</integer>
 </dict>
