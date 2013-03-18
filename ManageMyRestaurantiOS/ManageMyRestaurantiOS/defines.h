@@ -10,8 +10,7 @@
 #define ManageMyRestaurantiOS_defines_h
 
 #ifdef DEBUG
-//#define serverURL @"http://ec2-23-22-29-187.compute-1.amazonaws.com:6543" //development
-#define serverURL @"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543" //production
+#define serverURL @"http://ec2-23-22-29-187.compute-1.amazonaws.com:6543" //development
 #else
 #define serverURL @"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543" //production
 #endif
