@@ -517,12 +517,12 @@
 		2F8958B816EB8609004A7B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
 				INFOPLIST_FILE = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E48E4454-2D8B-4E9E-9EFB-466DB4CFBEC1";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -530,12 +530,12 @@
 		2F8958B916EB8609004A7B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
 				INFOPLIST_FILE = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "E48E4454-2D8B-4E9E-9EFB-466DB4CFBEC1";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
