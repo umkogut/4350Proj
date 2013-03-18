@@ -1,5 +1,5 @@
 //
-//  MenuItemTest.h
+//  TestMenuItem.h
 //  ManageMyRestaurantiOS
 //
 //  Created by Marko Kalic on 3/17/13.
@@ -8,7 +8,7 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@interface MenuItemTest : SenTestCase
+@interface TestMenuItem : SenTestCase
 
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *category;

@@ -51,12 +51,12 @@
 		D6C3509616F51D3D00C5FBD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3509516F51D3D00C5FBD4 /* SystemConfiguration.framework */; };
 		D6C3509816F51D4500C5FBD4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3509716F51D4500C5FBD4 /* MobileCoreServices.framework */; };
 		DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */; };
+		FD081CBE16F6AE9000606C57 /* TestMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD081CBD16F6AE9000606C57 /* TestMenuItem.m */; };
+		FD081CC116F6AED500606C57 /* GetMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD081CC016F6AED500606C57 /* GetMenuTests.m */; };
 		FDD56C6116F668FB00B7B015 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588916EB8608004A7B0E /* UIKit.framework */; };
 		FDD56C6216F668FB00B7B015 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588B16EB8608004A7B0E /* Foundation.framework */; };
 		FDD56C6816F668FC00B7B015 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDD56C6616F668FC00B7B015 /* InfoPlist.strings */; };
-		FDD56C6B16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD56C6A16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m */; };
 		FDD56C7116F66B8D00B7B015 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD56C7016F66B8D00B7B015 /* SenTestingKit.framework */; };
-		FDD56C7416F66E9900B7B015 /* MenuItemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD56C7316F66E9900B7B015 /* MenuItemTest.m */; };
 		FDD56C7816F6941800B7B015 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD56C7716F6941800B7B015 /* SenTestingKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -150,16 +150,16 @@
 		D6C3509716F51D4500C5FBD4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DD113AC816EFBC2000703CFA /* AddMenuItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMenuItemViewController.h; sourceTree = "<group>"; };
 		DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMenuItemViewController.m; sourceTree = "<group>"; };
+		FD081CBC16F6AE9000606C57 /* TestMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMenuItem.h; sourceTree = "<group>"; };
+		FD081CBD16F6AE9000606C57 /* TestMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMenuItem.m; sourceTree = "<group>"; };
+		FD081CBF16F6AED500606C57 /* GetMenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMenuTests.h; sourceTree = "<group>"; };
+		FD081CC016F6AED500606C57 /* GetMenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMenuTests.m; sourceTree = "<group>"; };
 		FDCB1B1616F660E600382A6B /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 		FDD56C5E16F668FB00B7B015 /* ManageMyRestaurantiOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageMyRestaurantiOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD56C6516F668FC00B7B015 /* ManageMyRestaurantiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ManageMyRestaurantiOSTests-Info.plist"; sourceTree = "<group>"; };
 		FDD56C6716F668FC00B7B015 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FDD56C6916F668FC00B7B015 /* ManageMyRestaurantiOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageMyRestaurantiOSTests.h; sourceTree = "<group>"; };
-		FDD56C6A16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageMyRestaurantiOSTests.m; sourceTree = "<group>"; };
 		FDD56C6C16F668FC00B7B015 /* ManageMyRestaurantiOSTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ManageMyRestaurantiOSTests-Prefix.pch"; sourceTree = "<group>"; };
 		FDD56C7016F66B8D00B7B015 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		FDD56C7216F66E9900B7B015 /* MenuItemTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemTest.h; sourceTree = "<group>"; };
-		FDD56C7316F66E9900B7B015 /* MenuItemTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemTest.m; sourceTree = "<group>"; };
 		FDD56C7716F6941800B7B015 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -366,11 +366,11 @@
 		FDD56C6316F668FB00B7B015 /* ManageMyRestaurantiOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				FDD56C6916F668FC00B7B015 /* ManageMyRestaurantiOSTests.h */,
-				FDD56C6A16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m */,
+				FD081CBF16F6AED500606C57 /* GetMenuTests.h */,
+				FD081CC016F6AED500606C57 /* GetMenuTests.m */,
+				FD081CBC16F6AE9000606C57 /* TestMenuItem.h */,
+				FD081CBD16F6AE9000606C57 /* TestMenuItem.m */,
 				FDD56C6416F668FC00B7B015 /* Supporting Files */,
-				FDD56C7216F66E9900B7B015 /* MenuItemTest.h */,
-				FDD56C7316F66E9900B7B015 /* MenuItemTest.m */,
 			);
 			path = ManageMyRestaurantiOSTests;
 			sourceTree = "<group>";
@@ -535,8 +535,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDD56C6B16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m in Sources */,
-				FDD56C7416F66E9900B7B015 /* MenuItemTest.m in Sources */,
+				FD081CBE16F6AE9000606C57 /* TestMenuItem.m in Sources */,
+				FD081CC116F6AED500606C57 /* GetMenuTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -741,6 +741,7 @@
 				FDD56C6E16F668FC00B7B015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
