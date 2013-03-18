@@ -7,7 +7,7 @@
 //
 
 #import "ManageMyRestaurantiOSTests.h"
-#import "MenuItemTest.h"
+#import "TestMenuItem.h"
 
 @implementation ManageMyRestaurantiOSTests
 
@@ -35,7 +35,7 @@
     NSDecimalNumber *price = [[NSDecimalNumber alloc] initWithDouble:0.99];
     BOOL isVeg = NO;
     
-    MenuItemTest *item = [[MenuItemTest alloc] initWithName:name
+    TestMenuItem *item = [[TestMenuItem alloc] initWithName:name
                                                    category:category
                                                 description:description
                                                       price:price
