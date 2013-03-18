@@ -82,9 +82,8 @@
     NSArray *menu = [menuList objectForKey:@"menu"];
     for (NSDictionary *item in menu) {
         NSString *name = [item objectForKey:@"name"];
-        
-        NSInteger index = [[item objectForKey:@"category"] integerValue]-1;
-        NSString *category = [self.dataController categoryAtIndex:index];
+
+        NSString *category = [item objectForKey:@"category"];
         NSString *description = [item objectForKey:@"description"];
         NSDecimalNumber *price = [item objectForKey:@"price"];
         BOOL isVeg = [[item objectForKey:@"isVeg"] boolValue];
