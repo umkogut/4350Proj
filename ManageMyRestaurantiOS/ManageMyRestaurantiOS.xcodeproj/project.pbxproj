@@ -51,7 +51,24 @@
 		D6C3509616F51D3D00C5FBD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3509516F51D3D00C5FBD4 /* SystemConfiguration.framework */; };
 		D6C3509816F51D4500C5FBD4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3509716F51D4500C5FBD4 /* MobileCoreServices.framework */; };
 		DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */; };
+		FDD56C6116F668FB00B7B015 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588916EB8608004A7B0E /* UIKit.framework */; };
+		FDD56C6216F668FB00B7B015 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588B16EB8608004A7B0E /* Foundation.framework */; };
+		FDD56C6816F668FC00B7B015 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDD56C6616F668FC00B7B015 /* InfoPlist.strings */; };
+		FDD56C6B16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD56C6A16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m */; };
+		FDD56C7116F66B8D00B7B015 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD56C7016F66B8D00B7B015 /* SenTestingKit.framework */; };
+		FDD56C7416F66E9900B7B015 /* MenuItemTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD56C7316F66E9900B7B015 /* MenuItemTest.m */; };
+		FDD56C7816F6941800B7B015 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDD56C7716F6941800B7B015 /* SenTestingKit.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FDD56C7516F6794D00B7B015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2F89587E16EB8608004A7B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F89588516EB8608004A7B0E;
+			remoteInfo = ManageMyRestaurantiOS;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2F4FFBAB16EE6325005805DB /* EditMenuDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditMenuDetailViewController.h; sourceTree = "<group>"; };
@@ -133,6 +150,17 @@
 		D6C3509716F51D4500C5FBD4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DD113AC816EFBC2000703CFA /* AddMenuItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMenuItemViewController.h; sourceTree = "<group>"; };
 		DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMenuItemViewController.m; sourceTree = "<group>"; };
+		FDCB1B1616F660E600382A6B /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
+		FDD56C5E16F668FB00B7B015 /* ManageMyRestaurantiOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageMyRestaurantiOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD56C6516F668FC00B7B015 /* ManageMyRestaurantiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ManageMyRestaurantiOSTests-Info.plist"; sourceTree = "<group>"; };
+		FDD56C6716F668FC00B7B015 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FDD56C6916F668FC00B7B015 /* ManageMyRestaurantiOSTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManageMyRestaurantiOSTests.h; sourceTree = "<group>"; };
+		FDD56C6A16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManageMyRestaurantiOSTests.m; sourceTree = "<group>"; };
+		FDD56C6C16F668FC00B7B015 /* ManageMyRestaurantiOSTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ManageMyRestaurantiOSTests-Prefix.pch"; sourceTree = "<group>"; };
+		FDD56C7016F66B8D00B7B015 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FDD56C7216F66E9900B7B015 /* MenuItemTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItemTest.h; sourceTree = "<group>"; };
+		FDD56C7316F66E9900B7B015 /* MenuItemTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItemTest.m; sourceTree = "<group>"; };
+		FDD56C7716F6941800B7B015 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,13 +178,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDD56C5A16F668FB00B7B015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD56C7116F66B8D00B7B015 /* SenTestingKit.framework in Frameworks */,
+				FDD56C6116F668FB00B7B015 /* UIKit.framework in Frameworks */,
+				FDD56C6216F668FB00B7B015 /* Foundation.framework in Frameworks */,
+				FDD56C7816F6941800B7B015 /* SenTestingKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		2F89587D16EB8608004A7B0E = {
 			isa = PBXGroup;
 			children = (
+				FDD56C7016F66B8D00B7B015 /* SenTestingKit.framework */,
 				2F89588F16EB8608004A7B0E /* ManageMyRestaurantiOS */,
+				FDD56C6316F668FB00B7B015 /* ManageMyRestaurantiOSTests */,
 				2F89588816EB8608004A7B0E /* Frameworks */,
 				2F89588716EB8608004A7B0E /* Products */,
 			);
@@ -166,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				2F89588616EB8608004A7B0E /* ManageMyRestaurantiOS.app */,
+				FDD56C5E16F668FB00B7B015 /* ManageMyRestaurantiOSTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +215,7 @@
 		2F89588816EB8608004A7B0E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FDD56C7716F6941800B7B015 /* SenTestingKit.framework */,
 				D6C3509316F51D3700C5FBD4 /* libz.dylib */,
 				D6C3509116F51D3000C5FBD4 /* CFNetwork.framework */,
 				D6C3509516F51D3D00C5FBD4 /* SystemConfiguration.framework */,
@@ -187,6 +230,7 @@
 		2F89588F16EB8608004A7B0E /* ManageMyRestaurantiOS */ = {
 			isa = PBXGroup;
 			children = (
+				FDCB1B1616F660E600382A6B /* defines.h */,
 				2F89589816EB8608004A7B0E /* ManageMyRestaurantiOSAppDelegate.h */,
 				2F89589916EB8608004A7B0E /* ManageMyRestaurantiOSAppDelegate.m */,
 				2F8958A116EB8609004A7B0E /* MainStoryboard_iPhone.storyboard */,
@@ -319,6 +363,28 @@
 			path = ASIHttpRequest;
 			sourceTree = "<group>";
 		};
+		FDD56C6316F668FB00B7B015 /* ManageMyRestaurantiOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				FDD56C6916F668FC00B7B015 /* ManageMyRestaurantiOSTests.h */,
+				FDD56C6A16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m */,
+				FDD56C6416F668FC00B7B015 /* Supporting Files */,
+				FDD56C7216F66E9900B7B015 /* MenuItemTest.h */,
+				FDD56C7316F66E9900B7B015 /* MenuItemTest.m */,
+			);
+			path = ManageMyRestaurantiOSTests;
+			sourceTree = "<group>";
+		};
+		FDD56C6416F668FC00B7B015 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDD56C6516F668FC00B7B015 /* ManageMyRestaurantiOSTests-Info.plist */,
+				FDD56C6616F668FC00B7B015 /* InfoPlist.strings */,
+				FDD56C6C16F668FC00B7B015 /* ManageMyRestaurantiOSTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -338,6 +404,25 @@
 			productName = ManageMyRestaurantiOS;
 			productReference = 2F89588616EB8608004A7B0E /* ManageMyRestaurantiOS.app */;
 			productType = "com.apple.product-type.application";
+		};
+		FDD56C5D16F668FB00B7B015 /* ManageMyRestaurantiOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDD56C6F16F668FC00B7B015 /* Build configuration list for PBXNativeTarget "ManageMyRestaurantiOSTests" */;
+			buildPhases = (
+				FDD56C5916F668FB00B7B015 /* Sources */,
+				FDD56C5A16F668FB00B7B015 /* Frameworks */,
+				FDD56C5B16F668FB00B7B015 /* Resources */,
+				FDD56C5C16F668FB00B7B015 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FDD56C7616F6794D00B7B015 /* PBXTargetDependency */,
+			);
+			name = ManageMyRestaurantiOSTests;
+			productName = ManageMyRestaurantiOSTests;
+			productReference = FDD56C5E16F668FB00B7B015 /* ManageMyRestaurantiOSTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -362,6 +447,7 @@
 			projectRoot = "";
 			targets = (
 				2F89588516EB8608004A7B0E /* ManageMyRestaurantiOS */,
+				FDD56C5D16F668FB00B7B015 /* ManageMyRestaurantiOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -383,7 +469,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDD56C5B16F668FB00B7B015 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD56C6816F668FC00B7B015 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FDD56C5C16F668FB00B7B015 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F89588216EB8608004A7B0E /* Sources */ = {
@@ -421,7 +531,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FDD56C5916F668FB00B7B015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDD56C6B16F668FC00B7B015 /* ManageMyRestaurantiOSTests.m in Sources */,
+				FDD56C7416F66E9900B7B015 /* MenuItemTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FDD56C7616F6794D00B7B015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F89588516EB8608004A7B0E /* ManageMyRestaurantiOS */;
+			targetProxy = FDD56C7516F6794D00B7B015 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2F89589216EB8608004A7B0E /* InfoPlist.strings */ = {
@@ -446,6 +573,14 @@
 				2F8958A516EB8609004A7B0E /* en */,
 			);
 			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		FDD56C6616F668FC00B7B015 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FDD56C6716F668FC00B7B015 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -517,9 +652,11 @@
 		2F8958B816EB8609004A7B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "E48E4454-2D8B-4E9E-9EFB-466DB4CFBEC1";
@@ -530,13 +667,49 @@
 		2F8958B916EB8609004A7B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				INFOPLIST_FILE = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "E48E4454-2D8B-4E9E-9EFB-466DB4CFBEC1";
 				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		FDD56C6D16F668FC00B7B015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManageMyRestaurantiOSTests/ManageMyRestaurantiOSTests-Prefix.pch";
+				INFOPLIST_FILE = "ManageMyRestaurantiOSTests/ManageMyRestaurantiOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FDD56C6E16F668FC00B7B015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ManageMyRestaurantiOS.app/ManageMyRestaurantiOS";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ManageMyRestaurantiOSTests/ManageMyRestaurantiOSTests-Prefix.pch";
+				INFOPLIST_FILE = "ManageMyRestaurantiOSTests/ManageMyRestaurantiOSTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -560,6 +733,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		FDD56C6F16F668FC00B7B015 /* Build configuration list for PBXNativeTarget "ManageMyRestaurantiOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDD56C6D16F668FC00B7B015 /* Debug */,
+				FDD56C6E16F668FC00B7B015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
