@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "MenuItem.h"
+#import "ASIHttpRequest/ASIFormDataRequest.h"
+#import "SBJson.h"
 
-@interface EditMenuDetailViewController : UITableViewController
+@interface EditMenuDetailViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
 @property (strong, nonatomic) MenuItem *menuItem;
 @property (strong, nonatomic) NSMutableArray *categoryList;

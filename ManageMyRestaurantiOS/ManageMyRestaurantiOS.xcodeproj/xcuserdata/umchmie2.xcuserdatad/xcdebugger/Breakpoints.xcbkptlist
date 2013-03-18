@@ -177,7 +177,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
-         timestampString = "385244434.693867"
+         timestampString = "385261904.213179"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "24"
@@ -190,11 +190,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
-         timestampString = "385249288.979318"
+         timestampString = "385263697.710278"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "72"
-         endingLineNumber = "72"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
          landmarkName = "-numberOfComponentsInPickerView:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -203,11 +203,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
-         timestampString = "385249288.979318"
+         timestampString = "385263697.710278"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "77"
-         endingLineNumber = "77"
+         startingLineNumber = "87"
+         endingLineNumber = "87"
          landmarkName = "-pickerView:numberOfRowsInComponent:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -235,6 +235,19 @@
          startingLineNumber = "21"
          endingLineNumber = "21"
          landmarkName = "-configureView"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "ManageMyRestaurantiOS/EditMenuDetailViewController.m"
+         timestampString = "385263697.710278"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "45"
+         endingLineNumber = "45"
+         landmarkName = "-done:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

@@ -22,6 +22,9 @@
     [self.descriptionTextField setText:item.description];    
     [self.priceTextField setText:[NSString stringWithFormat:@"%0.2f", [item.price floatValue]]];    
     [self.isVegetarianSwitch setOn:item.isVegetarian];
+    
+    NSInteger index = [self.categoryList indexOfObject:self.menuItem.category];
+    [self.categoryPickerView selectRow:index inComponent:0 animated:NO];
 }
 
 
@@ -31,7 +34,23 @@
 
 - (IBAction)done:(id)sender {
     NSLog(@"editing menu item details");
+    
+    NSString *name = [self.nameTextField text];
+    NSInteger categoryIndex = [self.categoryPickerView selectedRowInComponent:0];
+    NSString *category = [self.categoryList objectAtIndex:categoryIndex];
+    NSString *description = [self.descriptionTextField text];
+    NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:[self.priceTextField text]];
+    BOOL isVegetarian = [self.isVegetarianSwitch isOn];
+    
+    MenuItem *updatedItem = [[MenuItem alloc] initWithName:name category:category description:description price:price  isVegetarian:isVegetarian];
+    
+    
+    
     [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
+-(void)editMenuItemDetails:(MenuItem *)updatedItem {
+    SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
 }
 
 
@@ -64,7 +83,6 @@
 }
 
 
-
 #pragma mark - UIPickerView data source
 
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
@@ -79,6 +97,13 @@
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    return [self.categoryList objectAtIndex:row];
+    NSString *title = [self.categoryList objectAtIndex:row];
+//    NSString *category = self.menuItem.category;
+//    if ([title isEqual:category]) {
+//        [self.categoryPickerView selectRow:row inComponent:component animated:NO];
+//    }
+    
+    
+    return title;
 }
 @end
