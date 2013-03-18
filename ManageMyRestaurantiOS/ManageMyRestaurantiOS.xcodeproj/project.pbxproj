@@ -652,12 +652,9 @@
 		2F8958B816EB8609004A7B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-=======
 				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
->>>>>>> iOSTesting
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
@@ -671,12 +668,9 @@
 		2F8958B916EB8609004A7B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-=======
 				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
->>>>>>> iOSTesting
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ManageMyRestaurantiOS/ManageMyRestaurantiOS-Prefix.pch";
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
