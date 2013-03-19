@@ -11,13 +11,6 @@ $('#addForm input[name="price"]').bind('change keyup', function() {
                 $('#addForm :button').attr("disabled", true);
 });
 
-$('#editForm input[name="price"]').bind('change keyup', function() {
-        if(intRegex.test($('#editForm input[name="price"]').val()))
-                testIfCanSubmit();
-        else
-                $('#editForm :button').attr("disabled", true);
-});
-
 $('#addForm input[name="desc"], #editForm input[name="desc"]').bind('change keyup', function() {
         testIfCanSubmit();
 });
