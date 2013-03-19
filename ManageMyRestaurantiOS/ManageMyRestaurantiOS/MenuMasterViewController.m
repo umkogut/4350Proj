@@ -28,13 +28,7 @@
 }
 
 - (IBAction)refresh {
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
-    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request setRequestMethod:@"POST"];
-    [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
-	[request addRequestHeader:@"Accept" value:@"application/json"];
-    [request setDelegate:self];
-    [request startAsynchronous];
+    [self refreshMenu];
 }
 
 -(void)awakeFromNib
@@ -45,6 +39,12 @@
     }
     [super awakeFromNib];
     
+    [self refreshMenu];
+    
+    self.dataController = [[MenuItemDataController alloc] init];
+}
+
+- (void)refreshMenu {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     [request setRequestMethod:@"POST"];
@@ -52,8 +52,6 @@
 	[request addRequestHeader:@"Accept" value:@"application/json"];
     [request setDelegate:self];
     [request startAsynchronous];
-    
-    self.dataController = [[MenuItemDataController alloc] init];
 }
 
 - (void)viewDidLoad
@@ -81,19 +79,12 @@
     
     NSArray *menu = [menuList objectForKey:@"menu"];
     for (NSDictionary *item in menu) {
-        NSString *name = [item objectForKey:@"name"];
-
-        NSString *category = [item objectForKey:@"category"];
-        NSString *description = [item objectForKey:@"description"];
-        NSDecimalNumber *price = [item objectForKey:@"price"];
-        BOOL isVeg = [[item objectForKey:@"isVeg"] boolValue];
-        
-        MenuItem *item = [[MenuItem alloc] initWithName:name
-                                               category:category
-                                            description:description
-                                                  price:price
-                                           isVegetarian:isVeg];
-        [self.dataController addMenuItem:item];
+        MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
+                                               category:[item objectForKey:@"category"]
+                                            description:[item objectForKey:@"description"]
+                                                  price:[item objectForKey:@"price"]
+                                           isVegetarian:[[item objectForKey:@"isVeg"] boolValue]];
+        [self.dataController addMenuItem:newItem];
     }
     
     [self.tableView reloadData];

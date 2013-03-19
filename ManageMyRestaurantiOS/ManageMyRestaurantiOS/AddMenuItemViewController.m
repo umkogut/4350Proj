@@ -103,7 +103,7 @@
         [failedMsg show];
     }
     
-    NSLog([request responseString]);
+    NSLog(@"%@",[request responseString]);
 }
 
 - (IBAction)add:(id)sender {

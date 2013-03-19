@@ -65,7 +65,7 @@
                           nil];
     NSString *jsonCommand = [jsonWriter stringWithObject:json];
     
-    NSLog(jsonCommand);
+    NSLog(@"%@", jsonCommand);
     
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/editMenuItem", serverURL]];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
