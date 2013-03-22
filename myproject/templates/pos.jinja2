@@ -27,7 +27,7 @@
 		<div class="row-fluid">
   	        	<div class="span3" id="bill">
 	      			<label class="checkbox">
-                			<input type="checkbox" value="" id="item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}" checked="checked">
+                			<input type="checkbox" value="" id="order{{order.orderID}}_item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}" checked="checked">
 		 			{% for menuItem in menuItems %}
 						{% if order.menuItem is sameas menuItem.menuID %}
 							{{menuItem.name}} - {{menuItem.price}}
@@ -36,7 +36,7 @@
               			</label>
 			</div>
             		<div class="span3" id="currBill">
-              			<label id="item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}_lb">
+              			<label id="order{{order.orderID}}_item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}_lb">
                                         {% for menuItem in menuItems %}
                                                 {% if order.menuItem is sameas menuItem.menuID %}
                                                         {{menuItem.name}} - {{menuItem.price}}
@@ -48,7 +48,7 @@
              {% endif %}
            {% endfor %}
           <div class="row-fluid">
-            <button class="btn" id="pay" onclick="payForItems({{tableNum}})">Pay</button>
+            <button class="btn" id="pay">Pay</button>
           </div>
          </form>
         </div>
