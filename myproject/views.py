@@ -143,12 +143,11 @@ def editMenuItem_view(request):
 		item.price = newItem['price']
 		item.description = newItem['description']
 		item.image = newItem['image']
-        
         isVegetarian = item['isVeg']
-            if isVegetarian == 'TRUE':
-                item['isVeg'] = True
-            elif isVegetarian == 'FALSE':
-                item['isVeg'] = False
+        if isVegetarian == 'TRUE':
+            item['isVeg'] = True
+        elif isVegetarian == 'FALSE':
+            item['isVeg'] = False
             
 		transaction.commit()
 		return {'isSuccess': 1}
