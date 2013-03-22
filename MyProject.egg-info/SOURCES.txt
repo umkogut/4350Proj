@@ -179,6 +179,7 @@ myproject/static/bootstrap/less/tests/navbar-static-top.html
 myproject/static/bootstrap/less/tests/navbar.html
 myproject/static/js/admin.js
 myproject/static/js/orders.js
+myproject/static/js/orders2.js
 myproject/static/js/placeOrder.js
 myproject/static/js/pos.js
 myproject/static/qunit/adminTests.js
