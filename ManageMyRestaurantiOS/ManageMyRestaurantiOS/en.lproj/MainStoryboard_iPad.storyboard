@@ -677,6 +677,21 @@
             </objects>
             <point key="canvasLocation" x="2968" y="551"/>
         </scene>
+        <!--View Controller - About-->
+        <scene sceneID="U6G-P3-sc2">
+            <objects>
+                <viewController id="8LA-rl-Xpt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kaf-Am-iIb">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="bSW-ou-ldW"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gjo-Qa-N8e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3915" y="1763"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="hin-f6-Uns">
             <objects>
@@ -686,11 +701,14 @@
                         <rect key="frame" x="129" y="330" width="163" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="tintColor" red="0.094117656350135803" green="0.34509804844856262" blue="0.098039224743843079" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="selectedImageTintColor" red="0.047058828175067902" green="0.31372550129890442" blue="0.80000007152557373" alpha="1" colorSpace="deviceRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="RpJ-bx-hNg" kind="relationship" relationship="viewControllers" id="n11-Sw-0Rf"/>
                         <segue destination="zSJ-vr-Po8" kind="relationship" relationship="viewControllers" id="3HI-vN-Pp2"/>
                         <segue destination="0MM-c5-V3y" kind="relationship" relationship="viewControllers" id="Nuf-eI-UyH"/>
+                        <segue destination="aDp-UH-bFg" kind="relationship" relationship="viewControllers" id="dVd-QV-cUI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4RC-nU-h1q" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -716,6 +734,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n0p-dK-hWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5337" y="-3390"/>
+        </scene>
+        <!--Navigation Controller - About-->
+        <scene sceneID="qpz-VS-0y0">
+            <objects>
+                <navigationController id="aDp-UH-bFg" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="About" image="first.png" id="xEi-Rj-WG6"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Weo-ef-zus">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.094117656349999995" green="0.34509804840000002" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8LA-rl-Xpt" kind="relationship" relationship="rootViewController" id="wi3-XQ-nlw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chX-6O-ooq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2941" y="1763"/>
         </scene>
     </scenes>
     <resources>

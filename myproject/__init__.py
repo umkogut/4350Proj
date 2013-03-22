@@ -34,6 +34,7 @@ def main(global_config, **settings):
     config.add_route('about', '/about')
     config.add_route('test', '/test')
     config.add_route('addMenuItem', '/addMenuItem')
+    config.add_route('editMenuItem', '/editMenuItem')
     config.scan()
     return config.make_wsgi_app()
 
