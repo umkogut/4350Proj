@@ -38,20 +38,20 @@
     
     NSString *name = [self.nameTextField text];
 //    NSInteger categoryIndex = [self.categoryPickerView selectedRowInComponent:0];
-    NSString *categoryID = [NSString stringWithFormat:@"%d", [self.categoryPickerView selectedRowInComponent:0] + 1];
+    NSString *categoryID = [NSString stringWithFormat:@"%d", [self.categoryPickerView selectedRowInComponent:0] + 1];   // NOTE:  Must use categoryID because we are
 //    NSString *category = [self.categoryList objectAtIndex:categoryIndex];
     NSString *description = [self.descriptionTextField text];
     NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:[self.priceTextField text]];
     BOOL isVegetarian = [self.isVegetarianSwitch isOn];
     
     MenuItem *updatedItem = [[MenuItem alloc] initWithName:name category:categoryID description:description price:price  isVegetarian:isVegetarian];
-    [self editMenuItemDetails:updatedItem];
+    [self editMenuItemDetails:self.menuItem.name withUpdatedItem:updatedItem];
     
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
--(void)editMenuItemDetails:(MenuItem *)updatedItem {
-    NSLog(@"done called");
+-(void)editMenuItemDetails:(NSString *)oldItemName withUpdatedItem:(MenuItem *)updatedItem {
+    NSLog(@"editing");
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
     
     NSString *isVeg = self.menuItem.isVegetarian ? @"TRUE" : @"FALSE";
@@ -62,6 +62,7 @@
                           updatedItem.price, @"price",
                           isVeg, @"isVeg",
                           @"", @"image",
+                          oldItemName, @"prevItemName",
                           nil];
     NSString *jsonCommand = [jsonWriter stringWithObject:json];
     
@@ -144,12 +145,7 @@
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
 {
-    NSString *title = [self.categoryList objectAtIndex:row];
-//    NSString *category = self.menuItem.category;
-//    if ([title isEqual:category]) {
-//        [self.categoryPickerView selectRow:row inComponent:component animated:NO];
-//    }
-    
+    NSString *title = [self.categoryList objectAtIndex:row];    
     
     return title;
 }
