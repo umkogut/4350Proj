@@ -144,7 +144,7 @@ def editMenuItem_view(request):
 		item.description = newItem['description']
 		item.image = newItem['image']            
 
-        	isVegetarian = item['isVeg']
+        isVegetarian = request.json_body['isVeg'];
         	if isVegetarian == 'TRUE':
 			item.isVeg = True
 	        elif isVegetarian == 'FALSE':
