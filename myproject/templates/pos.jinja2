@@ -2,6 +2,12 @@
 <html land="en">
 {%extends "index.jinja2" %}
 {% block body %}
+
+<header class="subhead">
+  <div class="container">
+     <h1>Point of Sale</h1>
+  </div>
+</header>
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="tabbable tabs-left">
@@ -12,10 +18,11 @@
         {% endfor %}
       </ul>
       <div class="tab-content">
-	{% if tableNums is none %}
+	<label name="testing" id="testing"></label>	
 	{% for tableNum in tableNums %}
+	 <form method="POST" id="posForm" class="form-horizontal"> 
 	   <div class="tab-pane active" id="tableNum{{tableNum}}" style="display:none">
-           {% for order in orders %}
+	     {% for order in orders %}
              {% if order.tableNum is sameas tableNum %}
 		<div class="row-fluid">
   	        	<div class="span3" id="bill">
@@ -41,13 +48,11 @@
              {% endif %}
            {% endfor %}
           <div class="row-fluid">
-            <button class="btn" id="pay">Pay</button>
+            <button class="btn" id="pay" onclick="payForItems({{tableNum}})">Pay</button>
           </div>
+         </form>
         </div>
      {% endfor %}
-     {% else %}
-	There are currently no outstanding orders.
-     {% endif %} 
      </div>
     </div>
   </div>
