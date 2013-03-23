@@ -37,9 +37,10 @@ def cook_view(request):
 @view_config(route_name='placeOrder', xhr=True, renderer='json')
 def placeOrder_view(request):
 	print request
+	orders = DBSession.query(Order).group_by(Order.orderID).all()
 	menuItems = DBSession.query(MenuItem).group_by(MenuItem.category, MenuItem.name).all()
 
-	return {'menuItems': menuItems, 'project': 'MyProject'}
+	return {'menuItems': menuItems, 'orders': orders, 'project': 'MyProject'}
 
 @view_config(route_name='orders', renderer='templates/orders.jinja2')
 @view_config(route_name='orders', xhr=True, renderer='json')
@@ -209,7 +210,38 @@ def getOrders_view(request):
 	jsonOrder = jsonOrder + ']'
 	print jsonOrder
 	return jsonOrder
-			
+
+@view_config(renderer='json', name='getOrdersTable.json')
+def getOrdersTable_view(request):
+        print request
+        tableNums = []
+        orders = DBSession.query(Order).group_by(Order.orderID).all()
+        for i in range(len(orders)):
+                if (orders[i].tableNum not in tableNums):
+                        tableNums.append(orders[i].tableNum)
+
+        jsonOrder = '['
+        for i in range(len(tableNums)):
+                order = DBSession.query(Order).filter_by(tableNum=tableNums[i]).group_by(Order.orderID).all()
+                jsonOrder = jsonOrder + '{"tableNum": ' + str(order[0].tableNum) + ', "orders": '
+                if len(order) > 1:
+                        jsonOrder = jsonOrder + '['
+                for n in range(len(order)):
+                        if (len(order) == 0 or n >= (len(order)-1)):
+                                jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "menuItem": ' + str(order[n].menuItem) +', "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"}'
+                        else:
+                                jsonOrder = jsonOrder + '{"orderID": ' + str(order[n].orderID) + ', "menuItem": ' + str(order[n].menuItem) + ', "groupNum": ' + str(order[n].groupNum) + ', "isComplete": "' + str(order[n].isComplete) + '", "comments": "' + order[n].comments + '"},'
+                if (i < (len(tableNums)-1) and len(order) > 1):
+                        jsonOrder = jsonOrder + ']},'
+                elif (i < (len(tableNums)-1) and len(order) == 1):
+                        jsonOrder = jsonOrder + '},'
+                elif len(order) > 1:
+                        jsonOrder = jsonOrder + ']}'
+                elif len(order) == 1:
+                        jsonOrder = jsonOrder + '}'
+        jsonOrder = jsonOrder + ']'
+        print jsonOrder
+        return jsonOrder			
 	
 @view_config(renderer='json', name='placedOrder.json')
 def placedOrder_view(request):

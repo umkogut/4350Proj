@@ -20,6 +20,20 @@ $(function() {
       $('#' + table + '_item' + this.value).show();
     });
   });
+  $.post('getOrdersTable.json', function(data) {
+    var orderlist = $.parseJSON(data);
+    $.each(orderlist, function(key, table) {
+      var list = new Array();
+      var counter = 0;
+      $.each(table.orders, function(key, order) {
+        list[counter] = order.menuItem;
+        counter++;
+        $('#' + table.tableNum + '_item' + order.menuItem).show();
+        $('#' + table.tableNum + '_item' + order.menuItem).val('' + order.comments + '');
+      });
+      $('#orderlist' + table.tableNum).select2("val", list);
+    });
+  }, "json");
 });
 
 function submitOrder(table) {
