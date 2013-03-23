@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OrderMasterViewController.h"
 
-@interface OrderDetailViewController : UITableViewController
+@class ItemOrder;
+
+@interface OrderDetailViewController : UITableViewController <UISplitViewControllerDelegate, ItemOrderDelegate>
+
+@property (retain, nonatomic) ItemOrder *order;
+
+@property (weak, nonatomic) IBOutlet UILabel *orderIDLabel;
+@property (weak, nonatomic) IBOutlet UILabel *groupNumLabel;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
+@property (weak, nonatomic) IBOutlet UITableViewCell *isCompleteCell;
+@property (weak, nonatomic) IBOutlet UILabel *commentsLabel;
 
 @end

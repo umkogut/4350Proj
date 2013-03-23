@@ -7,12 +7,19 @@
 //
 
 #import "OrderMasterViewController.h"
+#import "OrderDetailViewController.h"
+#import "ItemOrder.h"
+#import "TableOrder.h"
+#import "TableOrderDataController.h"
+#import "defines.h"
 
 @interface OrderMasterViewController ()
 
 @end
 
 @implementation OrderMasterViewController
+
+@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -23,15 +30,77 @@
     return self;
 }
 
+-(void)awakeFromNib
+{
+    self.dataController = [[TableOrderDataController alloc] init];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
+    [self refreshOrders];
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)refreshOrders {
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getOrders.json", serverURL]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setRequestMethod:@"POST"];
+    [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
+	[request addRequestHeader:@"Accept" value:@"application/json"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
+// called when the ASIHTTPRequest is finished
+- (void)requestFinished:(ASIHTTPRequest *)request {
+    NSString *responseString =[request responseString];
+    responseString = [responseString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
+    responseString = [responseString stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:@""];
+    NSLog(@"Response: %@", responseString);
+    
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSArray *tableList = [jsonParser objectWithString:responseString];
+    NSLog(@"%@", tableList);
+    
+    [self.dataController clearAllTable];
+    
+    for (NSDictionary *table in tableList) {
+        NSInteger tableNum = [[table objectForKey:@"tableNum"] intValue];
+        [self.dataController addTable:tableNum];
+        
+        if ([[table objectForKey:@"orders"] isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *order = [table objectForKey:@"orders"];
+            ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
+                                                          orderID:[[order objectForKey:@"orderID"] intValue]
+                                                         category:[order objectForKey:@"category"]
+                                                         groupNum:[[order objectForKey:@"groupNum"] intValue]
+                                                       isComplete:[[order objectForKey:@"isComplete"] boolValue]
+                                                         comments:[order objectForKey:@"comments"]];
+            [self.dataController addOrder:tableNum :newOrder];
+
+        } else {
+            NSArray *orderList = [table objectForKey:@"orders"];
+            for (NSDictionary *order in orderList) {
+                ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
+                                                              orderID:[[order objectForKey:@"orderID"] intValue]
+                                                             category:[order objectForKey:@"category"]
+                                                             groupNum:[[order objectForKey:@"groupNum"] intValue]
+                                                           isComplete:[[order objectForKey:@"isComplete"] boolValue]
+                                                             comments:[order objectForKey:@"comments"]];
+                [self.dataController addOrder:tableNum :newOrder];
+            }
+        }
+    }
+    
+    [self.tableView reloadData];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,36 +113,43 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return [self.dataController numTables];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [self.dataController numOrdersByIndex:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"TableOrderCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier]; //forIndexPath:indexPath];
     
-    // Configure the cell...
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+    }
+    
+    TableOrder *table = [self.dataController objectInListAtIndex:indexPath.section];
+    ItemOrder *order = [table objectInListAtIndex:indexPath.row];
+    [[cell textLabel] setText:order.name];
     
     return cell;
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
-    return YES;
+    return NO;
 }
-*/
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    TableOrder *table = [self.dataController objectInListAtIndex:section];
+    return [NSString stringWithFormat:@"Table %i", table.tableNum];
+}
 
 /*
 // Override to support editing the table view.
@@ -116,6 +192,11 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
+    
+    TableOrder *table = [self.dataController.tableOrderList objectAtIndex:[self.tableView indexPathForSelectedRow].section];
+    ItemOrder *order = [table objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+    [self.delegate didSelectOrder:order];
+    //detailViewController.order = order;
 }
 
 @end
