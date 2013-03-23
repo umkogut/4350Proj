@@ -5,7 +5,7 @@ $(function() {
 });
 
 function payBill(tableNumCheck) {
-    var itemsToPayFor = "{";
+    var itemsToPayFor = "[";
     var itemCount = 0;
 
     $("#bill input[type=checkbox]").each(function() {
@@ -40,8 +40,8 @@ function payBill(tableNumCheck) {
       }
 
      });
-     itemsToPayFor += "}";
-     $.post('/payForItems.json', itemsToPayFor, function(data) {}, "json");
+     itemsToPayFor += "]";
+     $.post('/payForItems.json', JSON.stringify(itemsToPayFor), function(data) {}, "json");
 }
 
 function displayTableBill(tableNum) {
