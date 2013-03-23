@@ -10,6 +10,21 @@ $(function() {
        $(this).parent().hide();
        $(this).prop('checked', false);
        $('#'+ this.id +'_lb').hide();
+      
+       var itemInfo = this.id.split('_');
+       var orderNum = itemInfo[0].substring(5);
+       var tableNum = itemInfo[2].substring(5);
+       var itemNum = itemInfo[1].substring(4);
+       var groupNum = itemInfo[3].substring(5);
+
+       var itemsToPayFor = JSON.stringify({
+	'table':tableNum,
+	'menuItem':itemNum,
+	'group':groupNum,
+	'order':orderNum
+        });
+
+       $.post('/payForItems.json', itemsToPayFor, function(data) {}, "json");
       }
     });
   });

@@ -130,6 +130,7 @@ def orderStatus_view(request):
 		transaction.commit()
 	return {'isSuccess' : 1}
 
+@view_config(renderer='json', route_name='editMenuItem')
 @view_config(renderer='json', name='editMenuItem.json')
 def editMenuItem_view(request):
 	print request
@@ -140,9 +141,15 @@ def editMenuItem_view(request):
 		item.name = newItem['name']
 		item.category = newItem['category']
 		item.price = newItem['price']
-		item.isVeg = newItem['isVeg']
 		item.description = newItem['description']
-		item.image = newItem['image']
+		item.image = newItem['image']            
+
+        	isVegetarian = request.json_body['isVeg'];
+        	if isVegetarian == 'TRUE':
+			item.isVeg = True
+	        elif isVegetarian == 'FALSE':
+			item.isVeg = False
+
 		transaction.commit()
 		return {'isSuccess': 1}
 	else:
@@ -161,6 +168,20 @@ def getMenuName_view(request):
 	jsonString = jsonString + "]"
 	print jsonString
 	return jsonString
+
+@view_config(renderer='json', name="payForItems.json")
+def getPOS_view(request):
+	print request
+
+	orderID = request.json_body['order']
+	menuItem = request.json_body['menuItem']
+	groupNum = request.json_body['group']
+	tableNum = request.json_body['table']
+
+	DBSession.query(Order).filter(Order.orderID==orderID, Order.menuItem==menuItem, Order.tableNum==tableNum, Order.groupNum==groupNum).delete()
+	transaction.commit()
+
+	return {'isSuccess': 1}
 
 @view_config(renderer='json', name='getOrders.json')
 def getOrders_view(request):
