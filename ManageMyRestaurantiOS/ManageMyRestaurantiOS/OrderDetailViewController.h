@@ -11,7 +11,7 @@
 
 @class ItemOrder;
 
-@interface OrderDetailViewController : UITableViewController <UISplitViewControllerDelegate, ItemOrderDelegate>
+@interface OrderDetailViewController : UITableViewController <UISplitViewControllerDelegate>//<UISplitViewControllerDelegate, ItemOrderDelegate>
 
 @property (retain, nonatomic) ItemOrder *order;
 

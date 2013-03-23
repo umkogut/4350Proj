@@ -893,7 +893,7 @@
         <scene sceneID="NK3-WB-ajJ">
             <objects>
                 <splitViewController id="OMN-YX-hMf" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="View Orders" id="f4J-wx-7ao"/>
+                    <tabBarItem key="tabBarItem" title="View Orders" image="first.png" id="f4J-wx-7ao"/>
                     <toolbarItems/>
                     <connections>
                         <segue destination="Y4M-we-rqC" kind="relationship" relationship="masterViewController" id="DVz-xm-30Y"/>
@@ -1075,12 +1075,12 @@
                         </connections>
                     </tableView>
                     <connections>
-                        <outlet property="categoryLabel" destination="vCD-tZ-ci4" id="BSn-UY-T2q"/>
-                        <outlet property="commentsLabel" destination="Yf1-cR-cEm" id="xtl-KQ-SQm"/>
-                        <outlet property="groupNumLabel" destination="z5S-43-t7X" id="ReL-9Y-7Xz"/>
+                        <outlet property="categoryLabel" destination="1oc-6t-mYd" id="qL2-2l-V35"/>
+                        <outlet property="commentsLabel" destination="z3f-0J-k6i" id="ttr-eh-7Hl"/>
+                        <outlet property="groupNumLabel" destination="guy-Xa-nZF" id="cCH-Dh-r57"/>
                         <outlet property="isCompleteCell" destination="3c1-DU-K0a" id="0fW-w8-0mj"/>
-                        <outlet property="nameLabel" destination="TAN-pa-ykJ" id="BcZ-cE-Zfd"/>
-                        <outlet property="orderIDLabel" destination="t9u-2f-l5f" id="Qif-aN-pLO"/>
+                        <outlet property="nameLabel" destination="nov-CQ-aik" id="Zid-05-nH8"/>
+                        <outlet property="orderIDLabel" destination="6vz-RN-Fg1" id="Fpz-Ww-PRA"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ror-rc-BmB" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1148,9 +1148,6 @@
         </class>
         <class className="OrderMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/OrderMasterViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="detailViewController" candidateClass="OrderDetailViewController"/>
-            </relationships>
         </class>
         <class className="UICustomSwitch" superclassName="UISlider">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICustomSwitch.h"/>

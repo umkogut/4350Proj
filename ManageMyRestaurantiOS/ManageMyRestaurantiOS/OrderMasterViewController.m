@@ -19,7 +19,7 @@
 
 @implementation OrderMasterViewController
 
-@synthesize delegate;
+//@synthesize delegate;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -40,6 +40,8 @@
     [super viewDidLoad];
 
     [self refreshOrders];
+
+    self.detailViewController = (OrderDetailViewController *)[self.splitViewController.viewControllers lastObject];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -191,11 +193,26 @@
      // ...
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
+     
+     
      */
     
-    TableOrder *table = [self.dataController.tableOrderList objectAtIndex:[self.tableView indexPathForSelectedRow].section];
-    ItemOrder *order = [table objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
-    [self.delegate didSelectOrder:order];
+    
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        
+//        NSDate *object = _objects[indexPath.row];
+//        self.detailViewController.detailItem = object;
+        
+        TableOrder *table = [self.dataController.tableOrderList objectAtIndex:[self.tableView indexPathForSelectedRow].section];
+        ItemOrder *order = [table objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
+        
+        self.detailViewController.order = order;
+    }
+    
+    
+    
+//    [self.delegate didSelectOrder:order];
+//    [self.detailViewController ]
     //detailViewController.order = order;
 }
 
