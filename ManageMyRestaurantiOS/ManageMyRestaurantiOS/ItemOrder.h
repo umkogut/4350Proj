@@ -10,4 +10,18 @@
 
 @interface ItemOrder : NSObject
 
+@property (nonatomic) NSInteger orderID;
+@property (nonatomic, copy) NSString *category;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic) NSInteger groupNum;
+@property BOOL isComplete;
+@property (nonatomic, copy) NSString *comments;
+
+- (id)initWithName:(NSString *)name
+           orderID:(NSInteger)orderID
+          category:(NSString *)category
+          groupNum:(NSInteger)groupNum
+        isComplete:(BOOL)isComplete
+          comments:(NSString *)comments;
+
 @end

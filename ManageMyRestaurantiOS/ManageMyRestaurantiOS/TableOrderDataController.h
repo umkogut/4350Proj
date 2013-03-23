@@ -8,6 +8,25 @@
 
 #import <Foundation/Foundation.h>
 
+@class ItemOrder;
+@class TableOrder;
+
 @interface TableOrderDataController : NSObject
+
+@property (nonatomic) NSMutableArray *tableOrderList;
+
+- (NSInteger)numTables;
+- (NSInteger)numOrdersByTable:(NSInteger)tableNum;
+- (NSInteger)numOrdersByIndex:(NSUInteger)index;
+- (void)addTable:(NSInteger)tableNum;
+- (void)addOrder:(NSInteger)tableNum
+                :(ItemOrder *)order;
+- (NSMutableArray *)getListInCategory:(NSInteger)tableNum
+                                     :(NSString *)category;
+- (TableOrder *)objectInListAtIndex:(NSUInteger)index;
+- (ItemOrder *)orderInListAtIndex:(NSInteger)tableNum
+                                 :(NSUInteger)index;
+- (void)clearTable:(NSInteger)tableNum;
+- (void)clearAllTable;
 
 @end
