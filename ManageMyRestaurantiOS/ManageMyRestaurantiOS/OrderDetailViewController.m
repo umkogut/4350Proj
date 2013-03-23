@@ -16,7 +16,7 @@
 
 @implementation OrderDetailViewController
 
-@synthesize order;
+//@synthesize order;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -30,8 +30,8 @@
 #pragma mark - Managing the detail order
 
 - (void)setOrder:(ItemOrder *)newOrder {
-    if (self.order != newOrder) {
-        self.order = newOrder;
+    if (_order != newOrder) {
+        _order = newOrder;
         
         [self initializeView];
     }
@@ -60,14 +60,15 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self initializeView];
 
-    if([self conformsToProtocol:@protocol(ItemOrderDelegate)])
-    {
-        NSLog(@"conformed");
-    }
+//    if([self conformsToProtocol:@protocol(ItemOrderDelegate)])
+//    {
+//        NSLog(@"conformed");
+//    }
     
-    OrderMasterViewController *master = [[OrderMasterViewController alloc] init];
-    master.delegate = self;
+//    OrderMasterViewController *master = [[OrderMasterViewController alloc] init];
+//    master.delegate = self;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
