@@ -40,6 +40,5 @@ function submitOrder(table) {
   jsonResult = JSON.stringify(jsonResult);
   $.post('/placedOrder.json', jsonResult, function(data) {
   }, "json");
-  alert("Order placed");
 }
 
