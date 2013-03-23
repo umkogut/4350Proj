@@ -2,6 +2,12 @@
 <html land="en">
 {%extends "index.jinja2" %}
 {% block body %}
+
+<header class="subhead">
+  <div class="container">
+     <h1>Point of Sale</h1>
+  </div>
+</header>
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="tabbable tabs-left">
@@ -12,15 +18,16 @@
         {% endfor %}
       </ul>
       <div class="tab-content">
-	{% if tableNums is none %}
+	<label name="testing" id="testing"></label>	
 	{% for tableNum in tableNums %}
+	 <form method="POST" id="posForm" class="form-horizontal"> 
 	   <div class="tab-pane active" id="tableNum{{tableNum}}" style="display:none">
-           {% for order in orders %}
+	     {% for order in orders %}
              {% if order.tableNum is sameas tableNum %}
 		<div class="row-fluid">
   	        	<div class="span3" id="bill">
 	      			<label class="checkbox">
-                			<input type="checkbox" value="" id="item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}" checked="checked">
+                			<input type="checkbox" value="" id="order{{order.orderID}}_item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}" checked="checked">
 		 			{% for menuItem in menuItems %}
 						{% if order.menuItem is sameas menuItem.menuID %}
 							{{menuItem.name}} - {{menuItem.price}}
@@ -29,7 +36,7 @@
               			</label>
 			</div>
             		<div class="span3" id="currBill">
-              			<label id="item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}_lb">
+              			<label id="order{{order.orderID}}_item{{order.menuItem}}_table{{order.tableNum}}_group{{order.groupNum}}_lb">
                                         {% for menuItem in menuItems %}
                                                 {% if order.menuItem is sameas menuItem.menuID %}
                                                         {{menuItem.name}} - {{menuItem.price}}
@@ -43,11 +50,9 @@
           <div class="row-fluid">
             <button class="btn" id="pay">Pay</button>
           </div>
+         </form>
         </div>
      {% endfor %}
-     {% else %}
-	There are currently no outstanding orders.
-     {% endif %} 
      </div>
     </div>
   </div>
