@@ -7,12 +7,16 @@
 //
 
 #import "OrderDetailViewController.h"
+#import "OrderMasterViewController.h"
+#import "ItemOrder.h"
 
 @interface OrderDetailViewController ()
 
 @end
 
 @implementation OrderDetailViewController
+
+@synthesize order;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -23,10 +27,47 @@
     return self;
 }
 
+#pragma mark - Managing the detail order
+
+- (void)setOrder:(ItemOrder *)newOrder {
+    if (self.order != newOrder) {
+        self.order = newOrder;
+        
+        [self initializeView];
+    }
+}
+
+- (void) didSelectOrder:(ItemOrder *)newOrder {
+    self.order = newOrder;
+    
+    [self initializeView];
+}
+
+- (void)initializeView {
+    if (self.order) {
+        [self.orderIDLabel setText:[NSString stringWithFormat:@"%i", self.order.orderID]];
+        [self.groupNumLabel setText:[NSString stringWithFormat:@"%i", self.order.groupNum]];
+        [self.nameLabel setText:self.order.name];
+        [self.categoryLabel setText:self.order.category];
+        [self.commentsLabel setText:self.order.comments];
+        
+        if (self.order.isComplete) {
+            self.isCompleteCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        }
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 
+    if([self conformsToProtocol:@protocol(ItemOrderDelegate)])
+    {
+        NSLog(@"conformed");
+    }
+    
+    OrderMasterViewController *master = [[OrderMasterViewController alloc] init];
+    master.delegate = self;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -39,6 +80,8 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+/*  NOT SURE IF WE NEED
 
 #pragma mark - Table view data source
 
@@ -66,6 +109,8 @@
     return cell;
 }
 
+    NOT SURE IF WE NEED END */
+ 
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -105,6 +150,9 @@
 }
 */
 
+
+/*     NOT SURE IF WE NEED
+
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -116,6 +164,7 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-}
+//}
+
 
 @end
