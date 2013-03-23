@@ -69,7 +69,7 @@
         NSTextCheckingResult *match = [regex firstMatchInString:self.price.text options:0 range:NSMakeRange(0, [self.price.text length])];
         */
         if(match) {
-        NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
+            NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                  self.itemName.text, @"name",
                                  row, @"category",
                                  self.description.text, @"description",
@@ -77,48 +77,24 @@
                                  vegValue, @"isVeg",
                                  @"", @"image",
                                  nil];
-        NSString *jsonCommand = [jsonWriter stringWithObject:json];
+            NSString *jsonCommand = [jsonWriter stringWithObject:json];
         
-        //NSLog(jsonCommand);
+            //NSLog(jsonCommand);
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/addMenuItem", serverURL]];
+            NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/addMenuItem", serverURL]];
         
-        //Production
-        //NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
-        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+            //Production
+            //NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
+            ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
         
-        //[request addRequestHeader:@"User-Agent" value:@"ASIHTTPRequest"];
-        [request addRequestHeader:@"Content-Type" value:@"application/json"];
+            //[request addRequestHeader:@"User-Agent" value:@"ASIHTTPRequest"];
+            [request addRequestHeader:@"Content-Type" value:@"application/json"];
         
-        [request setRequestMethod:@"POST"];
-        [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
+            [request setRequestMethod:@"POST"];
+            [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
         
-        [request setDelegate:self];
-        [request startSynchronous];
-        
-        NSString *JsonData = [request responseString];
-        SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
-        NSDictionary *jsonObject = [jsonParser objectWithString:JsonData];
-        NSInteger retVal = [[jsonObject objectForKey:@"isSuccess"] integerValue];
-        
-        if (retVal == 1)
-        {
-            //success
-            UIAlertView *successMsg = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Menu item successfully added!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-            [successMsg show];
-            
-            self.itemName.text = @"";
-            self.description.text = @"";
-            self.price.text = @"";
-        }
-        else
-        {
-            //failed - can't know why yet. Will work that out later
-            UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Adding new menu item failed." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-            [failedMsg show];
-        }
-        
-        NSLog(@"%@",[request responseString]);
+            [request setDelegate:self];
+            [request startAsynchronous];
         }
         else
         {
@@ -133,5 +109,30 @@
     }
 }
 
+- (void)requestFinished:(ASIHTTPRequest *)request {
+    NSString *JsonData = [request responseString];
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSDictionary *jsonObject = [jsonParser objectWithString:JsonData];
+    NSInteger retVal = [[jsonObject objectForKey:@"isSuccess"] integerValue];
+    
+    if (retVal == 1)
+    {
+        //success
+        UIAlertView *successMsg = [[UIAlertView alloc] initWithTitle:@"Success" message:@"Menu item successfully added!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [successMsg show];
+        
+        self.itemName.text = @"";
+        self.description.text = @"";
+        self.price.text = @"";
+    }
+    else
+    {
+        //failed - can't know why yet. Will work that out later
+        UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Adding new menu item failed." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [failedMsg show];
+    }
+    
+    NSLog(@"%@",[request responseString]);
+}
 
 @end
