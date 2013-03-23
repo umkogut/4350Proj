@@ -54,21 +54,21 @@
     NSLog(@"editing");
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
     
-    NSString *isVeg = self.menuItem.isVegetarian ? @"TRUE" : @"FALSE";
     NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                           updatedItem.name, @"name",
                           updatedItem.category, @"category",
                           updatedItem.description, @"description",
                           updatedItem.price, @"price",
-                          isVeg, @"isVeg",
+                          [NSNumber numberWithBool:updatedItem.isVegetarian] , @"isVeg",
                           @"", @"image",
                           oldItemName, @"prevItemName",
                           nil];
+    NSLog(@"%@", json);
     NSString *jsonCommand = [jsonWriter stringWithObject:json];
     
     NSLog(@"%@", jsonCommand);
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/editMenuItem", serverURL]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/editMenuItem.json", serverURL]];
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     
     [request addRequestHeader:@"Content-Type" value:@"application/json"];
@@ -77,9 +77,12 @@
     [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
     
     [request setDelegate:self];
-    [request startSynchronous];
-    
+    [request startAsynchronous];
+}
+
+- (void)requestFinished:(ASIHTTPRequest *)request {
     NSString *JsonData = [request responseString];
+    NSLog(@"Return value: %@", JsonData);
     SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
     NSDictionary *jsonObject = [jsonParser objectWithString:JsonData];
     NSInteger retVal = [[jsonObject objectForKey:@"isSuccess"] integerValue];
@@ -97,10 +100,7 @@
         UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Editing failed" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [failedMsg show];
     }
-
 }
-
-
 
 #pragma mark - Table view data source
 
