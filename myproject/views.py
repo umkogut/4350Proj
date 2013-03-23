@@ -179,11 +179,11 @@ def getPOS_view(request):
 	for item in itemArr:
 		#print item
 		fields = item.split(',')
-		tableNum = fields[0].split(':')[1][1]
-		menuItem = fields[1].split(':')[1][1] 
-		groupNum = fields[2].split(':')[1][1]
-		orderID = fields[3].split(':')[1][1] 
-		#print order
+		tableNum = fields[0].split(':')[1].replace("\"", "")
+		menuItem = fields[1].split(':')[1].replace("\"", "")
+		groupNum = fields[2].split(':')[1].replace("\"", "")
+		orderID = fields[3].split(':')[1].replace("\"", "").replace("}]", "")
+		#print tableNum + menuItem + groupNum + orderID
 		DBSession.query(Order).filter(Order.orderID==orderID, Order.menuItem==menuItem, Order.tableNum==tableNum, Order.groupNum==groupNum).delete()
 	        transaction.commit()
 
