@@ -78,7 +78,6 @@ $(document).on('change', 'input:checkbox', function() {
 
 $(document).on('click', ':button[name="submitBtn"]', function() {
 	var status = '{"orderStatus": [' + getOrderStatus() + ']}';
-	alert(status);
 	$.post('/orderStatus.json', status, function(data) {
 		if(data['isSuccess'])
 			$('#result').text('Successfully updated order for "' + table + '"');

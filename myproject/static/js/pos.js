@@ -2,8 +2,9 @@ $(function() {
   $('input:checkbox').bind('change',function() {
     $('#'+this.id+'_lb').toggle($(this).is(':checked'));
   });
- 
-  $("#pay").click(function() {
+});
+
+function payBill(tableNumCheck) {
     $("#bill input[type=checkbox]").each(function() {
       if($(this).is(":checked"))
       {
@@ -24,11 +25,13 @@ $(function() {
 	'order':orderNum
         });
 
-       $.post('/payForItems.json', itemsToPayFor, function(data) {}, "json");
+      if(tableNum == tableNumCheck)
+         $.post('/payForItems.json', itemsToPayFor, function(data) {}, "json");
       }
+
+      location.reload();
     });
-  });
-});
+}
 
 function displayTableBill(tableNum) {
     $(".tab-pane").hide();
