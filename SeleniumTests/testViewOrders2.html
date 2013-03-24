@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/.compute-1.amazonaws.com:6543/" />
+<title>testViewOrders2</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">testViewOrders2</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/orders</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=ManageMyRestaurant</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=View Orders</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForElementPresent</td>
+	<td>link=Table3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Table3</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=7</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=17</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=42</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=18</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>id=43</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//button[@id='submitBtn'])[3]</td>
+	<td></td>
+</tr>
+<tr>
+	<td>assertText</td>
+	<td>id=result</td>
+	<td>Successfully updated order for &quot;Table 3&quot;</td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
