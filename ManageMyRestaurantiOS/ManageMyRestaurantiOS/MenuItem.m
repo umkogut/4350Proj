@@ -19,12 +19,14 @@
     self = [super init];
     
     if (self) {
-        _name = name;
-        _category = category;
-        _description = description;
-        _price = price;
-        _isVegetarian = isVegetarian;
-        return self;
+        if (name != nil && category != nil && price != nil) {
+            _name = name;
+            _category = category;
+            _description = description;
+            _price = price;
+            _isVegetarian = isVegetarian;
+            return self;
+        }
     }
     return nil;
 }

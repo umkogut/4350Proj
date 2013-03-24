@@ -97,7 +97,7 @@
     STAssertEquals([item name], @"salad", @"Unable to set menu item name");
     STAssertEquals([item category], @"Appetizer", @"Unable to set menu item category");
     STAssertEquals([item description], @"greens", @"Unable to set menu item description");
-    STAssertFalse([item price] > [[NSDecimalNumber alloc] initWithDouble:1.99] && [item price] < [[NSDecimalNumber alloc] initWithDouble:1.99], @"Menu item price not set correctly");
+    STAssertEqualObjects([item price], [[NSDecimalNumber alloc] initWithDouble:1.99], @"Menu item price not set correctly");
     STAssertEquals([item isVegetarian], YES, @"Unable to change menu item to vegetarian");
     
     item = [self.menuDataController objectInListAtIndex:2];
@@ -106,7 +106,7 @@
     STAssertEquals([item name], @"cake", @"Unable to set menu item name");
     STAssertEquals([item category], @"Dessert", @"Unable to set menu item category");
     STAssertEquals([item description], @"sweeeet", @"Unable to set menu item description");
-    STAssertFalse([item price] > [[NSDecimalNumber alloc] initWithDouble:2.49] && [item price] < [[NSDecimalNumber alloc] initWithDouble:2.49], @"Menu item price not set correctly");
+    STAssertEqualObjects([item price], [[NSDecimalNumber alloc] initWithDouble:2.45], @"Menu item price not set correctly");
     STAssertEquals([item isVegetarian], YES, @"Unable to change menu item to vegetarian");
     
     MenuItem *newItem = [[MenuItem alloc] initWithName:@"newItem"
@@ -124,7 +124,7 @@
     STAssertEquals([item name], @"newItem", @"Unable to set menu item name");
     STAssertEquals([item category], @"Dessert", @"Unable to set menu item category");
     STAssertEquals([item description], @"new dessert", @"Unable to set menu item description");
-    STAssertFalse([item price] > [[NSDecimalNumber alloc] initWithDouble:5.75] && [item price] < [[NSDecimalNumber alloc] initWithDouble:5.75], @"Menu item price not set correctly");
+    STAssertEqualObjects([item price], [[NSDecimalNumber alloc] initWithDouble:5.75], @"Menu item price not set correctly");
     STAssertEquals([item isVegetarian], NO, @"Unable to change menu item to vegetarian");
     
     itemList = [self.menuDataController getListInCategory:1];
@@ -134,7 +134,7 @@
     STAssertEquals([item name], @"burger", @"Unable to set menu item name");
     STAssertEquals([item category], @"Entrees", @"Unable to set menu item category");
     STAssertEquals([item description], @"beef", @"Unable to set menu item description");
-    STAssertFalse([item price] > [[NSDecimalNumber alloc] initWithDouble:7.95] && [item price] < [[NSDecimalNumber alloc] initWithDouble:7.95], @"Menu item price not set correctly");
+    STAssertEqualObjects([item price], [[NSDecimalNumber alloc] initWithDouble:7.95], @"Menu item price not set correctly");
     STAssertEquals([item isVegetarian], NO, @"Unable to change menu item to vegetarian");
     
     item = itemList[1];
@@ -143,7 +143,7 @@
     STAssertEquals([item name], @"hot dog", @"Unable to set menu item name");
     STAssertEquals([item category], @"Entrees", @"Unable to set menu item category");
     STAssertEquals([item description], @"pork", @"Unable to set menu item description");
-    STAssertFalse([item price] > [[NSDecimalNumber alloc] initWithDouble:4.95] && [item price] < [[NSDecimalNumber alloc] initWithDouble:4.95], @"Menu item price not set correctly");
+    STAssertEqualObjects([item price], [[NSDecimalNumber alloc] initWithDouble:4.95], @"Menu item price not set correctly");
     STAssertEquals([item isVegetarian], NO, @"Unable to change menu item to vegetarian");
     
     [self.menuDataController clearMenu];
@@ -159,7 +159,7 @@
     STAssertEquals([item name], @"newItem", @"Unable to set menu item name");
     STAssertEquals([item category], @"Dessert", @"Unable to set menu item category");
     STAssertEquals([item description], @"new dessert", @"Unable to set menu item description");
-    STAssertFalse([item price] > [[NSDecimalNumber alloc] initWithDouble:5.75] && [item price] < [[NSDecimalNumber alloc] initWithDouble:5.75], @"Menu item price not set correctly");
+    STAssertEqualObjects([item price], [[NSDecimalNumber alloc] initWithDouble:5.75], @"Menu item price not set correctly");
     STAssertEquals([item isVegetarian], NO, @"Unable to change menu item to vegetarian");
 }
 
