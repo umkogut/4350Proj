@@ -73,32 +73,7 @@
     
     for (NSDictionary *table in tableList) {
         NSInteger tableNum = [[table objectForKey:@"tableNum"] intValue];
-        [self.dataController addTable:tableNum];
-        
-        /*if ([[table objectForKey:@"orders"] isKindOfClass:[NSDictionary class]]) {
-            NSDictionary *order = [table objectForKey:@"orders"];
-            
-            ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
-                                                          orderID:[[order objectForKey:@"orderID"] intValue]
-                                                         category:[order objectForKey:@"category"]
-                                                         groupNum:[[order objectForKey:@"groupNum"] intValue]
-                                                       isComplete:[[order objectForKey:@"isComplete"] boolValue]
-                                                         comments:[order objectForKey:@"comments"]];
-            [self.dataController addOrder:tableNum :newOrder];
-            
-        } else {
-            NSArray *orderList = [table objectForKey:@"orders"];
-            for (NSDictionary *order in orderList) {
-                NSString *comment = [order objectForKey:@"comments"];
-                ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
-                                                              orderID:[[order objectForKey:@"orderID"] intValue]
-                                                             category:[order objectForKey:@"category"]
-                                                             groupNum:[[order objectForKey:@"groupNum"] intValue]
-                                                           isComplete:[[order objectForKey:@"isComplete"] boolValue]
-                                                             comments:[order objectForKey:@"comments"]];
-                [self.dataController addOrder:tableNum :newOrder];
-            }
-        }*/
+        [self.dataController addSalesTable:tableNum];
     }
     
     [self.tableView reloadData];
@@ -134,8 +109,8 @@
     }
     
     TableOrder *table = [self.dataController objectInListAtIndex:indexPath.section];
-    ItemOrder *order = [table objectInListAtIndex:indexPath.row];
-    [[cell textLabel] setText:order.name];
+    NSString *tableNum = [table objectInListAtIndex:indexPath.row];
+    [[cell textLabel] setText:tableNum];
     
     return cell;
 }
