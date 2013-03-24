@@ -79,6 +79,7 @@
         
         if ([[table objectForKey:@"orders"] isKindOfClass:[NSDictionary class]]) {
             NSDictionary *order = [table objectForKey:@"orders"];
+            
             ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
                                                           orderID:[[order objectForKey:@"orderID"] intValue]
                                                          category:[order objectForKey:@"category"]
@@ -90,6 +91,7 @@
         } else {
             NSArray *orderList = [table objectForKey:@"orders"];
             for (NSDictionary *order in orderList) {
+                NSString *comment = [order objectForKey:@"comments"];
                 ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
                                                               orderID:[[order objectForKey:@"orderID"] intValue]
                                                              category:[order objectForKey:@"category"]
