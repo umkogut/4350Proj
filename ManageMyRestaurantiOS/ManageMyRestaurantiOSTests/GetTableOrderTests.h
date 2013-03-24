@@ -12,13 +12,14 @@
 
 @interface GetTableOrderTests : SenTestCase
 
-@property (nonatomic, retain) TableOrder *testTableOrder;
+@property TableOrder *testTableOrder;
+@property ItemOrder *order;
 @property NSInteger nOrdersBefore;
 @property NSInteger nOrdersAfter;
+@property NSInteger nOrdersCleaned;
+@property NSMutableArray *result;
+@property ItemOrder *resultOrder;
 
-- (void)testNumOrder;
-- (void)testAddOrder;
-- (void)testGetListsInCategory;
-- (void)testObjectList;
+- (void)tableOrderTests;
 
 @end
