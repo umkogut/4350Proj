@@ -31,6 +31,10 @@
     [self.orderList addObject:order];
 }
 
+- (void)addTable:(NSInteger)tableNum {
+    [self.orderList addObject:[NSString stringWithFormat:@"%d", tableNum]];
+}
+
 - (NSMutableArray *)getListInCategory:(NSString *)category {
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
@@ -44,6 +48,10 @@
 }
 
 - (ItemOrder *)objectInListAtIndex:(NSUInteger)index {
+    return [self.orderList objectAtIndex:index];
+}
+
+- (NSString *)tableInListAtIndex:(NSUInteger)index {
     return [self.orderList objectAtIndex:index];
 }
 

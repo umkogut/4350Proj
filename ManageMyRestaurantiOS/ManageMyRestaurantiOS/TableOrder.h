@@ -17,8 +17,10 @@
 
 - (NSInteger)numOrders;
 - (void)addOrder:(ItemOrder *)order;
+- (void)addTable:(NSInteger)tableNum;
 - (NSMutableArray *)getListInCategory:(NSString *)category;
 - (ItemOrder *)objectInListAtIndex:(NSUInteger)index;
+- (NSString *)tableInListAtIndex:(NSUInteger)index;
 - (void)clearOrders;
 
 - (id)initWithTableNum:(NSInteger)tableNum;

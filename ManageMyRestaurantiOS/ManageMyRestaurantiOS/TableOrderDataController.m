@@ -8,7 +8,7 @@
 
 #import "TableOrderDataController.h"
 #import "TableOrder.h"
-
+#import "ItemOrder.h"
 
 @implementation TableOrderDataController
 
@@ -54,6 +54,12 @@
         TableOrder *newTable = [[TableOrder alloc] initWithTableNum:tableNum];
         [self.tableOrderList addObject:newTable];
     }
+}
+
+-(void)addSalesTable:(NSInteger)tableNum {
+    TableOrder *newTable = [[TableOrder alloc] initWithTableNum:tableNum];
+    [self.tableOrderList addObject:newTable];
+    [newTable addTable:tableNum];
 }
 
 - (void)addOrder:(NSInteger)tableNum

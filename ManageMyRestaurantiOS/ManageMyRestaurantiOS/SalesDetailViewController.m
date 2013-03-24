@@ -1,19 +1,20 @@
 //
-//  OrderDetailViewController.m
+//  SalesDetailViewController.m
 //  ManageMyRestaurantiOS
 //
-//  Created by Rong Wu on 2013-03-19.
+//  Created by Riley Draward on 2013-03-23.
 //  Copyright (c) 2013 Group6Comp4350. All rights reserved.
 //
 
-#import "OrderDetailViewController.h"
+#import "SalesDetailViewController.h"
+#import "SalesMasterViewController.h"
+#import "ItemOrder.h"
 
-@interface OrderDetailViewController ()
-@property (strong, nonatomic) UIPopoverController *masterPopoverController;
+@interface SalesDetailViewController ()
 
 @end
 
-@implementation OrderDetailViewController
+@implementation SalesDetailViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -24,52 +25,17 @@
     return self;
 }
 
-#pragma mark - Managing the detail order
-
-- (void)setOrder:(ItemOrder *)newOrder {
-    if (_order != newOrder) {
-        _order = newOrder;
-        
-        [self initializeView];
-    }
-    
-    if (self.masterPopoverController != nil) {
-        [self.masterPopoverController dismissPopoverAnimated:YES];
-    }
-}
-
-- (void) didSelectOrder:(ItemOrder *)newOrder {
-    self.order = newOrder;
-    
-    [self initializeView];
-}
-
-- (void)initializeView {
-    if (self.order) {
-        [self.nameLabel setText:self.order.name];
-        [self.categoryLabel setText:self.order.category];
-        
-        NSString *comment = self.order.comments;
-        if ([comment isEqual:@""]) {
-            [self.commentsLabel setText:@"None"];
-        }
-        else {
-            [self.commentsLabel setText:self.order.comments];
-        }        
-        
-        if (self.order.isComplete) {
-            self.isCompleteCell.accessoryType = UITableViewCellAccessoryCheckmark;
-        }
-        else {
-            self.isCompleteCell.accessoryType = UITableViewCellAccessoryNone;
-        }
-    }
-}
-
 - (void)viewDidLoad
 {
-    [super viewDidLoad];    
-    [self initializeView];
+    [super viewDidLoad];
+    
+    
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,25 +43,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-#pragma mark - Split view
-
-- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
-{
-    barButtonItem.title = NSLocalizedString(@"Tables", @"Tables");
-    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
-    self.masterPopoverController = popoverController;
-}
-
-- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
-{
-    // Called when the view is shown again in the split view, invalidating the button and popover controller.
-    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
-    self.masterPopoverController = nil;
-}
-
-
-/*  NOT SURE IF WE NEED
 
 #pragma mark - Table view data source
 
@@ -123,8 +70,6 @@
     return cell;
 }
 
-    NOT SURE IF WE NEED END */
- 
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -164,9 +109,6 @@
 }
 */
 
-
-/*     NOT SURE IF WE NEED
-
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -178,9 +120,6 @@
      // Pass the selected object to the new view controller.
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
-//}
-
-
-
+}
 
 @end
