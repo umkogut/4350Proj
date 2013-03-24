@@ -49,10 +49,20 @@
         [self.groupNumLabel setText:[NSString stringWithFormat:@"%i", self.order.groupNum]];
         [self.nameLabel setText:self.order.name];
         [self.categoryLabel setText:self.order.category];
-        [self.commentsLabel setText:self.order.comments];
+        
+        NSString *comment = self.order.comments;
+        if ([comment isEqual:@""]) {
+            [self.commentsLabel setText:@"None"];
+        }
+        else {
+            [self.commentsLabel setText:self.order.comments];
+        }        
         
         if (self.order.isComplete) {
             self.isCompleteCell.accessoryType = UITableViewCellAccessoryCheckmark;
+        }
+        else {
+            self.isCompleteCell.accessoryType = UITableViewCellAccessoryNone;
         }
     }
 }

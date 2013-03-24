@@ -174,13 +174,18 @@ def getMenuName_view(request):
 def getPOS_view(request):
 	print request
 
-	orderID = request.json_body['order']
-	menuItem = request.json_body['menuItem']
-	groupNum = request.json_body['group']
-	tableNum = request.json_body['table']
-
-	DBSession.query(Order).filter(Order.orderID==orderID, Order.menuItem==menuItem, Order.tableNum==tableNum, Order.groupNum==groupNum).delete()
-	transaction.commit()
+	items = request.json_body
+	itemArr = items.split('},')
+	for item in itemArr:
+		#print item
+		fields = item.split(',')
+		tableNum = fields[0].split(':')[1].replace("\"", "")
+		menuItem = fields[1].split(':')[1].replace("\"", "")
+		groupNum = fields[2].split(':')[1].replace("\"", "")
+		orderID = fields[3].split(':')[1].replace("\"", "").replace("}]", "")
+		#print tableNum + menuItem + groupNum + orderID
+		DBSession.query(Order).filter(Order.orderID==orderID, Order.menuItem==menuItem, Order.tableNum==tableNum, Order.groupNum==groupNum).delete()
+	        transaction.commit()
 
 	return {'isSuccess': 1}
 
