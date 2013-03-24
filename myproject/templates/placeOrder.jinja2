@@ -21,12 +21,10 @@
           {% endfor %}
         </div>
         <button class="btn" id="submit{{table}}" onclick="submitOrder({{table}})"=>Submit</button>
-        <div class="control-group">
-          
-            <label id="result" name="result">TEXT</label>
-        </div> <!-- control-group -->
       </div>
     </div>
+    <br>
+    <label class="result" id="result{{table}}" name="result"></label>
   </div>
 {%- endmacro %}
 
