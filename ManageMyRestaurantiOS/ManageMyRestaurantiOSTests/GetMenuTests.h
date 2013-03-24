@@ -18,5 +18,6 @@
 @property MenuItem *testItem;
 
 - (void)testCreateItem;
+- (void)testNil;
 
 @end
