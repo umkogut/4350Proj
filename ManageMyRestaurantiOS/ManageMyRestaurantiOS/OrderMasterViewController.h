@@ -14,18 +14,9 @@
 @class TableOrderDataController;
 @class OrderDetailViewController;
 
-//@protocol ItemOrderDelegate <NSObject>
-//
-//-(void) didSelectOrder:(ItemOrder *) newOrder;
-//
-//@end
-
 @interface OrderMasterViewController : UITableViewController
 
 @property (retain, nonatomic) TableOrderDataController *dataController;
-//@property (nonatomic, retain) IBOutlet OrderDetailViewController *detailViewController;
 @property (strong, nonatomic) OrderDetailViewController *detailViewController;
-
-//@property (nonatomic,retain) id<ItemOrderDelegate> delegate;
 
 @end
