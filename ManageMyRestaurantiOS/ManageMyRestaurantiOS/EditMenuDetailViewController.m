@@ -45,12 +45,12 @@
     BOOL isVegetarian = [self.isVegetarianSwitch isOn];
     
     MenuItem *updatedItem = [[MenuItem alloc] initWithName:name category:categoryID description:description price:price  isVegetarian:isVegetarian];
-    [self editMenuItemDetails:self.menuItem.name withUpdatedItem:updatedItem];
+    [self editMenuItem:self.menuItem.name withUpdatedItem:updatedItem];
     
     [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
--(void)editMenuItemDetails:(NSString *)oldItemName withUpdatedItem:(MenuItem *)updatedItem {
+-(void)editMenuItem:(NSString *)oldItemName withUpdatedItem:(MenuItem *)updatedItem {
     NSLog(@"editing");
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
     

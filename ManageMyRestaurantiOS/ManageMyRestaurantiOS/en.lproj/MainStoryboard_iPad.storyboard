@@ -59,15 +59,34 @@
         <scene sceneID="Ud2-VZ-c09">
             <objects>
                 <tableViewController id="3f9-DU-DN0" customClass="EditMenuDetailViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QY0-EG-5uG">
-                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="QY0-EG-5uG">
+                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" id="6bp-fs-whQ">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <color key="tintColor" red="0.094117656349999995" green="0.34509804840000002" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
+                            <items>
+                                <navigationItem title="Edit Details" id="tEb-Ut-OaX">
+                                    <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="KSP-RF-hA0">
+                                        <connections>
+                                            <action selector="cancel:" destination="3f9-DU-DN0" id="dEQ-yV-jF7"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" systemItem="done" id="i3E-L5-8dr">
+                                        <connections>
+                                            <action selector="done:" destination="3f9-DU-DN0" id="FZc-5D-aEe"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
                         <sections>
                             <tableViewSection id="Gav-yS-Ljn">
                                 <cells>
                                     <tableViewCell contentMode="scaleAspectFit" restorationIdentifier="" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="GVf-DH-JHu">
-                                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="44" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
@@ -104,7 +123,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" rowHeight="238" id="51c-Fn-MGy">
-                                        <rect key="frame" x="0.0" y="44" width="768" height="238"/>
+                                        <rect key="frame" x="0.0" y="88" width="768" height="238"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="237"/>
@@ -136,7 +155,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="3c1-xe-eOb">
-                                        <rect key="frame" x="0.0" y="282" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="326" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
@@ -170,7 +189,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="ykn-0P-M5j">
-                                        <rect key="frame" x="0.0" y="326" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="370" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
@@ -199,7 +218,7 @@
                                         </constraints>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" id="8tH-nL-eEa">
-                                        <rect key="frame" x="0.0" y="370" width="768" height="44"/>
+                                        <rect key="frame" x="0.0" y="414" width="768" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
@@ -239,16 +258,8 @@
                         </sections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Edit Details" id="xzq-j4-5xm">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iB0-9b-ARm">
-                            <connections>
-                                <action selector="cancel:" destination="3f9-DU-DN0" id="YYh-RK-TYy"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="caW-FD-2Ki">
-                            <connections>
-                                <action selector="done:" destination="3f9-DU-DN0" id="5Mw-q1-aoa"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="iB0-9b-ARm"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="caW-FD-2Ki"/>
                     </navigationItem>
                     <connections>
                         <outlet property="categoryPickerView" destination="1ik-A6-0bF" id="ibO-4o-E90"/>
@@ -404,23 +415,6 @@
             </objects>
             <point key="canvasLocation" x="6311" y="-3390"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="WAz-gL-WDb">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="Uvo-d3-TpW" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="SXx-0t-aDB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vnu-pY-wXA">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.09803922474" green="0.3803921938" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="3f9-DU-DN0" kind="relationship" relationship="rootViewController" id="0ol-zE-Q3Y"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MId-We-9aR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6406" y="-2137"/>
-        </scene>
         <!--Menu Detail View Controller - Details-->
         <scene sceneID="7yC-73-h7j">
             <objects>
@@ -557,7 +551,7 @@
                     <navigationItem key="navigationItem" title="Details" id="fhE-as-9SB">
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="saA-Il-SWr">
                             <connections>
-                                <segue destination="Uvo-d3-TpW" kind="modal" identifier="EditMenuItemDetails" id="Snw-pL-o30"/>
+                                <segue destination="3f9-DU-DN0" kind="modal" identifier="EditMenuItemDetails" id="Rsa-hF-F2d"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
