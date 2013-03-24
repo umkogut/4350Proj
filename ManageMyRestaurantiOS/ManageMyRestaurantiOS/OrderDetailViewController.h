@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "OrderMasterViewController.h"
+#import "ItemOrder.h"
 
 @class ItemOrder;
 
@@ -15,8 +16,6 @@
 
 @property (retain, nonatomic) ItemOrder *order;
 
-@property (weak, nonatomic) IBOutlet UILabel *orderIDLabel;
-@property (weak, nonatomic) IBOutlet UILabel *groupNumLabel;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;
 @property (weak, nonatomic) IBOutlet UITableViewCell *isCompleteCell;

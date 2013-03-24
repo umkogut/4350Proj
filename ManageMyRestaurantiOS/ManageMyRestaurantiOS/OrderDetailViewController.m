@@ -7,16 +7,13 @@
 //
 
 #import "OrderDetailViewController.h"
-#import "OrderMasterViewController.h"
-#import "ItemOrder.h"
 
 @interface OrderDetailViewController ()
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
 @end
 
 @implementation OrderDetailViewController
-
-//@synthesize order;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -35,6 +32,10 @@
         
         [self initializeView];
     }
+    
+    if (self.masterPopoverController != nil) {
+        [self.masterPopoverController dismissPopoverAnimated:YES];
+    }
 }
 
 - (void) didSelectOrder:(ItemOrder *)newOrder {
@@ -45,8 +46,6 @@
 
 - (void)initializeView {
     if (self.order) {
-        [self.orderIDLabel setText:[NSString stringWithFormat:@"%i", self.order.orderID]];
-        [self.groupNumLabel setText:[NSString stringWithFormat:@"%i", self.order.groupNum]];
         [self.nameLabel setText:self.order.name];
         [self.categoryLabel setText:self.order.category];
         
@@ -69,21 +68,8 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
+    [super viewDidLoad];    
     [self initializeView];
-
-//    if([self conformsToProtocol:@protocol(ItemOrderDelegate)])
-//    {
-//        NSLog(@"conformed");
-//    }
-    
-//    OrderMasterViewController *master = [[OrderMasterViewController alloc] init];
-//    master.delegate = self;
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -91,6 +77,23 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Split view
+
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+{
+    barButtonItem.title = NSLocalizedString(@"Tables", @"Tables");
+    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    self.masterPopoverController = popoverController;
+}
+
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    // Called when the view is shown again in the split view, invalidating the button and popover controller.
+    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+    self.masterPopoverController = nil;
+}
+
 
 /*  NOT SURE IF WE NEED
 
@@ -176,6 +179,8 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 //}
+
+
 
 
 @end
