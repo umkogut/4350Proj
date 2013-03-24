@@ -28,20 +28,25 @@ function payBill(tableNumCheck) {
 	  'group':groupNum,
 	  'order':orderNum
           });
-	//alert(item);
+
 	if(itemCount > 0)
 	  itemsToPayFor += ", " + item;
         else
           itemsToPayFor += item;
 
         itemCount++;
-	//alert(itemsToPayFor);
        }
       }
 
      });
      itemsToPayFor += "]";
-     $.post('/payForItems.json', JSON.stringify(itemsToPayFor), function(data) {}, "json");
+     $.post('/payForItems.json', JSON.stringify(itemsToPayFor), function(data) {
+	$.each(data, function(key, value) {
+		if(key == 'isSuccess' && value) {
+			location.reload();
+		}
+	});
+     }, "json");
 }
 
 function displayTableBill(tableNum) {
