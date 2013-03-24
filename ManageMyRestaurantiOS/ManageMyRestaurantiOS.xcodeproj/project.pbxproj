@@ -27,6 +27,21 @@
 		2FC85ADA16F0E42800C3216E /* switchOffPlain.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC85AD316F0E42800C3216E /* switchOffPlain.png */; };
 		2FC85ADB16F0E42800C3216E /* switchThumb.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC85AD516F0E42800C3216E /* switchThumb.png */; };
 		2FC85ADC16F0E42800C3216E /* switchBlueBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 2FC85AD616F0E42800C3216E /* switchBlueBg.png */; };
+		60195DDE16FFA175005DA6FC /* GetMenuListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DD716FFA175005DA6FC /* GetMenuListTests.m */; };
+		60195DDF16FFA175005DA6FC /* GetOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DD916FFA175005DA6FC /* GetOrderTests.m */; };
+		60195DE016FFA175005DA6FC /* GetTableOrderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DDB16FFA175005DA6FC /* GetTableOrderTests.m */; };
+		60195DE116FFA175005DA6FC /* GetTableTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DDD16FFA175005DA6FC /* GetTableTests.m */; };
+		60195DF416FFA227005DA6FC /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 60195DE216FFA227005DA6FC /* first.png */; };
+		60195DF516FFA227005DA6FC /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60195DE316FFA227005DA6FC /* first@2x.png */; };
+		60195DF616FFA227005DA6FC /* ItemOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DE516FFA227005DA6FC /* ItemOrder.m */; };
+		60195DF716FFA227005DA6FC /* OrderDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DE716FFA227005DA6FC /* OrderDetailViewController.m */; };
+		60195DF816FFA227005DA6FC /* OrderMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DE916FFA227005DA6FC /* OrderMasterViewController.m */; };
+		60195DF916FFA227005DA6FC /* SalesDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DEB16FFA227005DA6FC /* SalesDetailViewController.m */; };
+		60195DFA16FFA227005DA6FC /* SalesMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DED16FFA227005DA6FC /* SalesMasterViewController.m */; };
+		60195DFB16FFA227005DA6FC /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 60195DEE16FFA227005DA6FC /* second.png */; };
+		60195DFC16FFA227005DA6FC /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 60195DEF16FFA227005DA6FC /* second@2x.png */; };
+		60195DFD16FFA227005DA6FC /* TableOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DF116FFA227005DA6FC /* TableOrder.m */; };
+		60195DFE16FFA227005DA6FC /* TableOrderDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60195DF316FFA227005DA6FC /* TableOrderDataController.m */; };
 		D63DB54B16F645FF00B2D7CE /* SBJsonStreamParserAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DB53816F645FF00B2D7CE /* SBJsonStreamParserAccumulator.m */; };
 		D63DB54C16F645FF00B2D7CE /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DB53A16F645FF00B2D7CE /* SBJsonWriter.m */; };
 		D63DB54D16F645FF00B2D7CE /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = D63DB53B16F645FF00B2D7CE /* SBJsonStreamParser.m */; };
@@ -51,7 +66,6 @@
 		D6C3509616F51D3D00C5FBD4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3509516F51D3D00C5FBD4 /* SystemConfiguration.framework */; };
 		D6C3509816F51D4500C5FBD4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3509716F51D4500C5FBD4 /* MobileCoreServices.framework */; };
 		DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */; };
-		FD081CBE16F6AE9000606C57 /* TestMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = FD081CBD16F6AE9000606C57 /* TestMenuItem.m */; };
 		FD081CC116F6AED500606C57 /* GetMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD081CC016F6AED500606C57 /* GetMenuTests.m */; };
 		FDD56C6116F668FB00B7B015 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588916EB8608004A7B0E /* UIKit.framework */; };
 		FDD56C6216F668FB00B7B015 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588B16EB8608004A7B0E /* Foundation.framework */; };
@@ -101,6 +115,32 @@
 		2FC85AD416F0E42800C3216E /* UICustomSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICustomSwitch.h; sourceTree = "<group>"; };
 		2FC85AD516F0E42800C3216E /* switchThumb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchThumb.png; sourceTree = "<group>"; };
 		2FC85AD616F0E42800C3216E /* switchBlueBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = switchBlueBg.png; sourceTree = "<group>"; };
+		60195DD616FFA175005DA6FC /* GetMenuListTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMenuListTests.h; sourceTree = "<group>"; };
+		60195DD716FFA175005DA6FC /* GetMenuListTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMenuListTests.m; sourceTree = "<group>"; };
+		60195DD816FFA175005DA6FC /* GetOrderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetOrderTests.h; sourceTree = "<group>"; };
+		60195DD916FFA175005DA6FC /* GetOrderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetOrderTests.m; sourceTree = "<group>"; };
+		60195DDA16FFA175005DA6FC /* GetTableOrderTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTableOrderTests.h; sourceTree = "<group>"; };
+		60195DDB16FFA175005DA6FC /* GetTableOrderTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTableOrderTests.m; sourceTree = "<group>"; };
+		60195DDC16FFA175005DA6FC /* GetTableTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetTableTests.h; sourceTree = "<group>"; };
+		60195DDD16FFA175005DA6FC /* GetTableTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetTableTests.m; sourceTree = "<group>"; };
+		60195DE216FFA227005DA6FC /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		60195DE316FFA227005DA6FC /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		60195DE416FFA227005DA6FC /* ItemOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemOrder.h; sourceTree = "<group>"; };
+		60195DE516FFA227005DA6FC /* ItemOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemOrder.m; sourceTree = "<group>"; };
+		60195DE616FFA227005DA6FC /* OrderDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderDetailViewController.h; sourceTree = "<group>"; };
+		60195DE716FFA227005DA6FC /* OrderDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderDetailViewController.m; sourceTree = "<group>"; };
+		60195DE816FFA227005DA6FC /* OrderMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderMasterViewController.h; sourceTree = "<group>"; };
+		60195DE916FFA227005DA6FC /* OrderMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderMasterViewController.m; sourceTree = "<group>"; };
+		60195DEA16FFA227005DA6FC /* SalesDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesDetailViewController.h; sourceTree = "<group>"; };
+		60195DEB16FFA227005DA6FC /* SalesDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesDetailViewController.m; sourceTree = "<group>"; };
+		60195DEC16FFA227005DA6FC /* SalesMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SalesMasterViewController.h; sourceTree = "<group>"; };
+		60195DED16FFA227005DA6FC /* SalesMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SalesMasterViewController.m; sourceTree = "<group>"; };
+		60195DEE16FFA227005DA6FC /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		60195DEF16FFA227005DA6FC /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+		60195DF016FFA227005DA6FC /* TableOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableOrder.h; sourceTree = "<group>"; };
+		60195DF116FFA227005DA6FC /* TableOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableOrder.m; sourceTree = "<group>"; };
+		60195DF216FFA227005DA6FC /* TableOrderDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableOrderDataController.h; sourceTree = "<group>"; };
+		60195DF316FFA227005DA6FC /* TableOrderDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableOrderDataController.m; sourceTree = "<group>"; };
 		D63DB53616F645FF00B2D7CE /* SBJsonStreamWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriter.h; sourceTree = "<group>"; };
 		D63DB53716F645FF00B2D7CE /* SBJsonStreamWriterState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonStreamWriterState.h; sourceTree = "<group>"; };
 		D63DB53816F645FF00B2D7CE /* SBJsonStreamParserAccumulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonStreamParserAccumulator.m; sourceTree = "<group>"; };
@@ -150,8 +190,6 @@
 		D6C3509716F51D4500C5FBD4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DD113AC816EFBC2000703CFA /* AddMenuItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddMenuItemViewController.h; sourceTree = "<group>"; };
 		DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMenuItemViewController.m; sourceTree = "<group>"; };
-		FD081CBC16F6AE9000606C57 /* TestMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestMenuItem.h; sourceTree = "<group>"; };
-		FD081CBD16F6AE9000606C57 /* TestMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestMenuItem.m; sourceTree = "<group>"; };
 		FD081CBF16F6AED500606C57 /* GetMenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMenuTests.h; sourceTree = "<group>"; };
 		FD081CC016F6AED500606C57 /* GetMenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMenuTests.m; sourceTree = "<group>"; };
 		FDCB1B1616F660E600382A6B /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
@@ -230,6 +268,24 @@
 		2F89588F16EB8608004A7B0E /* ManageMyRestaurantiOS */ = {
 			isa = PBXGroup;
 			children = (
+				60195DE216FFA227005DA6FC /* first.png */,
+				60195DE316FFA227005DA6FC /* first@2x.png */,
+				60195DE416FFA227005DA6FC /* ItemOrder.h */,
+				60195DE516FFA227005DA6FC /* ItemOrder.m */,
+				60195DE616FFA227005DA6FC /* OrderDetailViewController.h */,
+				60195DE716FFA227005DA6FC /* OrderDetailViewController.m */,
+				60195DE816FFA227005DA6FC /* OrderMasterViewController.h */,
+				60195DE916FFA227005DA6FC /* OrderMasterViewController.m */,
+				60195DEA16FFA227005DA6FC /* SalesDetailViewController.h */,
+				60195DEB16FFA227005DA6FC /* SalesDetailViewController.m */,
+				60195DEC16FFA227005DA6FC /* SalesMasterViewController.h */,
+				60195DED16FFA227005DA6FC /* SalesMasterViewController.m */,
+				60195DEE16FFA227005DA6FC /* second.png */,
+				60195DEF16FFA227005DA6FC /* second@2x.png */,
+				60195DF016FFA227005DA6FC /* TableOrder.h */,
+				60195DF116FFA227005DA6FC /* TableOrder.m */,
+				60195DF216FFA227005DA6FC /* TableOrderDataController.h */,
+				60195DF316FFA227005DA6FC /* TableOrderDataController.m */,
 				FDCB1B1616F660E600382A6B /* defines.h */,
 				2F89589816EB8608004A7B0E /* ManageMyRestaurantiOSAppDelegate.h */,
 				2F89589916EB8608004A7B0E /* ManageMyRestaurantiOSAppDelegate.m */,
@@ -366,10 +422,16 @@
 		FDD56C6316F668FB00B7B015 /* ManageMyRestaurantiOSTests */ = {
 			isa = PBXGroup;
 			children = (
+				60195DD616FFA175005DA6FC /* GetMenuListTests.h */,
+				60195DD716FFA175005DA6FC /* GetMenuListTests.m */,
+				60195DD816FFA175005DA6FC /* GetOrderTests.h */,
+				60195DD916FFA175005DA6FC /* GetOrderTests.m */,
+				60195DDA16FFA175005DA6FC /* GetTableOrderTests.h */,
+				60195DDB16FFA175005DA6FC /* GetTableOrderTests.m */,
+				60195DDC16FFA175005DA6FC /* GetTableTests.h */,
+				60195DDD16FFA175005DA6FC /* GetTableTests.m */,
 				FD081CBF16F6AED500606C57 /* GetMenuTests.h */,
 				FD081CC016F6AED500606C57 /* GetMenuTests.m */,
-				FD081CBC16F6AE9000606C57 /* TestMenuItem.h */,
-				FD081CBD16F6AE9000606C57 /* TestMenuItem.m */,
 				FDD56C6416F668FC00B7B015 /* Supporting Files */,
 			);
 			path = ManageMyRestaurantiOSTests;
@@ -466,6 +528,10 @@
 				2FC85ADA16F0E42800C3216E /* switchOffPlain.png in Resources */,
 				2FC85ADB16F0E42800C3216E /* switchThumb.png in Resources */,
 				2FC85ADC16F0E42800C3216E /* switchBlueBg.png in Resources */,
+				60195DF416FFA227005DA6FC /* first.png in Resources */,
+				60195DF516FFA227005DA6FC /* first@2x.png in Resources */,
+				60195DFB16FFA227005DA6FC /* second.png in Resources */,
+				60195DFC16FFA227005DA6FC /* second@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +594,13 @@
 				D63DB55216F645FF00B2D7CE /* SBJsonStreamWriter.m in Sources */,
 				D63DB55316F645FF00B2D7CE /* SBJsonParser.m in Sources */,
 				D63DB55416F645FF00B2D7CE /* SBJsonStreamWriterAccumulator.m in Sources */,
+				60195DF616FFA227005DA6FC /* ItemOrder.m in Sources */,
+				60195DF716FFA227005DA6FC /* OrderDetailViewController.m in Sources */,
+				60195DF816FFA227005DA6FC /* OrderMasterViewController.m in Sources */,
+				60195DF916FFA227005DA6FC /* SalesDetailViewController.m in Sources */,
+				60195DFA16FFA227005DA6FC /* SalesMasterViewController.m in Sources */,
+				60195DFD16FFA227005DA6FC /* TableOrder.m in Sources */,
+				60195DFE16FFA227005DA6FC /* TableOrderDataController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,8 +608,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD081CBE16F6AE9000606C57 /* TestMenuItem.m in Sources */,
 				FD081CC116F6AED500606C57 /* GetMenuTests.m in Sources */,
+				60195DDE16FFA175005DA6FC /* GetMenuListTests.m in Sources */,
+				60195DDF16FFA175005DA6FC /* GetOrderTests.m in Sources */,
+				60195DE016FFA175005DA6FC /* GetTableOrderTests.m in Sources */,
+				60195DE116FFA175005DA6FC /* GetTableTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -652,7 +728,6 @@
 		2F8958B816EB8609004A7B0E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -668,7 +743,6 @@
 		2F8958B916EB8609004A7B0E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				BUNDLE_LOADER = "";
 				CODE_SIGN_IDENTITY = "iPhone Developer: Amandusia Chmieluk (KGEV68ZL8Q)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
