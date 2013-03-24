@@ -61,6 +61,9 @@
         if (self.order.isComplete) {
             self.isCompleteCell.accessoryType = UITableViewCellAccessoryCheckmark;
         }
+        else {
+            self.isCompleteCell.accessoryType = UITableViewCellAccessoryNone;
+        }
     }
 }
 
