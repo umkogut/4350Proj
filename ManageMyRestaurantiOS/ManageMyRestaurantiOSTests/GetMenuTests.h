@@ -7,7 +7,7 @@
 //
 
 #import <SenTestingKit/SenTestingKit.h>
-#import "TestMenuItem.h"
+#import "MenuItem.h"
 
 @interface GetMenuTests : SenTestCase
 /* {
@@ -15,10 +15,8 @@
     NSMutableArray *testList;
 } */
 
-@property TestMenuItem *testItem;
-@property NSMutableArray *testList;
+@property MenuItem *testItem;
 
 - (void)testCreateItem;
-- (void)testGetMenu;
 
 @end
