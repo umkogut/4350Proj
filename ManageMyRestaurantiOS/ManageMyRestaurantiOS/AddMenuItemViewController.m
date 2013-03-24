@@ -61,7 +61,7 @@
     
     if(![self.itemName.text isEqualToString:@""] && ![self.description.text isEqualToString:@""] && ![self.price.text isEqualToString:@""]) {
         
-        NSString *currencyRegex = @"[0-9]+(\.[0-9][0-9]?)?";
+        NSString *currencyRegex = @"[0-9]+(.[0-9][0-9]?)?";
         NSPredicate *test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", currencyRegex];
         BOOL match = [test evaluateWithObject:self.price.text];
         
