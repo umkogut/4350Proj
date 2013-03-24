@@ -19,8 +19,6 @@
 
 @implementation OrderMasterViewController
 
-//@synthesize delegate;
-
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -30,8 +28,14 @@
     return self;
 }
 
--(void)awakeFromNib
+- (void)awakeFromNib
 {
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
+        self.clearsSelectionOnViewWillAppear = NO;
+        self.contentSizeForViewInPopover = CGSizeMake(320.0, 600.0);
+    }
+    [super awakeFromNib];
+    
     self.dataController = [[TableOrderDataController alloc] init];
 }
 
@@ -41,7 +45,8 @@
 
     [self refreshOrders];
 
-    self.detailViewController = (OrderDetailViewController *)[self.splitViewController.viewControllers lastObject];
+    OrderDetailViewController *orderDetailViewController = (OrderDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.detailViewController = orderDetailViewController;
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -91,7 +96,6 @@
         } else {
             NSArray *orderList = [table objectForKey:@"orders"];
             for (NSDictionary *order in orderList) {
-                NSString *comment = [order objectForKey:@"comments"];
                 ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
                                                               orderID:[[order objectForKey:@"orderID"] intValue]
                                                              category:[order objectForKey:@"category"]
@@ -104,7 +108,6 @@
     }
     
     [self.tableView reloadData];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -189,33 +192,13 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     
-     
-     */
-    
-    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        
-//        NSDate *object = _objects[indexPath.row];
-//        self.detailViewController.detailItem = object;
         
         TableOrder *table = [self.dataController.tableOrderList objectAtIndex:[self.tableView indexPathForSelectedRow].section];
         ItemOrder *order = [table objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
         
         self.detailViewController.order = order;
     }
-    
-    
-    
-//    [self.delegate didSelectOrder:order];
-//    [self.detailViewController ]
-    //detailViewController.order = order;
 }
 
 @end

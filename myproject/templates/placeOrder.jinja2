@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="en">
 {% macro tableTab(table) -%}
   <li><a href="#table{{table}}" data-toggle="tab">Table {{table}}</a></li>
 {%- endmacro %}
@@ -21,6 +23,8 @@
         <button class="btn" id="submit{{table}}" onclick="submitOrder({{table}})"=>Submit</button>
       </div>
     </div>
+    <br>
+    <label class="result" id="result{{table}}" name="result"></label>
   </div>
 {%- endmacro %}
 
@@ -35,11 +39,15 @@
   </div>
 </header>
 <div class="container-fluid">
+  
   <div class="row-fluid">
+    <!--
     <p align="right">
       <button class="btn btn-primary btn-large" type="button" id="addTable">+</button>
     </p>
   </div>
+  -->
+  <br>
   <div class="row-fluid">
     <div class="span2">
       <div class="tabbable tabs-left">
