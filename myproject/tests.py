@@ -194,7 +194,7 @@ class GetMenuItemViewTest(unittest.TestCase):
  	self.assertEqual(view_info['name'], item.name) 
  	self.assertEqual(view_info['category'], item.category) 
  	self.assertEqual(view_info['price'], item.price) 
-	self.assertEqual(view_info['isVeg'], item.isVeg]) 
+	self.assertEqual(view_info['isVeg'], item.isVeg) 
 	self.assertEqual(view_info['isActive'], item.isActive) 
 	self.assertEqual(view_info['description'], item.description) 
 	self.assertEqual(view_info['image'], item.image) 
