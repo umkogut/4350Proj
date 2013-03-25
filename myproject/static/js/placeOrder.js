@@ -20,6 +20,7 @@ $(function() {
       $('#' + table + '_item' + this.value).show();
     });
   });
+  /*
   $.post('getOrdersTable.json', function(data) {
     var orderlist = $.parseJSON(data);
     $.each(orderlist, function(key, table) {
@@ -34,6 +35,7 @@ $(function() {
       $('#orderlist' + table.tableNum).select2("val", list);
     });
   }, "json");
+  */
 });
 
 function submitOrder(table) {
