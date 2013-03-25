@@ -20,13 +20,15 @@
     self = [super init];
     
     if (self) {
-        _name = name;
-        _orderID = orderID;
-        _category = category;
-        _groupNum = groupNum;
-        _isComplete = isComplete;
-        _comments = comments;
-        return self;
+        if (name != nil && orderID >= 0 && category != nil && groupNum >= 0) {
+            _name = name;
+            _orderID = orderID;
+            _category = category;
+            _groupNum = groupNum;
+            _isComplete = isComplete;
+            _comments = comments;
+            return self;
+        }
     }
     return nil;
 }

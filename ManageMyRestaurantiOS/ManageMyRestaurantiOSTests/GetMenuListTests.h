@@ -15,5 +15,6 @@
 
 - (void)testMenuItem;
 - (void)testCategory;
+- (void)testAddNil;
 
 @end

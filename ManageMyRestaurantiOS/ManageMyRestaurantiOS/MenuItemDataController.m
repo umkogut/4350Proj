@@ -61,7 +61,9 @@
 
 // adds a new category to the list
 -(void)addCategory:(NSString *)newCategory {
-    [self.categoryList addObject:newCategory];
+    if (newCategory != nil) {
+        [self.categoryList addObject:newCategory];
+    }
 }
 
 // get the list of menu items in a given category
@@ -109,7 +111,9 @@
 
 // adds a new item to the list (does not manipulate the database)
 -(void)addMenuItem:(MenuItem *)menuItem {
-    [self.masterMenuItemList addObject:menuItem];
+    if (menuItem != nil && [menuItem isKindOfClass:[MenuItem class]]) {
+        [self.masterMenuItemList addObject:menuItem];
+    }
 }
 
 -(void)clearMenu {

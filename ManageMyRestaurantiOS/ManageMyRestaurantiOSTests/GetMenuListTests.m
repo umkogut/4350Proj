@@ -184,4 +184,32 @@
     STAssertEquals([self.menuDataController categoryAtIndex:0], @"Appetizer", @"Unable to create Appetizer category");
 }
 
+- (void)testAddNil {
+    MenuItem *item;
+    
+    STAssertTrue([self.menuDataController countOfList] == 4, @"Unable to create all menu items");
+    
+    [self.menuDataController addMenuItem:(MenuItem *)@"object"];
+    STAssertTrue([self.menuDataController countOfList] == 4, @"Added an object that wasn't a MenuItem");
+    
+    [self.menuDataController addMenuItem:nil];
+    STAssertTrue([self.menuDataController countOfList] == 4, @"Added an object that wasn't a MenuItem");
+    
+    item = [[MenuItem alloc] initWithName:@"newItem"
+                                category:@"Dessert"
+                              description:@"new dessert"
+                                    price:[[NSDecimalNumber alloc] initWithDouble:5.75]
+                             isVegetarian:NO];
+    [self.menuDataController addMenuItem:item];
+    STAssertTrue([self.menuDataController countOfList] == 5, @"Unable to add item");
+    
+    STAssertEquals([self.menuDataController numCategories], 3, @"Unable to create all categories");
+    
+    [self.menuDataController addCategory:nil];
+    STAssertEquals([self.menuDataController numCategories], 3, @"Added nil category");
+    
+    [self.menuDataController addCategory:@"New Category"];
+    STAssertEquals([self.menuDataController numCategories], 4, @"Unable to create new category");
+}
+
 @end
