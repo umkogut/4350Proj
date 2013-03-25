@@ -18,10 +18,14 @@
     
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-        UISplitViewController *splitViewController = [tabBarController.viewControllers objectAtIndex:2];
-        UINavigationController *detailController = [splitViewController.viewControllers lastObject];
-        tabBarController.delegate = (id)detailController.topViewController;
-        splitViewController.delegate = (id)detailController.topViewController;
+        
+        UISplitViewController *ordersViewController = [tabBarController.viewControllers objectAtIndex:2];
+        UINavigationController *detailController = [ordersViewController.viewControllers lastObject];
+        ordersViewController.delegate = (id)detailController.topViewController;
+        
+        UISplitViewController *placeOrderViewController = [tabBarController.viewControllers objectAtIndex:1];
+        UINavigationController *placeOrderDetailController = [placeOrderViewController.viewControllers lastObject];
+        tabBarController.delegate = (id)placeOrderDetailController.topViewController;
     }
     
     return YES;
