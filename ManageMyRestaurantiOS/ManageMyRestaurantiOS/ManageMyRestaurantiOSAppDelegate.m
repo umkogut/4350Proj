@@ -8,6 +8,8 @@
 
 #import "ManageMyRestaurantiOSAppDelegate.h"
 
+@class OrderDetailViewController;
+
 @implementation ManageMyRestaurantiOSAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -18,6 +20,7 @@
         UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
         UISplitViewController *splitViewController = [tabBarController.viewControllers objectAtIndex:2];
         UINavigationController *detailController = [splitViewController.viewControllers lastObject];
+        tabBarController.delegate = (id)detailController.topViewController;
         splitViewController.delegate = (id)detailController.topViewController;
     }
     
