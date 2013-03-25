@@ -10,7 +10,6 @@
 #import "ASIHTTPRequest.h"
 #import "SBJson.h"
 
-@class ItemOrder;
 @class TableOrderDataController;
 @class PlaceOrderViewController;
 

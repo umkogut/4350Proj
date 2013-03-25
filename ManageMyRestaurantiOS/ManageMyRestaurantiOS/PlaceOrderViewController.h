@@ -19,6 +19,6 @@
 @interface PlaceOrderViewController : UITableViewController
 
 @property (strong, nonatomic) MenuItemDataController *dataController;
-@property (nonatomic) NSInteger tableNum;
+@property (strong, nonatomic) TableOrder *tableOrder;
 
 @end

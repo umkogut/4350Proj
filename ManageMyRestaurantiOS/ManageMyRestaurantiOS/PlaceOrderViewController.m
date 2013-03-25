@@ -24,6 +24,15 @@
     return self;
 }
 
+-(void)setTableOrder:(TableOrder *)tableOrder
+{
+    if (_tableOrder != tableOrder) {
+        _tableOrder = tableOrder;
+        
+        [self refreshMenu];
+    }
+}
+
 -(void)awakeFromNib
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
@@ -32,7 +41,7 @@
     }
     [super awakeFromNib];
     
-    [self refreshMenu];
+//    [self refreshMenu];
     
     self.dataController = [[MenuItemDataController alloc] init];
 }
@@ -40,12 +49,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+//    [self refreshMenu];
 }
 
 
@@ -101,26 +105,31 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return [self.dataController numCategories];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    NSMutableArray *list = [self.dataController getListInCategory:section];    
+    return [list count];
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
+    return [self.dataController.categoryList objectAtIndex:section];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"MenuItemCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    NSMutableArray *sectionList = [self.dataController getListInCategory:indexPath.section];
+    MenuItem *itemAtIndex = [sectionList objectAtIndex:indexPath.row];
+    
+    [[cell textLabel] setText:itemAtIndex.name];
     
     return cell;
+
 }
 
 /*

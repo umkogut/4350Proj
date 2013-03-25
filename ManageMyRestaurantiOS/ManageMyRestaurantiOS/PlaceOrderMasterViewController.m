@@ -32,7 +32,7 @@
     
     [self refreshOrders];
     
-    self.detailViewController = (PlaceOrderViewController *)[self.splitViewController.viewControllers lastObject];
+    self.detailViewController = (PlaceOrderViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -69,7 +69,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        self.detailViewController.tableNum = (indexPath.row + 1);
+        NSInteger tableNum = (NSInteger)([self.tableView indexPathForSelectedRow].row + 1);
+        TableOrder *tableOrder = [[TableOrder alloc] initWithTableNum:tableNum];
+        
+        self.detailViewController.tableOrder = tableOrder;
     }
 }
 

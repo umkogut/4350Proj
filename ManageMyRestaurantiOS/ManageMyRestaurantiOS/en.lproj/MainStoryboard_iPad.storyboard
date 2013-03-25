@@ -778,7 +778,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qMu-Cy-v4P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6343" y="1099"/>
+            <point key="canvasLocation" x="7317" y="1099"/>
         </scene>
         <!--Place Order Master View Controller - Tables-->
         <scene sceneID="L8c-2S-2NV">
@@ -907,28 +907,35 @@
                     <toolbarItems/>
                     <connections>
                         <segue destination="6xT-bD-Urf" kind="relationship" relationship="masterViewController" id="ifb-qD-9oa"/>
-                        <segue destination="2VG-Ic-scg" kind="relationship" relationship="detailViewController" id="ukq-YA-ac0"/>
+                        <segue destination="zpA-9U-bip" kind="relationship" relationship="detailViewController" id="ukq-YA-ac0"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3j-qi-8lv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2976" y="-397"/>
         </scene>
-        <!--Place Order View Controller-->
+        <!--Place Order View Controller - Menu Items-->
         <scene sceneID="AUM-Ze-oqu">
             <objects>
                 <tableViewController id="2VG-Ic-scg" customClass="PlaceOrderViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zNo-tX-XuR">
-                        <rect key="frame" x="0.0" y="20" width="768" height="955"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="zNo-tX-XuR">
+                        <rect key="frame" x="0.0" y="64" width="768" height="911"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="27t-oN-5K2">
-                                <rect key="frame" x="0.0" y="22" width="768" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MenuItemCell" textLabel="yJ5-rm-9Le" style="IBUITableViewCellStyleDefault" id="27t-oN-5K2">
+                                <rect key="frame" x="0.0" y="54" width="768" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="768" height="43"/>
+                                    <rect key="frame" x="45" y="1" width="678" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yJ5-rm-9Le">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                             </tableViewCell>
@@ -938,10 +945,11 @@
                             <outlet property="delegate" destination="2VG-Ic-scg" id="tuG-js-mam"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Menu Items" id="4U9-YQ-NYS"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIZ-n8-3aK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3968" y="125"/>
+            <point key="canvasLocation" x="4942" y="125"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="pIu-HO-FdE">
@@ -957,7 +965,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XYC-SX-gql" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5560" y="1099"/>
+            <point key="canvasLocation" x="6534" y="1099"/>
         </scene>
         <!--Split View Controller - View Orders-->
         <scene sceneID="NK3-WB-ajJ">
@@ -1237,6 +1245,25 @@
             </objects>
             <point key="canvasLocation" x="2992" y="3663"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Bkr-8W-1N9">
+            <objects>
+                <navigationController id="zpA-9U-bip" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="t3c-pf-e8G">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.094117656349999995" green="0.34509804840000002" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="2VG-Ic-scg" kind="relationship" relationship="rootViewController" id="hpp-AC-KSc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="89P-TB-lO3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3968" y="125"/>
+        </scene>
     </scenes>
     <resources>
         <image name="first.png" width="30" height="30"/>
@@ -1282,6 +1309,9 @@
                 <relationship kind="action" name="refresh"/>
             </relationships>
         </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
         <class className="OrderDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/OrderDetailViewController.h"/>
             <relationships>
@@ -1308,6 +1338,9 @@
         </class>
         <class className="UICustomSwitch" superclassName="UISlider">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICustomSwitch.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
