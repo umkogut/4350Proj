@@ -16,9 +16,11 @@
     self = [super init];
     
     if (self) {
-        _tableNum = tableNum;
-        _orderList = [[NSMutableArray alloc] init];
-        return self;
+        if (tableNum >= 0) {
+            _tableNum = tableNum;
+            _orderList = [[NSMutableArray alloc] init];
+            return self;
+        }
     }
     return nil;
 }
@@ -28,11 +30,9 @@
 }
 
 - (void)addOrder:(ItemOrder *)order {
-    [self.orderList addObject:order];
-}
-
-- (void)addTable:(NSInteger)tableNum {
-    [self.orderList addObject:[NSString stringWithFormat:@"%d", tableNum]];
+    if (order != nil && [order isKindOfClass:[ItemOrder class]]) {
+        [self.orderList addObject:order];
+    }
 }
 
 - (NSMutableArray *)getListInCategory:(NSString *)category {
@@ -48,10 +48,6 @@
 }
 
 - (ItemOrder *)objectInListAtIndex:(NSUInteger)index {
-    return [self.orderList objectAtIndex:index];
-}
-
-- (NSString *)tableInListAtIndex:(NSUInteger)index {
     return [self.orderList objectAtIndex:index];
 }
 
