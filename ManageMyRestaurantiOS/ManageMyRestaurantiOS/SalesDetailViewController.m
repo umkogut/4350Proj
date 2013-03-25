@@ -8,9 +8,11 @@
 
 #import "SalesDetailViewController.h"
 #import "SalesMasterViewController.h"
+#import "TableOrder.h"
 #import "ItemOrder.h"
 
 @interface SalesDetailViewController ()
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
 @end
 
@@ -25,17 +27,50 @@
     return self;
 }
 
+#pragma mark - Managing the detail order
+
+- (void)setTable:(TableOrder *)newTable {
+    if (_table != newTable) {
+        _table = newTable;
+        
+        [self initializeView];
+    }
+    
+    if (self.masterPopoverController != nil) {
+        [self.masterPopoverController dismissPopoverAnimated:YES];
+    }
+}
+
+- (void) didSelectTable:(TableOrder *)newTable {
+    self.table = newTable;
+    
+    [self initializeView];
+}
+
+- (void)initializeView {
+    NSArray *orderList = self.table.orderList;
+    for (NSDictionary *order in orderList) {
+        
+        NSLog(@"HERE");
+        
+        /*ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
+                                                orderID:[[order objectForKey:@"orderID"] intValue]
+                                                category:[order objectForKey:@"category"]
+                                                groupNum:[[order objectForKey:@"groupNum"] intValue]
+                                                isComplete:[[order objectForKey:@"isComplete"] boolValue]
+                                                comments:[order objectForKey:@"comments"]];*/
+        
+        
+
+        //populate the cells
+        //[self.orderItem setText:@"TEST"];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initializeView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,30 +79,42 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
+//- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UISplitViewController *)viewController
+//{
+//    NSArray *list = viewController.childViewControllers;
+//    if ([viewController class] == [OrderDetailViewController class]) {
+//        NSLog(@"Order Details");
+//    }
+//}
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    
+    
+    if (fromInterfaceOrientation == UIInterfaceOrientationPortrait || fromInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        NSLog(@"I'm landscape");
+    }
+    else
+    {
+        NSLog(@"I'm portrait");
+    }
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+#pragma mark - Split view
+
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    barButtonItem.title = NSLocalizedString(@"Tables", @"Tables");
+    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    self.masterPopoverController = popoverController;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    // Called when the view is shown again in the split view, invalidating the button and popover controller.
+    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+    self.masterPopoverController = nil;
     
-    // Configure the cell...
-    
-    return cell;
 }
 
 /*

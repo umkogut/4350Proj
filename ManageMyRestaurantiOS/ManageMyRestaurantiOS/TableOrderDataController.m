@@ -98,6 +98,10 @@
     return nil;
 }
 
+- (NSString *)tableInListAtIndex:(NSInteger)tableNum {
+    return [self.tablesList objectAtIndex:tableNum];
+}
+
 - (void)clearTable:(NSInteger)tableNum {
     for (TableOrder *table in self.tableOrderList) {
         if (table.tableNum == tableNum) {

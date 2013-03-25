@@ -28,6 +28,7 @@
 - (TableOrder *)objectInListAtIndex:(NSUInteger)index;
 - (ItemOrder *)orderInListAtIndex:(NSInteger)tableNum
                                  :(NSUInteger)index;
+- (NSString *)tableInListAtIndex:(NSInteger)tableNum;
 - (void)clearTable:(NSInteger)tableNum;
 - (void)clearAllTable;
 

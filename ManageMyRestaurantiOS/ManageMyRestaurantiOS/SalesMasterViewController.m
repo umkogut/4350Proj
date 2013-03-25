@@ -39,7 +39,8 @@
     
     [self refreshOrders];
 
-    self.detailViewController = (OrderDetailViewController *)[self.splitViewController.viewControllers lastObject];
+    SalesDetailViewController *salesDetailViewController = (SalesDetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    self.detailViewController = salesDetailViewController;
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -74,10 +75,34 @@
     for (NSDictionary *table in tableList) {
         NSInteger tableNum = [[table objectForKey:@"tableNum"] intValue];
         [self.dataController addSalesTable:tableNum];
+        [self.dataController addTable:tableNum];
+        
+        if ([[table objectForKey:@"orders"] isKindOfClass:[NSDictionary class]]) {
+            NSDictionary *order = [table objectForKey:@"orders"];
+            
+            ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
+                                                          orderID:[[order objectForKey:@"orderID"] intValue]
+                                                         category:[order objectForKey:@"category"]
+                                                         groupNum:[[order objectForKey:@"groupNum"] intValue]
+                                                       isComplete:[[order objectForKey:@"isComplete"] boolValue]
+                                                         comments:[order objectForKey:@"comments"]];
+            //[self.dataController addOrder:tableNum :newOrder];
+            
+        } else {
+            NSArray *orderList = [table objectForKey:@"orders"];
+            for (NSDictionary *order in orderList) {
+                ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
+                                                              orderID:[[order objectForKey:@"orderID"] intValue]
+                                                             category:[order objectForKey:@"category"]
+                                                             groupNum:[[order objectForKey:@"groupNum"] intValue]
+                                                           isComplete:[[order objectForKey:@"isComplete"] boolValue]
+                                                             comments:[order objectForKey:@"comments"]];
+                //[self.dataController addOrder:tableNum :newOrder];
+            }
+        }
     }
     
     [self.tableView reloadData];
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -162,33 +187,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     
-     
-     */
-    
-    
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        
-        //        NSDate *object = _objects[indexPath.row];
-        //        self.detailViewController.detailItem = object;
-        
         TableOrder *table = [self.dataController.tableOrderList objectAtIndex:[self.tableView indexPathForSelectedRow].section];
-        ItemOrder *order = [table objectInListAtIndex:[self.tableView indexPathForSelectedRow].row];
         
-        //self.detailViewController.order = order;
+        self.detailViewController.table = table;
     }
-    
-    
-    
-    //    [self.delegate didSelectOrder:order];
-    //    [self.detailViewController ]
-    //detailViewController.order = order;
 }
 
 @end
