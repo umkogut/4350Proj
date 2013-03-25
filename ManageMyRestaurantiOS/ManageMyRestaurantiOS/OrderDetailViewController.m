@@ -78,6 +78,27 @@
     // Dispose of any resources that can be recreated.
 }
 
+//- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UISplitViewController *)viewController
+//{
+//    NSArray *list = viewController.childViewControllers;
+//    if ([viewController class] == [OrderDetailViewController class]) {
+//        NSLog(@"Order Details");
+//    }
+//}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    
+    
+    if (fromInterfaceOrientation == UIInterfaceOrientationPortrait || fromInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        NSLog(@"I'm landscape");
+    }
+    else
+    {
+        NSLog(@"I'm portrait");
+    }
+}
+
 #pragma mark - Split view
 
 - (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
@@ -92,6 +113,7 @@
     // Called when the view is shown again in the split view, invalidating the button and popover controller.
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
+    
 }
 
 
