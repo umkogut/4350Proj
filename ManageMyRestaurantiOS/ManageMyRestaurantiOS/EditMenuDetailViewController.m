@@ -54,12 +54,14 @@
     NSLog(@"editing");
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
     
+    NSString *isVegStr = updatedItem.isVegetarian ? @"TRUE" : @"FALSE";
+    
     NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                           updatedItem.name, @"name",
                           updatedItem.category, @"category",
                           updatedItem.description, @"description",
                           updatedItem.price, @"price",
-                          [NSNumber numberWithBool:updatedItem.isVegetarian] , @"isVeg",
+                          isVegStr, @"isVeg",
                           @"", @"image",
                           oldItemName, @"prevItemName",
                           nil];
