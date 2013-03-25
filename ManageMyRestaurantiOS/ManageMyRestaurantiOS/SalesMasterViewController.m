@@ -74,7 +74,6 @@
     
     for (NSDictionary *table in tableList) {
         NSInteger tableNum = [[table objectForKey:@"tableNum"] intValue];
-        [self.dataController addSalesTable:tableNum];
         [self.dataController addTable:tableNum];
         
         if ([[table objectForKey:@"orders"] isKindOfClass:[NSDictionary class]]) {
@@ -86,7 +85,7 @@
                                                          groupNum:[[order objectForKey:@"groupNum"] intValue]
                                                        isComplete:[[order objectForKey:@"isComplete"] boolValue]
                                                          comments:[order objectForKey:@"comments"]];
-            //[self.dataController addOrder:tableNum :newOrder];
+            [self.dataController addOrder:tableNum :newOrder];
             
         } else {
             NSArray *orderList = [table objectForKey:@"orders"];
@@ -97,7 +96,7 @@
                                                              groupNum:[[order objectForKey:@"groupNum"] intValue]
                                                            isComplete:[[order objectForKey:@"isComplete"] boolValue]
                                                              comments:[order objectForKey:@"comments"]];
-                //[self.dataController addOrder:tableNum :newOrder];
+                [self.dataController addOrder:tableNum :newOrder];
             }
         }
     }
@@ -120,7 +119,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [self.dataController numOrdersByIndex:section];
+    return 1;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -132,14 +131,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
         
     }
-    
+
     TableOrder *table = [self.dataController objectInListAtIndex:indexPath.section];
-    NSString *tableNum = [table objectInListAtIndex:indexPath.row];
+    NSString *tableNum = [NSString stringWithFormat:@"%i", table.tableNum];
     [[cell textLabel] setText:tableNum];
     
     return cell;
 }
-
 
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -189,7 +187,7 @@
 {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
         TableOrder *table = [self.dataController.tableOrderList objectAtIndex:[self.tableView indexPathForSelectedRow].section];
-        
+
         self.detailViewController.table = table;
     }
 }
