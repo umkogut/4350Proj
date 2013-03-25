@@ -20,5 +20,8 @@
 
 @property (strong, nonatomic) MenuItemDataController *dataController;
 @property (strong, nonatomic) TableOrder *tableOrder;
+@property (strong, nonatomic) IBOutlet UITableView *menuTable;
+
+- (IBAction)save:(id)sender;
 
 @end

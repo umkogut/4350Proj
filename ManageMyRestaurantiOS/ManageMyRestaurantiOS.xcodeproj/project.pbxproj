@@ -67,6 +67,8 @@
 		D6C3509816F51D4500C5FBD4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C3509716F51D4500C5FBD4 /* MobileCoreServices.framework */; };
 		DD113ACA16EFBC2000703CFA /* AddMenuItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */; };
 		FD081CC116F6AED500606C57 /* GetMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD081CC016F6AED500606C57 /* GetMenuTests.m */; };
+		FD100FEE170102CE00D1A076 /* PlaceOrderMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD100FEB170102CE00D1A076 /* PlaceOrderMasterViewController.m */; };
+		FD100FEF170102CE00D1A076 /* PlaceOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD100FED170102CE00D1A076 /* PlaceOrderViewController.m */; };
 		FDD56C6116F668FB00B7B015 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588916EB8608004A7B0E /* UIKit.framework */; };
 		FDD56C6216F668FB00B7B015 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F89588B16EB8608004A7B0E /* Foundation.framework */; };
 		FDD56C6816F668FC00B7B015 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDD56C6616F668FC00B7B015 /* InfoPlist.strings */; };
@@ -192,6 +194,10 @@
 		DD113AC916EFBC2000703CFA /* AddMenuItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddMenuItemViewController.m; sourceTree = "<group>"; };
 		FD081CBF16F6AED500606C57 /* GetMenuTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetMenuTests.h; sourceTree = "<group>"; };
 		FD081CC016F6AED500606C57 /* GetMenuTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetMenuTests.m; sourceTree = "<group>"; };
+		FD100FEA170102CE00D1A076 /* PlaceOrderMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOrderMasterViewController.h; sourceTree = "<group>"; };
+		FD100FEB170102CE00D1A076 /* PlaceOrderMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceOrderMasterViewController.m; sourceTree = "<group>"; };
+		FD100FEC170102CE00D1A076 /* PlaceOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceOrderViewController.h; sourceTree = "<group>"; };
+		FD100FED170102CE00D1A076 /* PlaceOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceOrderViewController.m; sourceTree = "<group>"; };
 		FDCB1B1616F660E600382A6B /* defines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defines.h; sourceTree = "<group>"; };
 		FDD56C5E16F668FB00B7B015 /* ManageMyRestaurantiOSTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ManageMyRestaurantiOSTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD56C6516F668FC00B7B015 /* ManageMyRestaurantiOSTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ManageMyRestaurantiOSTests-Info.plist"; sourceTree = "<group>"; };
@@ -268,6 +274,10 @@
 		2F89588F16EB8608004A7B0E /* ManageMyRestaurantiOS */ = {
 			isa = PBXGroup;
 			children = (
+				FD100FEA170102CE00D1A076 /* PlaceOrderMasterViewController.h */,
+				FD100FEB170102CE00D1A076 /* PlaceOrderMasterViewController.m */,
+				FD100FEC170102CE00D1A076 /* PlaceOrderViewController.h */,
+				FD100FED170102CE00D1A076 /* PlaceOrderViewController.m */,
 				60195DE216FFA227005DA6FC /* first.png */,
 				60195DE316FFA227005DA6FC /* first@2x.png */,
 				60195DE416FFA227005DA6FC /* ItemOrder.h */,
@@ -601,6 +611,8 @@
 				60195DFA16FFA227005DA6FC /* SalesMasterViewController.m in Sources */,
 				60195DFD16FFA227005DA6FC /* TableOrder.m in Sources */,
 				60195DFE16FFA227005DA6FC /* TableOrderDataController.m in Sources */,
+				FD100FEE170102CE00D1A076 /* PlaceOrderMasterViewController.m in Sources */,
+				FD100FEF170102CE00D1A076 /* PlaceOrderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
