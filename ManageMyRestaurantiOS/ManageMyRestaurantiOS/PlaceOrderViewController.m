@@ -41,15 +41,12 @@
     }
     [super awakeFromNib];
     
-//    [self refreshMenu];
-    
     self.dataController = [[MenuItemDataController alloc] init];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-//    [self refreshMenu];
 }
 
 
@@ -183,5 +180,16 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      */
 }
+
+#pragma mark - Tab bar controller delegate
+-(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+    UITabBarItem *vctab = viewController.tabBarItem;
+    
+    if ([vctab.title isEqual:@"Place Orders"]) {
+        self.dataController = [[MenuItemDataController alloc] init];
+        [self.tableView reloadData];
+    }
+}
+
 
 @end
