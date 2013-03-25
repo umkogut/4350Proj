@@ -48,23 +48,8 @@
 }
 
 - (void)initializeView {
-    NSArray *orderList = self.table.orderList;
-    for (NSDictionary *order in orderList) {
-        
-        NSLog(@"HERE");
-        
-        /*ItemOrder *newOrder = [[ItemOrder alloc] initWithName:[order objectForKey:@"menuName"]
-                                                orderID:[[order objectForKey:@"orderID"] intValue]
-                                                category:[order objectForKey:@"category"]
-                                                groupNum:[[order objectForKey:@"groupNum"] intValue]
-                                                isComplete:[[order objectForKey:@"isComplete"] boolValue]
-                                                comments:[order objectForKey:@"comments"]];*/
-        
-        
-
-        //populate the cells
-        //[self.orderItem setText:@"TEST"];
-    }
+    self.orderItemCount = 0;
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad
@@ -115,6 +100,43 @@
     [self.navigationItem setLeftBarButtonItem:nil animated:YES];
     self.masterPopoverController = nil;
     
+}
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.table.numOrders;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"TableOrderCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier]; //forIndexPath:indexPath];
+    
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+    }
+    
+    if(self.orderItemCount >= [self.table.orderList count]) {
+        self.orderItemCount = 0;
+    }
+    
+    if([self.table.orderList count] > 0) {
+        NSString *orderInfo = [[self.table.orderList objectAtIndex:self.orderItemCount] name];
+        NSLog(orderInfo);
+        [[cell textLabel] setText:orderInfo];
+    }
+    
+    self.orderItemCount = self.orderItemCount + 1;
+    
+    return cell;
 }
 
 /*

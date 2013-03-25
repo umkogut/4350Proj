@@ -56,12 +56,6 @@
     }
 }
 
--(void)addSalesTable:(NSInteger)tableNum {
-    TableOrder *newTable = [[TableOrder alloc] initWithTableNum:tableNum];
-    [self.tableOrderList addObject:newTable];
-    [newTable addTable:tableNum];
-}
-
 - (void)addOrder:(NSInteger)tableNum
                 :(ItemOrder *)order {
     for (TableOrder *table in self.tableOrderList) {
@@ -96,10 +90,6 @@
         }
     }
     return nil;
-}
-
-- (NSString *)tableInListAtIndex:(NSInteger)tableNum {
-    return [self.tablesList objectAtIndex:tableNum];
 }
 
 - (void)clearTable:(NSInteger)tableNum {

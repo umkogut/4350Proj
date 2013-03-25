@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableOrderDataController.h"
 #import "SalesMasterViewController.h"
 #import "TableOrder.h"
 #import "ItemOrder.h"
@@ -16,9 +17,13 @@
 
 @interface SalesDetailViewController : UITableViewController <UITabBarControllerDelegate, UISplitViewControllerDelegate>
 
+@property (retain, nonatomic) TableOrderDataController *dataController;
 @property (retain, nonatomic) TableOrder *table;
+@property (nonatomic) NSInteger *orderItemCount;
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *orderItem;
+@property (weak, nonatomic) IBOutlet UILabel *itemName;
+@property (weak, nonatomic) IBOutlet UILabel *itemPrice;
 
 
 @end
