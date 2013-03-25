@@ -16,7 +16,7 @@
 
 @class MenuItemDataController;
 
-@interface PlaceOrderViewController : UITableViewController
+@interface PlaceOrderViewController : UITableViewController <UITabBarControllerDelegate>
 
 @property (strong, nonatomic) MenuItemDataController *dataController;
 @property (strong, nonatomic) TableOrder *tableOrder;
