@@ -75,22 +75,31 @@
     
     [self.dataController clearMenu];
     
-    NSArray *categories = [menuList objectForKey:@"categories"];
-    for (NSDictionary *category in categories) {
-        [self.dataController addCategory:[category objectForKey:@"name"]];
+    if ([menuList count] > 0)
+    //reloading the menu
+    {    
+        NSArray *categories = [menuList objectForKey:@"categories"];
+        for (NSDictionary *category in categories) {
+            [self.dataController addCategory:[category objectForKey:@"name"]];
+        }
+        
+        NSArray *menu = [menuList objectForKey:@"menu"];
+        for (NSDictionary *item in menu) {
+            MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
+                                                        menuID:(NSInteger)[[item objectForKey:@"menuID"] intValue]
+                                                      category:[item objectForKey:@"category"]
+                                                   description:[item objectForKey:@"description"]
+                                                         price:[item objectForKey:@"price"]
+                                                  isVegetarian:[[item objectForKey:@"isVeg"] boolValue]];
+            [self.dataController addMenuItem:newItem];
+        }
     }
-    
-    NSArray *menu = [menuList objectForKey:@"menu"];
-    for (NSDictionary *item in menu) {
-        MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
-                                                    menuID:(NSInteger)[[item objectForKey:@"menuID"] intValue]
-                                                  category:[item objectForKey:@"category"]
-                                               description:[item objectForKey:@"description"]
-                                                     price:[item objectForKey:@"price"]
-                                              isVegetarian:[[item objectForKey:@"isVeg"] boolValue]];
-        [self.dataController addMenuItem:newItem];
+    else
+    //placed an order
+    {
+        UIAlertView *successMsg = [[UIAlertView alloc] initWithTitle:@"Order Placed" message:@"Successfully placed orders" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [successMsg show];
     }
-    
     [self.tableView reloadData];
     
 }
