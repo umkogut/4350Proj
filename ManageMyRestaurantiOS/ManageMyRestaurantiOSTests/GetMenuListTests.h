@@ -13,8 +13,11 @@
 
 @property (nonatomic, retain) MenuItemDataController *menuDataController;
 
-- (void)testMenuItem;
-- (void)testCategory;
-- (void)testAddNil;
+- (void)testCreateMenuList;
+- (void)testGetMenuItem;
+- (void)testGetMenuItemByCategory;
+- (void)testGetCategory;
+- (void)testAddMenuItem;
+- (void)testAddCategory;
 
 @end
