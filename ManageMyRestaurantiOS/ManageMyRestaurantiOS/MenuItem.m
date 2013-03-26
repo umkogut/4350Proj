@@ -11,6 +11,7 @@
 @implementation MenuItem
 
 -(id)initWithName:(NSString *)name
+           menuID:(NSInteger *)menuID
          category:(NSString *)category
       description:(NSString *)description
             price:(NSDecimalNumber *)price
@@ -19,8 +20,9 @@
     self = [super init];
     
     if (self) {
-        if (name != nil && category != nil && price != nil) {
+        if (name != nil && category != nil && price != nil && menuID != nil) {
             _name = name;
+            _menuID = menuID;
             _category = category;
             _description = description;
             _price = price;
