@@ -8,18 +8,14 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 #import "TableOrder.h"
-#import "ItemOrder.h"
 
 @interface GetTableOrderTests : SenTestCase
 
-@property TableOrder *testTableOrder;
-@property ItemOrder *order;
-@property NSInteger nOrdersBefore;
-@property NSInteger nOrdersAfter;
-@property NSInteger nOrdersCleaned;
-@property NSMutableArray *result;
-@property ItemOrder *resultOrder;
+@property TableOrder *table;
 
-- (void)tableOrderTests;
+- (void)testCreateTable;
+- (void)testAddingOrders;
+- (void)testGettingListByCategory;
+- (void)testGettingOrder;
 
 @end

@@ -8,12 +8,9 @@
 
 #import <SenTestingKit/SenTestingKit.h>
 
-@class ItemOrder;
-
 @interface GetOrderTests : SenTestCase
 
-@property (nonatomic, retain) ItemOrder *order;
-
 - (void)testCreateItem;
+- (void)testNil;
 
 @end

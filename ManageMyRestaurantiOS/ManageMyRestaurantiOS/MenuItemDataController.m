@@ -67,7 +67,7 @@
 }
 
 // get the list of menu items in a given category
--(NSMutableArray *)getListInCategory:(NSInteger)index {
+-(NSMutableArray *)getListInCategory:(NSUInteger)index {
     NSString *category = [self.categoryList objectAtIndex:index];
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
@@ -95,7 +95,7 @@
     }
 }
 
--(NSString *)categoryAtIndex:(NSInteger)index {
+-(NSString *)categoryAtIndex:(NSUInteger)index {
     return [self.categoryList objectAtIndex:index];
 }
 
