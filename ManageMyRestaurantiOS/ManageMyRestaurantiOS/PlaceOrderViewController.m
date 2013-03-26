@@ -26,10 +26,14 @@
 
 -(void)setTableOrder:(TableOrder *)tableOrder
 {
-    if (_tableOrder != tableOrder) {
+    if (_tableOrder != tableOrder)
+    {
         _tableOrder = tableOrder;
         
-        [self refreshMenu];
+        if ([self.dataController.masterMenuItemList count] > 0)
+        {
+            [self refreshMenu];
+        }
     }
 }
 
