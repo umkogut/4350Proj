@@ -311,7 +311,6 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QEh-NW-gYh">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="LFm-yZ-2JE"/>
-                                    <constraint firstAttribute="height" constant="30" id="ORV-ey-2Tj"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -371,29 +370,28 @@
                         <color key="backgroundColor" red="0.86051577446910266" green="0.86633842446091469" blue="0.88797129755434778" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="qWy-mo-QUs" firstAttribute="leading" secondItem="JCH-SU-0wr" secondAttribute="leading" type="default" id="03F-H2-mDF"/>
+                            <constraint firstItem="JP5-v7-dIa" firstAttribute="trailing" secondItem="3z9-yJ-Bor" secondAttribute="trailing" type="default" id="0OO-zC-Vn6"/>
                             <constraint firstItem="JP5-v7-dIa" firstAttribute="top" secondItem="qWy-mo-QUs" secondAttribute="top" type="default" id="2ko-AP-zfh"/>
                             <constraint firstItem="IKm-1o-FoO" firstAttribute="leading" secondItem="6jN-tY-6iA" secondAttribute="leading" type="default" id="57M-6Y-1vK"/>
                             <constraint firstItem="JCH-SU-0wr" firstAttribute="leading" secondItem="yju-cV-wGe" secondAttribute="leading" constant="141" id="7dr-7d-01A"/>
-                            <constraint firstAttribute="bottom" secondItem="QEh-NW-gYh" secondAttribute="bottom" constant="379" id="EPx-Kg-XCz"/>
-                            <constraint firstItem="6jN-tY-6iA" firstAttribute="leading" secondItem="ezY-2w-Um9" secondAttribute="leading" type="default" id="Gsv-oS-RAe"/>
+                            <constraint firstItem="qWy-mo-QUs" firstAttribute="leading" secondItem="6jN-tY-6iA" secondAttribute="leading" type="default" id="8aM-u0-sd3"/>
+                            <constraint firstAttribute="bottom" secondItem="te5-sQ-2Iq" secondAttribute="bottom" constant="145" id="HoK-Q4-4jv"/>
+                            <constraint firstItem="ezY-2w-Um9" firstAttribute="leading" secondItem="IKm-1o-FoO" secondAttribute="leading" type="default" id="JJS-GG-5Nf"/>
+                            <constraint firstAttribute="bottom" secondItem="ezY-2w-Um9" secondAttribute="bottom" constant="151" id="JMe-Cy-Ezf"/>
+                            <constraint firstItem="JP5-v7-dIa" firstAttribute="trailing" secondItem="te5-sQ-2Iq" secondAttribute="trailing" type="default" id="KqY-d3-gkw"/>
                             <constraint firstItem="3z9-yJ-Bor" firstAttribute="baseline" secondItem="JCH-SU-0wr" secondAttribute="baseline" type="default" id="Ky9-pO-SyA"/>
-                            <constraint firstItem="ezY-2w-Um9" firstAttribute="leading" secondItem="qWy-mo-QUs" secondAttribute="leading" type="default" id="LhA-Tn-Kfa"/>
-                            <constraint firstItem="6jN-tY-6iA" firstAttribute="baseline" secondItem="QEh-NW-gYh" secondAttribute="baseline" type="default" id="OBg-xz-Cub"/>
                             <constraint firstItem="bNG-Sv-Q5L" firstAttribute="leading" secondItem="QEh-NW-gYh" secondAttribute="leading" type="default" id="QP3-sH-Eb4"/>
                             <constraint firstItem="te5-sQ-2Iq" firstAttribute="baseline" secondItem="ezY-2w-Um9" secondAttribute="baseline" type="default" id="TFj-Pw-jlj"/>
-                            <constraint firstItem="te5-sQ-2Iq" firstAttribute="trailing" secondItem="JP5-v7-dIa" secondAttribute="trailing" type="default" id="VHw-re-HDU"/>
-                            <constraint firstItem="JP5-v7-dIa" firstAttribute="trailing" secondItem="3z9-yJ-Bor" secondAttribute="trailing" type="default" id="YDG-iP-9th"/>
-                            <constraint firstAttribute="bottom" secondItem="bNG-Sv-Q5L" secondAttribute="bottom" constant="310" id="YbB-z2-pWP"/>
-                            <constraint firstItem="QEh-NW-gYh" firstAttribute="leading" secondItem="te5-sQ-2Iq" secondAttribute="leading" type="default" id="aDW-fo-MRZ"/>
+                            <constraint firstItem="JP5-v7-dIa" firstAttribute="leading" secondItem="QEh-NW-gYh" secondAttribute="leading" type="default" id="Trg-4v-F2E"/>
+                            <constraint firstItem="te5-sQ-2Iq" firstAttribute="leading" secondItem="bNG-Sv-Q5L" secondAttribute="leading" type="default" id="Ub2-Da-7JP"/>
+                            <constraint firstItem="JP5-v7-dIa" firstAttribute="leading" secondItem="3z9-yJ-Bor" secondAttribute="leading" type="default" id="Y8i-JA-Bzb"/>
+                            <constraint firstAttribute="bottom" secondItem="bNG-Sv-Q5L" secondAttribute="bottom" constant="208" id="Yep-K2-UGI"/>
                             <constraint firstItem="bNG-Sv-Q5L" firstAttribute="top" secondItem="IKm-1o-FoO" secondAttribute="top" type="default" id="c8t-qT-QX1"/>
-                            <constraint firstItem="te5-sQ-2Iq" firstAttribute="top" secondItem="yju-cV-wGe" secondAttribute="top" constant="427" id="cgc-VC-Wdu"/>
-                            <constraint firstItem="JP5-v7-dIa" firstAttribute="leading" secondItem="3z9-yJ-Bor" secondAttribute="leading" type="default" id="dz4-46-MMd"/>
                             <constraint firstItem="qWy-mo-QUs" firstAttribute="top" secondItem="yju-cV-wGe" secondAttribute="top" constant="159" id="fpO-w2-WCz"/>
                             <constraint firstItem="3z9-yJ-Bor" firstAttribute="top" secondItem="yju-cV-wGe" secondAttribute="top" constant="86" id="kSg-Dl-UdS"/>
-                            <constraint firstItem="te5-sQ-2Iq" firstAttribute="leading" secondItem="JP5-v7-dIa" secondAttribute="leading" type="default" id="rCZ-sU-I7K"/>
+                            <constraint firstItem="6jN-tY-6iA" firstAttribute="baseline" secondItem="QEh-NW-gYh" secondAttribute="baseline" type="default" id="nnn-0y-pIP"/>
+                            <constraint firstAttribute="bottom" secondItem="QEh-NW-gYh" secondAttribute="bottom" constant="269" id="q5J-ql-ujq"/>
                             <constraint firstItem="te5-sQ-2Iq" firstAttribute="leading" secondItem="ezY-2w-Um9" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="rKp-ke-QJN"/>
-                            <constraint firstItem="ezY-2w-Um9" firstAttribute="top" secondItem="yju-cV-wGe" secondAttribute="top" constant="430" id="tsT-o3-Mqa"/>
-                            <constraint firstAttribute="bottom" secondItem="6jN-tY-6iA" secondAttribute="bottom" constant="385" id="vbe-dZ-Qln"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
@@ -1286,6 +1284,87 @@
     <resources>
         <image name="first.png" width="30" height="30"/>
     </resources>
+    <classes>
+        <class className="AddMenuItemViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMenuItemViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addMenuItem:"/>
+                <relationship kind="outlet" name="category" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="description" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="price" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="vegetarian" candidateClass="UICustomSwitch"/>
+            </relationships>
+        </class>
+        <class className="EditMenuDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditMenuDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="categoryPickerView" candidateClass="UIPickerView"/>
+                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="isVegetarianSwitch" candidateClass="UISwitch"/>
+                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="priceTextField" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="MenuDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="categoryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="isVegCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="MenuMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuMasterViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
+                <relationship kind="action" name="refresh"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="OrderDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OrderDetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="categoryLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="commentsLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="isCompleteCell" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="OrderMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/OrderMasterViewController.h"/>
+        </class>
+        <class className="PlaceOrderMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaceOrderMasterViewController.h"/>
+        </class>
+        <class className="PlaceOrderViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaceOrderViewController.h"/>
+        </class>
+        <class className="SalesDetailViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SalesDetailViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="paySelectedItems:"/>
+                <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="itemPrice" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="orderItem" candidateClass="UITableViewCell"/>
+            </relationships>
+        </class>
+        <class className="SalesMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SalesMasterViewController.h"/>
+        </class>
+        <class className="UICustomSwitch" superclassName="UISlider">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICustomSwitch.h"/>
+        </class>
+        <class className="UIStoryboardSegue" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>

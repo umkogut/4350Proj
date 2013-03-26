@@ -10,6 +10,8 @@
 #import "SalesMasterViewController.h"
 #import "TableOrder.h"
 #import "ItemOrder.h"
+#import "defines.h"
+#import "ASIFormDataRequest.h"
 
 @interface SalesDetailViewController ()
 @property (strong, nonatomic) UIPopoverController *masterPopoverController;
@@ -191,5 +193,43 @@
 }
 
 - (IBAction)paySelectedItems:(id)sender {
+    NSString *jsonCommand = [NSString stringWithFormat:@"[{\"numItems\":%@}",[NSString stringWithFormat:@"%i", [self.itemsToRemove count]]];
+    
+    if([self.itemsToRemove count] > 0) {
+        SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
+        
+        for (int i = 0; i < [self.itemsToRemove count]; i++) {
+            NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
+                                  [NSString stringWithFormat:@"%i",self.table.tableNum], @"table",
+                                  [NSString stringWithFormat:@"%i",0], @"menuItem",
+                                  [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:i] groupNum]], @"group",
+                                  [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:i] orderID]], @"order",
+                                  nil];
+            
+            if(jsonCommand != NULL)
+                jsonCommand = [NSString stringWithFormat:@"%@,{\"orderItem\":%@}", jsonCommand, [jsonWriter stringWithObject:json]];
+            else
+                jsonCommand = [NSString stringWithFormat:@"{\"orderItem\":%@}",[jsonWriter stringWithObject:json]];
+        }
+        
+        jsonCommand = [NSString stringWithFormat:@"%@]", jsonCommand];
+        //NSLog(jsonCommand);
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/payForItems", serverURL]];
+        
+        //Production
+        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+        
+        [request addRequestHeader:@"Content-Type" value:@"application/json"];
+        
+        [request setRequestMethod:@"POST"];
+        [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        [request setDelegate:self];
+        [request startAsynchronous];
+    } else {
+        UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"No items selected!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [failedMsg show];
+    }
 }
 @end
