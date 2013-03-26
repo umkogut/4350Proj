@@ -33,6 +33,11 @@
     self.dataController = [[TableOrderDataController alloc] init];
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self refreshOrders];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
