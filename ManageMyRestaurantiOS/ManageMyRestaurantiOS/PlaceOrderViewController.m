@@ -82,6 +82,7 @@
     NSArray *menu = [menuList objectForKey:@"menu"];
     for (NSDictionary *item in menu) {
         MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
+                                                    menuID:(NSInteger)[[item objectForKey:@"menuID"] intValue]
                                                   category:[item objectForKey:@"category"]
                                                description:[item objectForKey:@"description"]
                                                      price:[item objectForKey:@"price"]
@@ -148,7 +149,7 @@
     
     MenuItem *selectedItem = [self.dataController.masterMenuItemList objectAtIndex:(offset + indexPath.row)];
     
-    NSLog(selectedItem.name);
+    //NSLog([NSString stringWithFormat:"%d - #@", selectedItem. selectedItem.name);
     
     //server will want JSON like:
 //    {
@@ -161,7 +162,7 @@
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *selectedCell = [tableView cellForRowAtIndexPath:indexPath];
+    NSLog(@"Item de-selected");
 }
 
 #pragma mark - Tab bar controller delegate
