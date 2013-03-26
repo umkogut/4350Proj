@@ -100,7 +100,6 @@ class TransactionModelTests(unittest.TestCase):
 	instance = self._makeOne()
 
 # View Tests
-
 class ViewMenuTests(unittest.TestCase):
     def _callFUT(self, request):
 	from .views import cook_view
@@ -210,10 +209,10 @@ class AddMenuItemViewTest(unittest.TestCase):
  	item = request.DummyResource()
 	self.assertEqual(view_info['isSuccess'], 1)
 
-class OrderStatusViewTest(unittest.TestCase):                                                                                                                                      
+class OrderStatusViewTest(unittest.TestCase):
     def _callFUT(self, request):
-        from .views import orderStatus_view                                                                                                                                        
-        return orderStatus_view(request)                                                                                                                                           
+        from .views import orderStatus_view
+	return orderStatus_view(request)
 
     def test_orderStatus_view(self):
         request = testing.DummyRequest()
@@ -222,16 +221,14 @@ class OrderStatusViewTest(unittest.TestCase):
 	self.assertEqual(orderStatus.isComplete, 'isComplete')
         self.assertEqual(view_info['isSuccess'], 1)
 
-class EditMenuItemViewTest(unittest.TestCase):                                                                                                                                
+class EditMenuItemViewTest(unittest.TestCase):
     def _callFUT(self, request):
-        from .views import editMenuItem_view                                                                                                               
-        return editMenuItem_view(request)                                                                                                                                     
+        from .views import editMenuItem_view
+	return editMenuItem_view(request)
 
     def test_editMenuItem_view(self):
         request = testing.DummyRequest()
         view_info = self._callFUT(request)
-        item = request.DummyResource()
-	newItem = request.DummyResource()
         self.assertEqual(view_info['isSuccess'], 1)
 
 class ViewIndexTests(unittest.TestCase):
