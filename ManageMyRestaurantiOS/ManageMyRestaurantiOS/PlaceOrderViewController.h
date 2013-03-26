@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ASIHTTPRequest.h"
+#import "ASIHttpRequest/ASIFormDataRequest.h"
 #import "SBJson.h"
 #import "defines.h"
 #import "MenuItem.h"
@@ -20,5 +20,9 @@
 
 @property (strong, nonatomic) MenuItemDataController *dataController;
 @property (strong, nonatomic) TableOrder *tableOrder;
+@property (strong, nonatomic) IBOutlet UITableView *menuTable;
+@property (strong, nonatomic) NSMutableArray *selectedMenuItems;
+
+- (IBAction)save:(id)sender;
 
 @end

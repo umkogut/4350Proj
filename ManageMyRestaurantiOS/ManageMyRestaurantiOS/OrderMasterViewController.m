@@ -55,6 +55,11 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [self refreshOrders];
+}
+
 - (void)refreshOrders {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getOrders.json", serverURL]];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];

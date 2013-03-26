@@ -959,7 +959,16 @@
                             <outlet property="delegate" destination="2VG-Ic-scg" id="tuG-js-mam"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Menu Items" id="4U9-YQ-NYS"/>
+                    <navigationItem key="navigationItem" title="Menu Items" id="4U9-YQ-NYS">
+                        <barButtonItem key="rightBarButtonItem" title="Place Order" id="SV4-Ev-OdF">
+                            <connections>
+                                <action selector="save:" destination="2VG-Ic-scg" id="EJz-8C-6hQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="menuTable" destination="zNo-tX-XuR" id="XfZ-jR-EQI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rIZ-n8-3aK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
