@@ -146,7 +146,7 @@
         NSString *jsonCommand = [jsonWriter stringWithObject:json];
         NSLog(@"jsonCommand\n%@", jsonCommand);
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/placeOrder.json", serverURL]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/placedOrder.json", serverURL]];
         ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
         
         [request addRequestHeader:@"Content-Type" value:@"application/json"];
