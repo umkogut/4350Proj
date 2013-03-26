@@ -1193,7 +1193,7 @@
                 <navigationController id="c0o-71-P8C" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="H9N-1t-uAw">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.36078432202339172" green="0.48627454042434692" blue="0.36078432202339172" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="0.094117656349999995" green="0.34509804840000002" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="HaJ-BA-oyd" kind="relationship" relationship="rootViewController" id="oFc-r2-nFi"/>
@@ -1259,7 +1259,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QDQ-PM-oCw">
                         <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="0.42352944612503052" green="0.51372551918029785" blue="0.41960787773132324" alpha="1" colorSpace="deviceRGB"/>
+                        <color key="tintColor" red="0.094117656349999995" green="0.34509804840000002" blue="0.09803922474" alpha="1" colorSpace="deviceRGB"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -1354,6 +1354,10 @@
         </class>
         <class className="PlaceOrderViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaceOrderViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="menuTable" candidateClass="UITableView"/>
+            </relationships>
         </class>
         <class className="SalesDetailViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SalesDetailViewController.h"/>
