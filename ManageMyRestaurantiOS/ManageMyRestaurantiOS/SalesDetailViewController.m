@@ -45,13 +45,14 @@
 
 - (void) didSelectTable:(TableOrder *)newTable {
     self.table = newTable;
-    
     [self initializeView];
 }
 
 - (void)initializeView {
     self.itemsToRemove = [[NSMutableArray alloc] init];
+    self.dataController = [[MenuItemDataController alloc] init];
     [self.tableView reloadData];
+    [self refreshMenu];
 }
 
 - (void)viewDidLoad
@@ -196,12 +197,26 @@
     NSString *jsonCommand = [NSString stringWithFormat:@"[{\"numItems\":%@}",[NSString stringWithFormat:@"%i", [self.itemsToRemove count]]];
     
     if([self.itemsToRemove count] > 0) {
+        //request
         SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
         
         for (int i = 0; i < [self.itemsToRemove count]; i++) {
+            //get MenuItem id #
+            NSInteger *menuid = 0;
+            
+           //NSLog([NSString stringWithFormat:@"%i",self.dataController.countOfList]);
+            for (int j = 0; j < self.dataController.countOfList; j++) {
+                //NSLog([[self.itemsToRemove objectAtIndex:i] name]);
+                //NSLog([[self.dataController objectInListAtIndex:j] name]);
+                if([[[self.itemsToRemove objectAtIndex:i] name] isEqualToString:[[self.dataController objectInListAtIndex:j] name]]) {
+                    menuid = [[self.dataController objectInListAtIndex:j] menuID];
+                }
+            }
+            //NSLog([NSString stringWithFormat:@"%i",menuid]);
+            
             NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [NSString stringWithFormat:@"%i",self.table.tableNum], @"table",
-                                  [NSString stringWithFormat:@"%i",0], @"menuItem",
+                                  [NSString stringWithFormat:@"%i",menuid], @"menuItem",
                                   [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:i] groupNum]], @"group",
                                   [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:i] orderID]], @"order",
                                   nil];
@@ -230,6 +245,60 @@
     } else {
         UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"No items selected!" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [failedMsg show];
+    }
+}
+
+- (void)refreshMenu
+{
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
+    ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
+    [request setRequestMethod:@"GET"];
+    [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
+	[request addRequestHeader:@"Accept" value:@"application/json"];
+    [request setDelegate:self];
+    [request startAsynchronous];
+}
+
+// called when the ASIHTTPRequest is finished
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
+    NSString *responseString =[request responseString];
+    responseString = [responseString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
+    responseString = [responseString stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:@""];
+    //NSLog(@"Response: %@", responseString);
+    
+    SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
+    NSDictionary *menuList = [jsonParser objectWithString:responseString];
+    //NSLog(@"%@", menuList);
+    
+    [self.dataController clearMenu];
+    
+    if ([menuList count] > 0)
+        //reloading the menu
+    {
+        NSArray *categories = [menuList objectForKey:@"categories"];
+        for (NSDictionary *category in categories) {
+            [self.dataController addCategory:[category objectForKey:@"name"]];
+        }
+        
+        NSArray *menu = [menuList objectForKey:@"menu"];
+        for (NSDictionary *item in menu) {
+            MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
+                                                        menuID:(NSInteger)[[item objectForKey:@"menuID"] intValue]
+                                                      category:[item objectForKey:@"category"]
+                                                   description:[item objectForKey:@"description"]
+                                                         price:[item objectForKey:@"price"]
+                                                  isVegetarian:[[item objectForKey:@"isVeg"] boolValue]];
+            [self.dataController addMenuItem:newItem];
+        }
+        
+        [self.tableView reloadData];
+    }
+    else
+        //placed an order
+    {
+        [self refreshMenu];
+        [self initializeView];
     }
 }
 @end
