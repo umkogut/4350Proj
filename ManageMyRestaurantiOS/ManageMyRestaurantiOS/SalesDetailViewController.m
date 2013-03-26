@@ -204,15 +204,17 @@
             //get MenuItem id #
             NSInteger *menuid = 0;
             
-           //NSLog([NSString stringWithFormat:@"%i",self.dataController.countOfList]);
             for (int j = 0; j < self.dataController.countOfList; j++) {
-                //NSLog([[self.itemsToRemove objectAtIndex:i] name]);
-                //NSLog([[self.dataController objectInListAtIndex:j] name]);
                 if([[[self.itemsToRemove objectAtIndex:i] name] isEqualToString:[[self.dataController objectInListAtIndex:j] name]]) {
                     menuid = [[self.dataController objectInListAtIndex:j] menuID];
                 }
             }
-            //NSLog([NSString stringWithFormat:@"%i",menuid]);
+            
+            for (int k = 0; k < [self.table.orderList count]; k++) {
+                if([[[self.table.orderList objectAtIndex:k] name] isEqualToString:[[self.itemsToRemove objectAtIndex:i] name]]) {
+                    [self.table.orderList removeObjectAtIndex:i];
+                }
+            }
             
             NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [NSString stringWithFormat:@"%i",self.table.tableNum], @"table",
