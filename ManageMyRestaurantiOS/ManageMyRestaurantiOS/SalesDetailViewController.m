@@ -190,31 +190,38 @@
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-     [self.itemsToRemove removeObject:[self.table.orderList objectAtIndex:indexPath.row]];
+    [self.itemsToRemove removeObject:[self.table.orderList objectAtIndex:indexPath.row]];
 }
 
 - (IBAction)paySelectedItems:(id)sender {
     NSString *jsonCommand = [NSString stringWithFormat:@"[{\"numItems\":%@}",[NSString stringWithFormat:@"%i", [self.itemsToRemove count]]];
-    
-    if([self.itemsToRemove count] > 0) {
+    NSArray *itemsChosen = [self.orderTable indexPathsForSelectedRows];
+    NSIndexPath *itemPath;
+        
+    if([itemsChosen count] > 0) {
         //request
         SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
         
-        for (int i = 0; i < [self.itemsToRemove count]; i++) {
+        for (int i = 0; i < [itemsChosen count]; i++) {
             //get MenuItem id #
             NSInteger *menuid = 0;
+            itemPath = [itemsChosen objectAtIndex:i];
+            //selectedItem = [self.table.orderList objectAtIndex: itemPath.row];
+            NSString *itemName = [[[self.orderTable cellForRowAtIndexPath:itemPath] textLabel] text];
             
             for (int j = 0; j < self.dataController.countOfList; j++) {
-                if([[[self.itemsToRemove objectAtIndex:i] name] isEqualToString:[[self.dataController objectInListAtIndex:j] name]]) {
+                if([itemName isEqualToString:[[self.dataController objectInListAtIndex:j] name]]) {
                     menuid = [[self.dataController objectInListAtIndex:j] menuID];
                 }
             }
             
             for (int k = 0; k < [self.table.orderList count]; k++) {
-                if([[[self.table.orderList objectAtIndex:k] name] isEqualToString:[[self.itemsToRemove objectAtIndex:i] name]]) {
-                    [self.table.orderList removeObjectAtIndex:i];
+                if([[[self.table.orderList objectAtIndex:k] name] isEqualToString:itemName]) {
+                    [self.table.orderList removeObjectAtIndex:k];
                 }
             }
+            
+            NSLog(itemName);
             
             NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [NSString stringWithFormat:@"%i",self.table.tableNum], @"table",
@@ -230,7 +237,7 @@
         }
         
         jsonCommand = [NSString stringWithFormat:@"%@]", jsonCommand];
-        //NSLog(jsonCommand);
+        NSLog(jsonCommand);
         
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/payForItems", serverURL]];
         
