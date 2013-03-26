@@ -93,15 +93,17 @@
                                                   isVegetarian:[[item objectForKey:@"isVeg"] boolValue]];
             [self.dataController addMenuItem:newItem];
         }
+        
+        [self.tableView reloadData];
     }
     else
     //placed an order
     {
         UIAlertView *successMsg = [[UIAlertView alloc] initWithTitle:@"Order Placed" message:@"Successfully placed orders" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [successMsg show];
+        
+        [self refreshMenu];
     }
-    [self.tableView reloadData];
-    
 }
 
 - (IBAction)save:(id)sender
