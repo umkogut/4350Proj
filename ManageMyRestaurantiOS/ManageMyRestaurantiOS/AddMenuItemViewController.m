@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    categories = [[NSArray alloc] initWithObjects:@"Appetizer", @"Entree", @"Dessert", nil];
+    categories = [[NSArray alloc] initWithObjects:@"Appetizers", @"Entrees", @"Dessert", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -102,6 +102,10 @@
         UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"Failed" message:@"Adding new menu item failed - Name, Description and Price cannot be left empty." delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [failedMsg show];
     }
+}
+
+- (IBAction)cancel:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)requestFinished:(ASIHTTPRequest *)request {
