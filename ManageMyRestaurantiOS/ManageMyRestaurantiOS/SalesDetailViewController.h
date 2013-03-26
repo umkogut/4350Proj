@@ -19,11 +19,13 @@
 
 @property (retain, nonatomic) TableOrderDataController *dataController;
 @property (retain, nonatomic) TableOrder *table;
-@property (nonatomic) NSInteger *orderItemCount;
+@property (nonatomic) NSInteger orderItemCount;
+@property (retain, nonatomic) NSMutableArray *itemsToRemove;
 
 @property (weak, nonatomic) IBOutlet UITableViewCell *orderItem;
 @property (weak, nonatomic) IBOutlet UILabel *itemName;
 @property (weak, nonatomic) IBOutlet UILabel *itemPrice;
 
+- (IBAction)paySelectedItems:(id)sender;
 
 @end

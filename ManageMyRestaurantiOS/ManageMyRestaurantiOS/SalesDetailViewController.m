@@ -48,7 +48,7 @@
 }
 
 - (void)initializeView {
-    self.orderItemCount = 0;
+    self.itemsToRemove = [[NSMutableArray alloc] init];
     [self.tableView reloadData];
 }
 
@@ -124,20 +124,20 @@
         
     }
     
-    if(self.orderItemCount >= [self.table.orderList count]) {
-        self.orderItemCount = 0;
-    }
-    
     if([self.table.orderList count] > 0) {
+        if(self.orderItemCount >= [self.table.orderList count]) {
+            self.orderItemCount = 0;
+        }
+        
         NSString *orderInfo = [[self.table.orderList objectAtIndex:self.orderItemCount] name];
-        NSLog(orderInfo);
         [[cell textLabel] setText:orderInfo];
+        self.orderItemCount = self.orderItemCount + 1;
     }
-    
-    self.orderItemCount = self.orderItemCount + 1;
     
     return cell;
 }
+
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -182,13 +182,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    [self.itemsToRemove addObject:[self.table.orderList objectAtIndex:indexPath.row]];
 }
 
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+     [self.itemsToRemove removeObject:[self.table.orderList objectAtIndex:indexPath.row]];
+}
+
+- (IBAction)paySelectedItems:(id)sender {
+}
 @end
