@@ -170,6 +170,7 @@ def getMenuName_view(request):
 	print jsonString
 	return jsonString
 
+@view_config(renderer='json', route_name='payForItems')
 @view_config(renderer='json', name="payForItems.json")
 def getPOS_view(request):
 	print request

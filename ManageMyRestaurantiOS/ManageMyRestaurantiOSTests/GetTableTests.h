@@ -14,6 +14,12 @@
 
 @property (nonatomic, retain) TableOrderDataController *tableDataController;
 
-- (void)testCreateItem;
+- (void)testCreateTableList;
+- (void)testAddTable;
+- (void)testGetTable;
+
+- (void)testAddOrder;
+- (void)testGetOrder;
+- (void)testGetOrderByCategory;
 
 @end

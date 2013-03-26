@@ -27,9 +27,11 @@
 }
 
 - (NSInteger)numOrdersByTable:(NSInteger)tableNum {
-    for (TableOrder *table in self.tableOrderList) {
-        if (table.tableNum == tableNum) {
-            return [table numOrders];
+    if (tableNum >= 0) {
+        for (TableOrder *table in self.tableOrderList) {
+            if (table.tableNum == tableNum) {
+                return [table numOrders];
+            }
         }
     }
     return -1;
@@ -43,35 +45,41 @@
 - (void)addTable:(NSInteger)tableNum {
     BOOL exists = NO;
     
-    for (TableOrder *table in self.tableOrderList) {
-        if (table.tableNum == tableNum) {
-            exists = YES;
-            break;
+    if (tableNum >= 0) {
+        for (TableOrder *table in self.tableOrderList) {
+            if (table.tableNum == tableNum) {
+                exists = YES;
+                break;
+            }
         }
-    }
     
-    if (!exists) {
-        TableOrder *newTable = [[TableOrder alloc] initWithTableNum:tableNum];
-        [self.tableOrderList addObject:newTable];
+        if (!exists) {
+            TableOrder *newTable = [[TableOrder alloc] initWithTableNum:tableNum];
+            [self.tableOrderList addObject:newTable];
+        }
     }
 }
 
 - (void)addOrder:(NSInteger)tableNum
                 :(ItemOrder *)order {
-    for (TableOrder *table in self.tableOrderList) {
-        if (table.tableNum == tableNum) {
-            [table addOrder:order];
-            break;
+    if (tableNum >= 0 && [order isKindOfClass:[ItemOrder class]]) {
+        for (TableOrder *table in self.tableOrderList) {
+            if (table.tableNum == tableNum) {
+                [table addOrder:order];
+                break;
+            }
         }
     }
 }
 
 - (NSMutableArray *)getListInCategory:(NSInteger)tableNum
                          :(NSString *)category {
-    for (TableOrder *table in self.tableOrderList) {
-        if (table.tableNum == tableNum) {
-            return [table getListInCategory:category];
-            break;
+    if (tableNum >=0 && category != nil) {
+        for (TableOrder *table in self.tableOrderList) {
+            if (table.tableNum == tableNum) {
+                return [table getListInCategory:category];
+                break;
+            }
         }
     }
     return nil;
@@ -83,19 +91,23 @@
 
 - (ItemOrder *)orderInListAtIndex:(NSInteger)tableNum
                                      :(NSUInteger)index {
-    for (TableOrder *table in self.tableOrderList) {
-        if (table.tableNum == tableNum) {
-            return [table objectInListAtIndex:index];
-            break;
+    if (tableNum >= 0) {
+        for (TableOrder *table in self.tableOrderList) {
+            if (table.tableNum == tableNum) {
+                return [table objectInListAtIndex:index];
+                break;
+            }
         }
     }
     return nil;
 }
 
 - (void)clearTable:(NSInteger)tableNum {
-    for (TableOrder *table in self.tableOrderList) {
-        if (table.tableNum == tableNum) {
-            [table clearOrders];
+    if (tableNum >= 0) {
+        for (TableOrder *table in self.tableOrderList) {
+            if (table.tableNum == tableNum) {
+                [table clearOrders];
+            }
         }
     }
 }
