@@ -29,11 +29,7 @@
     if (_tableOrder != tableOrder)
     {
         _tableOrder = tableOrder;
-        
-        if ([self.dataController.masterMenuItemList count] > 0)
-        {
-            [self refreshMenu];
-        }
+        [self refreshMenu];
     }
 }
 
@@ -51,6 +47,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //[self refreshMenu];
 }
 
 
@@ -76,7 +73,7 @@
     SBJsonParser *jsonParser = [[SBJsonParser alloc] init];
     NSDictionary *menuList = [jsonParser objectWithString:responseString];
     NSLog(@"%@", menuList);
-    
+        
     [self.dataController clearMenu];
     
     if ([menuList count] > 0)
@@ -105,9 +102,7 @@
     //placed an order
     {
         UIAlertView *successMsg = [[UIAlertView alloc] initWithTitle:@"Order Placed" message:@"Successfully placed orders" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-        [successMsg show];
-        
-        [self refreshMenu];
+        [successMsg show];        
     }
 }
 
