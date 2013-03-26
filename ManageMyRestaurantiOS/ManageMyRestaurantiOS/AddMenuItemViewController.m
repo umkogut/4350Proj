@@ -65,9 +65,6 @@
         NSPredicate *test = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", currencyRegex];
         BOOL match = [test evaluateWithObject:self.price.text];
         
-        /*NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[0-9]+(\.[0-9][0-9]?)?" options:0 error:NULL];
-        NSTextCheckingResult *match = [regex firstMatchInString:self.price.text options:0 range:NSMakeRange(0, [self.price.text length])];
-        */
         if(match) {
             NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                  self.itemName.text, @"name",
@@ -84,10 +81,8 @@
             NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/addMenuItem", serverURL]];
         
             //Production
-            //NSURL *url = [NSURL URLWithString:@"http://ec2-54-234-208-213.compute-1.amazonaws.com:6543/addMenuItem"];
             ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
         
-            //[request addRequestHeader:@"User-Agent" value:@"ASIHTTPRequest"];
             [request addRequestHeader:@"Content-Type" value:@"application/json"];
         
             [request setRequestMethod:@"POST"];
