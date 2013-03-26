@@ -21,6 +21,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *descriptionTextField;
 @property (weak, nonatomic) IBOutlet UITextField *priceTextField;
 @property (weak, nonatomic) IBOutlet UISwitch *isVegetarianSwitch;
+@property (nonatomic) NSInteger *menuID;
 
 -(void)configureView;
 -(void)editMenuItem:(NSString *)oldItemName withUpdatedItem:(MenuItem *)updatedItem;

@@ -11,17 +11,18 @@
 #import "ASIHttpRequest/ASIFormDataRequest.h"
 #import "SBJson.h"
 
-@interface AddMenuItemViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
+@interface AddMenuItemViewController : UITableViewController <UIPickerViewDataSource, UIPickerViewDelegate> {
     NSArray *categories;
 }
 
-@property (weak, nonatomic) IBOutlet UILabel *itemName;
+@property (weak, nonatomic) IBOutlet UITextField *itemName;
 @property (strong, nonatomic) IBOutlet UIPickerView *category;
 @property (weak, nonatomic) IBOutlet UITextField *description;
 @property (weak, nonatomic) IBOutlet UITextField *price;
 @property (weak, nonatomic) IBOutlet UICustomSwitch *vegetarian;
 
 - (IBAction)addMenuItem:(id)sender;
+- (IBAction)cancel:(id)sender;
 
 
 

@@ -62,8 +62,9 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        NSInteger tableNum = (NSInteger)([self.tableView indexPathForSelectedRow].row + 1);
+    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad)
+    {
+        NSInteger tableNum = (NSInteger)([self.tableView indexPathForSelectedRow].section + 1);
         TableOrder *tableOrder = [[TableOrder alloc] initWithTableNum:tableNum];
         
         self.detailViewController.tableOrder = tableOrder;

@@ -70,7 +70,8 @@
     
     if ([[segue identifier] isEqualToString:@"EditMenuItemDetails"]) {
         
-        EditMenuDetailViewController *editMenuDetailViewController = [segue destinationViewController];
+        UINavigationController *navController = [segue destinationViewController];        
+        EditMenuDetailViewController *editMenuDetailViewController = (EditMenuDetailViewController *)navController.topViewController;
         
         editMenuDetailViewController.menuItem = self.menuItem;
         editMenuDetailViewController.categoryList = self.categoriesList;
