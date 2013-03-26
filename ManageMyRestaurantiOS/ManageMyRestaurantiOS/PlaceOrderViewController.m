@@ -170,30 +170,35 @@
             }
             
             selectedItem = [self.dataController.masterMenuItemList objectAtIndex:(offset + itemPath.row)];
-            //[self.selectedMenuItems addObject:selectedItem];
             
             indItem = [[NSDictionary alloc] init];
             indItem = [NSDictionary dictionaryWithObjectsAndKeys:
-                       [NSString stringWithFormat:@"%d", selectedItem.menuID], @"menuItem",
-                       [NSString stringWithFormat:@"%d", self.tableOrder.tableNum], @"tableNum",
-                       @"0", @"groupNum",
                        @"", @"comments",
+                       [NSNumber numberWithInteger: 0], @"groupNum",
+                       [NSNumber numberWithInteger: self.tableOrder.tableNum], @"tableNum", 
+                       [NSNumber numberWithInteger: selectedItem.menuID], @"menuItem",                      
                        nil];
             
             [allSelections addObject:indItem];
-            
-            NSLog(@"allSelections\n%@", allSelections);
         }
         
         json = [NSDictionary dictionaryWithObjectsAndKeys:
                 allSelections, @"Orders",
                 nil];
         
-        NSLog(@"everything\n%@", json);
-        
         NSString *jsonCommand = [jsonWriter stringWithObject:json];
-        
         NSLog(@"jsonCommand\n%@", jsonCommand);
+        
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/placeOrder", serverURL]];
+        ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+        
+        [request addRequestHeader:@"Content-Type" value:@"application/json"];
+        
+        [request setRequestMethod:@"POST"];
+        [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
+        
+        [request setDelegate:self];
+        [request startAsynchronous];
     }
     else
     {

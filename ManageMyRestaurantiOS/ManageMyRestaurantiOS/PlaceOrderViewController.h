@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ASIHTTPRequest.h"
+#import "ASIHttpRequest/ASIFormDataRequest.h"
 #import "SBJson.h"
 #import "defines.h"
 #import "MenuItem.h"
