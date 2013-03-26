@@ -5,7 +5,7 @@ $(function() {
 });
 
 function payBill(tableNumCheck) {
-    var itemsToPayFor = "[";
+    var itemsToPayFor = '';
     var itemCount = 0;
 
     $("#bill input[type=checkbox]").each(function() {
@@ -29,18 +29,19 @@ function payBill(tableNumCheck) {
 	  'order':orderNum
           });
 
-	if(itemCount > 0)
-	  itemsToPayFor += ", " + item;
-        else
-          itemsToPayFor += item;
+	//if(itemCount > 0)
+	  itemsToPayFor +=  JSON.stringify({'orderItem':item});
+        //else
+          //itemsToPayFor += JSON.stringify({'orderItem':item});
 
         itemCount++;
        }
       }
 
      });
-     itemsToPayFor += "]";
-     $.post('/payForItems.json', JSON.stringify(itemsToPayFor), function(data) {
+     itemsToPayFor = '[{"numItems":' + itemCount + '},' + itemsToPayFor + ']';
+
+     $.post('/payForItems.json', itemsToPayFor, function(data) {
 	$.each(data, function(key, value) {
 		if(key == 'isSuccess' && value) {
 			location.reload();
