@@ -176,18 +176,19 @@ def getPOS_view(request):
 	print request
 
 	items = request.json_body
-	itemArr = items.split('},')
-	for item in itemArr:
-		#print item
-		fields = item.split(',')
-		tableNum = fields[0].split(':')[1].replace("\"", "")
-		menuItem = fields[1].split(':')[1].replace("\"", "")
-		groupNum = fields[2].split(':')[1].replace("\"", "")
-		orderID = fields[3].split(':')[1].replace("\"", "").replace("}]", "")
+	numItems = items[0]['numItems']
+	#print numItems
+	
+	for i in range(0, numItems):
+		item = items[i + 1]['orderItem']
+		tableNum = item['table']
+		menuItem = item['menuItem']
+		groupNum = item['group']
+		orderID = item['order']
 		#print tableNum + menuItem + groupNum + orderID
 		DBSession.query(Order).filter(Order.orderID==orderID, Order.menuItem==menuItem, Order.tableNum==tableNum, Order.groupNum==groupNum).delete()
 	        transaction.commit()
-
+	
 	return {'isSuccess': 1}
 
 @view_config(renderer='json', name='getOrders.json')
