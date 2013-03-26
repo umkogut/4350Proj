@@ -274,8 +274,8 @@ def getMenu_view(request):
 	categories = DBSession.query(MenuCategory).group_by(MenuCategory.catID).all()
 	jsonMenu = '{"menu": ['
 	for i in range(len(menuItems)):
+		category = DBSession.query(MenuCategory).filter_by(catID=menuItems[i].category).first().name
 		if i < (len(menuItems)-1):
-			category = DBSession.query(MenuCategory).filter_by(catID=menuItems[i].category).first().name
 			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": "' + category + '", "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"},'
 		else:
 			jsonMenu = jsonMenu + '{"menuID": ' + str(menuItems[i].menuID) + ', "name": "' + menuItems[i].name + '", "category": "' + category + '", "price": ' + str(menuItems[i].price) + ', "isVeg": "' + str(menuItems[i].isVeg) + '", "isActive": "' + str(menuItems[i].isActive) + '", "description": "' + menuItems[i].description + '"}'
