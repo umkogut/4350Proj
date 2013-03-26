@@ -66,6 +66,13 @@
     }
 }
 
+- (void)viewDidAppear:(BOOL)animated
+{
+    [self.nameLabel setText:@"None"];
+    [self.categoryLabel setText:@"None"];
+    [self.commentsLabel setText:@"None"];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];    
