@@ -84,7 +84,8 @@
         }
         
         NSArray *menu = [menuList objectForKey:@"menu"];
-        for (NSDictionary *item in menu) {
+        for (NSDictionary *item in menu)
+        {
             MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
                                                         menuID:(NSInteger)[[item objectForKey:@"menuID"] intValue]
                                                       category:[item objectForKey:@"category"]
@@ -116,35 +117,22 @@
     NSDictionary *indItem;
     SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
     NSDictionary *json;
-    
-    //server will want JSON like:
-    //    {
-    //        "Orders" : [
-    //                    { "menuItem" : menuID, "tableNum" : tableID, "groupNum" : 0, "comments" : "" },
-    //                    { "menuItem" : menuID, "tableNum" : tableID, "groupNum" : 0, "comments" : "" }
-    //                   ]
-    //    }
+    NSMutableArray *itemsInSection;
     
     if ([itemsChosen count] > 0)
     {
         for (int i=1; i <= [itemsChosen count]; i++)
         {
-            offset = 0;
             itemPath = [itemsChosen objectAtIndex:i-1];
-            
-            for (int section = itemPath.section; section > 0; section--)
-            {
-                offset += [self.menuTable numberOfRowsInSection:section];
-            }
-            
-            selectedItem = [self.dataController.masterMenuItemList objectAtIndex:(offset + itemPath.row)];
+            itemsInSection = [self.dataController getListInCategory: itemPath.section];
+            selectedItem = [itemsInSection objectAtIndex:itemPath.row];
             
             indItem = [[NSDictionary alloc] init];
             indItem = [NSDictionary dictionaryWithObjectsAndKeys:
                        @"", @"comments",
                        [NSNumber numberWithInteger: 0], @"groupNum",
                        [NSNumber numberWithInteger: self.tableOrder.tableNum], @"tableNum", 
-                       [NSNumber numberWithInteger: selectedItem.menuID], @"menuItem",                      
+                       [NSNumber numberWithInteger: (NSInteger)selectedItem.menuID], @"menuItem",
                        nil];
             
             [allSelections addObject:indItem];
