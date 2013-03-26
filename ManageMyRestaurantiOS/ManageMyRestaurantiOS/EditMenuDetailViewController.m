@@ -23,6 +23,7 @@
     [self.descriptionTextField setText:item.description];    
     [self.priceTextField setText:[NSString stringWithFormat:@"%0.2f", [item.price floatValue]]];    
     [self.isVegetarianSwitch setOn:item.isVegetarian];
+    self.menuID = item.menuID;
     
     NSInteger index = [self.categoryList indexOfObject:self.menuItem.category];
     [self.categoryPickerView selectRow:index inComponent:0 animated:NO];
@@ -43,8 +44,8 @@
     NSString *description = [self.descriptionTextField text];
     NSDecimalNumber *price = [NSDecimalNumber decimalNumberWithString:[self.priceTextField text]];
     BOOL isVegetarian = [self.isVegetarianSwitch isOn];
-    
-    MenuItem *updatedItem = [[MenuItem alloc] initWithName:name category:categoryID description:description price:price  isVegetarian:isVegetarian];
+
+    MenuItem *updatedItem = [[MenuItem alloc] initWithName:name menuID:self.menuID category:categoryID description:description price:price  isVegetarian:isVegetarian];
     [self editMenuItem:self.menuItem.name withUpdatedItem:updatedItem];
     
     [self dismissViewControllerAnimated:YES completion:NULL];
@@ -58,6 +59,7 @@
     
     NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                           updatedItem.name, @"name",
+                          [NSString stringWithFormat:@"%d", updatedItem.menuID], @"menuID",
                           updatedItem.category, @"category",
                           updatedItem.description, @"description",
                           updatedItem.price, @"price",
