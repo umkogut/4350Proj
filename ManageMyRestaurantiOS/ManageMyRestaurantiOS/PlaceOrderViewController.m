@@ -54,7 +54,7 @@
 {
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/getMenu.json", serverURL]];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
-    [request setRequestMethod:@"POST"];
+    [request setRequestMethod:@"GET"];
     [request addRequestHeader:@"X-Requested-With" value:@"XMLHttpRequest"];
 	[request addRequestHeader:@"Accept" value:@"application/json"];
     [request setDelegate:self];
@@ -62,7 +62,8 @@
 }
 
 // called when the ASIHTTPRequest is finished
-- (void)requestFinished:(ASIHTTPRequest *)request {
+- (void)requestFinished:(ASIHTTPRequest *)request
+{
     NSString *responseString =[request responseString];
     responseString = [responseString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
     responseString = [responseString stringByReplacingCharactersInRange:NSMakeRange(0, 1) withString:@""];
@@ -96,7 +97,109 @@
 
 - (IBAction)save:(id)sender
 {
+    int offset = 0;
+    NSArray *itemsChosen = [self.menuTable indexPathsForSelectedRows];
+    MenuItem *selectedItem;
+    NSIndexPath *itemPath;
+    NSMutableArray *allSelections = [[NSMutableArray alloc] init];
+    NSDictionary *indItem;
+    SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
+    NSDictionary *json;
     
+    //server will want JSON like:
+    //    {
+    //        "Orders" : [
+    //                    { "menuItem" : menuID, "tableNum" : tableID, "groupNum" : 0, "comments" : "" },
+    //                    { "menuItem" : menuID, "tableNum" : tableID, "groupNum" : 0, "comments" : "" }
+    //                   ]
+    //    }
+    
+    //NSLog(@"table num: %i", self.tableOrder.tableNum);
+    
+    /*
+     
+     -(void)editMenuItem:(NSString *)oldItemName withUpdatedItem:(MenuItem *)updatedItem {
+         NSLog(@"editing");
+         SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
+         
+         NSString *isVegStr = updatedItem.isVegetarian ? @"TRUE" : @"FALSE";
+         
+         NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
+         updatedItem.name, @"name",
+         [NSString stringWithFormat:@"%d", updatedItem.menuID], @"menuID",
+         updatedItem.category, @"category",
+         updatedItem.description, @"description",
+         updatedItem.price, @"price",
+         isVegStr, @"isVeg",
+         @"", @"image",
+         oldItemName, @"prevItemName",
+         nil];
+         NSLog(@"%@", json);
+         NSString *jsonCommand = [jsonWriter stringWithObject:json];
+         
+         NSLog(@"%@", jsonCommand);
+         
+         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/editMenuItem.json", serverURL]];
+         ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+         
+         [request addRequestHeader:@"Content-Type" value:@"application/json"];
+         
+         [request setRequestMethod:@"POST"];
+         [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
+         
+         [request setDelegate:self];
+         [request startAsynchronous];
+     }
+
+     */
+    
+    NSDictionary *jsonWrapper = [NSDictionary dictionaryWithObjectsAndKeys:
+                                 json, @"Orders",
+                                 nil];
+    
+    if ([itemsChosen count] > 0)
+    {
+        for (int i=1; i <= [itemsChosen count]; i++)
+        {
+            offset = 0;
+            itemPath = [itemsChosen objectAtIndex:i-1];
+            
+            for (int section = itemPath.section; section > 0; section--)
+            {
+                offset += [self.menuTable numberOfRowsInSection:section];
+            }
+            
+            selectedItem = [self.dataController.masterMenuItemList objectAtIndex:(offset + itemPath.row)];
+            //[self.selectedMenuItems addObject:selectedItem];
+            
+            indItem = [[NSDictionary alloc] init];
+            indItem = [NSDictionary dictionaryWithObjectsAndKeys:
+                       [NSString stringWithFormat:@"%d", selectedItem.menuID], @"menuItem",
+                       [NSString stringWithFormat:@"%d", self.tableOrder.tableNum], @"tableNum",
+                       @"0", @"groupNum",
+                       @"", @"comments",
+                       nil];
+            
+            [allSelections addObject:indItem];
+            
+            NSLog(@"allSelections\n%@", allSelections);
+        }
+        
+        json = [NSDictionary dictionaryWithObjectsAndKeys:
+                allSelections, @"Orders",
+                nil];
+        
+        NSLog(@"everything\n%@", json);
+        
+        NSString *jsonCommand = [jsonWriter stringWithObject:json];
+        
+        NSLog(@"jsonCommand\n%@", jsonCommand);
+    }
+    else
+    {
+        UIAlertView *failedMsg = [[UIAlertView alloc] initWithTitle:@"No items selected" message:@"Please select at least one item to add to the order" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+        [failedMsg show];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -140,24 +243,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    int offset = 0;
-    
-    for (int section = indexPath.section; section > 0; section--)
-    {
-        offset += [self.menuTable numberOfRowsInSection:section];
-    }
-    
-    MenuItem *selectedItem = [self.dataController.masterMenuItemList objectAtIndex:(offset + indexPath.row)];
-    
-    //NSLog([NSString stringWithFormat:"%d - #@", selectedItem. selectedItem.name);
-    
-    //server will want JSON like:
-//    {
-//        "Orders" : [
-//                    { "menuItem" : menuID, "tableNum" : tableID, "groupNum" : 0, "comments" : "" },
-//                    { "menuItem" : menuID, "tableNum" : tableID, "groupNum" : 0, "comments" : "" }
-//                   ]
-//    }
+    NSLog(@"Item selected");
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -165,6 +251,13 @@
     NSLog(@"Item de-selected");
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    self.dataController = [[MenuItemDataController alloc] init];
+    [self.tableView reloadData];
+}
+
+/*
 #pragma mark - Tab bar controller delegate
 -(void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
     UITabBarItem *vctab = viewController.tabBarItem;
@@ -174,6 +267,7 @@
         [self.tableView reloadData];
     }
 }
+*/
 
 /*
  // Override to support conditional editing of the table view.
