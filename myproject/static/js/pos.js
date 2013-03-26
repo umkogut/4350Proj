@@ -30,7 +30,7 @@ function payBill(tableNumCheck) {
           });
 
 	//if(itemCount > 0)
-	  itemsToPayFor +=  JSON.stringify({'orderItem':item});
+	  itemsToPayFor +=  '{"orderItem":' + item + "}";
         //else
           //itemsToPayFor += JSON.stringify({'orderItem':item});
 
