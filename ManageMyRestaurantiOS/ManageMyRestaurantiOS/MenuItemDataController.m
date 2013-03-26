@@ -61,11 +61,13 @@
 
 // adds a new category to the list
 -(void)addCategory:(NSString *)newCategory {
-    [self.categoryList addObject:newCategory];
+    if (newCategory != nil) {
+        [self.categoryList addObject:newCategory];
+    }
 }
 
 // get the list of menu items in a given category
--(NSMutableArray *)getListInCategory:(NSInteger)index {
+-(NSMutableArray *)getListInCategory:(NSUInteger)index {
     NSString *category = [self.categoryList objectAtIndex:index];
     NSMutableArray *result = [[NSMutableArray alloc] init];
     
@@ -93,7 +95,7 @@
     }
 }
 
--(NSString *)categoryAtIndex:(NSInteger)index {
+-(NSString *)categoryAtIndex:(NSUInteger)index {
     return [self.categoryList objectAtIndex:index];
 }
 
@@ -109,7 +111,9 @@
 
 // adds a new item to the list (does not manipulate the database)
 -(void)addMenuItem:(MenuItem *)menuItem {
-    [self.masterMenuItemList addObject:menuItem];
+    if (menuItem != nil && [menuItem isKindOfClass:[MenuItem class]]) {
+        [self.masterMenuItemList addObject:menuItem];
+    }
 }
 
 -(void)clearMenu {
