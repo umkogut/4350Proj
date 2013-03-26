@@ -1220,6 +1220,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="orderTable" destination="yDF-Qt-OpK" id="gfa-mG-3YM"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbY-N9-QEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1374,6 +1377,7 @@
                 <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="itemPrice" candidateClass="UILabel"/>
                 <relationship kind="outlet" name="orderItem" candidateClass="UITableViewCell"/>
+                <relationship kind="outlet" name="orderTable" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="SalesMasterViewController" superclassName="UITableViewController">

@@ -26,6 +26,7 @@
 @property (weak, nonatomic) IBOutlet UITableViewCell *orderItem;
 @property (weak, nonatomic) IBOutlet UILabel *itemName;
 @property (weak, nonatomic) IBOutlet UILabel *itemPrice;
+@property (strong, nonatomic) IBOutlet UITableView *orderTable;
 
 - (IBAction)paySelectedItems:(id)sender;
 
