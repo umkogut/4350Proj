@@ -8,9 +8,11 @@
 
 #import "SalesDetailViewController.h"
 #import "SalesMasterViewController.h"
+#import "TableOrder.h"
 #import "ItemOrder.h"
 
 @interface SalesDetailViewController ()
+@property (strong, nonatomic) UIPopoverController *masterPopoverController;
 
 @end
 
@@ -25,17 +27,35 @@
     return self;
 }
 
+#pragma mark - Managing the detail order
+
+- (void)setTable:(TableOrder *)newTable {
+    if (_table != newTable) {
+        _table = newTable;
+        
+        [self initializeView];
+    }
+    
+    if (self.masterPopoverController != nil) {
+        [self.masterPopoverController dismissPopoverAnimated:YES];
+    }
+}
+
+- (void) didSelectTable:(TableOrder *)newTable {
+    self.table = newTable;
+    
+    [self initializeView];
+}
+
+- (void)initializeView {
+    self.itemsToRemove = [[NSMutableArray alloc] init];
+    [self.tableView reloadData];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self initializeView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,31 +64,80 @@
     // Dispose of any resources that can be recreated.
 }
 
+//- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UISplitViewController *)viewController
+//{
+//    NSArray *list = viewController.childViewControllers;
+//    if ([viewController class] == [OrderDetailViewController class]) {
+//        NSLog(@"Order Details");
+//    }
+//}
+
+- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+{
+    
+    
+    if (fromInterfaceOrientation == UIInterfaceOrientationPortrait || fromInterfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        NSLog(@"I'm landscape");
+    }
+    else
+    {
+        NSLog(@"I'm portrait");
+    }
+}
+
+#pragma mark - Split view
+
+- (void)splitViewController:(UISplitViewController *)splitController willHideViewController:(UIViewController *)viewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)popoverController
+{
+    barButtonItem.title = NSLocalizedString(@"Tables", @"Tables");
+    [self.navigationItem setLeftBarButtonItem:barButtonItem animated:YES];
+    self.masterPopoverController = popoverController;
+}
+
+- (void)splitViewController:(UISplitViewController *)splitController willShowViewController:(UIViewController *)viewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem
+{
+    // Called when the view is shown again in the split view, invalidating the button and popover controller.
+    [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+    self.masterPopoverController = nil;
+    
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return self.table.numOrders;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    static NSString *CellIdentifier = @"TableOrderCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier]; //forIndexPath:indexPath];
     
-    // Configure the cell...
+    if(cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        
+    }
+    
+    if([self.table.orderList count] > 0) {
+        if(self.orderItemCount >= [self.table.orderList count]) {
+            self.orderItemCount = 0;
+        }
+        
+        NSString *orderInfo = [[self.table.orderList objectAtIndex:self.orderItemCount] name];
+        [[cell textLabel] setText:orderInfo];
+        self.orderItemCount = self.orderItemCount + 1;
+    }
     
     return cell;
 }
+
+
 
 /*
 // Override to support conditional editing of the table view.
@@ -113,13 +182,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    [self.itemsToRemove addObject:[self.table.orderList objectAtIndex:indexPath.row]];
 }
 
+- (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+     [self.itemsToRemove removeObject:[self.table.orderList objectAtIndex:indexPath.row]];
+}
+
+- (IBAction)paySelectedItems:(id)sender {
+}
 @end

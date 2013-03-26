@@ -23,8 +23,8 @@
 -(void)addCategory:(NSString *)category;
 
 -(NSInteger)numCategories;
--(NSMutableArray *)getListInCategory:(NSInteger)index;
--(NSString *)categoryAtIndex:(NSInteger)index;
+-(NSMutableArray *)getListInCategory:(NSUInteger)index;
+-(NSString *)categoryAtIndex:(NSUInteger)index;
 
 -(void)clearMenu;
 

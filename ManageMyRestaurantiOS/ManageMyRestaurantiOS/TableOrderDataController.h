@@ -14,13 +14,11 @@
 @interface TableOrderDataController : NSObject
 
 @property (nonatomic) NSMutableArray *tableOrderList;
-@property (nonatomic) NSMutableArray *tablesList;
 
 - (NSInteger)numTables;
 - (NSInteger)numOrdersByTable:(NSInteger)tableNum;
 - (NSInteger)numOrdersByIndex:(NSUInteger)index;
 - (void)addTable:(NSInteger)tableNum;
-- (void)addSalesTable:(NSInteger)tableNum;
 - (void)addOrder:(NSInteger)tableNum
                 :(ItemOrder *)order;
 - (NSMutableArray *)getListInCategory:(NSInteger)tableNum

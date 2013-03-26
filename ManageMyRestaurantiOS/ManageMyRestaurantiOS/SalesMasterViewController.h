@@ -12,11 +12,11 @@
 
 @class ItemOrder;
 @class TableOrderDataController;
-@class OrderDetailViewController;
+@class SalesDetailViewController;
 
 @interface SalesMasterViewController : UITableViewController
 
 @property (retain, nonatomic) TableOrderDataController *dataController;
-@property (strong, nonatomic) OrderDetailViewController *detailViewController;
+@property (strong, nonatomic) SalesDetailViewController *detailViewController;
 
 @end

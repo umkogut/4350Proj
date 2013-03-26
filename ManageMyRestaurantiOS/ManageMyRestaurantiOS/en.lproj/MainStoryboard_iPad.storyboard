@@ -1196,46 +1196,18 @@
             </objects>
             <point key="canvasLocation" x="5780" y="3279"/>
         </scene>
-        <!--Sales Detail View Controller-->
+        <!--Sales Detail View Controller - Title-->
         <scene sceneID="B5S-Hy-Orm">
             <objects>
                 <tableViewController id="My9-3t-Jwd" customClass="SalesDetailViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yDF-Qt-OpK">
-                        <rect key="frame" x="0.0" y="20" width="703" height="699"/>
+                        <rect key="frame" x="0.0" y="64" width="703" height="655"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                        <navigationBar key="tableHeaderView" contentMode="scaleToFill" barStyle="blackOpaque" id="9ge-7V-KtC">
-                            <rect key="frame" x="0.0" y="0.0" width="703" height="44"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <color key="tintColor" red="0.3333333432674408" green="0.46274513006210327" blue="0.32941177487373352" alpha="1" colorSpace="deviceRGB"/>
-                            <items>
-                                <navigationItem title="Menu Items" id="9d0-5Z-miA">
-                                    <barButtonItem key="rightBarButtonItem" title="Pay for Selected Items" id="TOS-sn-nUr"/>
-                                </navigationItem>
-                            </items>
-                        </navigationBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="3Zr-1G-ODD" detailTextLabel="xX2-6r-7bA" style="IBUITableViewCellStyleSubtitle" id="6J8-N9-9Be">
-                                <rect key="frame" x="0.0" y="66" width="703" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="703" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zr-1G-ODD">
-                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xX2-6r-7bA">
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </label>
-                                    </subviews>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" style="IBUITableViewCellStyleSubtitle" id="6J8-N9-9Be">
+                                <rect key="frame" x="0.0" y="22" width="703" height="44"/>
                             </tableViewCell>
                         </prototypes>
                         <sections/>
@@ -1244,11 +1216,18 @@
                             <outlet property="delegate" destination="My9-3t-Jwd" id="0bG-de-q1w"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="3vA-kj-G62">
+                        <barButtonItem key="rightBarButtonItem" title="Pay Selected Items" id="aVI-u6-hgv">
+                            <connections>
+                                <action selector="paySelectedItems:" destination="My9-3t-Jwd" id="nty-hd-AhH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbY-N9-QEV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5780" y="4348"/>
+            <point key="canvasLocation" x="6742" y="4308"/>
         </scene>
         <!--Split View Controller - Sales-->
         <scene sceneID="o2G-eQ-bLF">
@@ -1258,12 +1237,31 @@
                     <toolbarItems/>
                     <connections>
                         <segue destination="c0o-71-P8C" kind="relationship" relationship="masterViewController" id="Ngp-1Y-RRC"/>
-                        <segue destination="My9-3t-Jwd" kind="relationship" relationship="detailViewController" id="ahs-fq-vyj"/>
+                        <segue destination="6On-LG-Zro" kind="relationship" relationship="detailViewController" id="ahs-fq-vyj"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSI-RW-oWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2992" y="3663"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="JaA-wA-P1R">
+            <objects>
+                <navigationController id="6On-LG-Zro" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QDQ-PM-oCw">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.42352944612503052" green="0.51372551918029785" blue="0.41960787773132324" alpha="1" colorSpace="deviceRGB"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="My9-3t-Jwd" kind="relationship" relationship="rootViewController" id="pur-xh-lmO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lDF-Ti-Ce8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5772" y="4308"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bkr-8W-1N9">
@@ -1288,81 +1286,6 @@
     <resources>
         <image name="first.png" width="30" height="30"/>
     </resources>
-    <classes>
-        <class className="AddMenuItemViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AddMenuItemViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="addMenuItem:"/>
-                <relationship kind="outlet" name="category" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="description" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="price" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="vegetarian" candidateClass="UICustomSwitch"/>
-            </relationships>
-        </class>
-        <class className="EditMenuDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/EditMenuDetailViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:"/>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="categoryPickerView" candidateClass="UIPickerView"/>
-                <relationship kind="outlet" name="descriptionTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="isVegetarianSwitch" candidateClass="UISwitch"/>
-                <relationship kind="outlet" name="nameTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="priceTextField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="MenuDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="categoryLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="descriptionLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="isVegCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="priceLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="MenuMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/MenuMasterViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancel:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="action" name="refresh"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="OrderDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OrderDetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="categoryLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="commentsLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="isCompleteCell" candidateClass="UITableViewCell"/>
-                <relationship kind="outlet" name="nameLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="OrderMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OrderMasterViewController.h"/>
-        </class>
-        <class className="PlaceOrderMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaceOrderMasterViewController.h"/>
-        </class>
-        <class className="PlaceOrderViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/PlaceOrderViewController.h"/>
-        </class>
-        <class className="SalesDetailViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SalesDetailViewController.h"/>
-        </class>
-        <class className="SalesMasterViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/SalesMasterViewController.h"/>
-        </class>
-        <class className="UICustomSwitch" superclassName="UISlider">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICustomSwitch.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
