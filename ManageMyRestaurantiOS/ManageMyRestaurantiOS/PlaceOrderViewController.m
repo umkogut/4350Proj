@@ -114,49 +114,6 @@
     //                   ]
     //    }
     
-    //NSLog(@"table num: %i", self.tableOrder.tableNum);
-    
-    /*
-     
-     -(void)editMenuItem:(NSString *)oldItemName withUpdatedItem:(MenuItem *)updatedItem {
-         NSLog(@"editing");
-         SBJsonWriter *jsonWriter = [[SBJsonWriter alloc] init];
-         
-         NSString *isVegStr = updatedItem.isVegetarian ? @"TRUE" : @"FALSE";
-         
-         NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
-         updatedItem.name, @"name",
-         [NSString stringWithFormat:@"%d", updatedItem.menuID], @"menuID",
-         updatedItem.category, @"category",
-         updatedItem.description, @"description",
-         updatedItem.price, @"price",
-         isVegStr, @"isVeg",
-         @"", @"image",
-         oldItemName, @"prevItemName",
-         nil];
-         NSLog(@"%@", json);
-         NSString *jsonCommand = [jsonWriter stringWithObject:json];
-         
-         NSLog(@"%@", jsonCommand);
-         
-         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/editMenuItem.json", serverURL]];
-         ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
-         
-         [request addRequestHeader:@"Content-Type" value:@"application/json"];
-         
-         [request setRequestMethod:@"POST"];
-         [request appendPostData:[jsonCommand  dataUsingEncoding:NSUTF8StringEncoding]];
-         
-         [request setDelegate:self];
-         [request startAsynchronous];
-     }
-
-     */
-    
-    NSDictionary *jsonWrapper = [NSDictionary dictionaryWithObjectsAndKeys:
-                                 json, @"Orders",
-                                 nil];
-    
     if ([itemsChosen count] > 0)
     {
         for (int i=1; i <= [itemsChosen count]; i++)
@@ -189,7 +146,7 @@
         NSString *jsonCommand = [jsonWriter stringWithObject:json];
         NSLog(@"jsonCommand\n%@", jsonCommand);
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/placeOrder", serverURL]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/placeOrder.json", serverURL]];
         ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
         
         [request addRequestHeader:@"Content-Type" value:@"application/json"];
