@@ -26,14 +26,16 @@
     MenuItem *item;
     
     item = [[MenuItem alloc] initWithName:@"salad"
-                                          category:@"Appetizer"
-                                       description:@"greens"
-                                             price:price
-                                      isVegetarian:YES];
+                                   menuID:(NSInteger *)1
+                                 category:@"Appetizer"
+                              description:@"greens"
+                                    price:price
+                             isVegetarian:YES];
     [self.menuDataController addMenuItem:item];
     
     price = [[NSDecimalNumber alloc] initWithDouble:7.95];
     item = [[MenuItem alloc] initWithName:@"burger"
+                                   menuID:(NSInteger *)1
                                  category:@"Entrees"
                               description:@"beef"
                                     price:price
@@ -42,6 +44,7 @@
     
     price = [[NSDecimalNumber alloc] initWithDouble:2.45];
     item = [[MenuItem alloc] initWithName:@"cake"
+                                   menuID:(NSInteger *)1
                                  category:@"Dessert"
                               description:@"sweeeet"
                                     price:price
@@ -50,6 +53,7 @@
     
     price = [[NSDecimalNumber alloc] initWithDouble:4.95];
     item = [[MenuItem alloc] initWithName:@"hot dog"
+                                   menuID:(NSInteger *)1
                                  category:@"Entrees"
                               description:@"pork"
                                     price:price
@@ -92,6 +96,7 @@
     STAssertEquals([item isVegetarian], YES, @"Unable to change menu item to vegetarian");
     
     MenuItem *newItem = [[MenuItem alloc] initWithName:@"newItem"
+                                                menuID:(NSInteger *)1
                                               category:@"Dessert"
                                            description:@"new dessert"
                                                  price:[[NSDecimalNumber alloc] initWithDouble:5.75]
@@ -135,6 +140,7 @@
     STAssertEquals([item isVegetarian], NO, @"Unable to change menu item to vegetarian");
     
     MenuItem *newItem = [[MenuItem alloc] initWithName:@"newItem"
+                                                menuID:(NSInteger *)1
                                               category:@"Entrees"
                                            description:@"new entree"
                                                  price:[[NSDecimalNumber alloc] initWithDouble:5.75]
@@ -191,6 +197,7 @@
     STAssertTrue([self.menuDataController countOfList] == 4, @"Added an object that wasn't a MenuItem");
     
     item = [[MenuItem alloc] initWithName:@"newItem"
+                                   menuID:(NSInteger *)1
                                 category:@"Dessert"
                               description:@"new dessert"
                                     price:[[NSDecimalNumber alloc] initWithDouble:5.75]

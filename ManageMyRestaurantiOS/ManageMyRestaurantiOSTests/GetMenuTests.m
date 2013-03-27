@@ -27,6 +27,7 @@
     MenuItem *item;
     
     item = [[MenuItem alloc] initWithName:@"testName"
+                                   menuID:(NSInteger *)1
                                  category:@"testCategory"
                               description:@"This is a test description"
                                     price:price
@@ -34,6 +35,7 @@
     
     STAssertNotNil(item, @"Unable to create test Menu item");
     STAssertEquals([item name], @"testName", @"Test Menu item name not set correctly");
+    STAssertEquals([item menuID], (NSInteger *)1, @"Test Menu item ID not set correctly");
     STAssertEquals([item category], @"testCategory", @"Test Menu item category not set correctly");
     STAssertEquals([item description], @"This is a test description", @"Test Menu item description not set correctly");
     STAssertEqualObjects([item price], [[NSDecimalNumber alloc] initWithDouble:0.99], @"Test Menu item price not set correctly");
@@ -45,28 +47,32 @@
     MenuItem *item;
     
     item = [[MenuItem alloc] initWithName:nil
-                                          category:@"testCategory"
-                                       description:@"This is a test description"
-                                             price:price
+                                   menuID:(NSInteger *)1
+                                 category:@"testCategory"
+                              description:@"This is a test description"
+                                    price:price
+                                isVegetarian:NO];
+    STAssertNil(item, @"Able to create menu item with nil data");
+    
+    item = [[MenuItem alloc] initWithName:@"testName"
+                                   menuID:(NSInteger *)1
+                                 category:nil
+                              description:@"This is a test description"
+                                    price:price
                              isVegetarian:NO];
     STAssertNil(item, @"Able to create menu item with nil data");
     
     item = [[MenuItem alloc] initWithName:@"testName"
-                                          category:nil
-                                       description:@"This is a test description"
-                                             price:price
-                                      isVegetarian:NO];
-    STAssertNil(item, @"Able to create menu item with nil data");
-    
-    item = [[MenuItem alloc] initWithName:@"testName"
-                                          category:@"testCategory"
-                                       description:@"This is a test description"
-                                             price:nil
-                                      isVegetarian:NO];
+                                   menuID:(NSInteger *)1
+                                 category:@"testCategory"
+                              description:@"This is a test description"
+                                    price:nil
+                             isVegetarian:NO];
     
     STAssertNil(item, @"Able to create menu item with nil data");
     
     item = [[MenuItem alloc] initWithName:@"testName"
+                                   menuID:(NSInteger *)1
                                  category:@"testCategory"
                               description:nil
                                     price:price
