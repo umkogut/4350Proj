@@ -205,10 +205,10 @@
         
         for (int i = 0; i < [itemsChosen count]; i++) {
             //get MenuItem id #
+            BOOL isRemoved = FALSE;
             NSInteger *menuid = 0;
             itemPath = [itemsChosen objectAtIndex:i];
             
-            //selectedItem = [self.table.orderList objectAtIndex: itemPath.row];
             NSString *itemName = [[[self.orderTable cellForRowAtIndexPath:itemPath] textLabel] text];
             
             for (int j = 0; j < self.dataController.countOfList; j++) {
@@ -218,24 +218,20 @@
             }
             
             for (int k = 0; k < [self.table.orderList count]; k++) {
-                if([[[self.table.orderList objectAtIndex:k] name] isEqualToString:itemName]) {
+                if([[[self.table.orderList objectAtIndex:k] name] isEqualToString:itemName] && !isRemoved) {
                     [self.itemsToRemove addObject:[self.table.orderList objectAtIndex:k]];
                     [self.table.orderList removeObjectAtIndex:k];
+                    isRemoved = TRUE;
                 }
             }
             
             for (int l = 0; l < [self.itemsToRemove count]; l++) {
-                NSLog([[self.itemsToRemove objectAtIndex:l] name]);
-                NSLog(itemName);
                 if([[[self.itemsToRemove objectAtIndex:l] name] isEqualToString:itemName]) {
-                    //NSLog([[self.itemsToRemove objectAtIndex:l] name]);
-                    //NSLog(itemName);
                     loc = l;
                 }
             }
             
             //NSLog(itemName);
-            NSLog([NSString stringWithFormat:@"%i", loc]);
             
             NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [NSString stringWithFormat:@"%i",self.table.tableNum], @"table",
