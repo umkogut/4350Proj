@@ -32,26 +32,12 @@
 -(void)initializeDefaultDataList {
     NSMutableArray *defaultList = [[NSMutableArray alloc] init];
     self.masterMenuItemList = defaultList;
-    
-//    MenuItem *item = [[MenuItem alloc] initWithName:@"Food 1" category:@"Category 1" description:@"This is description #1" price:[NSDecimalNumber decimalNumberWithString:@"1.00"] isVegetarian:YES];
-//    [self addMenuItem:item];
-//    
-//    item = [[MenuItem alloc] initWithName:@"Food 2" category:@"Category 2" description:@"This is description #2" price:[NSDecimalNumber decimalNumberWithString:@"2.02"] isVegetarian:NO];
-//    [self addMenuItem:item];
-//    
-//    item = [[MenuItem alloc] initWithName:@"Food 3" category:@"Category 2" description:@"This is description #3" price:[NSDecimalNumber decimalNumberWithString:@"3.00"] isVegetarian:NO];
-//    [self addMenuItem:item];
 }
 
 // initialize the default categories list
 -(void)initializeDefaultCategoriesList {
     NSMutableArray *defaultList = [[NSMutableArray alloc] init];
     self.categoryList = defaultList;
-//    [self.categoryList addObject:@"Category 1"];
-//    [self.categoryList addObject:@"Category 2"];
-    
-    
-    //self.categoryList = defaultList;
 }
 
 // get number of categories
