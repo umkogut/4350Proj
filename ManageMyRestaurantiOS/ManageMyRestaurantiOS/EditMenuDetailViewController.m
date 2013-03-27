@@ -8,12 +8,15 @@
 
 #import "EditMenuDetailViewController.h"
 #import "defines.h"
+#import "MenuDetailViewController.h"
 
 @interface EditMenuDetailViewController ()
 
 @end
 
 @implementation EditMenuDetailViewController
+
+@synthesize delegate;
 
 // displays the menu item's current details
 -(void)configureView {
@@ -96,7 +99,7 @@
         //success
         UIAlertView *success = [[UIAlertView alloc] initWithTitle:@"Success" message:@"You have successfully edited the menu item" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
         [success show];
-        
+        [self.delegate setReturnFromEdit:YES];
     }
     else
     {
