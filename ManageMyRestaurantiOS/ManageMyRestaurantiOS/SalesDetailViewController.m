@@ -185,18 +185,19 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.itemsToRemove addObject:[self.table.orderList objectAtIndex:indexPath.row]];
+    //[self.itemsToRemove addObject:[self.table.orderList objectAtIndex:indexPath.row]];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.itemsToRemove removeObject:[self.table.orderList objectAtIndex:indexPath.row]];
+    //[self.itemsToRemove removeObject:[self.table.orderList objectAtIndex:indexPath.row]];
 }
 
 - (IBAction)paySelectedItems:(id)sender {
-    NSString *jsonCommand = [NSString stringWithFormat:@"[{\"numItems\":%@}",[NSString stringWithFormat:@"%i", [self.itemsToRemove count]]];
     NSArray *itemsChosen = [self.orderTable indexPathsForSelectedRows];
+    NSString *jsonCommand = [NSString stringWithFormat:@"[{\"numItems\":%@}",[NSString stringWithFormat:@"%i", [itemsChosen count]]];
     NSIndexPath *itemPath;
+    int loc = 0;
         
     if([itemsChosen count] > 0) {
         //request
@@ -204,9 +205,10 @@
         
         for (int i = 0; i < [itemsChosen count]; i++) {
             //get MenuItem id #
+            BOOL isRemoved = FALSE;
             NSInteger *menuid = 0;
             itemPath = [itemsChosen objectAtIndex:i];
-            //selectedItem = [self.table.orderList objectAtIndex: itemPath.row];
+            
             NSString *itemName = [[[self.orderTable cellForRowAtIndexPath:itemPath] textLabel] text];
             
             for (int j = 0; j < self.dataController.countOfList; j++) {
@@ -216,25 +218,37 @@
             }
             
             for (int k = 0; k < [self.table.orderList count]; k++) {
-                if([[[self.table.orderList objectAtIndex:k] name] isEqualToString:itemName]) {
+                if([[[self.table.orderList objectAtIndex:k] name] isEqualToString:itemName] && !isRemoved) {
+                    [self.itemsToRemove addObject:[self.table.orderList objectAtIndex:k]];
                     [self.table.orderList removeObjectAtIndex:k];
+                    isRemoved = TRUE;
                 }
             }
             
-            NSLog(itemName);
+            for (int l = 0; l < [self.itemsToRemove count]; l++) {
+                if([[[self.itemsToRemove objectAtIndex:l] name] isEqualToString:itemName]) {
+                    loc = l;
+                }
+            }
+            
+            //NSLog(itemName);
             
             NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [NSString stringWithFormat:@"%i",self.table.tableNum], @"table",
                                   [NSString stringWithFormat:@"%i",menuid], @"menuItem",
-                                  [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:i] groupNum]], @"group",
-                                  [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:i] orderID]], @"order",
+                                  [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:loc] groupNum]], @"group",
+                                  [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:loc] orderID]], @"order",
                                   nil];
             
             if(jsonCommand != NULL)
                 jsonCommand = [NSString stringWithFormat:@"%@,{\"orderItem\":%@}", jsonCommand, [jsonWriter stringWithObject:json]];
             else
                 jsonCommand = [NSString stringWithFormat:@"{\"orderItem\":%@}",[jsonWriter stringWithObject:json]];
+            
+            //[self.itemsToRemove removeObjectAtIndex:loc];
+            //[self.table.orderList removeObjectAtIndex:i];
         }
+        [self.itemsToRemove removeAllObjects];
         
         jsonCommand = [NSString stringWithFormat:@"%@]", jsonCommand];
         NSLog(jsonCommand);

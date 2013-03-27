@@ -138,7 +138,7 @@
     }
 
     TableOrder *table = [self.dataController objectInListAtIndex:indexPath.section];
-    NSString *tableNum = [NSString stringWithFormat:@"%i", table.tableNum];
+    NSString *tableNum = [NSString stringWithFormat:@"Table %i", table.tableNum];
     [[cell textLabel] setText:tableNum];
     
     return cell;
@@ -152,8 +152,8 @@
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
-    TableOrder *table = [self.dataController objectInListAtIndex:section];
-    return [NSString stringWithFormat:@"Table %i", table.tableNum];
+    //TableOrder *table = [self.dataController objectInListAtIndex:section];
+    return [NSString stringWithFormat:@"%s", ""];
 }
 
 /*
