@@ -62,7 +62,7 @@
     
     NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                           updatedItem.name, @"name",
-                          [NSString stringWithFormat:@"%d", updatedItem.menuID], @"menuID",
+                          [NSString stringWithFormat:@"%d", (NSInteger)updatedItem.menuID], @"menuID",
                           updatedItem.category, @"category",
                           updatedItem.description, @"description",
                           updatedItem.price, @"price",

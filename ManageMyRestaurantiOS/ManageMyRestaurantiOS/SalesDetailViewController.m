@@ -235,7 +235,7 @@
             
             NSDictionary *json = [NSDictionary dictionaryWithObjectsAndKeys:
                                   [NSString stringWithFormat:@"%i",self.table.tableNum], @"table",
-                                  [NSString stringWithFormat:@"%i",menuid], @"menuItem",
+                                  [NSString stringWithFormat:@"%i",(NSInteger)menuid], @"menuItem",
                                   [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:loc] groupNum]], @"group",
                                   [NSString stringWithFormat:@"%i",[[self.itemsToRemove objectAtIndex:loc] orderID]], @"order",
                                   nil];
@@ -251,7 +251,7 @@
         [self.itemsToRemove removeAllObjects];
         
         jsonCommand = [NSString stringWithFormat:@"%@]", jsonCommand];
-        NSLog(jsonCommand);
+//        NSLog(jsonCommand);
         
         NSURL *url = [NSURL URLWithString:[NSString stringWithFormat: @"%@/payForItems", serverURL]];
         
@@ -307,7 +307,7 @@
         NSArray *menu = [menuList objectForKey:@"menu"];
         for (NSDictionary *item in menu) {
             MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
-                                                        menuID:(NSInteger)[[item objectForKey:@"menuID"] intValue]
+                                                        menuID:(NSInteger *)[[item objectForKey:@"menuID"] intValue]
                                                       category:[item objectForKey:@"category"]
                                                    description:[item objectForKey:@"description"]
                                                          price:[item objectForKey:@"price"]

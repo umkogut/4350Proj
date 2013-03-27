@@ -88,7 +88,7 @@
         for (NSDictionary *item in menu)
         {
             MenuItem *newItem = [[MenuItem alloc] initWithName:[item objectForKey:@"name"]
-                                                        menuID:(NSInteger)[[item objectForKey:@"menuID"] intValue]
+                                                        menuID:(NSInteger *)[[item objectForKey:@"menuID"] intValue]
                                                       category:[item objectForKey:@"category"]
                                                    description:[item objectForKey:@"description"]
                                                          price:[item objectForKey:@"price"]
@@ -108,7 +108,6 @@
 
 - (IBAction)save:(id)sender
 {
-    int offset = 0;
     NSArray *itemsChosen = [self.menuTable indexPathsForSelectedRows];
     MenuItem *selectedItem;
     NSIndexPath *itemPath;
