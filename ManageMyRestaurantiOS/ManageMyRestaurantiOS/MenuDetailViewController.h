@@ -13,6 +13,7 @@
 @interface MenuDetailViewController : UITableViewController
 @property (strong, nonatomic) MenuItem *menuItem;
 @property (strong, nonatomic) NSMutableArray *categoriesList;
+@property (nonatomic) BOOL returnFromEdit;
 
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
 @property (weak, nonatomic) IBOutlet UILabel *categoryLabel;

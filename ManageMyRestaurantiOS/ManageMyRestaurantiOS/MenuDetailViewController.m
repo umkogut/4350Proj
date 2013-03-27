@@ -55,6 +55,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    _returnFromEdit = NO;
 	// Do any additional setup after loading the view, typically from a nib.
     [self configureView];
 }
@@ -63,6 +64,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    if (_returnFromEdit)
+    {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
 }
 
 // does initial stuff before the segue is called
@@ -75,7 +84,7 @@
         
         editMenuDetailViewController.menuItem = self.menuItem;
         editMenuDetailViewController.categoryList = self.categoriesList;
-        
+        editMenuDetailViewController.delegate = self;
     }
 }
 @end
