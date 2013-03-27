@@ -139,7 +139,7 @@ def editMenuItem_view(request):
 	prevItemName = request.json_body['prevItemName']
 	item = DBSession.query(MenuItem).filter_by(name=newItem['prevItemName']).first()
 	newName = DBSession.query(MenuItem).filter_by(name=newItem['name']).first()
-	if item and !newName:
+	if item and not newName:
 		item.name = newItem['name']
 		item.category = newItem['category']
 		item.price = newItem['price']
