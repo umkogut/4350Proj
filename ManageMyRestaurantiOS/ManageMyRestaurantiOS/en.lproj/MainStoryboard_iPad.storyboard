@@ -500,9 +500,11 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="SBJson" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGv-4g-IUF">
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="213" id="RM0-DD-qia"/>
-                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="ASIHTTPRequest" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJO-HA-5Ir">
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -512,6 +514,8 @@
                         <constraints>
                             <constraint firstItem="9A3-Xp-kJT" firstAttribute="leading" secondItem="wM6-W4-eSB" secondAttribute="leading" type="default" id="04u-Mk-7Nt"/>
                             <constraint firstItem="TqD-qP-Q1s" firstAttribute="top" secondItem="Kaf-Am-iIb" secondAttribute="top" constant="20" symbolic="YES" type="default" id="2Aw-NC-DCY"/>
+                            <constraint firstItem="PGv-4g-IUF" firstAttribute="leading" secondItem="BJO-HA-5Ir" secondAttribute="leading" type="default" id="3YF-bW-QPZ"/>
+                            <constraint firstItem="PGv-4g-IUF" firstAttribute="trailing" secondItem="yMS-CQ-O2K" secondAttribute="trailing" type="default" id="4pw-FA-g4C"/>
                             <constraint firstItem="5UF-uo-65l" firstAttribute="leading" secondItem="TqD-qP-Q1s" secondAttribute="leading" type="default" id="6xL-8d-qdB"/>
                             <constraint firstItem="5UF-uo-65l" firstAttribute="trailing" secondItem="TqD-qP-Q1s" secondAttribute="trailing" type="default" id="8Sh-OY-VGa"/>
                             <constraint firstItem="9A3-Xp-kJT" firstAttribute="top" secondItem="wM6-W4-eSB" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="8kY-dO-QZZ"/>
@@ -519,10 +523,12 @@
                             <constraint firstItem="PGv-4g-IUF" firstAttribute="top" secondItem="Kaf-Am-iIb" secondAttribute="top" constant="407" id="Kro-Ge-nm5"/>
                             <constraint firstItem="cWe-Kw-mrd" firstAttribute="top" secondItem="9A3-Xp-kJT" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QFM-eC-MiI"/>
                             <constraint firstItem="9A3-Xp-kJT" firstAttribute="trailing" secondItem="wM6-W4-eSB" secondAttribute="trailing" type="default" id="YCm-cP-7hi"/>
-                            <constraint firstItem="PGv-4g-IUF" firstAttribute="leading" secondItem="Kaf-Am-iIb" secondAttribute="leading" constant="65" id="YSC-Kl-XJa"/>
                             <constraint firstItem="5oV-jM-KQq" firstAttribute="leading" secondItem="cWe-Kw-mrd" secondAttribute="leading" type="default" id="Zj4-Hh-P0l"/>
                             <constraint firstItem="jHa-kv-uWD" firstAttribute="top" secondItem="Kaf-Am-iIb" secondAttribute="top" constant="98" id="aWk-e7-Kc8"/>
+                            <constraint firstItem="PGv-4g-IUF" firstAttribute="trailing" secondItem="BJO-HA-5Ir" secondAttribute="trailing" type="default" id="apk-K2-9Q2"/>
                             <constraint firstItem="cWe-Kw-mrd" firstAttribute="trailing" secondItem="9A3-Xp-kJT" secondAttribute="trailing" type="default" id="bN0-J3-7cm"/>
+                            <constraint firstItem="BJO-HA-5Ir" firstAttribute="top" secondItem="PGv-4g-IUF" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="d7v-xc-38K"/>
+                            <constraint firstItem="PGv-4g-IUF" firstAttribute="leading" secondItem="yMS-CQ-O2K" secondAttribute="leading" type="default" id="dKV-vb-XKL"/>
                             <constraint firstItem="5UF-uo-65l" firstAttribute="top" secondItem="Kaf-Am-iIb" secondAttribute="top" constant="319" id="fqx-UB-anz"/>
                             <constraint firstItem="TqD-qP-Q1s" firstAttribute="leading" secondItem="Kaf-Am-iIb" secondAttribute="leading" constant="43" id="g0o-Ks-wZU"/>
                             <constraint firstItem="cWe-Kw-mrd" firstAttribute="leading" secondItem="9A3-Xp-kJT" secondAttribute="leading" type="default" id="h0C-aA-E0M"/>
@@ -1444,9 +1450,6 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SalesDetailViewController.h"/>
             <relationships>
                 <relationship kind="action" name="paySelectedItems:"/>
-                <relationship kind="outlet" name="itemName" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="itemPrice" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="orderItem" candidateClass="UITableViewCell"/>
                 <relationship kind="outlet" name="orderTable" candidateClass="UITableView"/>
             </relationships>
         </class>
